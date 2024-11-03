@@ -1,0 +1,15 @@
+.logo {
+  font-family: var(--suisse);
+  font-size: 2rem;
+  color: var(--black);
+  user-select: none;
+}
+
+.white {
+  color: var(--white);
+}
+
+.green {
+  color: var(--green3);
+  font-size: 3rem;
+}

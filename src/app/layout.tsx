@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import NoiseBg from "@/components/NoiseBg/NoiseBg";
+import Nav from "@/components/Nav/Nav";
+import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const suisse = localFont({
+  src: "../../public/fonts/SuisseIntl-Medium.ttf",
+  variable: "--suisse",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const suissReg = localFont({
+  src: "../../public/fonts/SuisseRegular.ttf",
+  variable: "--suisseReg",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +28,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang='en'>
+      <body className={`${suisse.variable} ${suissReg.variable}`}>
+        <NoiseBg>
+          <ScrollIndicator />
+          <Nav />
+          {children}
+        </NoiseBg>
       </body>
     </html>
   );

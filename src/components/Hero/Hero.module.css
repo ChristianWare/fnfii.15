@@ -1,0 +1,162 @@
+.container {
+  background-color: var(--tan);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.falseBtnContainer {
+  margin-bottom: -1rem;
+}
+
+.heading {
+  color: var(--black);
+  text-transform: none;
+}
+
+.span {
+  white-space: nowrap;
+}
+
+.copy {
+  color: var(--black);
+  width: 80%;
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.lottieBox {
+  width: 100%;
+  height: 550px;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
+.imgContainer {
+  position: relative;
+  width: 403px;
+  height: 500px;
+}
+
+.img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .copy {
+    width: 80%;
+    text-align: center;
+  }
+
+  .miscContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btnContainer {
+    margin-top: 1rem;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .lottieBox {
+    width: 100%;
+    height: 400px;
+  }
+
+  .imgContainer {
+    width: 303px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading,
+  .copy {
+    width: 100%;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    gap: 5rem;
+    /* margin-bottom: -10rem; */
+  }
+
+  .left {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading,
+  .copy {
+    text-align: left;
+  }
+
+  .btnContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lottieBox {
+    position: relative;
+    top: -50px;
+  }
+
+  .imgContainer {
+    width: 253px;
+    height: 350px;
+  }
+}
