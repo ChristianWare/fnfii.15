@@ -1,0 +1,171 @@
+.container {
+  background-color: var(--tan);
+  border-top: 1px solid var(--lightBlack);
+}
+
+.top {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.heading {
+  width: 40%;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.leftCopy {
+  margin-right: auto;
+  width: 40%;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-gap: 5rem;
+}
+
+.imgContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+.card {
+  border-bottom: 1px solid var(--lightBlack);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding-bottom: 1rem;
+}
+
+.indexInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.description {
+  opacity: 0.7;
+}
+
+.icon {
+  color: var(--green);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1368px) {
+  .heading {
+    width: 50%;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .leftCopy {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0rem;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .heading {
+    width: 100%;
+  }
+
+  .leftCopy {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .top {
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading,
+  .leftCopy {
+    width: 100%;
+    text-align: left;
+  }
+
+  .imgContainer {
+    width: 275px;
+    height: 275px;
+  }
+
+  .bottom {
+    grid-gap: 3rem;
+  }
+
+  .right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid var(--lightBlack);
+    border-radius: 10px;
+    gap: 2rem;
+  }
+
+  .description,
+  .title,
+  .icon {
+    text-align: center;
+  }
+}
