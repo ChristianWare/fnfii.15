@@ -1,0 +1,101 @@
+.bgColor {
+  background-color: var(--tan);
+  border-top: 1px solid var(--lightBlack);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.lottieBox {
+  width: 100%;
+  height: 400px;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
+.falseBtnContainer {
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+.authorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.img {
+  border-radius: 50%;
+  border: 2px solid var(--purple);
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .falseBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .heading,
+  .copy,
+  .authorDetails {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .falseBtnContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    text-align: left;
+    width: 100%;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}

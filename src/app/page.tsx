@@ -1,7 +1,17 @@
+import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import Hero from "@/components/Hero/Hero";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import Pricing from "@/components/Pricing/Pricing";
 import Problem from "@/components/Problem/Problem";
+import Projects from "@/components/Projects/Projects";
 import Solution from "@/components/Solution/Solution";
+import Testimonials from "@/components/Testimonials/Testimonials";
+import Usp from "@/components/Usp/Usp";
+import { homePageFaqs } from "../../lib/data";
+import Calendly from "@/components/Calendly/Calendly";
+import ContactHero from "@/components/ContactHero/ContactHero";
 
 export default function Home() {
   return (
@@ -10,6 +20,16 @@ export default function Home() {
       <Problem />
       <Solution />
       <EcommFeatures />
+      <AboutScrollText />
+      <Usp />
+
+      <Pricing bgColor='tan' />
+      <Projects />
+      <HowItWorks />
+      <Testimonials />
+      <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
+      <Calendly />
+      <ContactHero />
     </main>
   );
 }

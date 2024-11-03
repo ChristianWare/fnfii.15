@@ -1,0 +1,39 @@
+.container {
+  background-color: var(--tan);
+  border-top: 1px solid var(--lightBlack);
+  border-bottom: 1px solid var(--lightBlack);
+}
+
+.top,
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.copy {
+  margin-top: 3rem;
+}
+
+.lottieBox {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  top: -20px;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 968px) {
+  .top,
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading {
+    text-align: center;
+  }
+}
