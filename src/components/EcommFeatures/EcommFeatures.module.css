@@ -38,8 +38,8 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem;
   padding: 2rem;
-  /* border: 1px solid var(--lightBlack); */
-  background-color: var(--tan2);
+  border: 1px solid var(--lightBlack);
+  
   border-radius: 10px;
   height: 100%;
 }
