@@ -6,7 +6,7 @@
   --green3b: #7fc005;
   --green4: #31715d;
   --tan: #f2efe9;
-  --tan2: #ddddd5;
+  --tan2: #e1e1d9;
   --tanGlass: rgba(242, 236, 221, 0.7);
   --white: #fffdfb;
   --gray: #dfdddd;
@@ -151,7 +151,6 @@ textarea:focus {
   line-height: 1;
   letter-spacing: -0.04em;
 } */
-
 
 @media screen and (max-width: 768px) {
   html {

@@ -1,6 +1,5 @@
 "use client";
 
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EveryPlan.module.css";
 import Gaii from "../../../public/icons/gaii.svg";
 import Edit from "../../../public/icons/edit.svg";

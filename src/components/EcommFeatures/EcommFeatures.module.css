@@ -30,7 +30,7 @@
 .dataContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .content {
@@ -38,7 +38,8 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem;
   padding: 2rem;
-  border: 1px solid var(--lightBlack);
+  /* border: 1px solid var(--lightBlack); */
+  background-color: var(--tan2);
   border-radius: 10px;
   height: 100%;
 }

@@ -4,8 +4,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import animationData from "../../../public/lottie/agency.json";
 import Lottie from "lottie-react";
-import Image from "next/image";
-import Author from "../../../public/images/author.png";
 import Experience from "../Experience/Experience";
 import FalseButton from "../FalseButton/FalseButton";
 

@@ -43,7 +43,6 @@ const Solution = () => {
             </div>
             <h2 className={`${styles.heading} h2v2`}>
               Work with Fonts & Footers and we&apos;ll provide these solutions
-              for your ecommerce store:
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
@@ -63,13 +62,7 @@ const Solution = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.imgContainer}>
-              <Image
-                src={Img1}
-                alt=''
-                layout='fill'
-                objectFit='cover'
-                className={styles.img}
-              />
+              <Image src={Img1} alt='' fill className={styles.img} />
             </div>
           </div>
         </div>

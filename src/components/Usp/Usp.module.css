@@ -47,14 +47,13 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 1rem;
 }
 
 .card {
   padding: 2rem;
-  border: 1px solid var(--lightBlack);
-  background-color: var(--white);
+  background-color: var(--tan2);
   border-radius: 10px;
   display: flex;
   flex-direction: column;

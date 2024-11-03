@@ -44,22 +44,22 @@
 
 .primaryiii {
   color: var(--black);
-  background-color: transparent;
-  border: 1px solid var(--lightBlack);
+  background-color: var(--tan2);
+  /* border: 1px solid var(--lightBlack); */
 }
 
 .primaryNav {
   color: var(--tan);
   background-color: var(--purple);
-  border: 1px solid var(--lightBlack);
-  padding: 5px 15px;
+  /* border: 1px solid var(--lightBlack); */
+  padding: 7px 15px;
   font-size: 1.4rem;
 }
 
 .secondary {
   background-color: var(--purple);
   color: var(--tan);
-  border: 1px solid var(--black);
+  /* border: 1px solid var(--black); */
 }
 
 .secondary:hover,

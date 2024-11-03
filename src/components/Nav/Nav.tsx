@@ -102,9 +102,9 @@ function Nav() {
             onClick={openMenu}
           >
             <div className={styles.navBox}>
-              <li className={styles.navItem} onClick={() => setIsOpen(false)}>
+              {/* <li className={styles.navItem} onClick={() => setIsOpen(false)}>
                 <Link href='/'>{pathname === "/" ? <>Home</> : "Home"}</Link>
-              </li>
+              </li> */}
               {navItems.map((navItem, index) => (
                 <li
                   key={index}

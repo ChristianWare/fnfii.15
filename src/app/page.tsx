@@ -12,11 +12,13 @@ import Usp from "@/components/Usp/Usp";
 import { homePageFaqs } from "../../lib/data";
 import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
+import PostHero from "@/components/PostHero/PostHero";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <PostHero />
       <Problem />
       <Solution />
       <EcommFeatures />

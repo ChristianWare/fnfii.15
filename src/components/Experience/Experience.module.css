@@ -19,7 +19,7 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .heading {
@@ -30,12 +30,12 @@
 .mapContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .qaContainer {
   padding: 3rem 2rem;
-  border: 1px solid var(--lightBlack);
+  background-color: var(--tan2);
   border-radius: 10px;
   width: 100%;
   cursor: pointer;
