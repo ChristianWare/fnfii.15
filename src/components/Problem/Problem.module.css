@@ -43,7 +43,7 @@
 .right {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .card {

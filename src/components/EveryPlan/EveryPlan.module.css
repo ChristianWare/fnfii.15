@@ -1,6 +1,5 @@
 .container {
   background-color: var(--tan);
-  margin-top: 10rem;
 }
 
 .heading {
@@ -129,7 +128,7 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1068px) {
   .bottom {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -25,11 +25,7 @@ const Testimonials = () => {
               {/* <br /> */}
               <h2 className={styles.heading}>What our clients say</h2>
               <p className={styles.copy}>
-                Discover What Our Clients Have to Say About Their Dining
-                Experience with Us. We use the freshest ingredients and latest
-                culinary techniques to ensure that every event is memorable,
-                delicious, and seamless. Our team is committed to delivering
-                exceptional service, on time and within budget.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil porro error eligendi itaque asperiores quibusdam?
               </p>
             </div>
           </div>

@@ -8,7 +8,6 @@ import Team from "../../../public/icons/team.svg";
 import LayoutWrapper from "../LayoutWrapper";
 import animationData from "../../../public/lottie/usp.json";
 import Lottie from "lottie-react";
-import EveryPlan from "../EveryPlan/EveryPlan";
 
 const data = [
   {
@@ -63,7 +62,6 @@ const Usp = () => {
             ))}
           </div>
         </div>
-        <EveryPlan />
       </LayoutWrapper>
     </section>
   );

@@ -9,6 +9,7 @@ import Design from "../../../public/icons/design.svg";
 import Clock from "../../../public/icons/clock.svg";
 import Image from "next/image";
 import EveryPlanImage from "../../../public/images/everyPlan.png";
+import LayoutWrapper from "../LayoutWrapper";
 
 const EveryPlan = () => {
   const data = [
@@ -81,34 +82,35 @@ const EveryPlan = () => {
 
   return (
     <section className={styles.container}>
-      {/* <LayoutWrapper> */}
-      <div className={styles.parent}>
-        <div className={styles.top}>
-          <h2 className={`${styles.heading}`}>
-            <span className={styles.em}>Everything </span> we build includes...
-          </h2>
+      <LayoutWrapper>
+        <div className={styles.parent}>
+          <div className={styles.top}>
+            <h2 className={`${styles.heading}`}>
+              <span className={styles.em}>Everything </span> we build
+              includes...
+            </h2>
+          </div>
+          <div className={styles.bottom}>
+            {data.map((x, index) => (
+              <div className={styles.card} key={index}>
+                {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
+                <h3 className={styles.title}>{x.title}</h3>
+                <p className={styles.desc}>{x.description}</p>
+                {x.src && (
+                  <div className={styles.imgContainer}>
+                    <Image
+                      src={EveryPlanImage}
+                      alt=''
+                      fill
+                      className={styles.img}
+                    />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-        <div className={styles.bottom}>
-          {data.map((x, index) => (
-            <div className={styles.card} key={index}>
-              {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
-              <h3 className={styles.title}>{x.title}</h3>
-              <p className={styles.desc}>{x.description}</p>
-              {x.src && (
-                <div className={styles.imgContainer}>
-                  <Image
-                    src={EveryPlanImage}
-                    alt=''
-                    fill
-                    className={styles.img}
-                  />
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-      {/* </LayoutWrapper> */}
+      </LayoutWrapper>
     </section>
   );
 };

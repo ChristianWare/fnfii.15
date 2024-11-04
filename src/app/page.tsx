@@ -13,23 +13,24 @@ import { homePageFaqs } from "../../lib/data";
 import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
+import EveryPlan from "@/components/EveryPlan/EveryPlan";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <PostHero />
+      <Usp />
+      <EveryPlan />
       <Problem />
       <Solution />
       <EcommFeatures />
       <AboutScrollText />
-      <Usp />
-
-      <Pricing bgColor='tan' />
+      <PostHero />
       <Projects />
+      <Pricing bgColor='tan' />
       <HowItWorks />
       <Testimonials />
-      <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
+      <Faqsiii mapData={homePageFaqs} />
       <Calendly />
       <ContactHero />
     </main>

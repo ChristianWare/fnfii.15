@@ -38,21 +38,15 @@ const PostHero = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+        <div className={styles.imgContainer}>
+          <Image src={Img1} alt='' title='' fill className={styles.img} />
+        </div>
         <div className={styles.content}>
           <div className={styles.top}>
-            <div className={styles.topLeft}>
-              <h2 className={styles.topHeading}>Peace of Mind</h2>
-            </div>
-            <div className={styles.topRight}>
-              <h3 className={styles.heading}>
-                Empowering vacation rental owners with personalized and
-                user-friendly direct booking websites, our mission is to
-                liberate hosts from intermediary platforms, fostering
-                independence, trust, and growth in their businesses, as we
-                redefine the vacation rental experience away from Airbnb. Here
-                are the four ways we plan on accomplishing that goal:
-              </h3>
-            </div>
+            <h2 className={styles.topHeading}>Peace of Mind</h2>
+            <h3 className={styles.heading}>
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, mollitia.
+            </h3>
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (
@@ -64,9 +58,6 @@ const PostHero = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className={styles.imgContainer}>
-          <Image src={Img1} alt='' title='' fill className={styles.img} />
         </div>
       </LayoutWrapper>
     </section>

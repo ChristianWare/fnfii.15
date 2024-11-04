@@ -1,7 +1,5 @@
 .container {
   background-color: var(--tan);
-
-  border-bottom: 1px solid var(--lightBlack);
   height: 100%;
   overflow: hidden;
 }
@@ -11,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   position: relative;
   margin-left: auto;
   margin-right: auto;
