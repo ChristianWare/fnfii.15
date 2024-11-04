@@ -56,7 +56,7 @@ const Usp = () => {
                 {x.icon}
                 <div>
                   <h3 className={styles.usp}>{x.usp}</h3>
-                  <p className={styles.desc}>{x.desc}</p>
+                  {/* <p className={styles.desc}>{x.desc}</p> */}
                 </div>
               </div>
             ))}

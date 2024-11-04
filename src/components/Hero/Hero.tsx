@@ -22,7 +22,8 @@ const Hero = () => {
             <div className={styles.falseBtnContainer}>
               <FalseButton
                 btnType='primary'
-                text='Looking for an e-commerce website that drives results?'
+                // text='Looking for an e-commerce website that drives results?'
+                text='Eyebrow sentence here'
               />
             </div>
             <h1 className={styles.heading}>

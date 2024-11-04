@@ -2,7 +2,7 @@ import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import Hero from "@/components/Hero/Hero";
-import HowItWorks from "@/components/HowItWorks/HowItWorks";
+// import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import Problem from "@/components/Problem/Problem";
 import Projects from "@/components/Projects/Projects";
@@ -19,13 +19,13 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
+      <Testimonials />
+      <PostHero />
       <EcommFeatures />
       <AboutScrollText />
-      <PostHero />
       <Projects />
       <Pricing bgColor='tan' />
-      <HowItWorks />
-      <Testimonials />
+      {/* <HowItWorks /> */}
       <Faqsiii mapData={homePageFaqs} />
       <Calendly />
       <ContactHero />

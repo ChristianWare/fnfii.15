@@ -4,7 +4,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import animationData from "../../../public/lottie/agency.json";
 import Lottie from "lottie-react";
-import Experience from "../Experience/Experience";
+// import Experience from "../Experience/Experience";
 import FalseButton from "../FalseButton/FalseButton";
 
 const AboutScrollText = () => {
@@ -43,7 +43,7 @@ const AboutScrollText = () => {
             </p>
           </div>
         </div>
-        <Experience />
+        {/* <Experience /> */}
       </LayoutWrapper>
     </section>
   );

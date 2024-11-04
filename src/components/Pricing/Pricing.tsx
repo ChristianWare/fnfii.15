@@ -4,8 +4,8 @@ import { pricing } from "../../../lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
-import animationData from "../../../public/lottie/pricing.json";
-import Lottie from "lottie-react";
+// import animationData from "../../../public/lottie/pricing.json";
+// import Lottie from "lottie-react";
 
 interface Props {
   bgColor?: string;
@@ -23,9 +23,9 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <div className={styles.lottieBox}>
+            {/* <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
+            </div> */}
             <h2 className={styles.heading}>Pricing</h2>
 
             <p className={styles.copy}>

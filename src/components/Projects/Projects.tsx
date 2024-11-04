@@ -7,8 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
-import animationData from "../../../public/lottie/projects.json";
-import Lottie from "lottie-react";
+// import animationData from "../../../public/lottie/projects.json";
+// import Lottie from "lottie-react";
 
 // interface Project {
 //   src: StaticImageData;
@@ -34,10 +34,10 @@ const Projects = () => {
   return (
     <section className={styles.container} id='projects'>
       <LayoutWrapper>
-        <div className={styles.lottieBox} id='projects'>
+        {/* <div className={styles.lottieBox} id='projects'>
           <Lottie animationData={animationData} className={styles.lottie} />
-        </div>
-        <h2 className={`${styles.heading} h2v2`}>Projects</h2>
+        </div> */}
+        <h2 className={`${styles.heading} h2v2`}>Case Studies</h2>
         <div className={styles.dataContainer}>
           {projects.map((x, index) => (
             <div key={index} className={styles.parent}>

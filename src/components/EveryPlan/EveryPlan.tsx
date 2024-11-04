@@ -84,9 +84,9 @@ const EveryPlan = () => {
     <section className={styles.container}>
       {/* <LayoutWrapper> */}
       <div className={styles.parent}>
-        <div className={styles.top}>
+        {/* <div className={styles.top}>
           <h2 className={`${styles.heading}`}>What&apos;s included?</h2>
-        </div>
+        </div> */}
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div className={styles.card} key={index}>

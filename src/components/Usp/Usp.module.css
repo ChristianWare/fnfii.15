@@ -31,11 +31,6 @@
   width: 60%;
 }
 
-.em {
-  font-family: var(--PerfectlyNinetiesItalic);
-  color: var(--black);
-}
-
 .copy {
   color: var(--black);
   text-align: center;
@@ -58,13 +53,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .usp {
   margin-bottom: 2rem;
   text-align: center;
   color: var(--black);
+  font-size: 1.6rem;
 }
 
 .desc {

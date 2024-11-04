@@ -4,8 +4,8 @@ import styles from "./Testimonials.module.css";
 import { reviews } from "../../../lib/data"; 
 import StarCluster from "../StarCluster/StarCluster";
 import Person from "../../../public/icons/person.svg";
-import animationData from "../../../public/lottie/reviews.json";
-import Lottie from "lottie-react";
+// import animationData from "../../../public/lottie/reviews.json";
+// import Lottie from "lottie-react";
 import LayoutWrapper from "../LayoutWrapper";
 
 const Testimonials = () => {
@@ -15,12 +15,12 @@ const Testimonials = () => {
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.top}>
-              <div className={styles.lottieBox}>
+              {/* <div className={styles.lottieBox}>
                 <Lottie
                   animationData={animationData}
                   className={styles.lottie}
                 />
-              </div>
+              </div> */}
               <StarCluster />
               {/* <br /> */}
               <h2 className={styles.heading}>What our clients say</h2>
