@@ -13,7 +13,7 @@ import FalseButton from "../FalseButton/FalseButton";
 const EcommFeatures = () => {
   const ecommerceFeatures = [
     {
-      icon: <Integration width={100} height={100} className={styles.icon} />,
+      icon: <Integration width={75} height={75} className={styles.icon} />,
       title: "Platform Integration",
       description:
         "We integrate with leading e-commerce platforms like Shopify, WooCommerce, and Magento, ensuring your online store has the functionality and flexibility required to succeed in a competitive market.",
@@ -33,7 +33,7 @@ const EcommFeatures = () => {
       ],
     },
     {
-      icon: <Design width={100} height={100} className={styles.icon} />,
+      icon: <Design width={75} height={75} className={styles.icon} />,
       title: "Custom Website Design",
       description:
         "We offer bespoke design services that reflect your brand’s identity and provide an engaging user experience. Our designs are crafted to captivate your audience and provide an engaging user experience.",
@@ -54,7 +54,7 @@ const EcommFeatures = () => {
     },
 
     {
-      icon: <SEO width={100} height={100} className={styles.icon} />,
+      icon: <SEO width={75} height={75} className={styles.icon} />,
       title: "Search Engine Optimization (SEO)",
       description:
         "Our websites are built with SEO best practices to ensure that your business ranks well in search engine results, driving organic traffic to your site.",
@@ -74,7 +74,7 @@ const EcommFeatures = () => {
       ],
     },
     {
-      icon: <Analytics width={100} height={100} className={styles.icon} />,
+      icon: <Analytics width={75} height={75} className={styles.icon} />,
       title: "E-commerce Analytics and Reporting",
       description:
         "We provide comprehensive analytics and reporting to help you understand your e-commerce performance and make data-driven decisions.",
@@ -94,7 +94,7 @@ const EcommFeatures = () => {
       ],
     },
     {
-      icon: <Multiple width={100} height={100} className={styles.icon} />,
+      icon: <Multiple width={75} height={75} className={styles.icon} />,
       title: "Multiple Products Management",
       description:
         "Our e-commerce platforms enable efficient management of multiple products, allowing you to easily add, update, and organize your product catalog.",
@@ -114,7 +114,7 @@ const EcommFeatures = () => {
       ],
     },
     {
-      icon: <Payment width={100} height={100} className={styles.icon} />,
+      icon: <Payment width={75} height={75} className={styles.icon} />,
       title: "Stripe Payment Gateway",
       description:
         "Integrating Stripe as your payment gateway for  ensures secure transactions, supports multiple payment methods, automates payments, and expands global reach.",
@@ -152,16 +152,7 @@ const EcommFeatures = () => {
               </div>
               <div className={styles.right}>
                 <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.desc}>{x.description}</p>
-                <br />
-                {/* <span className={styles.span}>Benefits:</span>
-                  <ul className={styles.box}>
-                    {x.whyImportant.map((y, index) => (
-                      <li key={index}>
-                        <h4 className={styles.reasonnTitle}>{y.title}</h4>
-                      </li>
-                    ))}
-                  </ul> */}
+                {/* <p className={styles.desc}>{x.description}</p> */}
               </div>
             </div>
           ))}

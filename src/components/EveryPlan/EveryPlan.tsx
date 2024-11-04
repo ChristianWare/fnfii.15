@@ -55,16 +55,10 @@ const EveryPlan = () => {
       description:
         "If you ever need to reach out to us for any reason, call us! We're here and ready to help.",
     },
-    // {
-    //   icon: "",
-    //   title: "",
-    //   description: "",
-    // },
     {
-      icon: "",
-      title: "",
-      description: "",
+      src: EveryPlanImage,
     },
+
     {
       icon: <Listing width={30} height={30} className={styles.icon} />,
       title: "Citations & Listings",
@@ -100,11 +94,18 @@ const EveryPlan = () => {
               {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
+              {x.src && (
+                <div className={styles.imgContainer}>
+                  <Image
+                    src={EveryPlanImage}
+                    alt=''
+                    fill
+                    className={styles.img}
+                  />
+                </div>
+              )}
             </div>
           ))}
-        </div>
-        <div className={styles.imgContainer}>
-          <Image src={EveryPlanImage} alt='' fill className={styles.img} />
         </div>
       </div>
       {/* </LayoutWrapper> */}

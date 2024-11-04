@@ -1,6 +1,6 @@
 .container {
   background-color: var(--tan);
-  border-top: 1px solid var(--lightBlack);
+
   height: 100%;
 }
 
@@ -117,7 +117,7 @@
   }
 
   .right {
-    order: -1
+    order: -1;
   }
 
   .rightBottom {

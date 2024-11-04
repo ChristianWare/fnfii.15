@@ -1,10 +1,8 @@
 .container {
   background-color: transparent;
-  border-top: 1px solid var(--lightBlack);
 }
 
 .borderTop {
-  border-top: 1px solid var(--lightBlack);
 }
 
 .tan {
@@ -190,7 +188,7 @@
   text-align: center;
   width: 100%;
   margin-top: 2rem;
-  border-top: 1px solid var(--lightBlack);
+
   padding: 2rem;
 }
 

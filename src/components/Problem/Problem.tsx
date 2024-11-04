@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import styles from "./Problem.module.css";
@@ -45,8 +46,7 @@ const Problem = () => {
             <FalseButton btnType='primary' text='Problems we solve' />
           </div>
           <h2 className={styles.heading}>
-            Are you unhappy with your current ecommerce store, or do you not
-            have one at all?
+            Are you unhappy with your current ecommerce store?
           </h2>
           {/* <p className={styles.leftCopy}>
             If so, then these problems probably sound familiar to you:
