@@ -13,33 +13,15 @@ const ContactHero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <div className={styles.topleft}>
-              <h2 className={styles.heading}>Contact Us</h2>
-              <p className={styles.copy}>
-                Whether you&apos;re a prospective client or have questions about
-                our services, reaching out is simple and quick. We&apos;re ready
-                to assist you to ensuring a seamless and personalized experience
-                as you take the next step in transforming your vacation rental
-                business.
-              </p>
-              <br />
-              <b>
-                The details shared here allow us to dive into details on our
-                discovery call. Anything you share here remains confidential.
-              </b>
-            </div>
-            <div className={styles.topRight}>
-              <div className={styles.lottieBox}>
-                <Lottie
-                  animationData={animationData}
-                  className={styles.lottie}
-                />
-              </div>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
             </div>
           </div>
           <div className={styles.bottom}>
             <ContactDetails />
-            <ContactForm />
+            <div className={styles.formBox}>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </LayoutWrapper>

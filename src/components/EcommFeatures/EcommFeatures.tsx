@@ -9,6 +9,7 @@ import Integration from "../../../public/icons/integration.svg";
 import Multiple from "../../../public/icons/multiple.svg";
 import Analytics from "../../../public/icons/analytics.svg";
 import FalseButton from "../FalseButton/FalseButton";
+import EveryPlan from "../EveryPlan/EveryPlan";
 
 const EcommFeatures = () => {
   const ecommerceFeatures = [
@@ -157,6 +158,7 @@ const EcommFeatures = () => {
             </div>
           ))}
         </div>
+        <EveryPlan />
       </LayoutWrapper>
     </section>
   );

@@ -13,17 +13,16 @@ import { homePageFaqs } from "../../lib/data";
 import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
-import EveryPlan from "@/components/EveryPlan/EveryPlan";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Usp />
-      <EveryPlan />
       <Problem />
       <Solution />
       <EcommFeatures />
+      {/* <EveryPlan /> */}
       <AboutScrollText />
       <PostHero />
       <Projects />

@@ -1,7 +1,9 @@
 .content {
   padding: 3rem;
-  border: 1px solid var(--lightBlack);
+  padding-bottom: 0rem;
+  /* border: 1px solid var(--lightBlack); */
   border-radius: 10px;
+  width: 100%;
 }
 
 .bottom {
