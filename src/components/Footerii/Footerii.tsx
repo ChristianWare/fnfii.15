@@ -66,11 +66,11 @@ const Footerii = () => {
         <LayoutWrapper>
           <div className={styles.content}>
             <div className={styles.logoMobile}>
-              <Logo color='white' />
+              <Logo color='black' />
             </div>
             <div className={styles.top}>
               <div className={styles.box}>
-                <Logo color='white' />
+                <Logo color='black' />
               </div>
               <div className={styles.box}>
                 {footer.map((x) => (

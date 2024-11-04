@@ -10,7 +10,7 @@
 }
 
 .content {
-  background-color: var(--black);
+  background-color: var(--tan2);
   padding: 3rem;
   border-radius: 10px;
   margin-top: -5rem;
@@ -25,7 +25,7 @@
 
 .logo,
 .logoMobile {
-  color: var(--white);
+  color: var(--black);
   font-size: 2rem;
   white-space: nowrap;
 }
@@ -35,7 +35,7 @@
 }
 
 .sectionHeading {
-  color: var(--white);
+  color: var(--black);
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
@@ -50,7 +50,7 @@
 }
 
 .listItem {
-  color: var(--white);
+  color: var(--black);
   width: 100%;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--lightBlack);
@@ -58,7 +58,7 @@
 }
 
 .newslettterCopy {
-  color: var(--white);
+  color: var(--black);
   opacity: 0.8;
   font-size: 1.4rem;
 }
@@ -108,7 +108,7 @@
 }
 
 .small {
-  color: var(--white);
+  color: var(--black);
   opacity: 0.8;
   margin-top: 2rem;
 }
@@ -131,7 +131,7 @@
 }
 
 .small1 {
-  color: var(--white);
+  color: var(--black);
   opacity: 0.8;
 }
 
