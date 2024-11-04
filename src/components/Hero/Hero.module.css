@@ -111,6 +111,10 @@
     width: 303px;
     height: 400px;
   }
+
+  .uspContainer {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 870px) {

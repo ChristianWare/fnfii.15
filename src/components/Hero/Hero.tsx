@@ -7,6 +7,7 @@ import Button from "../Button/Button";
 import FalseButton from "../FalseButton/FalseButton";
 import animationData from "../../../public/lottie/heroii.json";
 import Lottie from "lottie-react";
+import Usp from "../Usp/Usp";
 
 const Hero = () => {
   return (
@@ -25,7 +26,8 @@ const Hero = () => {
               />
             </div>
             <h1 className={styles.heading}>
-              Conversion optimized <span className={styles.span}>E-commerce</span> websites
+              Conversion optimized{" "}
+              <span className={styles.span}>E-commerce</span> websites
             </h1>
             <p className={styles.copy}>
               We create online stores that engage your customers from the first
@@ -50,6 +52,9 @@ const Hero = () => {
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>
           </div>
+        </div>
+        <div className={styles.uspContainer}>
+          <Usp />
         </div>
       </LayoutWrapper>
     </section>

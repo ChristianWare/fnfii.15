@@ -5,9 +5,9 @@ import Track from "../../../public/icons/track.svg";
 import Solutions from "../../../public/icons/solutions.svg";
 import Attention from "../../../public/icons/attention.svg";
 import Team from "../../../public/icons/team.svg";
-import LayoutWrapper from "../LayoutWrapper";
-import animationData from "../../../public/lottie/usp.json";
-import Lottie from "lottie-react";
+// import LayoutWrapper from "../LayoutWrapper";
+// import animationData from "../../../public/lottie/usp.json";
+// import Lottie from "lottie-react";
 
 const data = [
   {
@@ -39,9 +39,9 @@ const data = [
 const Usp = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
+      {/* <LayoutWrapper> */}
         <div className={styles.content}>
-          <div className={styles.top}>
+          {/* <div className={styles.top}>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>
@@ -49,7 +49,7 @@ const Usp = () => {
               Why choose Fonts & Footers to build your online store?
             </h2>
             <p className={styles.copy}>What sets us apart is our...</p>
-          </div>
+          </div> */}
           <div className={styles.bottom}>
             {data.map((x) => (
               <div key={x.id} className={styles.card}>
@@ -62,7 +62,7 @@ const Usp = () => {
             ))}
           </div>
         </div>
-      </LayoutWrapper>
+      {/* </LayoutWrapper> */}
     </section>
   );
 };

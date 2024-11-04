@@ -8,7 +8,6 @@ import Problem from "@/components/Problem/Problem";
 import Projects from "@/components/Projects/Projects";
 import Solution from "@/components/Solution/Solution";
 import Testimonials from "@/components/Testimonials/Testimonials";
-import Usp from "@/components/Usp/Usp";
 import { homePageFaqs } from "../../lib/data";
 import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
@@ -18,11 +17,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Usp />
       <Problem />
       <Solution />
       <EcommFeatures />
-      {/* <EveryPlan /> */}
       <AboutScrollText />
       <PostHero />
       <Projects />
