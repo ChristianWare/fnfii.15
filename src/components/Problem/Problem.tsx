@@ -52,12 +52,7 @@ const Problem = () => {
             If so, then these problems probably sound familiar to you:
           </p> */}
         </div>
-        <p className={styles.leftCopy}>
-          This means solving strategic challenges like how to re-platform a
-          technology stack, get data-driven insights from business intelligence
-          or build a seamless digital experience across online and offline
-          channels.{" "}
-        </p>
+        <p className={styles.leftCopy}>Then this probably sounds familiar:</p>
         <div className={styles.bottom}>
           <div className={styles.left}>
             <div className={styles.imgContainer}>

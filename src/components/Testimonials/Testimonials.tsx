@@ -24,9 +24,9 @@ const Testimonials = () => {
               <StarCluster />
               {/* <br /> */}
               <h2 className={styles.heading}>What our clients say</h2>
-              <p className={styles.copy}>
+              {/* <p className={styles.copy}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil porro error eligendi itaque asperiores quibusdam?
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

@@ -38,16 +38,14 @@ const Solution = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.falseBtnContainer}>
+            {/* <div className={styles.falseBtnContainer}>
               <FalseButton btnType='primary' text='Our Solutions' />
-            </div>
-            <h2 className={`${styles.heading} h2v2`}>
-              Work with Fonts & Footers and we&apos;ll provide these solutions
-            </h2>
-            <p>
+            </div> */}
+            <h2 className={`${styles.heading} h2v2`}>Our solutions</h2>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
               laborum, id sed tenetur amet culpa.
-            </p>
+            </p> */}
             <div className={styles.rightBottom}>
               {data.map((x) => (
                 <div key={x.id} className={styles.card}>
