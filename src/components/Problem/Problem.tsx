@@ -14,25 +14,25 @@ import FalseButton from "../FalseButton/FalseButton";
 const Problem = () => {
   const data = [
     {
-      icon: <Outdated width={70} height={70} className={styles.icon} />,
+      icon: <Outdated width={50} height={50} className={styles.icon} />,
       title: "Outdated Design",
       description:
         "Your website looks outdated or unprofessional, which doesn’t reflect the quality of your business.",
     },
     {
-      icon: <Cloud width={70} height={70} className={styles.icon} />,
+      icon: <Cloud width={50} height={50} className={styles.icon} />,
       title: "Missed Online Presence",
       description:
         "You’re missing out on reaching potential customers because they can’t find you online.",
     },
     {
-      icon: <Credibility width={90} height={90} className={styles.icon} />,
+      icon: <Credibility width={70} height={70} className={styles.icon} />,
       title: "Losing Credibility",
       description:
         "Not having a website can make your business appear less credible or outdated compared to competitors who have an online presence.",
     },
     {
-      icon: <Update width={70} height={70} className={styles.icon} />,
+      icon: <Update width={50} height={50} className={styles.icon} />,
       title: "Hard to Update or Manage",
       description:
         "Every small update requires technical assistance, and it’s holding back your business growth.",
@@ -48,12 +48,24 @@ const Problem = () => {
           <h2 className={styles.heading}>
             Are you unhappy with your current ecommerce store?
           </h2>
-          {/* <p className={styles.leftCopy}>
-            If so, then these problems probably sound familiar to you:
-          </p> */}
+          <p className={styles.leftCopy}>
+            {/* If so, then these problems probably sound familiar to you: */}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum.
+          </p>
         </div>
-        <p className={styles.leftCopy}>Then this probably sounds familiar:</p>
         <div className={styles.bottom}>
+          <div className={styles.right}>
+            {data.map((x: any, index) => (
+              <div key={index} className={styles.card}>
+                {x.icon}
+                <div>
+                  <h4 className={styles.title}>{x.title}</h4>
+                  <p className={styles.description}>{x.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
           <div className={styles.left}>
             <div className={styles.imgContainer}>
               <Image
@@ -64,17 +76,6 @@ const Problem = () => {
                 className={styles.img}
               />
             </div>
-          </div>
-          <div className={styles.right}>
-            {data.map((x: any, index) => (
-              <div key={index} className={styles.card}>
-                <div>
-                  <h4 className={styles.title}>{x.title}</h4>
-                  <p className={styles.description}>{x.description}</p>
-                </div>
-                {x.icon}
-              </div>
-            ))}
           </div>
         </div>
       </LayoutWrapper>

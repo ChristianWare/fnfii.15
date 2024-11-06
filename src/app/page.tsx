@@ -19,9 +19,9 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
+      <EcommFeatures />
       <Testimonials />
       <PostHero />
-      <EcommFeatures />
       <AboutScrollText />
       <Projects />
       <Pricing bgColor='tan' />

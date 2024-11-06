@@ -7,7 +7,7 @@
 .content {
   padding-top: 5rem;
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: 1fr 1.7fr;
   grid-gap: 5rem;
 }
 
@@ -23,15 +23,22 @@
   margin-bottom: -1rem;
 }
 
+.heading {
+  text-align: center;
+}
+
 .copy {
-  font-weight: 500;
-  opacity: 0.8;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  order: -1;
 }
 
 .imgContainer {

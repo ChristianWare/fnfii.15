@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./Solution.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import Img1 from "../../../public/images/solution.png";
-import FalseButton from "../FalseButton/FalseButton";
 import Design from "../../../public/icons/designii.svg";
 
 const data = [
@@ -41,7 +40,14 @@ const Solution = () => {
             {/* <div className={styles.falseBtnContainer}>
               <FalseButton btnType='primary' text='Our Solutions' />
             </div> */}
-            <h2 className={`${styles.heading} h2v2`}>Our solutions</h2>
+            <h2 className={`${styles.heading} h2v2`}>
+              We build e-comm stores that truly connect with your audience
+            </h2>
+            <p className={styles.copy}>
+              You&apos;ve poured your heart into creating something special, so
+              let&apos;s showcase it with thoughtful, impactful design that
+              reflects the value you bring.
+            </p>
             {/* <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
               laborum, id sed tenetur amet culpa.
