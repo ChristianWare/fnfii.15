@@ -7,7 +7,7 @@ import Pricing from "@/components/Pricing/Pricing";
 import Problem from "@/components/Problem/Problem";
 import Projects from "@/components/Projects/Projects";
 import Solution from "@/components/Solution/Solution";
-import Testimonials from "@/components/Testimonials/Testimonials";
+// import Testimonials from "@/components/Testimonials/Testimonials";
 import { homePageFaqs } from "../../lib/data";
 import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
@@ -20,9 +20,9 @@ export default function Home() {
       <Problem />
       <Solution />
       <EcommFeatures />
-      <Testimonials />
-      <PostHero />
+      {/* <Testimonials /> */}
       <AboutScrollText />
+      <PostHero />
       <Projects />
       <Pricing bgColor='tan' />
       {/* <HowItWorks /> */}
