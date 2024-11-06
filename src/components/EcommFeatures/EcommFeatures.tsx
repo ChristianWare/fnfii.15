@@ -130,6 +130,11 @@ const EcommFeatures = () => {
           <h2 className={`${styles.heading} h2v2`}>
             Features of our <br /> Ecommerce Websites
           </h2>
+          <p className={styles.copy}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            delectus sit id voluptas architecto. Delectus reprehenderit eum odio
+            magnam illo?
+          </p>
         </div>
         <div className={styles.dataContainer}>
           {ecommerceFeatures.map((x, index) => (
