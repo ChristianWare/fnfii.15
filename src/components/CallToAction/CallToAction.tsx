@@ -27,7 +27,7 @@ const CallToAction = () => {
             <Button
               text='Contact Us'
               href='/contact'
-              btnType='primaryii'
+              btnType='secondary'
               arrow
             />
             <Button
