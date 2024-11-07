@@ -44,6 +44,7 @@
 .copy {
   text-align: center;
   margin: 1rem 0;
+  width: 60%;
 }
 
 .optionsBox {
@@ -188,8 +189,31 @@
   text-align: center;
   width: 100%;
   margin-top: 2rem;
-
   padding: 2rem;
+}
+
+.custommize {
+  margin-top: 2rem;
+  background-color: var(--tan2);
+  padding: 3rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.custommize h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* .custommize p {
+  width: 40%;
+} */
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1068px) {
@@ -205,5 +229,23 @@
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .custommize {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+
+  .btnContainer {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }

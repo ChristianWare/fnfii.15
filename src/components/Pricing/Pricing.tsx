@@ -1,6 +1,8 @@
 "use client";
 
 import { pricing } from "../../../lib/data";
+import Button from "../Button/Button";
+import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
@@ -26,11 +28,18 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
             {/* <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
             </div> */}
-            <h2 className={styles.heading}>Pricing</h2>
+            <FalseButton
+              btnType='primary'
+              // text='Looking for an e-commerce website that drives results?'
+              text='Our Plans'
+            />
+
+            <h2 className={styles.heading}>Choose your Package</h2>
 
             <p className={styles.copy}>
-              Subscription based pricing. No contracts. Pause or cancel whenever
-              you&rsquo;d like.
+              Our plans are clear and open, no shocks or caps. Help is always
+              here when you want it. Subscription based pricing. No contracts.
+              Pause or cancel whenever you&rsquo;d like.
             </p>
             <div className={styles.optionsBox}>
               <span className={styles.option}>Monthly</span>
@@ -71,6 +80,23 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                 </h6>
               </div>
             ))}
+          </div>
+          <div className={styles.custommize}>
+            <div>
+              <h3>Looking for a customized package?</h3>
+              <p>
+                If our plans don’t match your project or you want to talk it
+                over first, let’s have a call or lets talk while having a
+                coffee.
+              </p>
+            </div>
+            <div className={styles.btnContainer}>
+              <Button
+                text='Book a meeting'
+                href='/#schedule'
+                btnType='secondary'
+              />
+            </div>
           </div>
         </div>
       </LayoutWrapper>
