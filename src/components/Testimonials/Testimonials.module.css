@@ -51,9 +51,7 @@
 .cardContainer1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  width: 100%;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -61,8 +59,7 @@
 .card {
   padding: 2rem;
   border-radius: 10px;
-  border: 1px solid var(--lightBlack);
-  background-color: var(--white);
+  background-color: var(--tan2);
   position: relative;
   display: flex;
   flex-direction: column;

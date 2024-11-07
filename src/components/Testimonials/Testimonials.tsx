@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./Testimonials.module.css";
-import { reviews } from "../../../lib/data"; 
+import { reviews } from "../../../lib/data";
 import StarCluster from "../StarCluster/StarCluster";
 import Person from "../../../public/icons/person.svg";
 // import animationData from "../../../public/lottie/reviews.json";
@@ -23,7 +23,7 @@ const Testimonials = () => {
               </div> */}
               <StarCluster />
               {/* <br /> */}
-              <h2 className={styles.heading}>What our clients say</h2>
+              <h2 className={styles.heading}>Hear the praise</h2>
               {/* <p className={styles.copy}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil porro error eligendi itaque asperiores quibusdam?
               </p> */}
@@ -31,7 +31,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className={styles.cardContainer1}>
-          {reviews.slice(0, 3).map((x) => (
+          {reviews.slice(0, 6).map((x) => (
             <div key={x.id} className={styles.card}>
               <p className={styles.review}>&rdquo;{x.review}&rdquo;</p>
               <div className={styles.personBox}>
