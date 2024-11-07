@@ -54,7 +54,7 @@ const HowItWorks = () => {
           <div className={styles.right}>
             {process.map((x, index) => (
               <div key={x.id} className={styles.card}>
-                <div className={styles.cardLeft}>
+                <div>
                   <div className={styles.iconContainer}>{x.icon}</div>
                   <div className={styles.box}>
                     <span className={styles.span}>Weeek {index + 1}</span>

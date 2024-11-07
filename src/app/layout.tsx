@@ -5,6 +5,7 @@ import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import Nav from "@/components/Nav/Nav";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import Footerii from "@/components/Footerii/Footerii";
+import CallToAction from "@/components/CallToAction/CallToAction";
 
 const suisse = localFont({
   src: "../../public/fonts/SuisseIntl-Medium.ttf",
@@ -35,8 +36,9 @@ export default function RootLayout({
           <ScrollIndicator />
           <Nav />
           {children}
+          <CallToAction />
+          <Footerii />
         </NoiseBg>
-        <Footerii />
       </body>
     </html>
   );

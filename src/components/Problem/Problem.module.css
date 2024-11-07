@@ -39,7 +39,7 @@
 
 .img {
   object-fit: contain;
-  transform: scaleX(-1); /* This flips the image horizontally */
+  transform: scaleX(-1);
 }
 
 .right {
