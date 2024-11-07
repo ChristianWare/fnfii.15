@@ -12,6 +12,7 @@ import { homePageFaqs } from "../../lib/data";
 import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
+import Owner from "@/components/Owner/Owner";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <EcommFeatures />
       {/* <Testimonials /> */}
       <AboutScrollText />
+      <Owner />
       <PostHero />
       <Projects />
       <Pricing bgColor='tan' />

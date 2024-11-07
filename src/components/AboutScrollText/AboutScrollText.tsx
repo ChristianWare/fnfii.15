@@ -1,49 +1,57 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
-import animationData from "../../../public/lottie/agency.json";
-import Lottie from "lottie-react";
+// import animationData from "../../../public/lottie/agency.json";
+// import Lottie from "lottie-react";
 // import Experience from "../Experience/Experience";
 import FalseButton from "../FalseButton/FalseButton";
 
+const data = [
+  {
+    id: 1,
+    title: "7+",
+    desc: "Here are some thing you can include in the description area so that you can have a say. ",
+  },
+  {
+    id: 2,
+    title: "4*",
+    desc: "Here are some thing you can include in the description area so that you can have a say. ",
+  },
+  {
+    id: 3,
+    title: "40+",
+    desc: "Here are some thing you can include in the description area so that you can have a say. ",
+  },
+];
+
 const AboutScrollText = () => {
   return (
-    <section className={styles.bgColor} id='about'>
-      {" "}
-      {/* Place id here */}
-      <LayoutWrapper color='green3'>
+    <section className={styles.container} id='about'>
+      <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
+            <div>
+              <FalseButton text='About us' btnType='primary' />
+              <h2 className={styles.heading}>
+                Expert design for brands that really stand out
+              </h2>
             </div>
+            <p className={styles.copy}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              excepturi sit deleniti itaque? Beatae, exercitationem.
+            </p>
           </div>
           <div className={styles.right}>
-            <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='About Us' />
-            </div>
-            <h2 className={`${styles.heading} h2v2`}>
-              What exactly is Fonts & Footers?
-            </h2>
-            <p className={styles.text}>
-              Fonts & Footers is a digital agency focusing on web design, web
-              development, and SEO. We&apos;re experts at blending the latest
-              technology with creative ideas for top-notch results. By working
-              with us, you get personal care, support, and a website that boosts
-              engagement and sales. We operate out of sunny Phoenix, AZ.
-            </p>
-            <br />
-            <p className={styles.text}>
-              We use cutting-edge technology to craft websites that outperform
-              those built on platforms like Wordpress, Wix, or Godaddy, which
-              often rely on older, slower, and outdated technology. Our approach
-              involves using pure HTML, CSS, and Javascript code, ensuring a
-              sleek and efficient website.
-            </p>
+            {data.map((x: any) => (
+              <div className={styles.card} key={x.id}>
+                <h3 className={styles.title}>{x.title}</h3>
+                <p className={styles.desc}>{x.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
-        {/* <Experience /> */}
       </LayoutWrapper>
     </section>
   );

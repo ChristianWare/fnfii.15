@@ -1,100 +1,57 @@
-.bgColor {
+.container {
   background-color: var(--tan);
 }
 
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
 }
 
-.lottieBox {
-  width: 100%;
-  height: 400px;
-}
-
-.lottie {
-  height: 100%;
-  width: 100%;
-}
-
-.falseBtnContainer {
-  margin-bottom: 0.5rem;
+.left {
+  background-color: var(--tan2);
+  padding: 3rem;
+  padding-right: 5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10rem;
 }
 
 .heading {
-  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
-.authorBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+}
+
+.card {
+  border: 1px solid var(--lightBlack);
+  border-radius: 10px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
 }
 
-.imgContainer {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
-
-.img {
-  border-radius: 50%;
-  border: 2px solid var(--purple);
-  padding: 0.5rem;
-}
-
-@media screen and (max-width: 968px) {
-  .content {
-    grid-gap: 1rem;
-  }
+.title {
+  font-size: 8rem;
+  color: var(--tan3);
 }
 
 @media screen and (max-width: 968px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .falseBtnContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .heading,
-  .copy,
-  .authorDetails {
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .btnContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
-@media screen and (max-width: 568px) {
-  .falseBtnContainer {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .heading {
-    text-align: left;
-    width: 100%;
-  }
-
-  .btnContainer {
-    display: grid;
+@media screen and (max-width: 480px) {
+  .card {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
   }
 }
