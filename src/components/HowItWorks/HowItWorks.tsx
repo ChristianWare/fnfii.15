@@ -41,7 +41,9 @@ const HowItWorks = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.top}>
-              <h2 className={`${styles.heading} h2v2`}>How does it work?</h2>
+              <h2 className={`${styles.heading} h2v2`}>
+                What can I expect when working with you?
+              </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your
                 brand. We Keep you in the loop 100% of the time.
@@ -54,14 +56,11 @@ const HowItWorks = () => {
           <div className={styles.right}>
             {process.map((x, index) => (
               <div key={x.id} className={styles.card}>
-                <div>
-                  <div className={styles.iconContainer}>{x.icon}</div>
-                  <div className={styles.box}>
-                    <span className={styles.span}>Weeek {index + 1}</span>
-                    <h3 className={styles.processName}>{x.processName}</h3>
-                  </div>
+                <div className={styles.cardLeft}>
+                  <span className={styles.span}>Week {index + 1}</span>
                 </div>
                 <div className={styles.cardRight}>
+                  <h3 className={styles.processName}>{x.processName}</h3>
                   <p className={styles.processDescription}>
                     {x.processDescription}
                   </p>

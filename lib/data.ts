@@ -272,14 +272,6 @@ export const projects = [
     title: "Taco Bell Redesign",
     description:
       "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created, updated and deleted. Users can see menu items and reach out via a fully functional contact form.",
-    techStack: [
-      {
-        title: "CSS Modules",
-      },
-      {
-        title: "Nodemailer",
-      },
-    ],
 
     href: "https://www.livemas.dev/",
     github: "https://github.com/ChristianWare/Tacobell-ii",
@@ -289,15 +281,6 @@ export const projects = [
     title: "Elite Retreat Rentals",
     description:
       "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. This full stack project was built with an admin panel that allows the owner to create, update and delete properties. Each property listing shows details and images, and gives users the ability to book in advance with a fully functional booking engine. Stripe payment gateway was added, allowing users can pay in advance with any major credit card.",
-
-    techStack: [
-      {
-        title: "Redux",
-      },
-      {
-        title: "Stripe",
-      },
-    ],
 
     href: "https://www.eliteretreatrentals.com/",
     github: "https://github.com/ChristianWare/Case-Study-One",
@@ -329,14 +312,15 @@ export const projects = [
     title: "Nier Transportaion",
     description:
       "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives. Users have the ability to communicate witht the owner via a fully functional contact form that sends messages directly to the owners email address. The blog was built using Makrkdown nadn MDX.",
-    techStack: [
-      {
-        title: "React Hook Form",
-      },
-      {
-        title: "Node Mailer",
-      },
-    ],
+
+    href: "https://www.niertransportation.com/",
+    github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
+  },
+  {
+    src: Project2,
+    title: "Nier Transportaion",
+    description:
+      "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives. Users have the ability to communicate witht the owner via a fully functional contact form that sends messages directly to the owners email address. The blog was built using Makrkdown nadn MDX.",
 
     href: "https://www.niertransportation.com/",
     github: "https://github.com/ChristianWare/Nier-Transport-Redesign",

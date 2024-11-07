@@ -9,7 +9,7 @@ import Projects from "@/components/Projects/Projects";
 import Solution from "@/components/Solution/Solution";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { homePageFaqs } from "../../lib/data";
-import Calendly from "@/components/Calendly/Calendly";
+// import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
@@ -29,7 +29,7 @@ export default function Home() {
       <Pricing bgColor='tan' />
       <Testimonials />
       <Faqsiii mapData={homePageFaqs} />
-      <Calendly />
+      {/* <Calendly /> */}
       <ContactHero />
     </main>
   );

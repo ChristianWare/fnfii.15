@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import animationData from "../../../public/lottie/usp.json";
+import Lottie from "lottie-react";
 
 const Projects = () => {
   const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(
@@ -25,7 +27,12 @@ const Projects = () => {
       <LayoutWrapper>
         <div className={styles.parentContent}>
           <div className={styles.leftSide}>
-            <h2 className={styles.heading}>Our work <br /> speaks for itself</h2>
+            <h2 className={styles.heading}>
+              Our work <br /> speaks for itself
+            </h2>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
+            </div>
           </div>
           <div className={styles.dataContainer}>
             {projects.map((x, index) => (

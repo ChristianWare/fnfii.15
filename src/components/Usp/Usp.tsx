@@ -5,9 +5,7 @@ import Track from "../../../public/icons/track.svg";
 import Solutions from "../../../public/icons/solutions.svg";
 import Attention from "../../../public/icons/attention.svg";
 import Team from "../../../public/icons/team.svg";
-// import LayoutWrapper from "../LayoutWrapper";
-// import animationData from "../../../public/lottie/usp.json";
-// import Lottie from "lottie-react";
+
 
 const data = [
   {
