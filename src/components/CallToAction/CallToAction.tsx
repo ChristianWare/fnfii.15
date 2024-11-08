@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
 import animationData from "../../../public/lottie/cta.json";
@@ -23,7 +23,7 @@ const CallToAction = () => {
             Boost your online sales with secure, user-friendly, and scalable
             e-commerce websites.
           </p>
-          <div className={styles.btnContainer}>
+          {/* <div className={styles.btnContainer}>
             <Button
               text='Contact Us'
               href='/contact'
@@ -36,7 +36,7 @@ const CallToAction = () => {
               btnType='primaryiii'
               arrow
             />
-          </div>
+          </div> */}
         </div>
       </LayoutWrapper>
     </section>

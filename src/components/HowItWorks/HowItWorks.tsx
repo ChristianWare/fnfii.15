@@ -42,7 +42,7 @@ const HowItWorks = () => {
           <div className={styles.left}>
             <div className={styles.top}>
               <h2 className={`${styles.heading} h2v2`}>
-                What can I expect when working with you?
+                What is the process for working with you?
               </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your
