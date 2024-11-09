@@ -17,7 +17,7 @@ const CallToAction = () => {
         </div>
         <div className={styles.bottom}>
           <h2 className={styles.heading}>
-            Let your online store take flight with <br /> Fonts & Footers
+            Take flight with <br /> Fonts & Footers
           </h2>
           <p className={styles.topCopy}>
             Boost your online sales with secure, user-friendly, and scalable
