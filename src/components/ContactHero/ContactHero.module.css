@@ -2,6 +2,10 @@
   background-color: var(--tan);
 }
 
+.content {
+  margin-bottom: 3rem;
+}
+
 .top {
   display: flex;
   align-items: center;
@@ -11,7 +15,8 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  /* grid-gap: 1rem; */
+  margin-top: 2rem;
 }
 
 .copy {

@@ -10,17 +10,17 @@ const ContactDetails = () => {
       <div className={styles.right}>
         <div className={styles.top}>
           <div className={styles.box}>
-            <h2 className={styles.headingii}>Contact Us</h2>
-            <br />
-            <p className={styles.copy}>
+            {/* <h2 className={styles.headingii}>Contact Us</h2> */}
+            {/* <br /> */}
+            {/* <p className={styles.copy}>
               Whether you&apos;re a prospective client or have questions about
               our services, reaching out is simple and quick. We&apos;re ready
               to assist you to ensuring a seamless and personalized experience
               as you take the next step in transforming your vacation rental
               business.
-            </p>
-            <br />
-            <br />
+            </p> */}
+            {/* <br />
+            <br /> */}
             <h3 className={styles.title}>Phone</h3>
             <Link href='tel:+62363267800' className={styles.detail}>
               623-632-6780

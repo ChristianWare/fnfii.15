@@ -11,16 +11,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--tan2);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-}
-
 .navbar {
   max-width: 1440px;
   margin-right: auto;
@@ -259,4 +249,14 @@
   .navbar {
     padding: 1.5rem;
   }
+
+  .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--tan2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
 }

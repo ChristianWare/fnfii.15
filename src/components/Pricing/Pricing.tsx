@@ -62,7 +62,10 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
               <div key={x.id} className={styles.priceContainer}>
                 <div className={styles.contentParent}>
                   <div className={styles.pcTop}>
-                    <h3 className={styles.planName}>{x.plan}</h3>
+                    {/* <h3 className={styles.planName}>{x.plan}</h3> */}
+                    <h6 className={styles.price}>
+                      ${!isMonthly ? x.prices[0].price : x.prices[1].price}
+                    </h6>
                   </div>
                   <div className={styles.pcBottom}>
                     <ul className={styles.features}>
@@ -75,9 +78,6 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                     <p className={styles.description}>{x.description}</p>
                   </div>
                 </div>
-                <h6 className={styles.price}>
-                  ${!isMonthly ? x.prices[0].price : x.prices[1].price}
-                </h6>
               </div>
             ))}
           </div>

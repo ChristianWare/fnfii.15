@@ -2,8 +2,6 @@
   background-color: transparent;
 }
 
-.borderTop {
-}
 
 .tan {
   background-color: var(--tan);
@@ -135,7 +133,7 @@
 
 .planName {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .for {
@@ -184,12 +182,12 @@
 }
 
 .price {
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: var(--green);
   text-align: center;
   width: 100%;
-  margin-top: 2rem;
-  padding: 2rem;
+  /* margin-top: 2rem; */
+  /* padding: 2rem; */
 }
 
 .custommize {
