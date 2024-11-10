@@ -22,13 +22,12 @@ const Hero = () => {
             <div className={styles.falseBtnContainer}>
               <FalseButton
                 btnType='primary'
-                // text='Looking for an e-commerce website that drives results?'
                 text='E-commerce Web Development Agency '
               />
             </div>
             <h1 className={styles.heading}>
-              Conversion optimized{" "}
-              <span className={styles.span}>E-commerce</span> websites
+              We build Custom <span className={styles.span}>E-commerce</span>{" "}
+              Stores Designed for Growth 
             </h1>
             <p className={styles.copy}>
               We create online stores that engage your customers from the first

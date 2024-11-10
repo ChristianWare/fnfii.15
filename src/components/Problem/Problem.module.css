@@ -3,7 +3,6 @@
 }
 
 .top {
-  margin-bottom: 1.5rem;
   width: 100%;
 }
 
@@ -20,9 +19,17 @@
 }
 
 .bottom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-gap: 5rem;
+}
+
+.left,
+.right {
+  flex: 1;
 }
 
 .left {
@@ -34,7 +41,7 @@
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .img {
@@ -55,7 +62,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  padding: 2rem;
+  padding: 3rem;
   padding-left: 0rem;
 }
 
@@ -113,21 +120,26 @@
   }
 
   .bottom {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0rem;
   }
 
-  /* .left {
+  .card {
+    justify-content: flex-start;
+  }
+
+  .left {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-  } */
+  }
 }
 
 .imgContainer {
-  height: 550px;
-  /* width: 350px; */
+  height: 400px;
+  width: 400px;
 }
 
 @media screen and (max-width: 968px) {
@@ -143,14 +155,14 @@
 @media screen and (max-width: 568px) {
   .top {
     margin-bottom: 2rem;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .heading,
   .leftCopy {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 
   .imgContainer {
@@ -164,6 +176,7 @@
 
   .right {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 
   .card {

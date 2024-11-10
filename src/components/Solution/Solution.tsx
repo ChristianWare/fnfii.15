@@ -35,23 +35,12 @@ const Solution = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            {/* <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='Our Solutions' />
-            </div> */}
             <h2 className={`${styles.heading} h2v2`}>
               We build e-comm stores that truly connect with your audience
             </h2>
-            <p className={styles.copy}>
-              You&apos;ve poured your heart into creating something special, so
-              let&apos;s showcase it with thoughtful, impactful design that
-              reflects the value you bring.
-            </p>
-            {/* <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              laborum, id sed tenetur amet culpa.
-            </p> */}
+        <div className={styles.content}>
+          <div className={styles.left}>
+
             <div className={styles.rightBottom}>
               {data.map((x) => (
                 <div key={x.id} className={styles.card}>
@@ -68,6 +57,11 @@ const Solution = () => {
             <div className={styles.imgContainer}>
               <Image src={Img1} alt='' fill className={styles.img} />
             </div>
+            <p className={styles.copy}>
+              You&apos;ve poured your heart into creating something special, so
+              let&apos;s showcase it with thoughtful, impactful design that
+              reflects the value you bring.
+            </p>
           </div>
         </div>
       </LayoutWrapper>

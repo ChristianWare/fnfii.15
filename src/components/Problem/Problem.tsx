@@ -7,7 +7,6 @@ import Image from "next/image";
 import ProblemImage from "../../../public/images/problem.png";
 import Outdated from "../../../public/icons/outdatedDesign.svg";
 import Cloud from "../../../public/icons/cloudPresence.svg";
-import Credibility from "../../../public/icons/credibility.svg";
 import Update from "../../../public/icons/update.svg";
 import FalseButton from "../FalseButton/FalseButton";
 
@@ -25,12 +24,12 @@ const Problem = () => {
       description:
         "You’re missing out on reaching potential customers because they can’t find you online.",
     },
-    {
-      icon: <Credibility width={70} height={70} className={styles.icon} />,
-      title: "Losing Credibility",
-      description:
-        "Not having a website can make your business appear less credible or outdated compared to competitors who have an online presence.",
-    },
+    // {
+    //   icon: <Credibility width={70} height={70} className={styles.icon} />,
+    //   title: "Losing Credibility",
+    //   description:
+    //     "Not having a website can make your business appear less credible or outdated compared to competitors who have an online presence.",
+    // },
     {
       icon: <Update width={50} height={50} className={styles.icon} />,
       title: "Hard to Update or Manage",
@@ -48,11 +47,7 @@ const Problem = () => {
           <h2 className={styles.heading}>
             Are you unhappy with your current ecommerce store?
           </h2>
-          <p className={styles.leftCopy}>
-            {/* If so, then these problems probably sound familiar to you: */}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum.
-          </p>
+         
         </div>
         <div className={styles.bottom}>
           <div className={styles.right}>

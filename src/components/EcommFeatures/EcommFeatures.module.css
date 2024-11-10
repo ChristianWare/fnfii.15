@@ -35,8 +35,9 @@
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  border: 1px solid var(--lightBlack);
+  /* border: 1px solid var(--lightBlack); */
   border-radius: 10px;
+  background-color: var(--tan2);
 }
 
 .content:nth-child(1),
@@ -46,6 +47,7 @@
 .content:nth-child(6),
 .content:nth-child(9) {
   border: 0px;
+  background-color: transparent;
 }
 
 .title,

@@ -25,6 +25,8 @@
 .heading {
   color: var(--black);
   text-transform: none;
+  width: 80%;
+  line-height: 120%;
 }
 
 .span {
@@ -83,6 +85,7 @@
 
   .heading {
     text-align: center;
+    width: 100%;
   }
 
   .copy {
