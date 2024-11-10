@@ -1,29 +1,12 @@
 .content {
-  padding: 0rem 3rem;
-  /* padding-bottom: 0rem; */
-  /* border: 1px solid var(--lightBlack); */
-  border-radius: 10px;
   width: 100%;
+  height: 100%;
 }
 
 .bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.left,
-.right {
-  flex: 1;
-  width: 100%;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
 }
 
 .heading {
@@ -41,37 +24,17 @@
   font-size: 1.6rem;
 }
 
-.circleContainer {
-  margin-left: 8rem;
-}
-
-.checkContainer {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.featureText {
-  font-weight: 600;
-  color: var(--text);
-}
-
-.icon {
-  border: 3px solid var(--border);
-  color: black;
-}
-
 .form {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
 }
 
 .namesContainer {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
   width: 100%;
 }
 
@@ -112,16 +75,7 @@
 }
 
 .required {
-  color: var(--green) !important;
-}
-
-.btnBtnContainer {
-  margin-top: 2rem;
-}
-
-.btnContainer {
-  display: grid;
-  width: 100%;
+  color: res !important;
 }
 
 .btn {
@@ -146,9 +100,9 @@
   width: 100%;
   line-height: 107%;
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
-  color: var(--green);
-  background-color: var(--green3);
-  border: 1px solid var(--lightBlack);
+  color: var(--tan);
+  background-color: var(--purple);
+  /* border: 1px solid var(--lightBlack); */
   cursor: pointer;
 }
 

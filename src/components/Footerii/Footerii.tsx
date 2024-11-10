@@ -1,7 +1,6 @@
 import Link from "next/link";
 // import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Footerii.module.css";
-// import Button from "../Button/Button";
 import Insta from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
 import Facebook from "../../../public/icons/facebook.svg";

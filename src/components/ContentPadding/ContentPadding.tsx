@@ -1,9 +1,16 @@
-import React from 'react'
-import styles from './ContentPadding.module.css'
+import React from "react";
+import styles from "./ContentPadding.module.css";
 
-const ContentPadding = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className={styles.container}>{children}</div>
-  )
+interface PaddingProps {
+  children: React.ReactNode;
+  paddingBottom?: string
 }
-export default ContentPadding
+
+const ContentPadding = ({ children, paddingBottom='' }: PaddingProps) => {
+  return (
+    <div className={`${styles.container} ${styles[paddingBottom]}`}>
+      {children}
+    </div>
+  );
+};
+export default ContentPadding;

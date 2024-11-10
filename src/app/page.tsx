@@ -13,7 +13,7 @@ import { homePageFaqs } from "../../lib/data";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
-// import CallToAction from "@/components/CallToAction/CallToAction";
+import CallToAction from "@/components/CallToAction/CallToAction";
 
 export default function Home() {
   return (
@@ -31,8 +31,8 @@ export default function Home() {
       <Testimonials />
       <Faqsiii mapData={homePageFaqs} />
       {/* <Calendly /> */}
-      {/* <CallToAction /> */}
       <ContactHero />
+      <CallToAction />
     </main>
   );
 }
