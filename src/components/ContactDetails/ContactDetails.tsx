@@ -10,7 +10,7 @@ const ContactDetails = () => {
       <div className={styles.right}>
         <div className={styles.top}>
           <div className={styles.box}>
-            <h2 className={styles.headingii}>Contact Us</h2>
+            <h2 className={styles.headingii}>Let&apos;s Start a Project</h2>
             <br />
             <p className={styles.copy}>
               Whether you&apos;re a prospective client or have questions about

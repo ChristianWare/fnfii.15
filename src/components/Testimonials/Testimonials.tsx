@@ -26,7 +26,7 @@ const reviews = [
     company: "Glendale, AZ",
   },
   {
-    id: 73,
+    id: 74,
     review:
       "Great experience every time. The food is hot, the service is fast, and the prices can't be beat. My kids are obsessed with the cheesy gordita crunch.",
     reviewer: "David P.",
@@ -41,12 +41,7 @@ const Testimonials = () => {
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.top}>
-              {/* <Pasta className={styles.pasta} />
-            <Hamburger className={styles.hamburger} /> */}
               <h2 className={styles.heading}>What our clients say</h2>
-              {/* <p className={styles.copy}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, voluptates.
-            </p> */}
               <StarCluster color='purple' />
             </div>
           </div>
