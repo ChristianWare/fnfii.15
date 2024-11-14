@@ -1,6 +1,5 @@
 import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
-import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import Hero from "@/components/Hero/Hero";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
@@ -14,6 +13,7 @@ import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
 import CallToAction from "@/components/CallToAction/CallToAction";
+import NewFaq from "@/components/NewFaq/NewFaq";
 
 export default function Home() {
   return (
@@ -29,8 +29,7 @@ export default function Home() {
       <Projects />
       <Pricing bgColor='tan' />
       <Testimonials />
-      <Faqsiii mapData={homePageFaqs} />
-      {/* <Calendly /> */}
+      <NewFaq mapData={homePageFaqs} />
       <ContactHero />
       <CallToAction />
     </main>

@@ -41,8 +41,8 @@ const Testimonials = () => {
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>What our clients say</h2>
               <StarCluster color='purple' />
+              <h2 className={styles.heading}>What our clients say</h2>
             </div>
           </div>
         </div>
