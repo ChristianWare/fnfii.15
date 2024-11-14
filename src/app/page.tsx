@@ -32,7 +32,7 @@ export default function Home() {
       <Testimonials />
       <NewFaq mapData={homePageFaqs} />
       <FirstStep />
-      <FinalCTA />
+      {/* <FinalCTA /> */}
       <ContactHero />
     </main>
   );
