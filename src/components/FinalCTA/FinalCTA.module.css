@@ -1,0 +1,56 @@
+.container {
+  background-color: var(--tan);
+}
+
+.content {
+  background-color: var(--tan2);
+  border-radius: 10px;
+  padding: 3rem;
+  margin-bottom: -20rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+  /* margin-left: auto; */
+}
+
+.btnContainer {
+  /* margin-left: auto; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.lottie, .lottieii {
+  width: 300px;
+  height: 300px;
+}
+
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.lottieii {
+      transform: scaleX(-1);
+
+}

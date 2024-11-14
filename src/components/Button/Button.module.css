@@ -33,7 +33,7 @@
 }
 .primaryii {
   color: var(--black);
-  background-color: var(--green3);
+  /* background-color: var(--green3); */
   border: 1px solid var(--black);
 }
 

@@ -14,6 +14,7 @@ import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
 import NewFaq from "@/components/NewFaq/NewFaq";
 import FirstStep from "@/components/FirstStep/FirstStep";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Testimonials />
       <NewFaq mapData={homePageFaqs} />
       <FirstStep />
+      <FinalCTA />
       <ContactHero />
     </main>
   );
