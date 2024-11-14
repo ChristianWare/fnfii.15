@@ -3,7 +3,9 @@
 }
 
 .top {
-  margin-bottom: 10rem;
+  border-bottom: 1px solid var(--lightBlack);
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .heading {
@@ -43,4 +45,26 @@
 .addTitle {
   opacity: 0.7;
   font-size: 1.6rem;
+}
+
+.problemContainer {
+  /* background-color: var(--purple); */
+  /* padding: 2rem; */
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.headingii {
+  /* color: var(--white); */
+  line-height: 120%;
+}
+
+.pattern {
+  background-image: radial-gradient(var(--purple) 5px, transparent 5px);
+  background-size: 20px 20px; /* Adjusts spacing between dots */
+  width: 100%; /* Adjust width as needed */
+  height: 160px; /* Adjust height as needed */
+  border-radius: 10px; /* Rounds the corners */
 }

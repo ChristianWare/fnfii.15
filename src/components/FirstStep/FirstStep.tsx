@@ -98,6 +98,12 @@ const FirstStep = () => {
               ))}
             </div>
           </div>
+          <div className={styles.problemContainer}>
+            {/* <h3 className={styles.headingii}>
+              Are you unhappy with your <br /> current e-commerce store?
+            </h3> */}
+            <div className={styles.pattern}></div>
+          </div>
         </div>
       </LayoutWrapper>
     </section>
