@@ -4,7 +4,6 @@
 }
 
 .btn {
-  /* text-align: center; */
   font-size: 1.6rem;
   opacity: 0.6;
   font-weight: 500;
@@ -14,6 +13,8 @@
   width: fit-content;
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   line-height: 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 .primary {
@@ -23,16 +24,49 @@
 }
 
 .secondary {
-  font-family: var(--PerfectlyNinetiesItalic);
-  line-height: 100%;
-  color: var(--green);
-  background-color: var(--green3);
+  color: var(--purple2);
+  background-color: var(--tan2);
   border: 1px solid var(--lightBlack);
+  border-radius: 50px;
   padding: 5px 30px;
-  padding-bottom: 7px;
 }
 
-.secondary:hover {
+.tertiary {
+  color: var(--tan);
+  background-color: var(--black);
+  border: 1px solid var(--lightBlack);
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+
+.fourth {
+  color: var(--black);
   background-color: var(--green3);
-  color: var(--green);
+  border: 1px solid var(--lightBlack);
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+
+.fifth {
+  color: var(--tan);
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+
+.sixth {
+  color: var(--black);
+  background-color: var(--yellow);
+  border: 1px solid var(--purple);
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+
+.third {
+  color: var(--tan);
+  background-color: var(--green4);
+  border: 1px solid var(--purple);
+  border-radius: 50px;
+  padding: 5px 30px;
 }
