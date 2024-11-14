@@ -12,8 +12,8 @@ import { homePageFaqs } from "../../lib/data";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
-import CallToAction from "@/components/CallToAction/CallToAction";
 import NewFaq from "@/components/NewFaq/NewFaq";
+import FirstStep from "@/components/FirstStep/FirstStep";
 
 export default function Home() {
   return (
@@ -30,8 +30,8 @@ export default function Home() {
       <Pricing bgColor='tan' />
       <Testimonials />
       <NewFaq mapData={homePageFaqs} />
+      <FirstStep />
       <ContactHero />
-      <CallToAction />
     </main>
   );
 }

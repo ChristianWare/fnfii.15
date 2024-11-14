@@ -5,7 +5,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
 import animationData from "../../../public/lottie/cta.json";
 import Lottie from "lottie-react";
-import Footerii from "../Footerii/Footerii";
 
 const CallToAction = () => {
   return (
@@ -43,7 +42,6 @@ const CallToAction = () => {
         <br />
         <br />
         <br />
-        <Footerii />
       </LayoutWrapper>
     </section>
   );

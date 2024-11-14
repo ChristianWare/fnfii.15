@@ -18,6 +18,7 @@
 
 .heading {
   width: 40%;
+  margin-top: 1rem;
 }
 
 .copy {
@@ -69,12 +70,16 @@
 }
 .card:nth-child(2) {
   grid-area: two;
+  background-color: var(--green3);
+  border: 1px solid var(--lightBlack);
 }
 .card:nth-child(3) {
   grid-area: three;
 }
 .card:nth-child(4) {
   grid-area: four;
+  background-color: var(--green3);
+  border: 1px solid var(--lightBlack);
 }
 .card:nth-child(5) {
   grid-area: five;

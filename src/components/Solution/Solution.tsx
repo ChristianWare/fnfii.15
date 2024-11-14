@@ -3,6 +3,7 @@ import styles from "./Solution.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import Img1 from "../../../public/images/solution.png";
 import Design from "../../../public/icons/designii.svg";
+import FalseButton from "../FalseButton/FalseButton";
 
 const data = [
   {
@@ -73,6 +74,9 @@ const Solution = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+        <div className={styles.falseBtnContainer}>
+          <FalseButton btnType='primary' text='How we can help' />
+        </div>
         <h2 className={`${styles.heading} h2v2`}>
           We build e-comm stores that truly connect with your audience
         </h2>
@@ -81,9 +85,6 @@ const Solution = () => {
             <div className={styles.rightBottom}>
               {data.map((item) => (
                 <div key={item.id} className={styles.card}>
-                  {/* {item.icon && (
-                    <div className={styles.iconContainer}>{item.icon}</div>
-                  )} */}
                   <h3 className={styles.title}>{item.title}</h3>
                   <p className={styles.desc}>{item.desc}</p>
                 </div>
