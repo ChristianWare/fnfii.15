@@ -10,7 +10,8 @@
   margin-bottom: 5rem;
 }
 
-.heading, .copy {
+.heading,
+.copy {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -18,7 +19,6 @@
 
 .content {
   margin-bottom: 3rem;
-  
 }
 
 .top {
@@ -29,7 +29,7 @@
 
 .bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   grid-gap: 3rem;
   height: 100%;
 }
@@ -37,7 +37,6 @@
 .copy {
   margin-top: 3rem;
 }
-
 
 @media screen and (max-width: 968px) {
   .top,

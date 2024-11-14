@@ -26,13 +26,12 @@ const Hero = () => {
               />
             </div>
             <h1 className={styles.heading}>
-              We build Custom <span className={styles.span}>E-commerce</span>{" "}
-              Stores Designed for Growth 
+              Win the game called{" "}
+              <span className={styles.span}>E-commerce</span>{" "}
             </h1>
             <p className={styles.copy}>
-              We create online stores that engage your customers from the first
-              click to checkout. Our immersive designs and interactive features
-              drive higher conversions and keep your business growing.
+              We serve as your ‘on-demand CTO’ → A boutique consultancy for
+              consumer and retail brands that seek digital success
             </p>
             <div className={styles.btnContainer}>
               <Button

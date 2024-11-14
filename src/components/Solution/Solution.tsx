@@ -8,47 +8,84 @@ const data = [
   {
     id: 1,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "Inspiring Design",
+    title: "A. Strategy",
     desc: "The design of your website inspires and you stay in the minds of your customers.",
   },
   {
     id: 2,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "Professional identity",
+    title: "B. Data",
     desc: "You will be perceived by your visitors as trustworthy and professional.",
   },
   {
     id: 3,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "Authentic appearance",
+    title: "C. Process",
     desc: "You can identify with your website and are happy to share the link with potential customers.",
   },
   {
     id: 4,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "Stress-free management",
+    title: "D. Technology",
+    desc: "Change or expand your content effortlessly, without technical know-how.",
+  },
+  {
+    id: 5,
+    icon: <Design width={30} height={30} className={styles.icon} />,
+    title: "E. People",
+    desc: "Change or expand your content effortlessly, without technical know-how.",
+  },
+  {
+    id: 6,
+    icon: <Design width={30} height={30} className={styles.icon} />,
+    title: "F. Execution",
     desc: "Change or expand your content effortlessly, without technical know-how.",
   },
 ];
+// const data = [
+//   {
+//     id: 1,
+//     icon: <Design width={30} height={30} className={styles.icon} />,
+//     title: "Inspiring Design",
+//     desc: "The design of your website inspires and you stay in the minds of your customers.",
+//   },
+//   {
+//     id: 2,
+//     icon: <Design width={30} height={30} className={styles.icon} />,
+//     title: "Professional identity",
+//     desc: "You will be perceived by your visitors as trustworthy and professional.",
+//   },
+//   {
+//     id: 3,
+//     icon: <Design width={30} height={30} className={styles.icon} />,
+//     title: "Authentic appearance",
+//     desc: "You can identify with your website and are happy to share the link with potential customers.",
+//   },
+//   {
+//     id: 4,
+//     icon: <Design width={30} height={30} className={styles.icon} />,
+//     title: "Stress-free management",
+//     desc: "Change or expand your content effortlessly, without technical know-how.",
+//   },
+// ];
 
 const Solution = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-            <h2 className={`${styles.heading} h2v2`}>
-              We build e-comm stores that truly connect with your audience
-            </h2>
+        <h2 className={`${styles.heading} h2v2`}>
+          We build e-comm stores that truly connect with your audience
+        </h2>
         <div className={styles.content}>
           <div className={styles.left}>
-
             <div className={styles.rightBottom}>
-              {data.map((x) => (
-                <div key={x.id} className={styles.card}>
-                  {x.icon && (
-                    <div className={styles.iconContainer}>{x.icon}</div>
-                  )}
-                  <h3 className={styles.title}>{x.title}</h3>
-                  <p className={styles.desc}>{x.desc}</p>
+              {data.map((item) => (
+                <div key={item.id} className={styles.card}>
+                  {/* {item.icon && (
+                    <div className={styles.iconContainer}>{item.icon}</div>
+                  )} */}
+                  <h3 className={styles.title}>{item.title}</h3>
+                  <p className={styles.desc}>{item.desc}</p>
                 </div>
               ))}
             </div>

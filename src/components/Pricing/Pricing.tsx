@@ -89,14 +89,15 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                 over first, let’s have a call or lets talk while having a
                 coffee.
               </p>
+              <div className={styles.btnContainer}>
+                <Button
+                  text='Book a meeting'
+                  href='/#schedule'
+                  btnType='secondary'
+                />
+              </div>
             </div>
-            <div className={styles.btnContainer}>
-              <Button
-                text='Book a meeting'
-                href='/#schedule'
-                btnType='secondary'
-              />
-            </div>
+            <div className={styles.pattern}></div>
           </div>
         </div>
       </LayoutWrapper>
