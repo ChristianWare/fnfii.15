@@ -2,14 +2,15 @@
   /* border-bottom: 1px solid var(--lightBlack); */
   /* padding-bottom: 5rem; */
   background-color: var(--tan);
+  margin-top: 2rem;
 }
 
 .content {
   background-color: var(--tan2);
-  padding: 3rem;
+  /* padding: 3rem; */
   border-radius: 10px;
   /* margin-top: -20rem; */
-  margin-bottom: -15rem;
+  /* margin-bottom: -15rem; */
 }
 
 .top {
@@ -20,7 +21,7 @@
 
 .logo,
 .logoMobile {
-  color: var(--black);
+  color: var(--purple);
   font-size: 2rem;
   white-space: nowrap;
 }
@@ -110,8 +111,8 @@
 
 .bottom {
   border-top: 1px solid var(--lightBlack);
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -138,7 +139,7 @@
 }
 
 .detail {
-  border: 1px solid var(--lightBlack);
+  border: 1px solid var(--purple);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -149,11 +150,11 @@
 }
 
 .icon {
-  color: var(--lightBlack);
+  color: var(--purple);
 }
 
 .container b {
-  color: var(--lightBlack);
+  color: var(--purple);
 }
 
 @media screen and (max-width: 1068px) {
@@ -181,8 +182,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    margin-bottom: 1rem;
+    gap: 2rem;
   }
 }
 

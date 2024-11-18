@@ -2,7 +2,7 @@
 
 import ContactDetails from "../ContactDetails/ContactDetails";
 import ContactForm from "../ContactForm/ContactForm";
-import Footerii from "../Footerii/Footerii";
+// import Footerii from "../Footerii/Footerii";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ContactHero.module.css";
 
@@ -18,7 +18,6 @@ const ContactHero = () => {
             </div>
           </div>
         </div>
-        <Footerii />
       </LayoutWrapper>
     </section>
   );
