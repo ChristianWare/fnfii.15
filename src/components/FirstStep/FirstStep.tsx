@@ -1,6 +1,6 @@
+import styles from "./FirstStep.module.css";
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
-import styles from "./FirstStep.module.css";
 
 const data = [
   {
