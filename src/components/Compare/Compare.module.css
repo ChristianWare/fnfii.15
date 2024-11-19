@@ -47,10 +47,11 @@
 } */
 
 .icon,
-.iconii {
+.iconii,
+.iconiii {
   width: 100px;
   height: 100px;
-  color: var(--black);
+  color: var(--purple);
 }
 
 .column:nth-child(1) .iconii {
@@ -60,6 +61,10 @@
 .iconii {
   width: 50px;
   height: 50px;
+}
+
+.iconiii {
+  color: var(--gray3);
 }
 
 .title {
@@ -105,5 +110,15 @@
   .heading,
   .copy {
     text-align: center;
+  }
+
+  .copy {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .copy {
+    width: 100%;
   }
 }

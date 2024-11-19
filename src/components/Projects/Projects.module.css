@@ -125,9 +125,10 @@
 
   .leftSide {
     align-items: center;
+    justify-content: center;
     position: static;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, 1fr); */
   }
 
   .lottieBox {
@@ -167,7 +168,8 @@
     margin-bottom: 0rem;
   }
 
-  .lottie, .lottieBox {
+  .lottie,
+  .lottieBox {
     width: 200px;
     height: 200px;
   }

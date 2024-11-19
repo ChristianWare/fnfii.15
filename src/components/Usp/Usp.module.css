@@ -73,7 +73,7 @@
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border: 1px solid var(--lightBlack);
+  /* border: 1px solid var(--lightBlack); */
   border-radius: 50%;
   background-color: var(--tan);
 }

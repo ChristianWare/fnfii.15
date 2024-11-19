@@ -63,7 +63,7 @@
 
 .span {
   font-size: 6rem;
-  color: var(--tan3);
+  color: var(--purple);
 }
 
 .cardRight {
@@ -76,6 +76,7 @@
 
 .processName {
   margin-top: 1rem;
+  color: var(--purple);
 }
 
 .box {

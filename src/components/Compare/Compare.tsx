@@ -1,7 +1,7 @@
+import styles from "./Compare.module.css";
 import Button from "../Button/Button";
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
-import styles from "./Compare.module.css";
 import Listing from "../../../public/icons/listing.svg";
 import Clock from "../../../public/icons/clock.svg";
 import Check from "../../../public/icons/checkii.svg";
@@ -10,7 +10,7 @@ import Close from "../../../public/icons/closeii.svg";
 const data = [
   {
     id: 1,
-    icon: <Listing className={styles.icon} />,
+    icon: <Listing className={styles.iconiii} />,
     title: "Steel fence from other companies",
     details: [
       {

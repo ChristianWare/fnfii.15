@@ -82,7 +82,7 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
             ))}
           </div>
           <div className={styles.custommize}>
-            <div>
+            <div className={styles.customizeLeft}>
               <h3>Looking for a customized package?</h3>
               <p>
                 If our plans don’t match your project or you want to talk it

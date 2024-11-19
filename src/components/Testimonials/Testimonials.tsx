@@ -18,20 +18,20 @@ const reviews = [
     reviewer: "Sara L.",
     company: "Tempe, AZ",
   },
-  {
-    id: 73,
-    review:
-      "Great experience every time. The food is hot, the service is fast, and the prices can't be beat. My kids are obsessed with the cheesy gordita crunch.",
-    reviewer: "David P.",
-    company: "Glendale, AZ",
-  },
-  {
-    id: 74,
-    review:
-      "Great experience every time. The food is hot, the service is fast, and the prices can't be beat. My kids are obsessed with the cheesy gordita crunch.",
-    reviewer: "David P.",
-    company: "Glendale, AZ",
-  },
+  // {
+  //   id: 73,
+  //   review:
+  //     "Great experience every time. The food is hot, the service is fast, and the prices can't be beat. My kids are obsessed with the cheesy gordita crunch.",
+  //   reviewer: "David P.",
+  //   company: "Glendale, AZ",
+  // },
+  // {
+  //   id: 74,
+  //   review:
+  //     "Great experience every time. The food is hot, the service is fast, and the prices can't be beat. My kids are obsessed with the cheesy gordita crunch.",
+  //   reviewer: "David P.",
+  //   company: "Glendale, AZ",
+  // },
 ] as const;
 
 const Testimonials = () => {
