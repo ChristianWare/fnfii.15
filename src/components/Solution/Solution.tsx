@@ -74,12 +74,9 @@ const Solution = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.falseBtnContainer}>
-          <FalseButton btnType='primary' text='How we can help' />
-        </div>
-        <h2 className={`${styles.heading} h2v2`}>
-          We build e-comm stores that truly connect with your audience
-        </h2>
+        {/* <div className={styles.top}>
+          
+        </div> */}
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.rightBottom}>
@@ -92,14 +89,20 @@ const Solution = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              <Image src={Img1} alt='' fill className={styles.img} />
+            <div className={styles.falseBtnContainer}>
+              <FalseButton btnType='primary' text='How we can help' />
             </div>
+            <h2 className={`${styles.heading} h2v2`}>
+              We build e-comm stores that truly connect with your audience
+            </h2>
             <p className={styles.copy}>
               You&apos;ve poured your heart into creating something special, so
               let&apos;s showcase it with thoughtful, impactful design that
               reflects the value you bring.
             </p>
+            <div className={styles.imgContainer}>
+              <Image src={Img1} alt='' fill className={styles.img} />
+            </div>
           </div>
         </div>
       </LayoutWrapper>

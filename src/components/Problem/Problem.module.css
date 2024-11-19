@@ -7,13 +7,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* margin-bottom: 30rem; */
 }
 
 .heading {
-  width: 50%;
   margin-right: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .problemContainer {
@@ -106,6 +104,22 @@
 }
 
 @media screen and (max-width: 668px) {
+  .top {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .headingii {
+    text-align: center;
+    width: 100%;
+  }
+
   .problemContainer {
     flex-direction: column;
     gap: 2rem;

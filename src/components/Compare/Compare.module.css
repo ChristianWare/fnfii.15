@@ -4,8 +4,8 @@
 
 .content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5rem;
 }
 
 .left {
@@ -75,7 +75,8 @@
 
 .box {
   padding: 3rem;
-  border: 1px solid var(--lightBlack);
+  /* border: 1px solid var(--lightBlack); */
+  background-color: var(--tan2);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -89,7 +90,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1268px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }

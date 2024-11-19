@@ -59,7 +59,7 @@ const ContactDetails = () => {
         </div>
         {/* <div className={styles.bottom}>
           <SocialsContainer />
-        </div> */}
+          </div> */}
         <Footerii />
       </div>
     </div>
