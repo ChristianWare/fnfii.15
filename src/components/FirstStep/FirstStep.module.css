@@ -3,8 +3,8 @@
 }
 
 .top {
-  border-bottom: 1px solid var(--lightBlack);
-  padding-bottom: 2rem;
+  /* border-bottom: 1px solid var(--lightBlack); */
+  /* padding-bottom: 2rem; */
   margin-bottom: 5rem;
 }
 
@@ -51,7 +51,7 @@
   border-radius: 10px;
   margin-top: 1rem;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .headingii {

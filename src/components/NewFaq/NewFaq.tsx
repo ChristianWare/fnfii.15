@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import styles from "./NewFaq.module.css";
 import { FC, useState } from "react";
 import LayoutWrapper from "../LayoutWrapper";
-import Plus from "../../../public/icons/plus.svg";
+// import Plus from "../../../public/icons/plus.svg";
 import Image from "next/image";
 import FAQImage from "../../../public/images/faq.png";
-import styles from "./NewFaq.module.css";
 import FalseButton from "../FalseButton/FalseButton";
 
 interface Props {
@@ -37,12 +37,6 @@ const NewFaq: FC<Props> = ({ mapData }) => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.bLeft}>
-              <p className={styles.copy}>
-                This means solving strategic challenges like how to re-platform
-                a technology stack, get data-driven insights from business
-                intelligence or build a seamless digital experience across
-                online and offline channels.
-              </p>
               <div className={styles.imgContianer}>
                 <Image src={FAQImage} alt='' fill className={styles.img} />
               </div>

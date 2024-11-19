@@ -1,9 +1,9 @@
 "use client";
 
 import styles from "./ContactDetails.module.css";
-// import SocialsContainer from "../SocialsContainer/SocialsContainer";
 import Link from "next/link";
 import Footerii from "../Footerii/Footerii";
+import ContactForm from "../ContactForm/ContactForm";
 
 const ContactDetails = () => {
   return (
@@ -57,11 +57,16 @@ const ContactDetails = () => {
             </Link>
           </div>
         </div>
+        <div className={styles.bottom}>
+          <div className={styles.contactFormBox}>
+            <ContactForm />
+          </div>
+        </div>
         {/* <div className={styles.bottom}>
           <SocialsContainer />
           </div> */}
-        <Footerii />
       </div>
+        <Footerii />
     </div>
   );
 };
