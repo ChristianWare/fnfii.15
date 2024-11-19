@@ -14,7 +14,8 @@ import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
 import NewFaq from "@/components/NewFaq/NewFaq";
 import FirstStep from "@/components/FirstStep/FirstStep";
-import FinalCTA from "@/components/FinalCTA/FinalCTA";
+// import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import Compare from "@/components/Compare/Compare";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <HowItWorks />
       <Projects />
       <Pricing bgColor='tan' />
+      <Compare />
       <Testimonials />
       <NewFaq mapData={homePageFaqs} />
       <FirstStep />

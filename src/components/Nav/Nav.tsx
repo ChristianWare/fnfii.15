@@ -79,7 +79,7 @@ function Nav() {
       <div
         style={{
           height: isFixed ? `${navHeight}px` : 0,
-          backgroundColor: "var(--tan)",
+          // backgroundColor: "var(--tan)",
         }}
       />
       <header

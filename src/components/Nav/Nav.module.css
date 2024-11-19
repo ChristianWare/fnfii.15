@@ -21,8 +21,8 @@
   width: 100%;
   padding: 1rem 5.2rem;
   z-index: 1000;
-  border-left: 1px solid var(--lightBlack);
-  border-right: 1px solid var(--lightBlack);
+  /* border-left: 1px solid var(--lightBlack); */
+  /* border-right: 1px solid var(--lightBlack); */
 }
 
 .navMenu,
