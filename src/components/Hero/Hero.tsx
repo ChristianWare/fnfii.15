@@ -19,41 +19,52 @@ const Hero = () => {
           className={styles.content}
         >
           <div className={styles.left}>
-            <div className={styles.falseBtnContainer}>
-              <FalseButton
-                btnType='primary'
-                text='E-commerce Web Development Agency '
-              />
+            <div className={styles.headingLottieBox}>
+              <div className={styles.hlLeft}>
+                <div className={styles.falseBtnContainer}>
+                  <FalseButton
+                    btnType='primary'
+                    text='E-commerce Web Development Agency '
+                  />
+                </div>
+                <h1 className={styles.heading}>
+                  Win the game called{" "}
+                  <span className={styles.span}>E-commerce</span>{" "}
+                </h1>
+                <p className={styles.copy}>
+                  We serve as your ‘on-demand CTO’ → A boutique consultancy for
+                  consumer and retail brands that seek digital success.
+                </p>
+                <div className={styles.btnContainer}>
+                  <Button
+                    text='Schedule Discovery Call'
+                    href='/#schedule'
+                    btnType='secondary'
+                  />
+                  <Button
+                    text='Our Services'
+                    href='/#services'
+                    btnType='primaryii'
+                  />
+                </div>
+              </div>
+              <div className={styles.lottieBox}>
+                <Lottie
+                  animationData={animationData}
+                  className={styles.lottie}
+                />
+              </div>
             </div>
-            <h1 className={styles.heading}>
-              Win the game called{" "}
-              <span className={styles.span}>E-commerce</span>{" "}
-            </h1>
-            <p className={styles.copy}>
-              We serve as your ‘on-demand CTO’ → A boutique consultancy for
-              consumer and retail brands that seek digital success
-            </p>
-            <div className={styles.btnContainer}>
-              <Button
-                text='Schedule Discovery Call'
-                href='/#schedule'
-                btnType='secondary'
-              />
-              <Button
-                text='Our Services'
-                href='/#services'
-                btnType='primaryiii'
-              />
+
+            <div className={styles.uspContainer}>
+              <Usp />
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.lottieBox}>
+            {/* <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
+            </div> */}
           </div>
-        </div>
-        <div className={styles.uspContainer}>
-          <Usp />
         </div>
       </LayoutWrapper>
     </section>

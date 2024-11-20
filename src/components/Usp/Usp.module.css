@@ -1,5 +1,6 @@
 .container {
   background-color: var(--tan);
+  height: 100%;
 }
 
 .top {
@@ -33,25 +34,25 @@
 
 .bottom {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding-top: 1rem;
 }
 
 .card {
   padding: 3rem;
-  border: 1px solid var(--lightBlack);
+  background-color: var(--tan3);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  height: 100%;
 }
 
 .usp {
   font-size: 8rem;
-  color: var(--tan3);
+  color: var(--tan2);
 }
 
 .copy {
@@ -70,19 +71,13 @@
   background-color: var(--tan);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 968px) {
   .bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .heading {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 568px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }

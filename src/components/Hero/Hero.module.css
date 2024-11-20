@@ -4,10 +4,9 @@
 
 .content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin-top: -15rem;
-  margin-bottom: -5rem;
 }
 
 .left {
@@ -16,17 +15,28 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  background-color: var(--tan2);
+  border-radius: 10px;
+  padding: 3rem;
 }
 
-.falseBtnContainer {
-  margin-bottom: -1rem;
+.headingLottieBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hlLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .heading {
   color: var(--black);
   text-transform: none;
   width: 80%;
-  line-height: 95%;
 }
 
 .span {
@@ -35,16 +45,16 @@
 
 .copy {
   color: var(--black);
-  width: 65%;
+  width: 90%;
   font-size: 1.8rem;
   opacity: 0.8;
 }
 
 .btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 2rem;
   margin-top: 1rem;
 }
 
@@ -69,7 +79,9 @@
 } */
 
 .uspContainer {
-  margin-top: 5rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1068px) {
@@ -78,9 +90,17 @@
     gap: 3rem;
   }
 
-  .left {
+  .left,
+  .headingLottieBox,
+  .hlLeft {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .hlLeft {
+    padding: 2rem;
   }
 
   .heading {
@@ -89,8 +109,10 @@
   }
 
   .copy {
-    width: 80%;
+    width: 65%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .miscContainer {
@@ -131,6 +153,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hlLeft {
+    padding: 1rem;
+  }
+
   .heading,
   .copy {
     width: 100%;
@@ -140,6 +166,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+  }
+
+  .left {
+    padding: 2rem;
   }
 
   .right {
@@ -153,9 +183,14 @@
     /* margin-bottom: -10rem; */
   }
 
-  .left {
+  .left,
+  .hlLeft {
     align-items: flex-start;
     justify-content: flex-start;
+  }
+
+  .headingLottieBox {
+    gap: 10rem;
   }
 
   .heading,
