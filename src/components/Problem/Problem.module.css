@@ -32,10 +32,10 @@
 
 .pattern {
   background-image: radial-gradient(var(--white) 5px, transparent 5px);
-  background-size: 20px 20px; /* Adjusts spacing between dots */
-  width: 200px; /* Adjust width as needed */
-  height: 100px; /* Adjust height as needed */
-  border-radius: 10px; /* Rounds the corners */
+  background-size: 20px 20px; 
+  width: 200px; 
+  height: 100px;
+  border-radius: 10px; 
 }
 
 .falseBtnContainerii {
@@ -51,7 +51,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .card {
@@ -84,6 +84,16 @@
   color: var(--green);
   opacity: 0.6;
 }
+
+.card:nth-child(5) {
+  background-color: var(--purple);
+}
+
+.card:nth-child(5) .title,
+.card:nth-child(5) .description {
+  color: var(--white);
+}
+
 
 @media screen and (max-width: 1268px) {
   .bottom {
