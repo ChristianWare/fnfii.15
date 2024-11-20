@@ -13,25 +13,25 @@ const data = [
     id: 1,
     animation: animationData,
     title: "Profile thickness",
-    desc: "The use of 25 mm aluminium profiles ensures exceptional strength and stability of the fences, which is crucial for their long-term quality and safety.",
+    desc: "Our proprietary fence profiles, created without standard",
   },
   {
     id: 2,
     animation: animationData2,
-    title: "Aluminum and stainless steel",
-    desc: "The use of aluminum and paint coatings creates a product resistant to weather conditions, combining durability with a modern look.",
+    title: "Profile thickness",
+    desc: "Our proprietary fence profiles, created without standard",
   },
   {
     id: 3,
     animation: animationData3,
-    title: "Own profiles",
-    desc: "Our proprietary fence profiles, created without standard market components, guarantee higher quality and unique design.",
+    title: "Profile thickness",
+    desc: "Our proprietary fence profiles, created without standard",
   },
   {
     id: 4,
     animation: animationData4,
-    title: "Own profiles",
-    desc: "Our proprietary fence profiles, created without standard market components, guarantee higher quality and unique design.",
+    title: "Profile thickness",
+    desc: "Our proprietary fence profiles, created without standard",
   },
 ];
 
