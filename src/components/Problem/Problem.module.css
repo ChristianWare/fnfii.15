@@ -11,7 +11,9 @@
 
 .heading {
   margin-right: auto;
-  margin-bottom: 2rem;
+  font-size: 7rem;
+  -webkit-text-stroke: 1.2px var(--white);
+  -webkit-text-fill-color: transparent;
 }
 
 .problemContainer {
@@ -23,6 +25,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .headingii {
@@ -32,10 +35,10 @@
 
 .pattern {
   background-image: radial-gradient(var(--white) 5px, transparent 5px);
-  background-size: 20px 20px; 
-  width: 200px; 
+  background-size: 20px 20px;
+  width: 200px;
   height: 100px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .falseBtnContainerii {
@@ -93,7 +96,6 @@
 .card:nth-child(5) .description {
   color: var(--white);
 }
-
 
 @media screen and (max-width: 1268px) {
   .bottom {

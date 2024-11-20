@@ -12,26 +12,26 @@ const data = [
   {
     id: 1,
     animation: animationData,
-    title: "Profile thickness",
-    desc: "Our proprietary fence profiles, created without standard",
+    title: "Lift your brand to new heights",
+    desc: "We build websites that help your online store reach new heights, combining speed, scalability, and style to make your business stand out.",
   },
   {
     id: 2,
     animation: animationData2,
-    title: "Profile thickness",
-    desc: "Our proprietary fence profiles, created without standard",
+    title: "Effortless order management",
+    desc: "Simplify your workflow with seamless order processing, real-time updates, and automated confirmations to keep your customers coming back.",
   },
   {
     id: 3,
     animation: animationData3,
-    title: "Profile thickness",
-    desc: "Our proprietary fence profiles, created without standard",
+    title: "Maximize your revenue potential",
+    desc: "Drive more sales with optimized user experiences, fast load times, and conversion-focused design that turns visitors into loyal customers.",
   },
   {
     id: 4,
     animation: animationData4,
-    title: "Profile thickness",
-    desc: "Our proprietary fence profiles, created without standard",
+    title: "Relax with an intuitive dashboard",
+    desc: "Easily manage your store from anywhere with user-friendly tools that give you control over products, sales, and analytics—all in one place.",
   },
 ];
 

@@ -40,7 +40,8 @@
 
 .card {
   padding: 3rem;
-  background-color: var(--tan3);
+  background-color: var(--tan2);
+  /* border: 1px solid var(--purple); */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -52,12 +53,14 @@
 
 .usp {
   font-size: 8rem;
-  color: var(--tan2);
+  -webkit-text-stroke: 1.5px var(--purple); 
+  -webkit-text-fill-color: var(--tan2); 
 }
 
 .copy {
   opacity: 0.7;
   text-align: center;
+  color: var(--purple);
 }
 
 .icon {

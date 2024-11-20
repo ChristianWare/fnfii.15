@@ -15,7 +15,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
-  background-color: var(--tan2);
+  /* background-color: var(--tan2); */
   border-radius: 10px;
   padding: 3rem;
 }

@@ -64,8 +64,10 @@
 }
 
 .span {
-  font-size: 6rem;
-  color: var(--purple);
+  font-size: 7rem;
+  /* color: var(--purple); */
+  -webkit-text-stroke: 1.5px var(--purple);
+  -webkit-text-fill-color: var(--tan2);
 }
 
 .cardRight {

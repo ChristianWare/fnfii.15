@@ -2,7 +2,7 @@
 
 import styles from "./Problem.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-import FalseButton from "../FalseButton/FalseButton";
+// import FalseButton from "../FalseButton/FalseButton";
 
 const Problem = () => {
   const data = [
@@ -36,14 +36,14 @@ const Problem = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Problems we solve</h2>
-          <div className={styles.falseBtnContainer}>
+          {/* <div className={styles.falseBtnContainer}>
             <FalseButton btnType='primary' text='Main problem' />
-          </div>
+            </div> */}
           <div className={styles.problemContainer}>
-            <h3 className={styles.headingii}>
+            <h2 className={styles.heading}>Problems we solve</h2>
+            {/* <h3 className={styles.headingii}>
               Are you unhappy with your <br /> current e-commerce store?
-            </h3>
+            </h3> */}
             <div className={styles.pattern}></div>
           </div>
         </div>

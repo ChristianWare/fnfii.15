@@ -31,14 +31,14 @@
   background-color: var(--green3);
   border: 1px solid var(--lightBlack);
 }
+
 .primaryii {
-  color: var(--black);
-  /* background-color: var(--green3); */
-  border: 1px solid var(--black);
+  color: var(--purple);
+  border: 1px solid var(--purple);
 }
 
 .primaryii:hover {
-  background-color: var(--green3b);
+  background-color: var(--purple);
   color: var(--white);
 }
 
