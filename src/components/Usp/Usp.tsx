@@ -10,26 +10,26 @@ import Team from "../../../public/icons/team.svg";
 const data = [
   {
     id: 1,
-    usp: "Expert Team of Developers",
-    desc: "Skilled professionals with a passion for web design and development.",
+    usp: "7+",
+    desc: "Skilled professionals with a passion",
     icon: <Team className={styles.icon} width={80} height={80} />,
   },
   {
     id: 2,
-    usp: "Personalized Attention",
-    desc: "Building strong relationships with clients to understand their business, goals, and audience.",
+    usp: "4*",
+    desc: "Building strong relationships",
     icon: <Attention className={styles.icon} width={80} height={80} />,
   },
   {
     id: 3,
-    usp: "Innovative & Effective Solutions",
-    desc: "Combining the latest technology with creative ideas for top-notch results.",
+    usp: "40%",
+    desc: "Combining the latest technology",
     icon: <Solutions className={styles.icon} width={80} height={80} />,
   },
   {
     id: 4,
-    usp: "Proven Track Record of Success",
-    desc: "A portfolio of successful projects and satisfied clients.",
+    usp: "<12",
+    desc: "Portfolio of successful projects",
     icon: <Track className={styles.icon} width={80} height={80} />,
   },
 ];
@@ -37,30 +37,19 @@ const data = [
 const Usp = () => {
   return (
     <section className={styles.container}>
-      {/* <LayoutWrapper> */}
         <div className={styles.content}>
-          {/* <div className={styles.top}>
-            <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
-            <h2 className={styles.heading}>
-              Why choose Fonts & Footers to build your online store?
-            </h2>
-            <p className={styles.copy}>What sets us apart is our...</p>
-          </div> */}
+          <small>Company stats:</small>
           <div className={styles.bottom}>
             {data.map((x) => (
               <div key={x.id} className={styles.card}>
-                {x.icon}
                 <div>
                   <h3 className={styles.usp}>{x.usp}</h3>
-                  {/* <p className={styles.desc}>{x.desc}</p> */}
                 </div>
+                <p className={styles.copy}>{x.desc}</p>
               </div>
             ))}
           </div>
         </div>
-      {/* </LayoutWrapper> */}
     </section>
   );
 };

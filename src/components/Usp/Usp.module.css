@@ -31,13 +31,6 @@
   width: 60%;
 }
 
-.copy {
-  color: var(--black);
-  text-align: center;
-  font-weight: 500;
-  font-size: 2rem;
-}
-
 .bottom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -46,8 +39,8 @@
 }
 
 .card {
-  padding: 2rem;
-  background-color: var(--tan2);
+  padding: 3rem;
+  border: 1px solid var(--lightBlack);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -57,14 +50,13 @@
 }
 
 .usp {
-  margin-bottom: 2rem;
-  text-align: center;
-  color: var(--black);
-  font-size: 1.6rem;
+  font-size: 8rem;
+  color: var(--tan3);
 }
 
-.desc {
-  opacity: 0.5;
+.copy {
+  opacity: 0.7;
+  text-align: center;
 }
 
 .icon {
@@ -91,12 +83,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .heading,
-  .copy {
-    text-align: left;
-    margin-right: auto;
-  }
-
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
