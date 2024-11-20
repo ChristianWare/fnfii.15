@@ -3,10 +3,9 @@
 }
 
 .content {
-  background-color: var(--tan2);
+  /* background-color: var(--tan2); */
   border-radius: 10px;
   padding: 3rem;
-  /* margin-bottom: -20rem; */
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -54,10 +53,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-}
-
-.lottieii {
-  transform: scaleX(-1);
 }
 
 @media screen and (max-width: 968px) {

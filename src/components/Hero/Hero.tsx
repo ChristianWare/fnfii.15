@@ -28,12 +28,13 @@ const Hero = () => {
                   />
                 </div>
                 <h1 className={styles.heading}>
-                  Win the game called{" "}
-                  <span className={styles.span}>E-commerce</span>{" "}
+                  Unlock the Secrets to{" "}
+                  <span className={styles.span}>E-commerce</span> Success
+                  {/* <span className={styles.span}>E-commerce</span>{" "} */}
                 </h1>
                 <p className={styles.copy}>
-                  We serve as your ‘on-demand CTO’ → A boutique consultancy for
-                  consumer and retail brands that seek digital success.
+                  We build custom online stores designed to elevate your brand,
+                  engage your audience, and drive conversions.
                 </p>
                 <div className={styles.btnContainer}>
                   <Button
@@ -42,7 +43,7 @@ const Hero = () => {
                     btnType='secondary'
                   />
                   <Button
-                    text='Our Services'
+                    text='Explore Our Services'
                     href='/#services'
                     btnType='primaryii'
                   />

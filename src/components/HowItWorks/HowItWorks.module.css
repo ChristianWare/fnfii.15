@@ -45,12 +45,14 @@
 .right {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .card {
-  padding: 2rem 0rem;
-  border-bottom: 1px solid var(--lightBlack);
+  padding: 2rem 3rem;
+  /* border-bottom: 1px solid var(--lightBlack); */
+  background-color: var(--tan2);
+  border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -143,7 +145,6 @@
 
   .card {
     grid-template-columns: repeat(1, 1fr);
-    border: 1px solid var(--lightBlack);
     border-radius: 10px;
     padding: 2rem;
     grid-gap: 1rem;
