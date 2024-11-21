@@ -29,11 +29,11 @@ export default function Home() {
       <AboutScrollText />
       <Owner />
       <PostHero />
+      <Compare />
       <HowItWorks />
       <Projects />
       <Pricing bgColor='tan' />
       <Testimonials />
-      <Compare />
       <FirstStep />
       <NewFaq mapData={homePageFaqs} />
       <FinalCTA />

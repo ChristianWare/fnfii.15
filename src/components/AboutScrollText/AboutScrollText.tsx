@@ -35,12 +35,14 @@ const AboutScrollText = () => {
             <div>
               <FalseButton text='About us' btnType='primary' />
               <h2 className={styles.heading}>
-                Expert design for brands that really stand out
+                What exactly is Fonts & Footers?
               </h2>
             </div>
             <p className={styles.copy}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              excepturi sit deleniti itaque? Beatae, exercitationem.
+              Fonts & Footers is an e-commerce web development agency. We&apos;re experts at blending the latest
+              technology with creative ideas for top-notch results. By working
+              with us, you get personal care, support, and a website that boosts
+              engagement and sales. We operate out of sunny Phoenix, AZ.
             </p>
           </div>
           <div className={styles.right}>
