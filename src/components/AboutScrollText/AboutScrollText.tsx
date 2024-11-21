@@ -11,18 +11,23 @@ import FalseButton from "../FalseButton/FalseButton";
 const data = [
   {
     id: 1,
-    title: "7+",
-    desc: "Here are some thing you can include in the description area so that you can have a say. ",
+    title: "99.9%",
+    desc: "Uptime for every e-commerce site we build",
   },
   {
     id: 2,
-    title: "4*",
-    desc: "Here are some thing you can include in the description area so that you can have a say. ",
+    title: "2X",
+    desc: "Faster Website load times than industry standard",
   },
   {
     id: 3,
-    title: "40+",
-    desc: "Here are some thing you can include in the description area so that you can have a say. ",
+    title: "14",
+    desc: "Average days to launch your e-commerce store",
+  },
+  {
+    id: 4,
+    title: "2",
+    desc: "Cups of coffee per day fueling our passion for creating impactful online stores",
   },
 ];
 
@@ -34,15 +39,14 @@ const AboutScrollText = () => {
           <div className={styles.left}>
             <div>
               <FalseButton text='About us' btnType='primary' />
-              <h2 className={styles.heading}>
-                What is Fonts & Footers?
-              </h2>
+              <h2 className={styles.heading}>What is Fonts & Footers?</h2>
             </div>
             <p className={styles.copy}>
-              Fonts & Footers is an e-commerce web development agency. We&apos;re experts at blending the latest
-              technology with creative ideas for top-notch results. By working
-              with us, you get personal care, support, and a website that boosts
-              engagement and sales. We operate out of sunny Phoenix, AZ.
+              Fonts & Footers is an e-commerce web development agency.
+              We&apos;re experts at blending the latest technology with creative
+              ideas for top-notch results. By working with us, you get personal
+              care, support, and a website that boosts engagement and sales. We
+              operate out of sunny Phoenix, AZ.
             </p>
           </div>
           <div className={styles.right}>
