@@ -2,8 +2,8 @@ import styles from "./Compare.module.css";
 import Button from "../Button/Button";
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
-import Listing from "../../../public/icons/listing.svg";
-import Clock from "../../../public/icons/clock.svg";
+import Listing from "../../../public/icons/sad.svg";
+import Clock from "../../../public/icons/happy.svg";
 import Check from "../../../public/icons/checkii.svg";
 import Close from "../../../public/icons/closeii.svg";
 
@@ -11,31 +11,31 @@ const data = [
   {
     id: 1,
     icon: <Listing className={styles.iconiii} />,
-    title: "Steel fence from other companies",
+    title: "E-commerce websites from other companies",
     details: [
       {
         id: 1.1,
-        details: "Corrosion resistance",
+        details: "Custom design",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.2,
-        details: "No maintenance required",
+        details: "Performance optimization",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.3,
-        details: "Aesthetics without welds",
+        details: "Scalability",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.4,
-        details: "Exceptional durability",
+        details: "SEO-friendly development",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.5,
-        details: "Innovative design",
+        details: "Dedicated support",
         icon: <Close className={styles.iconii} />,
       },
     ],
@@ -43,31 +43,31 @@ const data = [
   {
     id: 2,
     icon: <Clock className={styles.icon} />,
-    title: "Steel fence from other companies",
+    title: "E-commerce websites from Fonts & Footers",
     details: [
       {
         id: 2.1,
-        details: "Corrosion resistance",
+        details: "Custom design",
         icon: <Check className={styles.iconii} />,
       },
       {
         id: 2.2,
-        details: "No maintenance required",
+        details: "Performance optimization",
         icon: <Check className={styles.iconii} />,
       },
       {
         id: 2.3,
-        details: "Aesthetics without welds",
+        details: "Scalability",
         icon: <Check className={styles.iconii} />,
       },
       {
         id: 2.4,
-        details: "Exceptional durability",
+        details: "SEO-friendly development",
         icon: <Check className={styles.iconii} />,
       },
       {
         id: 2.5,
-        details: "Innovative design",
+        details: "Dedicated support",
         icon: <Check className={styles.iconii} />,
       },
     ],
@@ -83,11 +83,13 @@ const Compare = () => {
             <div className={styles.falseBtnContainer}>
               <FalseButton btnType='primary' text='Us vs. the other guys' />
             </div>
-            <h2 className={styles.heading}>An investment for years to come</h2>
+            <h2 className={styles.heading}>
+              Why choose us over the competition?
+            </h2>
             <p className={styles.copy}>
-              FENZ® fences are modern solutions that offer exceptional
-              durability, aesthetics and practicality. Below is a comparison of
-              our aluminum fences with traditional steel fences.
+              When it comes to building your e-commerce store, not all solutions
+              are created equal. We go beyond templates and generic designs to
+              deliver custom-built websites tailored to your unique goals.
             </p>
             <div className={styles.btnContainer}>
               <Button
