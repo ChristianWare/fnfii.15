@@ -4,8 +4,7 @@ import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import Nav from "@/components/Nav/Nav";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
-// import Footerii from "@/components/Footerii/Footerii";
-// import CallToAction from "@/components/CallToAction/CallToAction";
+import PlausibleProvider from "next-plausible";
 
 const suisse = localFont({
   src: "../../public/fonts/SuisseIntl-Medium.ttf",
@@ -31,6 +30,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <PlausibleProvider
+          domain='fontsandfooters.com'
+          trackLocalhost={false}
+          enabled={true}
+        />
+      </head>
       <body className={`${suisse.variable} ${suissReg.variable}`}>
         <NoiseBg>
           <ScrollIndicator />
