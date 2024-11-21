@@ -28,8 +28,8 @@ export default function Home() {
       <Solution />
       <Owner />
       <EcommFeatures />
-      <PostHero />
       <Compare />
+      <PostHero />
       <HowItWorks />
       <Projects />
       <Pricing bgColor='tan' />

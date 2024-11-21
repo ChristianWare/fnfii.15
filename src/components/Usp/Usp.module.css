@@ -53,6 +53,7 @@
 
 .usp {
   font-size: 8rem;
+  letter-spacing: 3px;
   -webkit-text-stroke: 1.5px var(--purple); 
   -webkit-text-fill-color: var(--tan2); 
 }

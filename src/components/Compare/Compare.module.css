@@ -126,7 +126,9 @@
     width: 100%;
   }
 
-  .icon {
+.icon,
+.iconii,
+.iconiii {
     width: 60px;
     height: 60px;
   }
