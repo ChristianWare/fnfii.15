@@ -9,66 +9,40 @@ const data = [
   {
     id: 1,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "A. Strategy",
-    desc: "The design of your website inspires and you stay in the minds of your customers.",
+    title: "A. Customer-Centric Design",
+    desc: "Engage your audience with visually stunning designs that reflect your brand and captivate customers.",
   },
   {
     id: 2,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "B. Data",
-    desc: "You will be perceived by your visitors as trustworthy and professional.",
+    title: "B. Data-Driven Decisions",
+    desc: "Leverage insights to optimize your store for better user experiences and higher conversions.",
   },
   {
     id: 3,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "C. Process",
-    desc: "You can identify with your website and are happy to share the link with potential customers.",
+    title: "C. Seamless User Journey",
+    desc: "Guide visitors effortlessly from discovery to checkout with a streamlined shopping experience.",
   },
   {
     id: 4,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "D. Technology",
-    desc: "Change or expand your content effortlessly, without technical know-how.",
+    title: "D. Cutting-Edge Technology",
+    desc: "Stay ahead with fast, secure, and scalable solutions tailored to your e-commerce needs.",
   },
   {
     id: 5,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "E. People",
-    desc: "Change or expand your content effortlessly, without technical know-how.",
+    title: "E. Brand Storytelling",
+    desc: "Create a memorable connection with your audience by showcasing what makes your brand unique.",
   },
   {
     id: 6,
     icon: <Design width={30} height={30} className={styles.icon} />,
-    title: "F. Execution",
-    desc: "Change or expand your content effortlessly, without technical know-how.",
+    title: "F. Conversion-Focused Execution",
+    desc: "Drive results with strategies designed to turn casual visitors into loyal customers.",
   },
 ];
-// const data = [
-//   {
-//     id: 1,
-//     icon: <Design width={30} height={30} className={styles.icon} />,
-//     title: "Inspiring Design",
-//     desc: "The design of your website inspires and you stay in the minds of your customers.",
-//   },
-//   {
-//     id: 2,
-//     icon: <Design width={30} height={30} className={styles.icon} />,
-//     title: "Professional identity",
-//     desc: "You will be perceived by your visitors as trustworthy and professional.",
-//   },
-//   {
-//     id: 3,
-//     icon: <Design width={30} height={30} className={styles.icon} />,
-//     title: "Authentic appearance",
-//     desc: "You can identify with your website and are happy to share the link with potential customers.",
-//   },
-//   {
-//     id: 4,
-//     icon: <Design width={30} height={30} className={styles.icon} />,
-//     title: "Stress-free management",
-//     desc: "Change or expand your content effortlessly, without technical know-how.",
-//   },
-// ];
 
 const Solution = () => {
   return (
@@ -93,12 +67,12 @@ const Solution = () => {
               <FalseButton btnType='primary' text='How we can help' />
             </div>
             <h2 className={`${styles.heading} h2v2`}>
-              We build e-comm stores that truly connect with your audience
+              We build e-comm stores that truly resonate with your audience
             </h2>
             <p className={styles.copy}>
-              You&apos;ve poured your heart into creating something special, so
-              let&apos;s showcase it with thoughtful, impactful design that
-              reflects the value you bring.
+              You&apos;ve worked hard to create something unique—let&apos;s
+              showcase it with impactful design that highlights the value you
+              offer.
             </p>
             <div className={styles.imgContainer}>
               <Image src={Img1} alt='' fill className={styles.img} />

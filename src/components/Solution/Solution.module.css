@@ -25,6 +25,8 @@
 
 .copy {
   font-family: var(--suisse);
+  line-height: 130%;
+  width: 80%;
 }
 
 .right {
@@ -164,6 +166,10 @@
   .left {
     align-items: flex-start;
     justify-content: flex-start;
+  }
+
+  .copy {
+    width: 100%;
   }
 }
 

@@ -5,33 +5,35 @@ import LayoutWrapper from "../LayoutWrapper";
 // import FalseButton from "../FalseButton/FalseButton";
 
 const Problem = () => {
-  const data = [
-    {
-      title: "Modernise my tech stack to grow faster",
-      description:
-        "Your website looks outdated or unprofessional, which doesn’t reflect the quality of your business.",
-    },
-    {
-      title: "Simplify my tech stack to get to profitability",
-      description:
-        "You’re missing out on reaching potential customers because they can’t find you online.",
-    },
-    {
-      title: "Create a seamless digital experience to sell more",
-      description:
-        "Not having a website can make your business appear less credible or outdated compared to competitors who have an online presence.",
-    },
-    {
-      title: "Improve business intelligence to get better insights",
-      description:
-        "Every small update requires technical assistance, and it’s holding back your business growth.",
-    },
-    {
-      title: "Modernise my tech stack to grow faster",
-      description:
-        "Your website looks outdated or unprofessional, which doesn’t reflect the quality of your business.",
-    },
-  ];
+const data = [
+  {
+    title: "Slow Loading Times",
+    description:
+      "A slow website frustrates customers and leads to abandoned carts, costing you sales and damaging your brand's reputation.",
+  },
+  {
+    title: "Poor Mobile Experience",
+    description:
+      "Many e-commerce sites struggle to deliver a seamless shopping experience on mobile devices, resulting in lost opportunities as customers shop on the go.",
+  },
+  {
+    title: "Complicated Checkout Process",
+    description:
+      "A confusing or lengthy checkout process causes potential buyers to abandon their carts, leaving revenue on the table.",
+  },
+  {
+    title: "Low Search Visibility",
+    description:
+      "Without proper optimization, your website fails to rank on search engines, making it hard for potential customers to find you online.",
+  },
+  {
+    title: "Inefficient Inventory Management",
+    description:
+      "Managing products, stock levels, and updates can become overwhelming, leading to mistakes and unhappy customers.",
+  },
+];
+
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>

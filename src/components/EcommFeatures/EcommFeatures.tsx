@@ -131,9 +131,9 @@ const EcommFeatures = () => {
             Features of our <br /> Ecommerce Websites
           </h2>
           <p className={styles.copy}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            delectus sit id voluptas architecto. Delectus reprehenderit eum odio
-            magnam illo?
+            Packed with powerful tools and intuitive design, our e-commerce
+            websites are built to enhance user experience, drive sales, and
+            scale effortlessly with your business.
           </p>
         </div>
         <div className={styles.dataContainer}>
