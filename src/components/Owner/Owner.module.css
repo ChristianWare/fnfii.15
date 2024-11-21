@@ -14,6 +14,10 @@
   color: var(--purple);
 }
 
+.author {
+  font-family: var(--suisse);
+}
+
 .right {
   display: flex;
   align-items: center;

@@ -10,13 +10,13 @@ const Owner = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              &quot;Scribes been a real game-changer for me, no more having to
-              stop and take screenshots while Im working. The best part? Its all
-              automatic. No more manual documentation for me - thats a huge win
-              in my book.&quot;
+              &quot;At Fonts & Footers, we don’t just build websites—we create
+              e-commerce experiences that drive sales and build lasting
+              connections. Seeing our clients thrive is what fuels our
+              passion.&quot;
             </h2>
             <p className={styles.author}>
-                Chris Ware ~ Founder & Head Developer
+              Chris Ware ~ Founder & Head Developer
             </p>
           </div>
           <div className={styles.right}>
