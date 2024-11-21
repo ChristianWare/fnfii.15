@@ -23,11 +23,11 @@ export default function Home() {
     <main>
       <Hero />
       <WhatWeDo />
+      <AboutScrollText />
       <Problem />
       <Solution />
-      <EcommFeatures />
-      <AboutScrollText />
       <Owner />
+      <EcommFeatures />
       <PostHero />
       <Compare />
       <HowItWorks />

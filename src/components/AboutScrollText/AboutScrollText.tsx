@@ -35,7 +35,7 @@ const AboutScrollText = () => {
             <div>
               <FalseButton text='About us' btnType='primary' />
               <h2 className={styles.heading}>
-                What exactly is Fonts & Footers?
+                What is Fonts & Footers?
               </h2>
             </div>
             <p className={styles.copy}>
