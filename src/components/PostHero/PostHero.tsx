@@ -1,37 +1,27 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./PostHero.module.css";
 import Payment from "../../../public/icons/payment.svg";
-import SEO from "../../../public/icons/seo.svg";
-import Design from "../../../public/icons/designii.svg";
-// import Multiple from "../../../public/icons/multiple.svg";
+import Clock from "../../../public/icons/clock.svg";
+import Handshake from "../../../public/icons/support.svg";
 import Img1 from "../../../public/images/posthero.png";
 import Image from "next/image";
 
 const data = [
   {
     icon: <Payment width={75} height={75} className={styles.icon} />,
-
-    feature: "Fixed Monthly Rate",
-    desc: "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
+    feature: "Transparent Pricing",
+    desc: "No hidden fees or surprises—just straightforward pricing so you know exactly what you’re paying for.",
   },
   {
-    icon: <SEO width={75} height={75} className={styles.icon} />,
-
-    feature: "Lightning-Fast Delivery",
-    desc: "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
+    icon: <Clock width={75} height={75} className={styles.icon} />,
+    feature: "On-Time Delivery",
+    desc: "We guarantee timely delivery of your e-commerce store, so you can launch and start selling without delays.",
   },
   {
-    icon: <Design width={75} height={75} className={styles.icon} />,
-
-    feature: "Private Design Portal",
-    desc: "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
+    icon: <Handshake width={75} height={75} className={styles.icon} />,
+    feature: "Ongoing Support",
+    desc: "From launch to growth, we’re here for you every step of the way, ensuring peace of mind with continuous support.",
   },
-  // {
-  //   icon: <Multiple width={75} height={75} className={styles.icon} />,
-
-  //   feature: "Personalization",
-  //   desc: "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
-  // },
 ];
 
 const PostHero = () => {
