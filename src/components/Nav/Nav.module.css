@@ -193,13 +193,10 @@
     padding-bottom: 1rem;
   }
 
-  .navItem:nth-child(5) {
+  .navItem:nth-child(4) {
     border-bottom: none;
   }
 
-  .navItem:nth-child(8) {
-    border-bottom: 0px;
-  }
 
   .navBox {
     display: block;
