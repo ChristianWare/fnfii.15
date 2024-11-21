@@ -5,7 +5,7 @@ import styles from "./Modal.module.css";
 import Close from "../../../public/icons/close.svg";
 
 interface Props {
-  isOpen: Boolean;
+  isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
 }

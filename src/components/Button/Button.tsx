@@ -1,9 +1,19 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { FC } from "react";
 import Link from "next/link";
-import { ButtonProps } from "@/lib/interface";
 import styles from "./Button.module.css";
+
+interface ButtonProps {
+  href: string;
+  text: string;
+  btnType: string;
+  target?: string;
+  download?: boolean;
+  arrow?: boolean;
+  onClick?: any;
+}
 
 const Button: FC<ButtonProps> = ({
   href = "",
