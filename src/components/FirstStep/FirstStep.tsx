@@ -4,7 +4,7 @@ import LayoutWrapper from "../LayoutWrapper";
 
 const data = [
   {
-    id: 14,
+    id: 1433,
     title: "",
     additioanl: [
       {
@@ -12,60 +12,80 @@ const data = [
         addTitle: "",
         addDesc: "",
       },
+    ],
+  },
+  {
+    id: 14,
+    title: "Book a Discovery Call",
+    additioanl: [
+      {
+        id: 1.14,
+        addTitle: "Understand Your Needs",
+        addDesc:
+          "We’ll discuss your business goals, target audience, and vision for your online store.",
+      },
       {
         id: 1.24,
-        addTitle: "",
-        addDesc: "",
+        addTitle: "Identify Challenges",
+        addDesc:
+          "Together, we’ll pinpoint obstacles holding your business back from reaching its full potential.",
       },
       {
         id: 1.34,
-        addTitle: "",
-        addDesc: "",
+        addTitle: "Create a Roadmap",
+        addDesc:
+          "We’ll outline the next steps for building a custom online store tailored to your business.",
       },
     ],
   },
   {
     id: 1,
-    title: "Premium brand positioning",
+    title: "Develop a Customized Plan",
     additioanl: [
       {
         id: 1.1,
-        addTitle: "Marie Stella Maris",
-        addDesc: "Personal care brand scaling up (VC funded)",
+        addTitle: "Strategic Design",
+        addDesc:
+          "Our team will craft a plan to design an e-commerce store that reflects your brand’s identity.",
       },
       {
         id: 1.2,
-        addTitle: "Pink Gellac ",
-        addDesc: "Cosmetics brand expanding online (PE funded)",
+        addTitle: "Technical Framework",
+        addDesc:
+          "We’ll determine the best technologies and features to meet your needs and scale with your business.",
       },
       {
         id: 1.3,
-        addTitle: "Lekker Bikes ",
-        addDesc: "E-Bike brand scaling across continents (PE funded)",
+        addTitle: "Timeline and Deliverables",
+        addDesc:
+          "We’ll provide a clear timeline and list of deliverables so you know exactly what to expect.",
       },
     ],
   },
-  {
-    id: 2,
-    title: "Value brand positioning",
-    additioanl: [
-      {
-        id: 2.1,
-        addTitle: "HEMA",
-        addDesc: "Iconic home essentials brand going omnichannel (PE funded)",
-      },
-      {
-        id: 2.2,
-        addTitle: "ECOstyle",
-        addDesc: "Garden care brand moving direct to consumer (PE funded)",
-      },
-      {
-        id: 2.3,
-        addTitle: "STOX",
-        addDesc: "Sports appararel brand expanding online (VC funded)",
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   title: "Step 3: Begin the Development Process",
+  //   additioanl: [
+  //     {
+  //       id: 2.1,
+  //       addTitle: "Collaborate on Content",
+  //       addDesc:
+  //         "We’ll work with you to gather product details, images, and any other assets for your store.",
+  //     },
+  //     {
+  //       id: 2.2,
+  //       addTitle: "Design and Build",
+  //       addDesc:
+  //         "Our team will bring your vision to life, creating a functional, high-converting online store.",
+  //     },
+  //     {
+  //       id: 2.3,
+  //       addTitle: "Launch and Support",
+  //       addDesc:
+  //         "Once your store is live, we’ll provide ongoing support to ensure everything runs smoothly.",
+  //     },
+  //   ],
+  // },
 ];
 
 const FirstStep = () => {
@@ -78,9 +98,8 @@ const FirstStep = () => {
               <FalseButton btnType='primary' text='Our clients' />
             </div>
             <h2 className={styles.heading}>
-              We solve strategic challenges like how to re-platform your
-              technology stack, expand to new sales channels or grow into
-              international markets
+              Take the first step toward your dream online store. Let’s build a
+              high-converting website that elevates your business
             </h2>
           </div>
           <div className={styles.bottom}>
@@ -99,9 +118,6 @@ const FirstStep = () => {
             </div>
           </div>
           <div className={styles.problemContainer}>
-            {/* <h3 className={styles.headingii}>
-              Are you unhappy with your <br /> current e-commerce store?
-            </h3> */}
             <div className={styles.pattern}></div>
           </div>
         </div>

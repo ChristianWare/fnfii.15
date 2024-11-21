@@ -1,8 +1,5 @@
 import Project1 from "../public/images/elite.png";
-import Project2 from "../public/images/nier.png";
 import Project3 from "../public/images/taco.jpg";
-// import Project4 from "../../public/images/weko.jpg";
-// import Img1 from "../../public/images/aboutHouse.png";
 
 export const benefits = [
   {
@@ -285,46 +282,6 @@ export const projects = [
     href: "https://www.eliteretreatrentals.com/",
     github: "https://github.com/ChristianWare/Case-Study-One",
   },
-  // {
-  //   src: Project4,
-  //   title: "AZ Golf Whisperer",
-  //   description:
-  //     "Golf Guise/AZ Golf Whisperer is a front end project for a client of mine who sells Golf Stay-and-Play packages. The site showcases the details of each package offered, which golf courses they are partnered with, as well as information on golf club rentals. This was built with Next.Js, styled with CSS Modules and Nodemailer was used for the contact form for email notifications.",
-  //   techStack: [
-  //     {
-  //       title: "Next.JS",
-  //     },
-  //     {
-  //       title: "CSS Modules",
-  //     },
-  //     {
-  //       title: "React Hook Form",
-  //     },
-  //     {
-  //       title: "Node Mailer",
-  //     },
-  //   ],
-  //   href: "https://golf-guise.vercel.app/",
-  //   github: "https://github.com/ChristianWare/golf-guise",
-  // },
-  {
-    src: Project2,
-    title: "Nier Transportaion",
-    description:
-      "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives. Users have the ability to communicate witht the owner via a fully functional contact form that sends messages directly to the owners email address. The blog was built using Makrkdown nadn MDX.",
-
-    href: "https://www.niertransportation.com/",
-    github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
-  },
-  {
-    src: Project2,
-    title: "Nier Transportaion",
-    description:
-      "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives. Users have the ability to communicate witht the owner via a fully functional contact form that sends messages directly to the owners email address. The blog was built using Makrkdown nadn MDX.",
-
-    href: "https://www.niertransportation.com/",
-    github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
-  },
 ] as const;
 
 export const projectFaqs = [
@@ -394,63 +351,27 @@ export const projectFaqs = [
 export const homePageFaqs = [
   {
     id: 301,
-    question: "What services do you offer?",
+    question: "How long does it take to build an e-commerce website?",
     answer:
-      "We offer custom-coded solutions for direct booking websites, e-commerce platforms, and business websites, tailored to enhance user experience and SEO.",
+      "The timeline depends on the complexity of your store, but most e-commerce websites can be completed in 1–4 weeks. This includes design, development, and testing to ensure everything works perfectly.",
   },
   {
     id: 302,
-    question: "Why should I choose custom-coded websites?",
+    question: "Will my e-commerce website be mobile-friendly?",
     answer:
-      "Custom-coded websites provide better performance, enhanced security, and improved SEO compared to templates or site builders. They are tailored specifically to your business needs.",
+      "Absolutely! All our websites are optimized for mobile devices, ensuring a seamless shopping experience for customers on smartphones and tablets.",
   },
   {
     id: 303,
-    question: "How long does it take to build a website?",
+    question: "Can I manage my store after it's launched?",
     answer:
-      "The timeline depends on the complexity of the project. Typically, a custom website can take anywhere from a few weeks to a few months to complete.",
+      "Yes! We provide user-friendly dashboards that allow you to manage products, track sales, and update content without requiring technical skills.",
   },
   {
     id: 304,
-    question: "Do you provide ongoing support?",
+    question: "Do you offer support after the website is live?",
     answer:
-      "Yes, we offer ongoing maintenance and support packages to ensure your website remains updated, secure, and optimized for performance.",
-  },
-  {
-    id: 305,
-    question: "Can I update the content on my website myself?",
-    answer:
-      "Absolutely. We integrate user-friendly content management systems (CMS) that allow you to easily update and manage your website content.",
-  },
-  {
-    id: 306,
-    question: "Will my website be mobile-friendly?",
-    answer:
-      "Yes, all our websites are designed to be fully responsive, ensuring they look and perform well on all devices, including smartphones and tablets.",
-  },
-  {
-    id: 307,
-    question: "What kind of businesses do you work with?",
-    answer:
-      "We work with a variety of businesses, including healthcare providers, hospitality services, e-commerce stores, and many other sectors that need a strong online presence.",
-  },
-  {
-    id: 308,
-    question: "How do you ensure my website is secure?",
-    answer:
-      "We implement advanced security measures, including secure payment gateways and regular security updates, to protect your website and customer data.",
-  },
-  {
-    id: 309,
-    question: "Do you offer SEO services?",
-    answer:
-      "Yes, our websites are built with SEO best practices in mind. We also offer additional SEO services to help improve your website's visibility in search engine results.",
-  },
-  {
-    id: 310,
-    question: "How do I get started with your services?",
-    answer:
-      "You can get started by contacting us through our website. We'll discuss your needs and provide a customized plan to help you achieve your business goals.",
+      "Yes, we provide ongoing support and maintenance to ensure your website runs smoothly and continues to meet your business needs.",
   },
 ];
 

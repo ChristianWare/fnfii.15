@@ -114,7 +114,8 @@ p,
 input,
 textarea {
   hyphens: auto;
-  letter-spacing: -0.3px;
+  /* letter-spacing: -0.3px; */
+  letter-spacing: -0.2px;
   margin-bottom: 0;
   color: var(--black);
   font-size: 1em;
