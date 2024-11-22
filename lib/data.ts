@@ -133,8 +133,6 @@ export const process = [
 export const pricing = [
   {
     id: 2845654656,
-    plan: "Business Website",
-    for: "11 or more Properties",
     description: "Optimize your online presence and attract more visitors.",
     href: "/services/business-websites",
     prices: [
@@ -144,21 +142,17 @@ export const pricing = [
       },
       {
         id: 2,
-        price: "2,400 / Year",
+        price: "2,544 / Year",
       },
     ],
     includes: [
       {
-        id: 28.1,
-        feature: "5 Page website",
-      },
-      {
         id: 28.2,
-        feature: "Custom Design",
+        feature: "Stripe Payment Gateway",
       },
       {
         id: 28.3,
-        feature: "Built in HTML, CSS & Javascript",
+        feature: "Custom coded website",
       },
       {
         id: 28.4,
@@ -168,16 +162,11 @@ export const pricing = [
         id: 28.5,
         feature: "12 Blog Articles/year",
       },
-      {
-        id: 28.6,
-        feature: "$500 set up fee - one time",
-      },
     ],
     btnType: "tertiary",
   },
   {
     id: 27,
-    plan: "E-Commerce",
     description: "Comprehensive e-commerce platforms designed to drive sales.",
     href: "/services/ecommerce-stores",
     prices: [
@@ -187,40 +176,34 @@ export const pricing = [
       },
       {
         id: 2,
-        price: "3,360 / Year",
+        price: "3,024 / Year",
       },
     ],
     includes: [
       {
-        id: 26.1,
-        feature: "Everything in $265 plan, plus:",
-      },
-      {
-        id: 26.3,
+        id: 27.2,
         feature: "Stripe Payment Gateway",
       },
       {
         id: 27.3,
-        feature: "CMS Integration",
+        feature: "Custom coded website",
       },
       {
         id: 27.4,
-        feature: "Product Variants",
+        feature: "SEO Services",
+      },
+      {
+        id: 27.5,
+        feature: "12 Blog Articles/year",
       },
       {
         id: 27.6,
-        feature: "User Reviews",
-      },
-      {
-        id: 27.7,
-        feature: "$500 set up fee - one time",
+        feature: "Chat bot",
       },
     ],
-    btnType: "secondary",
   },
   {
     id: 28,
-    plan: "Booking Platform",
     description: "Optimize your online presence and attract more visitors.",
     href: "/services/booking-platforms",
     prices: [
@@ -235,28 +218,28 @@ export const pricing = [
     ],
     includes: [
       {
-        id: 28.1,
-        feature: "Everything in $315 plan, plus:",
-      },
-      {
         id: 28.2,
-        feature: "Admin Dashboard",
+        feature: "Stripe Payment Gateway",
       },
       {
-        id: 28.3333,
-        feature: "Client Invoicing",
+        id: 28.3,
+        feature: "Custom coded website",
       },
       {
-        id: 28.344534,
-        feature: "Avaialbility Calendar",
+        id: 28.4,
+        feature: "SEO Services",
       },
       {
-        id: 28.54654655,
-        feature: "Sales Charts",
+        id: 28.5,
+        feature: "12 Blog Articles/year",
       },
       {
-        id: 28.354654656,
-        feature: "$500 set up fee - one time",
+        id: 28.6,
+        feature: "Chat bot",
+      },
+      {
+        id: 28.7,
+        feature: "Email Marketing Setup",
       },
     ],
     btnType: "tertiary",

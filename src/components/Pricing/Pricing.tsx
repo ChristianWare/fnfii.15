@@ -66,8 +66,17 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                     <h6 className={styles.price}>
                       ${!isMonthly ? x.prices[0].price : x.prices[1].price}
                     </h6>
+                    <div className={styles.pcBottom}>
+                      <ul className={styles.features}>
+                        {x.includes.map((y) => (
+                          <li key={y.id} className={styles.feature}>
+                            {y.feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <div className={styles.pcBottom}>
+                  {/* <div className={styles.pcBottom}>
                     <ul className={styles.features}>
                       {x.includes.map((y) => (
                         <li key={y.id} className={styles.feature}>
@@ -75,8 +84,10 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                         </li>
                       ))}
                     </ul>
-                    <p className={styles.description}>{x.description}</p>
-                  </div>
+                  </div> */}
+                  <span className={styles.setupFee}>
+                    $500 one time set up fee
+                  </span>
                 </div>
               </div>
             ))}

@@ -43,7 +43,7 @@ const EcommFeatures = () => {
       description: "",
     },
     {
-      icon: <Integration width={50} height={50} className={styles.icon} />,
+      icon: <Integration width={40} height={40} className={styles.icon} />,
       title: "Platform Integration",
       description:
         "We integrate with leading e-commerce platforms like Shopify, WooCommerce, and Magento, ensuring your online store has the functionality and flexibility required to succeed in a competitive market.",
@@ -59,13 +59,13 @@ const EcommFeatures = () => {
       description: "",
     },
     {
-      icon: <Designii width={50} height={50} className={styles.icon} />,
+      icon: <Designii width={40} height={40} className={styles.icon} />,
       title: "Custom Website Design",
       description:
         "We offer bespoke design services that reflect your brand’s identity and provide an engaging user experience.",
     },
     {
-      icon: <SEO width={50} height={50} className={styles.icon} />,
+      icon: <SEO width={40} height={40} className={styles.icon} />,
       title: "Search Engine Optimization (SEO)",
       description:
         "Our websites are built with SEO best practices to ensure that your business ranks well in search engine results.",
@@ -76,46 +76,46 @@ const EcommFeatures = () => {
       description: "",
     },
     {
-      icon: <Analytics width={50} height={50} className={styles.icon} />,
+      icon: <Analytics width={40} height={40} className={styles.icon} />,
       title: "E-commerce Analytics and Reporting",
       description:
         "We provide comprehensive analytics and reporting to help you understand your e-commerce performance.",
     },
     {
-      icon: <Multiple width={50} height={50} className={styles.icon} />,
+      icon: <Multiple width={40} height={40} className={styles.icon} />,
       title: "Multiple Products Management",
       description:
         "Our e-commerce platforms enable efficient management of multiple products.",
     },
 
     {
-      icon: <Payment width={50} height={50} className={styles.icon} />,
+      icon: <Payment width={40} height={40} className={styles.icon} />,
       title: "Stripe Payment Gateway",
       description:
         "Integrating Stripe as your payment gateway ensures secure transactions and supports multiple payment methods.",
     },
 
     {
-      icon: <Hosting width={50} height={50} className={styles.icon} />,
+      icon: <Hosting width={40} height={40} className={styles.icon} />,
       title: "Hosting",
       description:
         "We use CDN's, or content delivery networks, to speed up the delivery of web content by bringing it closer to where users are.",
     },
 
     {
-      icon: <Edit width={50} height={50} className={styles.icon} />,
+      icon: <Edit width={40} height={40} className={styles.icon} />,
       title: "Unlimited Edits",
       description:
         "There are no limits to how many edits you can request. If you ever want to make any changes you can call us any time.",
     },
     {
-      icon: <Clock width={50} height={50} className={styles.icon} />,
+      icon: <Clock width={40} height={40} className={styles.icon} />,
       title: "24/7 Support",
       description:
         "If you ever need to reach out to us for any reason, call us! We're here and ready to help.",
     },
     {
-      icon: <Listing width={50} height={50} className={styles.icon} />,
+      icon: <Listing width={40} height={40} className={styles.icon} />,
       title: "Citations & Listings",
       description:
         "A listing on Google appears when potential customers are searching for your business name or a service you offer. We set this up for you.",
