@@ -8,7 +8,6 @@ import Projects from "@/components/Projects/Projects";
 import Solution from "@/components/Solution/Solution";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { homePageFaqs } from "../../lib/data";
-// import Calendly from "@/components/Calendly/Calendly";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PostHero from "@/components/PostHero/PostHero";
 import Owner from "@/components/Owner/Owner";
@@ -41,7 +40,3 @@ export default function Home() {
     </main>
   );
 }
-
-// Website should show clear information about what clients can expect when they work with you. If Done right, people will show up ready to work with you....
-
-// Working with a web developer is not a common thing, so we need to show potential clients what the process of working with us looks like.....
