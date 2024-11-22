@@ -17,7 +17,7 @@ import Hero from "@/components/Hero/Hero";
 // import Compare from "@/components/Compare/Compare";
 // import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <Hero />
@@ -39,4 +39,6 @@ export default function Home() {
       <ContactHero /> */}
     </main>
   );
-}
+};
+
+export default Home;
