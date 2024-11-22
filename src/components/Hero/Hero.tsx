@@ -1,39 +1,36 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-// import { motion } from "framer-motion";
 import FalseButton from "../FalseButton/FalseButton";
 import animationData from "../../../public/lottie/heroii.json";
-import Lottie from "lottie-react";
 import Usp from "../Usp/Usp";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
+
+// Dynamically import Lottie with SSR disabled
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Hero = () => {
   return (
     <section className={styles.container}>
       <Nav />
       <LayoutWrapper>
-        <div
-          // initial={{ y: -100, opacity: 0 }}
-          // animate={{ y: 0, opacity: 1 }}
-          className={styles.content}
-        >
+        <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
                 <div className={styles.falseBtnContainer}>
                   <FalseButton
                     btnType='primary'
-                    text='E-commerce Web Development Agency '
+                    text='E-commerce Web Development Agency'
                   />
                 </div>
                 <h1 className={styles.heading}>
                   Unlock the secrets to{" "}
                   <span className={styles.span}>E-commerce</span> success
-                  {/* <span className={styles.span}>E-commerce</span>{" "} */}
                 </h1>
                 <p className={styles.copy}>
                   We build custom online stores designed to elevate your brand,
@@ -65,14 +62,11 @@ const Hero = () => {
               <Usp />
             </div>
           </div>
-          <div className={styles.right}>
-            {/* <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div> */}
-          </div>
+          <div className={styles.right}></div>
         </div>
       </LayoutWrapper>
     </section>
   );
 };
+
 export default Hero;
