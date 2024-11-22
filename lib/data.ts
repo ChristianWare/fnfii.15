@@ -1,4 +1,5 @@
 import Project1 from "../public/images/elite.png";
+import Project2 from "../public/images/nier.png";
 import Project3 from "../public/images/taco.jpg";
 
 export const benefits = [
@@ -264,6 +265,14 @@ export const projects = [
 
     href: "https://www.eliteretreatrentals.com/",
     github: "https://github.com/ChristianWare/Case-Study-One",
+  },
+  {
+    src: Project2,
+    title: "Nier Transportaion",
+    description:
+      "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives. Users have the ability to communicate witht the owner via a fully functional contact form that sends messages directly to the owners email address. The blog was built using Makrkdown nadn MDX.",
+    href: "https://www.niertransportation.com/",
+    github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
   },
 ] as const;
 

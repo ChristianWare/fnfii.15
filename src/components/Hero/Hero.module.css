@@ -191,6 +191,10 @@
     justify-content: flex-start;
   }
 
+  .left {
+    padding: 0rem;
+  }
+
   .headingLottieBox {
     gap: 10rem;
   }
