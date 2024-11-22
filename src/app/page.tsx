@@ -1,6 +1,6 @@
-// import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
+import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 // import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
-import Hero from "@/components/Hero/Hero";
+// import Hero from "@/components/Hero/Hero";
 // import HowItWorks from "@/components/HowItWorks/HowItWorks";
 // import Pricing from "@/components/Pricing/Pricing";
 // import Problem from "@/components/Problem/Problem";
@@ -17,13 +17,13 @@ import Hero from "@/components/Hero/Hero";
 // import Compare from "@/components/Compare/Compare";
 // import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 
-const Home = () => {
+export default function Home() {
   return (
     <main>
-      <Hero />
-      {/* <WhatWeDo />
+      {/* <Hero />
+      <WhatWeDo /> */}
       <AboutScrollText />
-      <Problem />
+      {/* <Problem />
       <Solution />
       <Owner />
       <EcommFeatures />
@@ -39,6 +39,4 @@ const Home = () => {
       <ContactHero /> */}
     </main>
   );
-};
-
-export default Home;
+}
