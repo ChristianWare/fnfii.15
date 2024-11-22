@@ -64,7 +64,7 @@
   height: 40px;
   width: 100%;
   background-color: var(--tan);
-  border: 1px solid var(--lightBlack);
+  border: 1px solid var(--tan3);
   border-radius: 8px;
   color: var(--text);
   padding: 2rem;
@@ -107,7 +107,7 @@
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   color: var(--tan);
   background-color: var(--purple);
-  /* border: 1px solid var(--lightBlack); */
+  /* border: 1px solid var(--tan3); */
   cursor: pointer;
 }
 
@@ -116,7 +116,7 @@
   height: 30px;
   background-color: var(--green3);
   border-radius: 50%;
-  border: 1px solid var(--lightBlack);
+  border: 1px solid var(--tan3);
   padding: 5px;
   color: var(--green);
   position: absolute;

@@ -16,14 +16,15 @@
   margin-bottom: 2rem;
 }
 
-.title,
-.detail {
-  word-break: break-all;
-}
-
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  word-break: break-all;
+}
+
+.detail {
+  word-break: break-all;
+  opacity: 0.7;
 }
 
 .calBox {
@@ -40,6 +41,7 @@
 
 .copy {
   width: 80%;
+  opacity: 0.7;
 }
 
 .headingii {
