@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
-import Nav from "@/components/Nav/Nav";
+// import Nav from "@/components/Nav/Nav";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import PlausibleProvider from "next-plausible";
 
@@ -40,7 +40,7 @@ export default function RootLayout({
       <body className={`${suisse.variable} ${suissReg.variable}`}>
         <NoiseBg>
           <ScrollIndicator />
-          <Nav />
+          {/* <Nav /> */}
           {children}
           {/* <CallToAction /> */}
           {/* <Footerii /> */}

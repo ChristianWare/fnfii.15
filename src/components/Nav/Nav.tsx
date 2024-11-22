@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Button from "../Button/Button";
-import TopNav from "../TopNav/TopNav";
+// import TopNav from "../TopNav/TopNav";
 import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
@@ -75,7 +75,7 @@ function Nav() {
 
   return (
     <>
-      <TopNav />
+      {/* <TopNav /> */}
       <div
         style={{
           height: isFixed ? `${navHeight}px` : 0,

@@ -4,10 +4,11 @@
   left: 0;
   right: 0;
   z-index: 999;
-  border-bottom: 1px solid var(--lightBlack);
+  /* border-bottom: 1px solid var(--lightBlack); */
+  padding-top: 2rem;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
   transition: all 0.3s ease-in-out;
 }
 
@@ -197,7 +198,6 @@
     border-bottom: none;
   }
 
-
   .navBox {
     display: block;
     border: 1px solid var(--green3);
@@ -248,12 +248,12 @@
   }
 
   .fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--tan2);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--tan2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
 }

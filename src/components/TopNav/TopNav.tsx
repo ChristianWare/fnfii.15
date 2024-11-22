@@ -7,13 +7,11 @@ import Facebook from "../../../public/icons/facebook.svg";
 
 const TopNav = () => {
   return (
-    <section className={`${styles.header} topNav`} id='home'>
+    <div className={`${styles.header} topNav`} id='home'>
       {" "}
       {/* Added class topNav */}
       <div className={styles.content}>
-        <div className={styles.logoContainer}>
-          {/* <Logo /> */}
-        </div>
+        <div className={styles.logoContainer}>{/* <Logo /> */}</div>
         <div className={styles.leftBottom}>
           <Link
             href='https://www.linkedin.com/'
@@ -21,7 +19,7 @@ const TopNav = () => {
             aria-label='LinkedIn'
             className={styles.detail}
           >
-            <LinkedIn className={styles.icon} width={12} height={12} />
+            <LinkedIn className={styles.icon} />
           </Link>
           <Link
             href='https://www.facebook.com/'
@@ -29,7 +27,7 @@ const TopNav = () => {
             aria-label='Facebook'
             className={styles.detail}
           >
-            <Facebook className={styles.icon} width={12} height={12} />
+            <Facebook className={styles.icon} />
           </Link>
           <Link
             href='https://instagram.com/'
@@ -37,11 +35,11 @@ const TopNav = () => {
             aria-label='Instagram'
             className={styles.detail}
           >
-            <Insta className={styles.icon} width={12} height={12} />
+            <Insta className={styles.icon} />
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

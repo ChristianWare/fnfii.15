@@ -8,10 +8,13 @@ import FalseButton from "../FalseButton/FalseButton";
 import animationData from "../../../public/lottie/heroii.json";
 import Lottie from "lottie-react";
 import Usp from "../Usp/Usp";
+import TopNav from "../TopNav/TopNav";
+import Nav from "../Nav/Nav";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
+      <Nav />
       <LayoutWrapper>
         <div
           // initial={{ y: -100, opacity: 0 }}
@@ -28,8 +31,8 @@ const Hero = () => {
                   />
                 </div>
                 <h1 className={styles.heading}>
-                  Unlock the Secrets to{" "}
-                  <span className={styles.span}>E-commerce</span> Success
+                  Unlock the secrets to{" "}
+                  <span className={styles.span}>E-commerce</span> success
                   {/* <span className={styles.span}>E-commerce</span>{" "} */}
                 </h1>
                 <p className={styles.copy}>
@@ -48,6 +51,7 @@ const Hero = () => {
                     btnType='primaryii'
                   />
                 </div>
+                <TopNav />
               </div>
               <div className={styles.lottieBox}>
                 <Lottie
