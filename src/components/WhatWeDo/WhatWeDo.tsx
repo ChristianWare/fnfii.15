@@ -24,16 +24,16 @@ const data = [
     desc: "Simplify your workflow with seamless order processing, real-time updates, and automated confirmations to keep your customers coming back.",
   },
   {
-    id: 3,
-    animation: animationData3,
-    title: "Maximize your revenue potential",
-    desc: "Drive more sales with optimized user experiences, fast load times, and conversion-focused design that turns visitors into loyal customers.",
-  },
-  {
     id: 4,
     animation: animationData4,
     title: "Relax with an intuitive dashboard",
     desc: "Easily manage your store from anywhere with user-friendly tools that give you control over products, sales, and analytics—all in one place.",
+  },
+  {
+    id: 3,
+    animation: animationData3,
+    title: "Maximize your revenue potential",
+    desc: "Drive more sales with optimized user experiences, fast load times, and conversion-focused design that turns visitors into loyal customers.",
   },
 ];
 
