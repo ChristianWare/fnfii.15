@@ -8,7 +8,9 @@ import Link from "next/link";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import animationData from "../../../public/lottie/usp.json";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Projects = () => {
   const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(

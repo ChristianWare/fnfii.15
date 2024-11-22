@@ -7,7 +7,9 @@ import Develop from "../../../public/icons/develop.svg";
 import Consult from "../../../public/icons/consult.svg";
 import Notes from "../../../public/icons/notes.svg";
 import animationData from "../../../public/lottie/howitworks.json";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const process = [
   {

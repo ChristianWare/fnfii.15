@@ -6,7 +6,9 @@ import animationData from "../../../public/lottie/cta.json";
 import animationData2 from "../../../public/lottie/email.json";
 import animationData3 from "../../../public/lottie/pricing.json";
 import animationData4 from "../../../public/lottie/hero.json";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const data = [
   {
