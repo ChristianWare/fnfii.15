@@ -140,7 +140,7 @@ export const pricing = [
     prices: [
       {
         id: 1,
-        price: "250 / Month",
+        price: "265 / Month",
       },
       {
         id: 2,
@@ -183,7 +183,7 @@ export const pricing = [
     prices: [
       {
         id: 1,
-        price: "350 / Month",
+        price: "315 / Month",
       },
       {
         id: 2,
@@ -193,7 +193,7 @@ export const pricing = [
     includes: [
       {
         id: 26.1,
-        feature: "Everything in Business, plus:",
+        feature: "Everything in $265 plan, plus:",
       },
       {
         id: 26.3,
@@ -236,7 +236,7 @@ export const pricing = [
     includes: [
       {
         id: 28.1,
-        feature: "Everything in E-Commerce, plus:",
+        feature: "Everything in $315 plan, plus:",
       },
       {
         id: 28.2,

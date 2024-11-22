@@ -14,11 +14,11 @@ const ContactDetails = () => {
             <h2 className={styles.headingii}>Let&apos;s Start a Project</h2>
             <br />
             <p className={styles.copy}>
-              Whether you&apos;re a prospective client or have questions about
-              our services, reaching out is simple and quick. We&apos;re ready
-              to assist you to ensuring a seamless and personalized experience
-              as you take the next step in transforming your vacation rental
-              business.
+              Whether you’re ready to start your e-commerce journey or have
+              questions about our services, we’re here to help. Reach out today
+              to take the first step toward building a custom online store that
+              elevates your brand and drives conversions. Let’s create something
+              exceptional together!
             </p>
             <br />
             <br />
@@ -66,7 +66,7 @@ const ContactDetails = () => {
           <SocialsContainer />
           </div> */}
       </div>
-        <Footerii />
+      <Footerii />
     </div>
   );
 };

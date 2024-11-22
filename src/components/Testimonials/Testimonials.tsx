@@ -7,17 +7,32 @@ const reviews = [
   {
     id: 71,
     review:
-      "Taco Bell never disappoints! The Crunchwrap Supreme was packed with flavor, and the service was quick and friendly. Perfect for a late-night craving.",
-    reviewer: "Carlos M.",
-    company: "Phoenix, AZ",
+      "Working with Fonts & Footers was a game-changer! Our new e-commerce store has doubled our sales, and the design perfectly reflects our brand. Highly recommend!",
+    reviewer: "Emily R.",
+    company: "Urban Threads, Los Angeles, CA",
   },
   {
     id: 72,
     review:
-      "Absolutely love this Taco Bell location. The staff is always upbeat, and the food is consistently fresh. The Doritos Locos Tacos are my go-to!",
-    reviewer: "Sara L.",
-    company: "Tempe, AZ",
+      "Fonts & Footers delivered beyond our expectations. The user-friendly interface and smooth checkout process have made a huge difference in customer satisfaction.",
+    reviewer: "James P.",
+    company: "Nature's Essence, Austin, TX",
   },
+  {
+    id: 73,
+    review:
+      "The team at Fonts & Footers truly understood our vision. Our online store is now fast, responsive, and optimized for mobile. Couldn't be happier!",
+    reviewer: "Sophia K.",
+    company: "Glow Naturals, Phoenix, AZ",
+  },
+  {
+    id: 74,
+    review:
+      "Fonts & Footers turned our outdated store into a modern, high-converting e-commerce platform. The process was seamless and stress-free.",
+    reviewer: "Michael T.",
+    company: "Trail Gear Co., Denver, CO",
+  },
+
   // {
   //   id: 73,
   //   review:
