@@ -191,7 +191,7 @@ textarea:focus {
   }
 
   * {
-    scroll-margin-top: -20px;
+    scroll-margin-top: 20px;
   }
 
   p {

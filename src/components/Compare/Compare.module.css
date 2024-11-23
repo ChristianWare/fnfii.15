@@ -126,9 +126,16 @@
     width: 100%;
   }
 
-.icon,
-.iconiii {
+  .icon,
+  .iconiii {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .iconii {
+    width: 40px;
+    height: 40px;
   }
 }
