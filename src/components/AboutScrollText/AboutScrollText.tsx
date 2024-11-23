@@ -38,7 +38,9 @@ const AboutScrollText = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div>
-              <FalseButton text='About us' btnType='primary' />
+              <div className={styles.faslBtnContainer}>
+                <FalseButton text='About us' btnType='primary' />
+              </div>
               <h2 className={styles.heading}>What is Fonts & Footers?</h2>
             </div>
             <p className={styles.copy}>

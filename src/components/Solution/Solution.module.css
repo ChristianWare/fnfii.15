@@ -168,6 +168,7 @@
     justify-content: flex-start;
   }
 
+  .heading,
   .copy {
     width: 100%;
   }
@@ -175,12 +176,8 @@
 
 @media screen and (max-width: 568px) {
   .rightBottom {
-    display: flex; /* Switch to flexbox */
-    flex-direction: column; /* Stack items vertically */
-    gap: 2rem; /* Maintain spacing between items */
-  }
-
-  .desc {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }

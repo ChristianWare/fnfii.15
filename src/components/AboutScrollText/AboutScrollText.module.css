@@ -62,6 +62,18 @@
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .left {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .faslBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
