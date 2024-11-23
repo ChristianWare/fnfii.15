@@ -54,8 +54,8 @@
 .usp {
   font-size: 8rem;
   letter-spacing: 3px;
-  -webkit-text-stroke: 1.5px var(--purple); 
-  -webkit-text-fill-color: var(--tan2); 
+  -webkit-text-stroke: 1.5px var(--purple);
+  -webkit-text-fill-color: var(--tan2);
 }
 
 .copy {
@@ -89,5 +89,13 @@
   .usp,
   .desc {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .usp {
+    font-size: 7rem;
+    -webkit-text-stroke: 1.5px var(--purple);
+    -webkit-text-fill-color: var(--purple);
   }
 }
