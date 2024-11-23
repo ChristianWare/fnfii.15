@@ -47,16 +47,12 @@ const WhatWeDo = () => {
           </h2>
         </div>
         <div className={styles.bottom}>
-          {/* <div className={styles.lottieBox}>
-            <Lottie animationData={animationData} className={styles.lottie} />
-          </div> */}
           {data.map((x) => (
             <div key={x.id} className={styles.card}>
               <div className={styles.lottieBox}>
                 <Lottie animationData={x.animation} className={styles.lottie} />
               </div>
               <h3 className={styles.title}>{x.title}</h3>
-              {/* <p className={styles.desc}>{x.desc}</p> */}
             </div>
           ))}
         </div>
