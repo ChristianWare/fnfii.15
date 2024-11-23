@@ -4,7 +4,7 @@
 import styles from "./NewFaq.module.css";
 import { FC, useState } from "react";
 import LayoutWrapper from "../LayoutWrapper";
-// import Plus from "../../../public/icons/plus.svg";
+import Plus from "../../../public/icons/plus.svg";
 import Image from "next/image";
 import FAQImage from "../../../public/images/faq.png";
 import FalseButton from "../FalseButton/FalseButton";
@@ -51,7 +51,7 @@ const NewFaq: FC<Props> = ({ mapData }) => {
                   onClick={() => toggle(i)}
                 >
                   <div className={styles.headingArrowContainer}>
-                    {/* {selected === i ? (
+                    {selected === i ? (
                       <Plus
                         className={styles.iconFlip}
                         width={35}
@@ -59,10 +59,10 @@ const NewFaq: FC<Props> = ({ mapData }) => {
                       />
                     ) : (
                       <Plus className={styles.icon} width={30} height={30} />
-                    )} */}
-                    <h3 className={styles.question} lang='en'>
+                    )}
+                    {/* <h3 className={styles.question} lang='en'>
                       [ {i + 1} ]
-                    </h3>
+                    </h3> */}
                     <h3 className={styles.question} lang='en'>
                       {x.question}
                     </h3>

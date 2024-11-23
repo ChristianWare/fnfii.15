@@ -46,7 +46,8 @@
 
 .qaContainer {
   padding: 3rem;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  background-color: var(--tan2);
   border-radius: 10px;
   width: 100%;
   cursor: pointer;
@@ -85,7 +86,7 @@
 }
 
 .icon {
-  color: var(--black);
+  color: var(--purple);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -98,7 +99,7 @@
 }
 
 .question {
-  color: var(--black);
+  color: var(--purple);
 }
 
 .answerbox {

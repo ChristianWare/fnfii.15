@@ -18,20 +18,20 @@ const reviews = [
     reviewer: "James P.",
     company: "Nature's Essence, Austin, TX",
   },
-  {
-    id: 73,
-    review:
-      "The team at Fonts & Footers truly understood our vision. Our online store is now fast, responsive, and optimized for mobile. Couldn't be happier!",
-    reviewer: "Sophia K.",
-    company: "Glow Naturals, Phoenix, AZ",
-  },
-  {
-    id: 74,
-    review:
-      "Fonts & Footers turned our outdated store into a modern, high-converting e-commerce platform. The process was seamless and stress-free.",
-    reviewer: "Michael T.",
-    company: "Trail Gear Co., Denver, CO",
-  },
+  // {
+  //   id: 73,
+  //   review:
+  //     "The team at Fonts & Footers truly understood our vision. Our online store is now fast, responsive, and optimized for mobile. Couldn't be happier!",
+  //   reviewer: "Sophia K.",
+  //   company: "Glow Naturals, Phoenix, AZ",
+  // },
+  // {
+  //   id: 74,
+  //   review:
+  //     "Fonts & Footers turned our outdated store into a modern, high-converting e-commerce platform. The process was seamless and stress-free.",
+  //   reviewer: "Michael T.",
+  //   company: "Trail Gear Co., Denver, CO",
+  // },
 
   // {
   //   id: 73,
