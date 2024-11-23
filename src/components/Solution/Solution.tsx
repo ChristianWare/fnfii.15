@@ -63,17 +63,19 @@ const Solution = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='How we can help' />
+            <div className={styles.rightTop}>
+              <div className={styles.falseBtnContainer}>
+                <FalseButton btnType='primary' text='How we can help' />
+              </div>
+              <h2 className={styles.heading}>
+                We build e-comm stores that truly resonate with your audience
+              </h2>
+              <p className={styles.copy}>
+                You&apos;ve worked hard to create something unique—let&apos;s
+                showcase it with impactful design that highlights the value you
+                offer.
+              </p>
             </div>
-            <h2 className={`${styles.heading} h2v2`}>
-              We build e-comm stores that truly resonate with your audience
-            </h2>
-            <p className={styles.copy}>
-              You&apos;ve worked hard to create something unique—let&apos;s
-              showcase it with impactful design that highlights the value you
-              offer.
-            </p>
             <div className={styles.imgContainer}>
               <Image src={Img1} alt='' fill className={styles.img} />
             </div>
