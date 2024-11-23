@@ -30,6 +30,7 @@ const Hero = () => {
                 </div>
                 <h1 className={styles.heading}>
                   Unlock the secrets to{" "}
+                  <br />
                   <span className={styles.span}>E-commerce</span> success
                 </h1>
                 <p className={styles.copy}>
