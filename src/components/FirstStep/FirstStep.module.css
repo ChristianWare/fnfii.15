@@ -9,8 +9,9 @@
 }
 
 .heading {
-  width: 55%;
+  width: 45%;
   margin-top: 1rem;
+  font-size: 3rem;
 }
 
 .bottomMap {
