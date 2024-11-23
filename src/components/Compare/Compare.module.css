@@ -24,10 +24,6 @@
   margin-top: -1rem;
 }
 
-/* .copy {
-  width: 95%;
-} */
-
 .right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -41,7 +37,7 @@
   justify-content: center;
   gap: 2rem;
   border: 1px solid var(--lightBlack);
-  padding: 3rem 4rem;
+  padding: 2rem;
   border-radius: 10px;
 }
 
