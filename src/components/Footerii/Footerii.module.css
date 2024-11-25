@@ -1,12 +1,13 @@
 .container {
   background-color: var(--tan);
-  margin-top: 2rem;
 }
 
 .content {
   background-color: var(--tan2);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 10px;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
 }
 
 .top {
@@ -17,7 +18,7 @@
 
 .logo,
 .logoMobile {
-  color: var(--purple);
+  color: var(--black);
   font-size: 2rem;
   white-space: nowrap;
 }
@@ -107,8 +108,8 @@
 
 .bottom {
   border-top: 1px solid var(--lightBlack);
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -168,7 +169,7 @@
 
   .logoMobile {
     display: block;
-    /* margin-bottom: 3rem; */
+    margin-bottom: 3rem;
     font-size: 3rem;
     text-align: center;
     width: 100%;
@@ -178,7 +179,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 

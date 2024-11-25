@@ -16,6 +16,7 @@ import FirstStep from "@/components/FirstStep/FirstStep";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Compare from "@/components/Compare/Compare";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
+import Footerii from "@/components/Footerii/Footerii";
 
 export default function Home() {
   return (
@@ -35,8 +36,9 @@ export default function Home() {
       <Testimonials />
       <FirstStep />
       <NewFaq mapData={homePageFaqs} />
-      <FinalCTA />
       <ContactHero />
+      <FinalCTA />
+      <Footerii />
     </main>
   );
 }

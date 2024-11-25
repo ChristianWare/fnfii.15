@@ -2,7 +2,6 @@
 
 import styles from "./ContactDetails.module.css";
 import Link from "next/link";
-import Footerii from "../Footerii/Footerii";
 import ContactForm from "../ContactForm/ContactForm";
 
 const ContactDetails = () => {
@@ -66,7 +65,7 @@ const ContactDetails = () => {
           <SocialsContainer />
           </div> */}
       </div>
-      <Footerii />
+      {/* <Footerii /> */}
     </div>
   );
 };
