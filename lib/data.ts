@@ -136,6 +136,7 @@ export const pricing = [
     id: 2845654656,
     description: "Optimize your online presence and attract more visitors.",
     href: "/services/business-websites",
+    mostPopular: false,
     prices: [
       {
         id: 1,
@@ -170,6 +171,7 @@ export const pricing = [
     id: 27,
     description: "Comprehensive e-commerce platforms designed to drive sales.",
     href: "/services/ecommerce-stores",
+    mostPopular: true,
     prices: [
       {
         id: 1,
@@ -195,7 +197,7 @@ export const pricing = [
       },
       {
         id: 27.5,
-        feature: "12 Blog Articles/year",
+        feature: "24 Blog Articles/year",
       },
       {
         id: 27.6,
@@ -207,6 +209,8 @@ export const pricing = [
     id: 28,
     description: "Optimize your online presence and attract more visitors.",
     href: "/services/booking-platforms",
+    mostPopular: false,
+
     prices: [
       {
         id: 1,
@@ -232,7 +236,7 @@ export const pricing = [
       },
       {
         id: 28.5,
-        feature: "12 Blog Articles/year",
+        feature: "36 Blog Articles/year",
       },
       {
         id: 28.6,

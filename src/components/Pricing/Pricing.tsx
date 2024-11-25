@@ -6,8 +6,6 @@ import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
-// import animationData from "../../../public/lottie/pricing.json";
-// import Lottie from "lottie-react";
 
 interface Props {
   bgColor?: string;
@@ -20,19 +18,11 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
   return (
     <section
       className={`${styles.container} ${styles[bgColor]} ${styles[borderTop]}`}
-      id='pricing'
     >
       <LayoutWrapper>
-        <div className={styles.content}>
+        <div className={styles.content} id='pricing'>
           <div className={styles.top}>
-            {/* <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div> */}
-            <FalseButton
-              btnType='primary'
-              // text='Looking for an e-commerce website that drives results?'
-              text='Our Plans'
-            />
+            <FalseButton btnType='primary' text='Our Plans' />
 
             <h2 className={styles.heading}>Choose your Package</h2>
 
@@ -60,9 +50,11 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
           <div className={styles.bottom}>
             {pricing.map((x) => (
               <div key={x.id} className={styles.priceContainer}>
+                {/* {x.mostPopular && (
+                  <div className={styles.mostPopular}>Most Popular</div>
+                )} */}
                 <div className={styles.contentParent}>
                   <div className={styles.pcTop}>
-                    {/* <h3 className={styles.planName}>{x.plan}</h3> */}
                     <h6 className={styles.price}>
                       ${!isMonthly ? x.prices[0].price : x.prices[1].price}
                     </h6>
@@ -76,15 +68,6 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                       </ul>
                     </div>
                   </div>
-                  {/* <div className={styles.pcBottom}>
-                    <ul className={styles.features}>
-                      {x.includes.map((y) => (
-                        <li key={y.id} className={styles.feature}>
-                          {y.feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div> */}
                   <span className={styles.setupFee}>
                     $500 one time set up fee
                   </span>

@@ -27,8 +27,7 @@
   line-height: 120%;
   font-family: var(--suisseReg);
   scroll-behavior: smooth;
-  /* scroll-margin-top: -100px; */
-  /* scroll-margin-top: 200px; */
+  scroll-margin-top: 20px;
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -188,10 +187,6 @@ textarea:focus {
 @media screen and (max-width: 568px) {
   html {
     font-size: 50%;
-  }
-
-  * {
-    scroll-margin-top: 20px;
   }
 
   p {
