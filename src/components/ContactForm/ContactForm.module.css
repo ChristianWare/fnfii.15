@@ -107,8 +107,13 @@
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   color: var(--tan);
   background-color: var(--purple);
-  /* border: 1px solid var(--tan3); */
+  border: 1px solid var(--purple);
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--purple);
 }
 
 .icon2 {
@@ -127,10 +132,6 @@
 
 .btn:hover .icon2 {
   transform: rotate(-45deg);
-}
-
-.btn:hover {
-  background-color: transparent;
 }
 
 .error {
