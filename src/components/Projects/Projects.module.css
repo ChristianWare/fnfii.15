@@ -4,8 +4,8 @@
 
 .parentContent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5rem;
 }
 
 .leftSide {
@@ -13,16 +13,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
-  align-self: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 90px;
+  gap: 1rem;
 }
-
-/* .heading {
-  font-size: 6rem;
-} */
 
 .lottieBox {
   margin-top: 3rem;
@@ -43,21 +35,20 @@
   grid-gap: 2rem;
 }
 
+.parent {
+  margin-bottom: 7rem;
+}
+
 .content {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-  margin-bottom: 10rem;
+  grid-gap: 3rem;
 }
 
-.title,
-.titleMobile {
-  /* margin-bottom: 2rem; */
-  /* text-align: center; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin: 1rem 0rem;
+.title {
+  font-size: 2.5rem;
+  color: var(--purple);
+  margin-bottom: 2rem;
 }
 
 .titleMobile {
@@ -67,7 +58,7 @@
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 .img {
@@ -78,12 +69,46 @@
 .right {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-
-  /* padding: 2rem; */
-  border-radius: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
+
+.description {
+  width: 95%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.listItem {
+  background-color: var(--tan2);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: var(--purple);
+}
+/* .description {
+  opacity: 0.7;
+} */
+
+/* .rightRightBox {
+  list-style: none;
+} */
 
 .modalDescription {
   display: block;
@@ -93,31 +118,13 @@
   margin-left: 1rem;
 }
 
-.links,
-.modalLinks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  gap: 1rem;
-  /* margin-top: 1rem; */
-}
-
-.link {
-  padding: 1.5rem;
-  border-radius: 8px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--tan2);
-  cursor: pointer;
-}
-
-.modalLinks {
+.btnContainer {
   margin-top: 2rem;
+  display: grid;
+  width: 40%;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 968px) {
   .parentContent {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 3rem;
@@ -133,16 +140,20 @@
 
   .lottieBox {
     order: -1;
-    height: 300px;
   }
 
   .heading {
     text-align: center;
   }
 
-  .dataContainer {
-    grid-template-columns: repeat(2, 1fr);
+  .right {
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
+    /* grid-gap: 2rem; */
+  }
+
+  .featuresContainer {
+    order: -1;
   }
 
   .heading {
@@ -151,17 +162,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .dataContainer {
-    grid-template-columns: repeat(1, 1fr);
+  .description {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 568px) {
   .parent {
-    border-radius: 10px;
-    padding: 1.5rem;
+    border-radius: 20px;
+    padding: 2rem;
     margin-bottom: 5rem;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--tan3);
   }
 
   .content {
@@ -172,6 +183,10 @@
   .lottieBox {
     width: 200px;
     height: 200px;
+  }
+
+  .imgContainer {
+    height: 250px;
   }
 
   .leftSide {
@@ -190,8 +205,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .links,
-  .modalLinks {
-    grid-template-columns: repeat(1, 1fr);
+  .btnContainer {
+    width: 100%;
   }
 }

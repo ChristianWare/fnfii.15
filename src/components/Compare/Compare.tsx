@@ -11,7 +11,7 @@ const data = [
   {
     id: 1,
     icon: <Listing className={styles.iconiii} />,
-    title: "E-commerce websites from other companies",
+    title: "Other E-commerce sites",
     details: [
       {
         id: 1.1,
@@ -43,7 +43,7 @@ const data = [
   {
     id: 2,
     icon: <Clock className={styles.icon} />,
-    title: "E-commerce websites from Fonts & Footers",
+    title: "Our E-commerce sites",
     details: [
       {
         id: 2.1,
