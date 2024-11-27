@@ -93,7 +93,7 @@ const Footerii = () => {
                     <ul className={styles.sectionList}>
                       {x.section.map((y) => (
                         <li key={y.id} className={styles.listItem}>
-                          <Link href={y.href}>{y.name}</Link>
+                          <div>{y.name}</div>
                         </li>
                       ))}
                     </ul>
