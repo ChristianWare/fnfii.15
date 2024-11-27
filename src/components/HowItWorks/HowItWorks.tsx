@@ -43,7 +43,7 @@ const HowItWorks = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.top}>
-              <FalseButton btnType='primary' text='Process' />
+              <FalseButton btnType='primary' text='Our Process' />
               <h2 className={styles.heading}>
                 What is the process for working with you?
               </h2>
