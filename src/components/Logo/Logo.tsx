@@ -7,7 +7,7 @@ interface Props {
 
 const Logo = ({ color = "" }: Props) => {
   return (
-    <Link href='#home' className={`${styles.logo} ${styles[color]}`}>
+    <Link href='/' className={`${styles.logo} ${styles[color]}`}>
       Fonts & Footers
     </Link>
   );

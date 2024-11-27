@@ -1,3 +1,5 @@
+"use client";
+
 import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 import Hero from "@/components/Hero/Hero";
@@ -18,7 +20,11 @@ import Compare from "@/components/Compare/Compare";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import Footerii from "@/components/Footerii/Footerii";
 
+import { useQuery } from "convex/react";
+import { api } from "../../convex/_generated/api";
+
 export default function Home() {
+  const tasks = useQuery(api.tasks.getAllTasks);
   return (
     <main>
       <Hero />
@@ -39,6 +45,14 @@ export default function Home() {
       <ContactHero />
       <FinalCTA />
       <Footerii />
+      <h1>All tasks in DB</h1>
+      {tasks?.map((task) => (
+        <div key={task._id}>
+          <h2>
+            {task.text} is completed: {task.isCompleted ? "true" : "false"}
+          </h2>
+        </div>
+      ))}
     </main>
   );
 }
