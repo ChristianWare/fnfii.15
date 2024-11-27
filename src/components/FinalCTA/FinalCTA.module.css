@@ -59,6 +59,10 @@
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
+
+   .pattern {
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 568px) {
