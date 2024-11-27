@@ -9,20 +9,20 @@ import Team from "../../../public/icons/team.svg";
 const data = [
   {
     id: 1,
-    usp: "99.9%",
-    desc: "Uptime for every e-commerce site we build",
+    usp: "10+",
+    desc: "Years experience",
     icon: <Team className={styles.icon} width={80} height={80} />,
   },
   {
     id: 2,
     usp: "2X",
-    desc: "Faster Website load times than industry standard",
+    desc: "Faster Website load times",
     icon: <Attention className={styles.icon} width={80} height={80} />,
   },
   {
     id: 3,
     usp: "14",
-    desc: "Average days to launch your e-commerce store",
+    desc: "Average days to launch",
     icon: <Solutions className={styles.icon} width={80} height={80} />,
   },
   // {
