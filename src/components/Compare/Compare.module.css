@@ -24,6 +24,10 @@
   margin-top: -1rem;
 }
 
+.copy {
+  opacity: 0.7;
+}
+
 .right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,11 +44,6 @@
   padding: 2rem;
   border-radius: 10px;
 }
-
-/* .column:nth-child(1) .iconContainer,
-  border: 0px;
-  display: none;
-} */
 
 .icon,
 .iconii,
@@ -93,6 +92,7 @@
 .box li {
   list-style: none;
   text-align: center;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1268px) {

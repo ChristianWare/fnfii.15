@@ -59,8 +59,10 @@
 }
 
 .review {
-  font-weight: 600;
-  color: var(--bgColor);
+  /* font-weight: 600; */
+  /* color: var(--); */
+  font-family: var(--suisse);
+  opacity: 0.7;
 }
 
 .personBox {
@@ -79,7 +81,7 @@
 
 .reviewer {
   color: var(--bgColor);
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -89,7 +91,7 @@
 .company {
   color: var(--bgColor);
   display: block;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 1.4rem;
   opacity: 0.7;
 }
@@ -98,7 +100,7 @@
   .cardContainer1 {
     padding: 0rem;
   }
-  
+
   .copy {
     width: 100%;
   }

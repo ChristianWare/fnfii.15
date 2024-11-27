@@ -23,6 +23,7 @@
 }
 
 .heading {
+  margin-top: 1rem;
   margin-bottom: 2rem;
   line-height: 100%;
   color: var(--black);

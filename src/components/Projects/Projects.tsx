@@ -52,6 +52,7 @@ const Projects = () => {
                           target='_blank'
                           href={x.href}
                           btnType='primaryii'
+                          arrow
                         />
                       </div>
                     </div>
@@ -65,34 +66,15 @@ const Projects = () => {
                             <span>
                               <Check className={styles.icon} />
                             </span>
-                            {y.title}
+                            <span className={styles.listTitleTitle}>
+                              {y.title}
+                            </span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    {/* <h3 className={styles.title}>{x.title}</h3> */}
                   </div>
                 </div>
-                {/* {activeProjectIndex === index && (
-                  <Modal
-                    isOpen={activeProjectIndex === index}
-                    onClose={handleCloseModal}
-                  >
-                    <p className={styles.modalDescription}>{x.description}</p>
-                    <div className={styles.modalLinks}>
-                      <Link
-                        href={x.href}
-                        target='_blank'
-                        className={styles.link}
-                      >
-                        Live Site <span className={styles.arrow}>→</span>
-                      </Link>
-                      <div className={styles.link} onClick={handleCloseModal}>
-                        Close
-                      </div>
-                    </div>
-                  </Modal>
-                )} */}
               </div>
             ))}
           </div>

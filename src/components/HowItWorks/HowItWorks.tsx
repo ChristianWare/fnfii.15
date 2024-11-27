@@ -3,11 +3,11 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HowItWorks.module.css";
 import Develop from "../../../public/icons/develop.svg";
-// import Launch from "../../../public/icons/launch.svg";
 import Consult from "../../../public/icons/consult.svg";
 import Notes from "../../../public/icons/notes.svg";
 import animationData from "../../../public/lottie/howitworks.json";
 import dynamic from "next/dynamic";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -43,7 +43,8 @@ const HowItWorks = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.top}>
-              <h2 className={`${styles.heading} h2v2`}>
+              <FalseButton btnType='primary' text='Process' />
+              <h2 className={styles.heading}>
                 What is the process for working with you?
               </h2>
               <p className={styles.topText}>

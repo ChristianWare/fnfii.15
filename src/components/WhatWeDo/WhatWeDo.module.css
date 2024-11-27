@@ -38,10 +38,9 @@
 }
 
 .title {
-  /* margin-bottom: 1rem; */
   line-height: 120%;
-  /* color: var(--purple); */
   text-align: center;
+  color: var(--purple);
 }
 
 @media screen and (max-width: 1268px) {
@@ -49,10 +48,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-    .card {
+  .card {
     gap: 5rem;
   }
-
 }
 
 @media screen and (max-width: 668px) {

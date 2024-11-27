@@ -25,7 +25,8 @@
 }
 
 .copy {
-    opacity: 0.7;
+  /* opacity: 0.7; */
+  font-family: var(--suisse);
 }
 
 .right {

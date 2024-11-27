@@ -7,17 +7,13 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
 
-interface Props {
-  bgColor?: string;
-  borderTop?: string;
-}
 
-const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
+const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
 
   return (
     <section
-      className={`${styles.container} ${styles[bgColor]} ${styles[borderTop]}`}
+      className={styles.container}
     >
       <LayoutWrapper>
         <div className={styles.content} id='pricing'>

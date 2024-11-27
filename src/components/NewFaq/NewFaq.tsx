@@ -60,9 +60,6 @@ const NewFaq: FC<Props> = ({ mapData }) => {
                     ) : (
                       <Plus className={styles.icon} width={30} height={30} />
                     )}
-                    {/* <h3 className={styles.question} lang='en'>
-                      [ {i + 1} ]
-                    </h3> */}
                     <h3 className={styles.question} lang='en'>
                       {x.question}
                     </h3>

@@ -32,7 +32,7 @@ export default function Home() {
       <PostHero />
       <HowItWorks />
       <Projects />
-      <Pricing bgColor='tan' />
+      <Pricing />
       <Testimonials />
       <FirstStep />
       <NewFaq mapData={homePageFaqs} />

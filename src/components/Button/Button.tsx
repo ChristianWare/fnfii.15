@@ -4,6 +4,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import styles from "./Button.module.css";
+import Arrow from "../../../public/icons/arrow2.svg";
 
 interface ButtonProps {
   href: string;
@@ -22,6 +23,7 @@ const Button: FC<ButtonProps> = ({
   target = "",
   download,
   onClick,
+  arrow,
 }) => {
   return (
     <button
@@ -37,6 +39,7 @@ const Button: FC<ButtonProps> = ({
         download={download}
       >
         {text}
+        {arrow && <Arrow className={styles.arrow} />}
       </Link>
     </button>
   );
