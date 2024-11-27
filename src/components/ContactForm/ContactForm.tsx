@@ -71,7 +71,7 @@ const ContactForm = () => {
               )}
             </div>
           </div>
-          <div className={styles.labelInputBox}>
+          {/* <div className={styles.labelInputBox}>
             <label htmlFor='company'>
               Company <span className={styles.required}>*</span>
             </label>
@@ -83,7 +83,7 @@ const ContactForm = () => {
             {errors.lastName && (
               <span className={styles.error}>*** Last Name is required</span>
             )}
-          </div>
+          </div> */}
           <div className={styles.everythingElse}>
             <div className={styles.labelInputBox}>
               <label htmlFor='email'>
