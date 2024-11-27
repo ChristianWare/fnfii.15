@@ -17,14 +17,20 @@ const Projects = () => {
     <section className={styles.container} id='projects'>
       <LayoutWrapper>
         <div className={styles.parentContent}>
-          <div className={styles.leftSide}>
-            <FalseButton btnType='primary' text='Our Projects' />
-            <h2 className={styles.heading}>
-              Our work <br /> speaks for itself
-            </h2>
-            <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
+          <div className={styles.top}>
+            <div className={styles.leftSide}>
+              <FalseButton btnType='primary' text='Our Projects' />
+              <h2 className={styles.heading}>
+                Our work <br /> speaks for itself
+              </h2>
+              <div className={styles.lottieBox}>
+                <Lottie
+                  animationData={animationData}
+                  className={styles.lottie}
+                />
+              </div>
             </div>
+            <div className={styles.pattern}></div>
           </div>
           <div className={styles.dataContainer}>
             {projects.slice(0, 1).map((x, index) => (

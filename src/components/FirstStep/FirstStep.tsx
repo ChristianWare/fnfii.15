@@ -62,30 +62,6 @@ const data = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "Step 3: Begin the Development Process",
-  //   additioanl: [
-  //     {
-  //       id: 2.1,
-  //       addTitle: "Collaborate on Content",
-  //       addDesc:
-  //         "We’ll work with you to gather product details, images, and any other assets for your store.",
-  //     },
-  //     {
-  //       id: 2.2,
-  //       addTitle: "Design and Build",
-  //       addDesc:
-  //         "Our team will bring your vision to life, creating a functional, high-converting online store.",
-  //     },
-  //     {
-  //       id: 2.3,
-  //       addTitle: "Launch and Support",
-  //       addDesc:
-  //         "Once your store is live, we’ll provide ongoing support to ensure everything runs smoothly.",
-  //     },
-  //   ],
-  // },
 ];
 
 const FirstStep = () => {
