@@ -1,18 +1,25 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import { ReactNode } from "react";
 import styles from "./FalseButton.module.css";
 
 interface Props {
-  text: string;
+  text: ReactNode;
   btnType: string;
-  onClose?: () => void;
+  onClick?: any;
+  disabled?: boolean;
 }
 
-const FalseButton = ({ text, btnType, onClose }: Props) => {
+const FalseButton = ({ text, btnType, onClick, disabled = false }: Props) => {
   return (
-    <div className={`${styles.btn} ${styles[btnType]}`} onClick={onClose}>
+    <button
+      className={`${styles.btn} ${styles[btnType]}`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {text}
-    </div>
+    </button>
   );
 };
 export default FalseButton;

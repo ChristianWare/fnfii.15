@@ -56,10 +56,30 @@
   font-size: 1.4rem;
 }
 
-.secondary {
+.secondary,
+.secondaryNav {
   background-color: var(--purple);
   color: var(--tan);
-  /* border: 1px solid var(--black); */
+}
+
+.secondaryNav {
+  padding: 5px 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  user-select: none;
+  gap: 2rem;
+  width: fit-content;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--suisseReg);
+  border: 1px solid var(--purple);
+}
+
+.secondaryNav:hover {
+  background-color: transparent;
+  color: var(--purple);
 }
 
 .secondary:hover,
@@ -73,12 +93,12 @@
   border: 1px solid #729187;
 }
 
-.secondaryNav {
+/* .secondaryNav {
   color: var(--green);
   background-color: var(--white);
   border: 1px solid var(--green);
   padding: 5px 30px;
-}
+} */
 
 .tertiary {
   color: var(--tan);

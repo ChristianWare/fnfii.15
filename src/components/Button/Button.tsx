@@ -1,19 +1,20 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import Link from "next/link";
 import styles from "./Button.module.css";
 import Arrow from "../../../public/icons/arrow2.svg";
 
 interface ButtonProps {
   href: string;
-  text: string;
+  text: ReactNode;
   btnType: string;
   target?: string;
   download?: boolean;
   arrow?: boolean;
   onClick?: any;
+  disabled?: boolean; 
 }
 
 const Button: FC<ButtonProps> = ({
@@ -24,13 +25,15 @@ const Button: FC<ButtonProps> = ({
   download,
   onClick,
   arrow,
+  disabled = false,
 }) => {
   return (
     <button
       className={styles.container}
       onClick={() => {
-        if (onClick) onClick();
+        if (!disabled && onClick) onClick();
       }}
+      disabled={disabled} 
     >
       <Link
         href={href}

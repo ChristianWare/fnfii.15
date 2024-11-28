@@ -5,53 +5,43 @@ import LayoutWrapper from "../LayoutWrapper";
 // import FalseButton from "../FalseButton/FalseButton";
 
 const Problem = () => {
-const data = [
-  {
-    title: "Slow Loading Times",
-    description:
-      "A slow website frustrates customers and leads to abandoned carts, costing you sales and damaging your brand's reputation.",
-  },
-  {
-    title: "Poor Mobile Experience",
-    description:
-      "Many e-commerce sites struggle to deliver a seamless shopping experience on mobile devices, resulting in lost opportunities as customers shop on the go.",
-  },
-  {
-    title: "Complicated Checkout Process",
-    description:
-      "A confusing or lengthy checkout process causes potential buyers to abandon their carts, leaving revenue on the table.",
-  },
-  {
-    title: "Low Search Visibility",
-    description:
-      "Without proper optimization, your website fails to rank on search engines, making it hard for potential customers to find you online.",
-  },
-  {
-    title: "Inefficient Inventory Management",
-    description:
-      "Managing products, stock levels, and updates can become overwhelming, leading to mistakes and unhappy customers.",
-  },
-];
-
+  const data = [
+    {
+      title: "Slow Loading Times",
+      description:
+        "A slow website frustrates customers and leads to abandoned carts, costing you sales and damaging your brand's reputation.",
+    },
+    {
+      title: "Poor Mobile Experience",
+      description:
+        "Many e-commerce sites struggle to deliver a seamless shopping experience on mobile devices, resulting in lost opportunities as customers shop on the go.",
+    },
+    {
+      title: "Complicated Checkout Process",
+      description:
+        "A confusing or lengthy checkout process causes potential buyers to abandon their carts, leaving revenue on the table.",
+    },
+    {
+      title: "Low Search Visibility",
+      description:
+        "Without proper optimization, your website fails to rank on search engines, making it hard for potential customers to find you online.",
+    },
+    {
+      title: "Inefficient Inventory Management",
+      description:
+        "Managing products, stock levels, and updates can become overwhelming, leading to mistakes and unhappy customers.",
+    },
+  ];
 
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          {/* <div className={styles.falseBtnContainer}>
-            <FalseButton btnType='primary' text='Main problem' />
-            </div> */}
           <div className={styles.problemContainer}>
             <h2 className={styles.heading}>Problems we solve</h2>
-            {/* <h3 className={styles.headingii}>
-              Are you unhappy with your <br /> current e-commerce store?
-            </h3> */}
             <div className={styles.pattern}></div>
           </div>
         </div>
-        {/* <div className={styles.falseBtnContainerii}>
-          <FalseButton btnType='primary' text='Sub-problems' />
-        </div> */}
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div key={index} className={styles.card}>
@@ -59,7 +49,6 @@ const data = [
               <p className={styles.description}>{x.description}</p>
             </div>
           ))}
-          
         </div>
       </LayoutWrapper>
     </section>

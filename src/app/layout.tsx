@@ -4,7 +4,6 @@ import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import PlausibleProvider from "next-plausible";
-import { ConvexClientProvider } from "@/components/providers/ConvexClientProvider";
 
 const suisse = localFont({
   src: "../../public/fonts/SuisseIntl-Medium.ttf",
@@ -38,12 +37,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${suisse.variable} ${suissReg.variable}`}>
-        <ConvexClientProvider>
           <NoiseBg>
             <ScrollIndicator />
             {children}
           </NoiseBg>
-        </ConvexClientProvider>
       </body>
     </html>
   );

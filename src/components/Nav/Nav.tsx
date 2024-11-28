@@ -7,14 +7,6 @@ import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
 import Logo from "../Logo/Logo";
-import {
-  SignedIn,
-  SignInButton,
-  SignUpButton,
-  UserButton,
-} from "@clerk/nextjs";
-import { SignedOut } from "@clerk/nextjs";
-import { SignOutButton } from "@clerk/nextjs";
 
 const navItems = [
   { text: "Features", href: "/#features" },
@@ -26,7 +18,7 @@ const navItems = [
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState(""); 
   const [navHeight, setNavHeight] = useState(0);
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -109,6 +101,9 @@ function Nav() {
             onClick={openMenu}
           >
             <div className={styles.navBox}>
+              {/* <li className={styles.navItem} onClick={() => setIsOpen(false)}>
+                <Link href='/'>{pathname === "/" ? <>Home</> : "Home"}</Link>
+              </li> */}
               {navItems.map((navItem, index) => (
                 <li
                   key={index}
@@ -116,7 +111,7 @@ function Nav() {
                     activeSection === navItem.href.substring(2)
                       ? styles.active
                       : ""
-                  }`}
+                  }`} // Add the 'active' class when the section is visible
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href={navItem.href}>
@@ -139,31 +134,6 @@ function Nav() {
               btnType='primaryNav'
             />
           </div>
-          <SignedIn>
-            <Link href='/billing'>Billing</Link>
-          </SignedIn>
-
-          <UserButton />
-          <SignedIn>
-            <SignOutButton>
-              <button>Logout</button>
-            </SignOutButton>
-          </SignedIn>
-          {/* Show a user button only if the user is signed in... */}
-
-
-          <SignedOut>
-            <SignInButton mode='modal'>
-              <button>Log in</button>
-            </SignInButton>
-          </SignedOut>
-
-          <SignedOut>
-            <SignUpButton mode='modal'>
-              <button>Sign Up</button>
-            </SignUpButton>
-          </SignedOut>
-
           <span
             className={
               isOpen === false
