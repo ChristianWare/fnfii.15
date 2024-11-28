@@ -42,8 +42,10 @@ const HowItWorks = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
+              <div className={styles.falseBtnContainer}>
+                <FalseButton btnType='primary' text='Our Process' />
+              </div>
             <div className={styles.top}>
-              <FalseButton btnType='primary' text='Our Process' />
               <h2 className={styles.heading}>
                 What is the process for working with you?
               </h2>

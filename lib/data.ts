@@ -1,5 +1,5 @@
 // import Project1 from "../public/images/elite.png";
-import Project2 from "../public/images/nier.png";
+// import Project2 from "../public/images/nier.png";
 // import Project3 from "../public/images/taco.jpg";
 import Claro from "../public/images/herov.jpg";
 
@@ -297,27 +297,27 @@ export const projects = [
 
     href: "https://www.eliteretreatrentals.com/",
   },
-  {
-    src: Project2,
-    title: "Nier Transportaion",
-    description:
-      "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
-    techStack: [
-      {
-        title: "Next.JS",
-      },
-      {
-        title: "CSS Modules",
-      },
-      {
-        title: "React Hook Form",
-      },
-      {
-        title: "Node Mailer",
-      },
-    ],
-    href: "https://www.niertransportation.com/",
-  },
+  // {
+  //   src: Project2,
+  //   title: "Nier Transportaion",
+  //   description:
+  //     "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
+  //   techStack: [
+  //     {
+  //       title: "Next.JS",
+  //     },
+  //     {
+  //       title: "CSS Modules",
+  //     },
+  //     {
+  //       title: "React Hook Form",
+  //     },
+  //     {
+  //       title: "Node Mailer",
+  //     },
+  //   ],
+  //   href: "https://www.niertransportation.com/",
+  // },
 ] as const;
 
 export const projectFaqs = [
