@@ -1,6 +1,7 @@
-import Project1 from "../public/images/elite.png";
+// import Project1 from "../public/images/elite.png";
 import Project2 from "../public/images/nier.png";
-import Project3 from "../public/images/taco.jpg";
+// import Project3 from "../public/images/taco.jpg";
+import Claro from "../public/images/herov.jpg";
 
 export const benefits = [
   {
@@ -252,31 +253,31 @@ export const pricing = [
 ] as const;
 
 export const projects = [
-  {
-    src: Project3,
-    title: "Taco Bell Redesign",
-    description:
-      "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
-    techStack: [
-      {
-        title: "Custom coded website",
-      },
-      {
-        title: "Stripe Integration",
-      },
-      {
-        title: "Fully functional contact form",
-      },
-      {
-        title: "Product Reviews",
-      },
-    ],
+  // {
+  //   src: Project3,
+  //   title: "Taco Bell Redesign",
+  //   description:
+  //     "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
+  //   techStack: [
+  //     {
+  //       title: "Custom coded website",
+  //     },
+  //     {
+  //       title: "Stripe Integration",
+  //     },
+  //     {
+  //       title: "Fully functional contact form",
+  //     },
+  //     {
+  //       title: "Product Reviews",
+  //     },
+  //   ],
 
-    href: "https://www.livemas.dev/",
-  },
+  //   href: "https://www.livemas.dev/",
+  // },
   {
-    src: Project1,
-    title: "Elite Retreat Rentals",
+    src: Claro,
+    title: "Claro",
     description:
       "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
     techStack: [

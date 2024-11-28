@@ -33,7 +33,7 @@ const Projects = () => {
             <div className={styles.pattern}></div>
           </div>
           <div className={styles.dataContainer}>
-            {projects.slice(0, 1).map((x, index) => (
+            {projects.slice(0, 2).map((x, index) => (
               <div key={index} className={styles.parent}>
                 <div className={styles.content}>
                   <div className={styles.left}>
