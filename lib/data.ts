@@ -277,7 +277,7 @@ export const projects = [
   // },
   {
     src: Claro,
-    title: "Claro",
+    title: "Chuxly",
     description:
       "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
     techStack: [
