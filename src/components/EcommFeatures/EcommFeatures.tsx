@@ -77,13 +77,13 @@ const EcommFeatures = () => {
     },
     {
       icon: <Analytics width={40} height={40} className={styles.icon} />,
-      title: "E-commerce Analytics and Reporting",
+      title: "E-commerce Analytics",
       description:
         "We provide comprehensive analytics and reporting to help you understand your e-commerce performance.",
     },
     {
       icon: <Multiple width={40} height={40} className={styles.icon} />,
-      title: "Multiple Products Management",
+      title: "Inventory Management",
       description:
         "Our e-commerce platforms enable efficient management of multiple products.",
     },
