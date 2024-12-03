@@ -1,7 +1,5 @@
-// import Project1 from "../public/images/elite.png";
-// import Project2 from "../public/images/nier.png";
-// import Project3 from "../public/images/taco.jpg";
 import Claro from "../public/images/herov.jpg";
+import Taco from "../public/images/taco.webp";
 
 export const benefits = [
   {
@@ -253,28 +251,6 @@ export const pricing = [
 ] as const;
 
 export const projects = [
-  // {
-  //   src: Project3,
-  //   title: "Taco Bell Redesign",
-  //   description:
-  //     "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
-  //   techStack: [
-  //     {
-  //       title: "Custom coded website",
-  //     },
-  //     {
-  //       title: "Stripe Integration",
-  //     },
-  //     {
-  //       title: "Fully functional contact form",
-  //     },
-  //     {
-  //       title: "Product Reviews",
-  //     },
-  //   ],
-
-  //   href: "https://www.livemas.dev/",
-  // },
   {
     src: Claro,
     title: "Chuxly",
@@ -296,6 +272,28 @@ export const projects = [
     ],
 
     href: "https://www.chuxly.com/",
+  },
+  {
+    src: Taco,
+    title: "Taco Bell Redesign",
+    description:
+      "This project is a case study that redesigns Taco Bell's website. it has an admin panel where menu items can be created, updated and deleted. Users can see menu items and reach out via a fully functional contact form.",
+    techStack: [
+      {
+        title: "Full Menu",
+      },
+      {
+        title: "Multiple Categories",
+      },
+      {
+        title: "Custom Design",
+      },
+      {
+        title: "Multiple Pages",
+      },
+    ],
+
+    href: "https://www.livemas.dev/",
   },
 ] as const;
 
