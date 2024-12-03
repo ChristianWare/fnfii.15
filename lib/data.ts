@@ -279,45 +279,24 @@ export const projects = [
     src: Claro,
     title: "Chuxly",
     description:
-      "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
+      "Chuxly is an e-comemrce website offering wireless, portable, and home theater speakers; and headphones, components, and accessories.",
     techStack: [
       {
-        title: "Next.JS",
+        title: "Full Product Catalog",
       },
       {
-        title: "CSS Modules",
+        title: "Multiple Categories",
       },
       {
-        title: "React Hook Form",
+        title: "Stripe Secure Checkout",
       },
       {
-        title: "Node Mailer",
+        title: "Customer Reviews",
       },
     ],
 
-    href: "https://www.eliteretreatrentals.com/",
+    href: "https://www.chuxly.com/",
   },
-  // {
-  //   src: Project2,
-  //   title: "Nier Transportaion",
-  //   description:
-  //     "This project is a redesign of Taco Bell's website. This is a full stack project similar to 'Elite Retreat Rentals', since it has an admin panel where menu items can be created.",
-  //   techStack: [
-  //     {
-  //       title: "Next.JS",
-  //     },
-  //     {
-  //       title: "CSS Modules",
-  //     },
-  //     {
-  //       title: "React Hook Form",
-  //     },
-  //     {
-  //       title: "Node Mailer",
-  //     },
-  //   ],
-  //   href: "https://www.niertransportation.com/",
-  // },
 ] as const;
 
 export const projectFaqs = [
