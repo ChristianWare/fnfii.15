@@ -8,6 +8,13 @@
 
 .heading {
   text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.span {
+  white-space: nowrap;
 }
 
 .bottom {
@@ -53,7 +60,17 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .heading {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 668px) {
+  .heading {
+    width: 100%;
+  }
+
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }

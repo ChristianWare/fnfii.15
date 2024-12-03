@@ -43,7 +43,9 @@ const WhatWeDo = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.heading}>
-            What we can do <br /> for your online store
+            We&apos;ll help you build a profitable{" "}
+            <span className={styles.span}>E-commerce</span>e store you&apos;ll
+            love
           </h2>
         </div>
         <div className={styles.bottom}>

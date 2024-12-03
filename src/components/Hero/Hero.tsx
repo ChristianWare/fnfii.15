@@ -25,12 +25,11 @@ const Hero = () => {
                 <div className={styles.falseBtnContainer}>
                   <FalseButton
                     btnType='primary'
-                    text='E-commerce Web Development Agency'
+                    text="We'll show you how to..."
                   />
                 </div>
                 <h1 className={styles.heading}>
-                  Unlock the secrets to{" "}
-                  <br />
+                  Unlock the secrets to <br />
                   <span className={styles.span}>E-commerce</span> success
                 </h1>
                 <p className={styles.copy}>
