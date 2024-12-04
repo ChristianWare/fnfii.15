@@ -33,33 +33,18 @@ const Projects = () => {
             <div className={styles.pattern}></div>
           </div>
           <div className={styles.dataContainer}>
-            {projects.slice(0, 2).map((x, index) => (
+            {projects.map((x, index) => (
               <div key={index} className={styles.parent}>
                 <div className={styles.content}>
                   <div className={styles.left}>
                     <h3 className={styles.titleMobile}>{x.title}</h3>
-                    <h3 className={styles.title}>{x.title}</h3>
                     <div className={styles.imgContainer}>
                       <Image src={x.src} alt='' fill className={styles.img} />
                     </div>
+                    
                   </div>
                   <div className={styles.right}>
-                    <div className={styles.righLeftContainer}>
-                      <h4 className={styles.description}>{x.description}</h4>
-                      <div className={styles.btnContainer}>
-                        <Button
-                          text='Live Site'
-                          target='_blank'
-                          href={x.href}
-                          btnType='primaryii'
-                          arrow
-                        />
-                      </div>
-                    </div>
-
                     <div className={styles.featuresContainer}>
-                      <p>Features: </p>
-                      <br />
                       <ul className={styles.list}>
                         {x.techStack.map((y, index) => (
                           <li key={index} className={styles.listItem}>
@@ -72,6 +57,21 @@ const Projects = () => {
                           </li>
                         ))}
                       </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.contentBottom}>
+                  <h3 className={styles.title}>{x.title}</h3>
+                  <div className={styles.righLeftContainer}>
+                    <h4 className={styles.description}>{x.description}</h4>
+                    <div className={styles.btnContainer}>
+                      <Button
+                        text='Live Site'
+                        target='_blank'
+                        href={x.href}
+                        btnType='primaryii'
+                        arrow
+                      />
                     </div>
                   </div>
                 </div>

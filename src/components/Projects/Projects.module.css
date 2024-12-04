@@ -59,13 +59,15 @@
 
 .content {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
 
-.title {
+.title,
+.titleMobile {
   font-size: 2.5rem;
   color: var(--purple);
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -87,26 +89,27 @@
 .right {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 5rem;
 }
 
-.description {
-  width: 95%;
-}
-
 .list {
-  list-style: none;
+  /* list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  height: 100%;
 }
 
 .listItem {
   background-color: var(--tan2);
   width: 100%;
+  height: 100%;
   padding: 2rem;
   border-radius: 10px;
   display: flex;
@@ -124,13 +127,6 @@
   height: 30px;
   color: var(--purple);
 }
-/* .description {
-  opacity: 0.7;
-} */
-
-/* .rightRightBox {
-  list-style: none;
-} */
 
 .modalDescription {
   display: block;
@@ -144,6 +140,9 @@
   margin-top: 2rem;
   display: grid;
   width: 40%;
+}
+.contentBottom {
+  width: 50%;
 }
 
 @media screen and (max-width: 968px) {
@@ -185,58 +184,75 @@
   .heading {
     width: 100%;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .description {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .parent {
-    border-radius: 20px;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    border: 1px solid var(--tan3);
-  }
-
-  .content {
-    margin-bottom: 0rem;
-  }
-
-  .lottie,
-  .lottieBox {
-    width: 200px;
-    height: 200px;
-  }
-
-  .imgContainer {
-    height: 250px;
-  }
-
-  .leftSide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .heading {
-    font-size: 4rem;
-  }
-
-  .box,
-  .btnContainer {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .btnContainer {
+  .contentBottom {
     width: 100%;
   }
 
-  .title {
-    text-align: center;
-    font-size: 3rem;
+  @media screen and (max-width: 768px) {
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .titleMobile {
+      display: block;
+    }
+
+    .title {
+      display: none;
+    }
+
+    .description {
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .parent {
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 5rem;
+      border: 1px solid var(--tan3);
+    }
+
+    .content {
+      margin-bottom: 0rem;
+    }
+
+    .lottie,
+    .lottieBox {
+      width: 200px;
+      height: 200px;
+    }
+
+    .imgContainer {
+      height: 250px;
+    }
+
+    .leftSide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .heading {
+      font-size: 4rem;
+    }
+
+    .box,
+    .btnContainer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btnContainer {
+      width: 100%;
+    }
+
+    .titleMobile {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 0rem;
+    }
   }
 }
