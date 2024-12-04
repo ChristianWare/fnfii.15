@@ -19,6 +19,7 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Compare from "@/components/Compare/Compare";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import Footerii from "@/components/Footerii/Footerii";
+import Calendly from "@/components/Calendly/Calendly";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <Testimonials />
       <FirstStep />
       <NewFaq mapData={homePageFaqs} />
+      <Calendly />
       <ContactHero />
       <FinalCTA />
       <Footerii />
