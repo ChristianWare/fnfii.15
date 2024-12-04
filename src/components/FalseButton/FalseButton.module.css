@@ -21,6 +21,37 @@
   padding: 0;
 }
 
+.primaryHero {
+  font-family: var(--suisse);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  white-space: nowrap;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  flex: 1;
+  gap: 2rem;
+  border-radius: 50px;
+  padding: 9px 20px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.1s ease-in, color 0.1s ease-in;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  color: var(--tan);
+  cursor: pointer;
+}
+
+.primaryHero:hover {
+  background-color: transparent;
+  color: var(--purple);
+}
+
 .secondary {
   color: var(--purple);
   border: 1px solid var(--purple);

@@ -9,11 +9,19 @@ import animationData from "../../../public/lottie/heroii.json";
 import Usp from "../Usp/Usp";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
+import Modal from "../Modal/Modal";
+import Calendly from "../Calendly/Calendly";
+import { useState } from "react";
 
 // Dynamically import Lottie with SSR disabled
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Hero = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => setModalOpen(true);
+  const handleCloseModal = () => setModalOpen(false);
+
   return (
     <section className={styles.container}>
       <Nav />
@@ -37,14 +45,14 @@ const Hero = () => {
                   engage your audience, and drive conversions.
                 </p>
                 <div className={styles.btnContainer}>
-                  <Button
+                  <FalseButton
                     text='Schedule Discovery Call'
-                    href='/#schedule'
-                    btnType='secondary'
+                    btnType='primaryHero'
+                    onClick={handleOpenModal}
                   />
                   <Button
-                    text='Explore Our Services'
-                    href='/#services'
+                    text='Contact Us'
+                    href='/#contact'
                     btnType='primaryii'
                   />
                 </div>
@@ -65,6 +73,10 @@ const Hero = () => {
           <div className={styles.right}></div>
         </div>
       </LayoutWrapper>
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        <Calendly />
+      </Modal>
     </section>
   );
 };

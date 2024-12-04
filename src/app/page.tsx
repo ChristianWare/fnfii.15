@@ -20,7 +20,6 @@ import Compare from "@/components/Compare/Compare";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import Footerii from "@/components/Footerii/Footerii";
 
-
 export default function Home() {
   return (
     <main>
@@ -42,7 +41,6 @@ export default function Home() {
       <ContactHero />
       <FinalCTA />
       <Footerii />
-      
     </main>
   );
 }

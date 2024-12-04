@@ -6,24 +6,24 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in;
+  padding: 2rem;
 }
 
 .modalContent {
-  background-color: var(--white);
+  background-color: var(--tan);
   padding: 2rem;
   border-radius: 10px;
-  max-width: 700px;
+  min-width: 700px;
   position: relative;
   transition: all 0.3s ease-in;
 }
 
 .children {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 @media screen and (max-width: 768px) {
