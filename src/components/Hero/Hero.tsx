@@ -43,7 +43,7 @@ const Hero = () => {
                     btnType='secondary'
                   />
                   <Button
-                    text='Our Projects'
+                    text='See Our Work'
                     href='/#projects'
                     btnType='primaryii'
                   />

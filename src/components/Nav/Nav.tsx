@@ -9,8 +9,8 @@ import Arrow from "../../../public/icons/arrow.svg";
 import Logo from "../Logo/Logo";
 
 const navItems = [
-  { text: "Features", href: "/#features" },
   { text: "About Us", href: "/#about" },
+  { text: "Features", href: "/#features" },
   { text: "Pricing", href: "/#pricing" },
   { text: "Contact", href: "/#contact" },
 ];
@@ -18,7 +18,7 @@ const navItems = [
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); 
+  const [activeSection, setActiveSection] = useState("");
   const [navHeight, setNavHeight] = useState(0);
   const navRef = useRef<HTMLElement | null>(null);
 
