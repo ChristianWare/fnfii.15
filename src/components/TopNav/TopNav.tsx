@@ -22,7 +22,7 @@ const TopNav = () => {
             <LinkedIn className={styles.icon} />
           </Link>
           <Link
-            href='https://www.facebook.com/'
+            href='https://www.facebook.com/fontsandfooters/'
             target='_blank'
             aria-label='Facebook'
             className={styles.detail}
@@ -30,7 +30,7 @@ const TopNav = () => {
             <Facebook className={styles.icon} />
           </Link>
           <Link
-            href='https://instagram.com/'
+            href='https://www.instagram.com/fontsandfooters/'
             target='_blank'
             aria-label='Instagram'
             className={styles.detail}
