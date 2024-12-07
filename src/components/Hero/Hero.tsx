@@ -6,7 +6,7 @@ import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import FalseButton from "../FalseButton/FalseButton";
 import animationData from "../../../public/lottie/heroii.json";
-import Usp from "../Usp/Usp";
+// import Usp from "../Usp/Usp";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
 
@@ -25,12 +25,13 @@ const Hero = () => {
                 <div className={styles.falseBtnContainer}>
                   <FalseButton
                     btnType='primary'
-                    text="We'll show you how to..."
+                    text="Welcome!"
                   />
                 </div>
                 <h1 className={styles.heading}>
-                  Unlock the secrets to <br />
-                  <span className={styles.span}>E-commerce</span> success
+                  We build <br />
+                  <span className={styles.span}>E-commerce</span> stores <br />
+                  for ambitious companies
                 </h1>
                 <p className={styles.copy}>
                   We build custom online stores designed to elevate your brand,
@@ -58,9 +59,9 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className={styles.uspContainer}>
+            {/* <div className={styles.uspContainer}>
               <Usp />
-            </div>
+            </div> */}
           </div>
           <div className={styles.right}></div>
         </div>
