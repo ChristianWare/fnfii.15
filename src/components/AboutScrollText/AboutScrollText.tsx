@@ -4,9 +4,8 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import animationData from "../../../public/lottie/heroii.json";
-import Lottie from "lottie-react";
-// import Experience from "../Experience/Experience";
 import FalseButton from "../FalseButton/FalseButton";
+import dynamic from "next/dynamic";
 
 const data = [
   {
@@ -24,12 +23,11 @@ const data = [
     title: "14",
     desc: "Average days to launch your e-commerce store",
   },
-  // {
-  //   id: 4,
-  //   title: "2",
-  //   desc: "Cups of coffee per day fueling our passion for creating impactful online stores",
-  // },
+
 ];
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+
 
 const AboutScrollText = () => {
   return (
