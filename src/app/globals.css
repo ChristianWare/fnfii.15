@@ -172,12 +172,12 @@ textarea:focus {
     letter-spacing: -0.02em;
   } */
 
-  h3,
+  /* h3,
   h4,
   h5,
   h6 {
     font-size: 1.8rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 568px) {
@@ -189,13 +189,13 @@ textarea:focus {
     hyphens: auto;
   }
 
-  h1,
+  /* h1,
   .span1 {
     font-size: 4rem;
     letter-spacing: -0.02em;
-  }
+  } */
 
-  h2,
+  /* h2,
   .h2v2,
   .h2v3 {
     font-size: 3rem;
@@ -206,7 +206,7 @@ textarea:focus {
   h5,
   h6 {
     font-size: 2rem;
-  }
+  } */
 
   /* h2 {
     font-size: 5.5rem;
