@@ -12,7 +12,7 @@
 .left {
   background-color: var(--tan2);
   padding: 3rem;
-  padding-right: 5rem;
+  /* padding-right: 5rem; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@
 
 .heading {
   margin-top: 1rem;
+  text-align: center;
 }
 
 .lottieBox {

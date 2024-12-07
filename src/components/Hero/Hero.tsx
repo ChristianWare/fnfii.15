@@ -4,7 +4,7 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-import FalseButton from "../FalseButton/FalseButton";
+// import FalseButton from "../FalseButton/FalseButton";
 // import animationData from "../../../public/lottie/heroii.json";
 // import Usp from "../Usp/Usp";
 import TopNav from "../TopNav/TopNav";
@@ -23,13 +23,17 @@ const Hero = () => {
           <div className={styles.left}>
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
-                <div className={styles.falseBtnContainer}>
+                {/* <div className={styles.falseBtnContainer}>
                   <FalseButton btnType='primary' text='Welcome!' />
-                </div>
+                </div> */}
                 <h1 className={styles.heading}>
-                  We build <br />
+                  {/* We build 
                   <span className={styles.span}>E-commerce</span> stores <br />
-                  for ambitious companies
+                  for ambitious companies */}
+                  We build
+                  <br />
+                  <span className={styles.span}>E-commerce</span> websites.
+                  {/* Remove Carbon. */}
                 </h1>
                 <p className={styles.copy}>
                   We build custom online stores designed to elevate your brand,
@@ -49,7 +53,6 @@ const Hero = () => {
                 </div>
                 <TopNav />
               </div>
-             
             </div>
 
             <div className={styles.uspContainer}>

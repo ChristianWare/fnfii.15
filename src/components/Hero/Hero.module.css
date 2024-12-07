@@ -14,15 +14,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* gap: 2rem; */
   border-radius: 10px;
   padding-top: 3rem;
-  /* padding: 3rem; */
 }
 
 .headingLottieBox {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
 }
 
 .hlLeft {
@@ -30,34 +28,36 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .heading {
   color: var(--black);
-  text-transform: none;
-  margin-bottom: 1rem;
-  line-height: 115%;
 }
 
 .span {
   white-space: nowrap;
+  color: var(--purple);
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  margin-right: .5rem;
+  display: inline-block;
 }
 
 .copy {
   color: var(--black);
-  width: 90%;
+  width: 70%;
   font-size: 1.8rem;
-  opacity: 0.8;
-  margin-bottom: 1rem;
+  margin-top: -1rem;
+  /* opacity: 0.8; */
 }
 
 .btnContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  width: 60%;
   grid-gap: 2rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .lottieBox {

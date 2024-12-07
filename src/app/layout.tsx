@@ -17,6 +17,18 @@ const suissReg = localFont({
   display: "swap",
 });
 
+const chromaticCondensedBold = localFont({
+  src: "../../public/fonts/chromaticCondensedBold.woff2",
+  variable: "--chromaticCondensedBold",
+  display: "swap",
+});
+
+const MatterMonoMedium = localFont({
+  src: "../../public/fonts/MatterMonoMedium.woff2",
+  variable: "--MatterMonoMedium",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Fonts & Footers",
   description: "E-commerce Web Design and Developement Agency",
@@ -36,11 +48,13 @@ export default function RootLayout({
           enabled={true}
         />
       </head>
-      <body className={`${suisse.variable} ${suissReg.variable}`}>
-          <NoiseBg>
-            <ScrollIndicator />
-            {children}
-          </NoiseBg>
+      <body
+        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable}`}
+      >
+        <NoiseBg>
+          <ScrollIndicator />
+          {children}
+        </NoiseBg>
       </body>
     </html>
   );

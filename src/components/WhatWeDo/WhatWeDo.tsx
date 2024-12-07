@@ -1,6 +1,5 @@
 "use client";
 
-// import LayoutWrapper from "../LayoutWrapper";
 import styles from "./WhatWeDo.module.css";
 import animationData from "../../../public/lottie/cta.json";
 import animationData2 from "../../../public/lottie/email.json";
@@ -40,13 +39,8 @@ const data = [
 const WhatWeDo = () => {
   return (
     <section className={styles.container}>
-      {/* <LayoutWrapper> */}
       <div className={styles.top}>
-        {/* <h2 className={styles.heading}>
-            We&apos;ll help you build a profitable{" "}
-            <span className={styles.span}>E-commerce</span>e store you&apos;ll
-            love
-          </h2> */}
+        
       </div>
       <div className={styles.bottom}>
         {data.map((x) => (
@@ -58,7 +52,6 @@ const WhatWeDo = () => {
           </div>
         ))}
       </div>
-      {/* </LayoutWrapper> */}
     </section>
   );
 };

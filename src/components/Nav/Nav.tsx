@@ -2,12 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-// import Button from "../Button/Button";
+import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
 import Logo from "../Logo/Logo";
-import TopNav from "../TopNav/TopNav";
 
 const navItems = [
   { text: "About Us", href: "/#about" },
@@ -129,12 +128,11 @@ function Nav() {
             </div>
           </ul>
           <div className={styles.btnContainer}>
-            {/* <Button
+            <Button
               href='/#schedule'
               text='Schedule discovery call'
               btnType='primaryNav'
-            /> */}
-            <TopNav />
+            />
           </div>
           <span
             className={
