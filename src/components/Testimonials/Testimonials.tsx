@@ -39,7 +39,7 @@ const Testimonials = () => {
             <div key={x.id} className={styles.card}>
               <p className={styles.review}>&rdquo;{x.review}&rdquo;</p>
               <div className={styles.personBox}>
-                <Person width={50} height={50} className={styles.personImage} />
+                <Person width={60} height={60} className={styles.personImage} />
                 <p className={styles.reviewer}>
                   {x.reviewer}
                   <span className={styles.company}>{x.company}</span>

@@ -59,8 +59,6 @@
 }
 
 .review {
-  /* font-weight: 600; */
-  /* color: var(--); */
   font-family: var(--suisse);
   opacity: 0.7;
 }
@@ -80,8 +78,7 @@
 }
 
 .reviewer {
-  color: var(--bgColor);
-  /* font-weight: 700; */
+  color: var(--black);
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -91,9 +88,8 @@
 .company {
   color: var(--bgColor);
   display: block;
-  /* font-weight: 400; */
   font-size: 1.4rem;
-  opacity: 0.7;
+  font-family: var(--suisse);
 }
 
 @media screen and (max-width: 968px) {

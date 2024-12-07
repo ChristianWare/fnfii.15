@@ -63,7 +63,7 @@ const Projects = () => {
                 <div className={styles.contentBottom}>
                   <h3 className={styles.title}>{x.title}</h3>
                   <div className={styles.righLeftContainer}>
-                    <h4 className={styles.description}>{x.description}</h4>
+                    <p className={styles.description}>{x.description}</p>
                     <div className={styles.btnContainer}>
                       <Button
                         text='Live Site'

@@ -57,6 +57,8 @@
 .title,
 .titleMobile {
   text-align: center;
+  font-family: var(--suisse);
+  font-size: 2rem;
 }
 
 .titleMobile {

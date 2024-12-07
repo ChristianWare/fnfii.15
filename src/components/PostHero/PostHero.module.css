@@ -71,16 +71,11 @@
   margin-bottom: 1rem;
 }
 
-.index {
-  color: var(--bgColor);
-  opacity: 0.5;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .feature {
   text-align: center;
   color: var(--purple);
+  font-family: var(--suisse);
+  font-size: 2rem;
 }
 
 .desc {

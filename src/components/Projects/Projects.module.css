@@ -94,12 +94,6 @@
 }
 
 .list {
-  /* list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1rem; */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
@@ -128,12 +122,13 @@
   color: var(--purple);
 }
 
-.modalDescription {
-  display: block;
-}
-
 .arrow {
   margin-left: 1rem;
+}
+
+.description {
+  font-family: var(--suisse);
+  font-size: 1.6rem;
 }
 
 .btnContainer {

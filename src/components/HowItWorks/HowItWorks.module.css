@@ -55,7 +55,6 @@
 
 .card {
   padding: 2rem 3rem;
-  /* border-bottom: 1px solid var(--lightBlack); */
   background-color: var(--tan2);
   border-radius: 10px;
   display: grid;
@@ -70,7 +69,6 @@
 
 .span {
   font-size: 7rem;
-  /* color: var(--purple); */
   -webkit-text-stroke: 1.5px var(--purple);
   -webkit-text-fill-color: var(--tan2);
 }
@@ -86,6 +84,8 @@
 .processName {
   margin-top: 1rem;
   color: var(--purple);
+  font-family: var(--suisse);
+  font-size: 2rem;
 }
 
 .box {
