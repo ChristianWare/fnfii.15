@@ -71,11 +71,11 @@ const FirstStep = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='Our clients' />
+              <FalseButton btnType='primary' text='First steps' />
             </div>
             <h2 className={styles.heading}>
-              Take the first step toward your dream online store. Let’s build a
-              high-converting website that elevates your business
+              Take the first step toward your dream online store. Let&apos;s
+              build a high-converting website that elevates your business.
             </h2>
           </div>
           <div className={styles.bottom}>
