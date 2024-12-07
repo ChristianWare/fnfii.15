@@ -36,16 +36,10 @@ const PostHero = () => {
             <h2 className={styles.topHeading}>
               Work with us for peace of mind
             </h2>
-            {/* <h3 className={styles.heading}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab,
-              mollitia.
-            </h3> */}
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (
               <div key={index} className={styles.box}>
-                {/* <div className={styles.iconContainer}>{x.icon}</div> */}
-                {/* <span className={styles.index}>Step {index + 1}</span> */}
                 <div className={styles.iconContainer}>{x.icon}</div>
                 <h4 className={styles.feature}>{x.feature}</h4>
                 <p className={styles.desc}>{x.desc}</p>

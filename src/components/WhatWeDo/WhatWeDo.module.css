@@ -46,6 +46,9 @@
 .title {
   line-height: 120%;
   color: var(--purple);
+  font-size: 2rem;
+  font-family: var(--suisse);
+  letter-spacing: -0.001em;
 }
 
 @media screen and (max-width: 1068px) {

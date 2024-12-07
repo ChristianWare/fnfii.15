@@ -19,11 +19,13 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Compare from "@/components/Compare/Compare";
 import Footerii from "@/components/Footerii/Footerii";
 import Calendly from "@/components/Calendly/Calendly";
+import Explain from "@/components/Explain/Explain";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <Explain />
       <AboutScrollText />
       <Problem />
       <Solution />

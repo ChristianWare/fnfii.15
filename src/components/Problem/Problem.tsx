@@ -7,12 +7,12 @@ import LayoutWrapper from "../LayoutWrapper";
 const Problem = () => {
   const data = [
     {
-      title: "Slow Loading Times",
+      title: "Slow Page Loading Times",
       description:
         "A slow website frustrates customers and leads to abandoned carts, costing you sales and damaging your brand's reputation.",
     },
     {
-      title: "Poor Mobile Experience",
+      title: "Bad Mobile Phone Experience",
       description:
         "Many e-commerce sites struggle to deliver a seamless shopping experience on mobile devices, resulting in lost opportunities as customers shop on the go.",
     },
@@ -22,19 +22,19 @@ const Problem = () => {
         "A confusing or lengthy checkout process causes potential buyers to abandon their carts, leaving revenue on the table.",
     },
     {
-      title: "Low Search Visibility",
+      title: "Low Search Engine Visibility",
       description:
         "Without proper optimization, your website fails to rank on search engines, making it hard for potential customers to find you online.",
     },
     {
-      title: "Inefficient Inventory Management",
+      title: "Poor Inventory Management",
       description:
         "Managing products, stock levels, and updates can become overwhelming, leading to mistakes and unhappy customers.",
     },
   ];
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='problems'>
       <LayoutWrapper>
         <div className={styles.top}>
           <div className={styles.problemContainer}>
@@ -45,7 +45,7 @@ const Problem = () => {
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div key={index} className={styles.card}>
-              <h4 className={styles.title}>{x.title}</h4>
+              <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.description}>{x.description}</p>
             </div>
           ))}

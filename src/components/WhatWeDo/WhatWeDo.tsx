@@ -39,16 +39,14 @@ const data = [
 const WhatWeDo = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.top}>
-        
-      </div>
+      <div className={styles.top}></div>
       <div className={styles.bottom}>
         {data.map((x) => (
           <div key={x.id} className={styles.card}>
             <div className={styles.lottieBox}>
               <Lottie animationData={x.animation} className={styles.lottie} />
             </div>
-            <h3 className={styles.title}>{x.title}</h3>
+            <p className={styles.title}>{x.title}</p>
           </div>
         ))}
       </div>

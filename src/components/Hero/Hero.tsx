@@ -54,12 +54,10 @@ const Hero = () => {
                 <TopNav />
               </div>
             </div>
-
             <div className={styles.uspContainer}>
               <WhatWeDo />
             </div>
           </div>
-          <div className={styles.right}></div>
         </div>
       </LayoutWrapper>
     </section>

@@ -15,27 +15,27 @@ const data = [
     details: [
       {
         id: 1.1,
-        details: "Custom design",
+        details: "Boring templates",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.2,
-        details: "Performance optimization",
+        details: "Performance issues",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.3,
-        details: "Scalability",
+        details: "Limited scalability",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.4,
-        details: "SEO-friendly development",
+        details: "Poor SEO practices",
         icon: <Close className={styles.iconii} />,
       },
       {
         id: 1.5,
-        details: "Dedicated support",
+        details: "Generic support",
         icon: <Close className={styles.iconii} />,
       },
     ],
@@ -57,7 +57,7 @@ const data = [
       },
       {
         id: 2.3,
-        details: "Scalability",
+        details: "High scalability",
         icon: <Check className={styles.iconii} />,
       },
       {
@@ -73,6 +73,7 @@ const data = [
     ],
   },
 ];
+
 
 const Compare = () => {
   return (
