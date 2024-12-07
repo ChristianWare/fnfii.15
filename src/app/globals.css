@@ -159,25 +159,12 @@ textarea:focus {
     font-size: 113.7%;
   }
 
-  /* h1,
+  h1,
   .span1 {
-    font-size: 5.5rem;
+    font-size: 6rem;
     letter-spacing: -0.02em;
-  } */
-  /* 
-  h2,
-  .h2v2,
-  .h2v3 {
-    font-size: 4.5rem;
-    letter-spacing: -0.02em;
-  } */
+  }
 
-  /* h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 1.8rem;
-  } */
 }
 
 @media screen and (max-width: 568px) {
