@@ -222,9 +222,9 @@ textarea:focus {
 } */
 
 /* Only use in production */
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   h1,
   h2 {
     letter-spacing: -1px;
   }
-} */
+}
