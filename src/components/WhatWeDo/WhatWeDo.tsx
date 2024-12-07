@@ -1,6 +1,6 @@
 "use client";
 
-import LayoutWrapper from "../LayoutWrapper";
+// import LayoutWrapper from "../LayoutWrapper";
 import styles from "./WhatWeDo.module.css";
 import animationData from "../../../public/lottie/cta.json";
 import animationData2 from "../../../public/lottie/email.json";
@@ -20,7 +20,7 @@ const data = [
   {
     id: 2,
     animation: animationData2,
-    title: "Effortless order management",
+    title: "Effortlessly manage your orders",
     desc: "Simplify your workflow with seamless order processing, real-time updates, and automated confirmations to keep your customers coming back.",
   },
   {
@@ -40,25 +40,25 @@ const data = [
 const WhatWeDo = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
-        <div className={styles.top}>
-          <h2 className={styles.heading}>
+      {/* <LayoutWrapper> */}
+      <div className={styles.top}>
+        {/* <h2 className={styles.heading}>
             We&apos;ll help you build a profitable{" "}
             <span className={styles.span}>E-commerce</span>e store you&apos;ll
             love
-          </h2>
-        </div>
-        <div className={styles.bottom}>
-          {data.map((x) => (
-            <div key={x.id} className={styles.card}>
-              <div className={styles.lottieBox}>
-                <Lottie animationData={x.animation} className={styles.lottie} />
-              </div>
-              <h3 className={styles.title}>{x.title}</h3>
+          </h2> */}
+      </div>
+      <div className={styles.bottom}>
+        {data.map((x) => (
+          <div key={x.id} className={styles.card}>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={x.animation} className={styles.lottie} />
             </div>
-          ))}
-        </div>
-      </LayoutWrapper>
+            <h3 className={styles.title}>{x.title}</h3>
+          </div>
+        ))}
+      </div>
+      {/* </LayoutWrapper> */}
     </section>
   );
 };

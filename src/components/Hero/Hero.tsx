@@ -1,17 +1,18 @@
 "use client";
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import FalseButton from "../FalseButton/FalseButton";
-import animationData from "../../../public/lottie/heroii.json";
+// import animationData from "../../../public/lottie/heroii.json";
 // import Usp from "../Usp/Usp";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
+import WhatWeDo from "../WhatWeDo/WhatWeDo";
 
 // Dynamically import Lottie with SSR disabled
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+// const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Hero = () => {
   return (
@@ -23,10 +24,7 @@ const Hero = () => {
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
                 <div className={styles.falseBtnContainer}>
-                  <FalseButton
-                    btnType='primary'
-                    text="Welcome!"
-                  />
+                  <FalseButton btnType='primary' text='Welcome!' />
                 </div>
                 <h1 className={styles.heading}>
                   We build <br />
@@ -51,17 +49,12 @@ const Hero = () => {
                 </div>
                 <TopNav />
               </div>
-              <div className={styles.lottieBox}>
-                <Lottie
-                  animationData={animationData}
-                  className={styles.lottie}
-                />
-              </div>
+             
             </div>
 
-            {/* <div className={styles.uspContainer}>
-              <Usp />
-            </div> */}
+            <div className={styles.uspContainer}>
+              <WhatWeDo />
+            </div>
           </div>
           <div className={styles.right}></div>
         </div>

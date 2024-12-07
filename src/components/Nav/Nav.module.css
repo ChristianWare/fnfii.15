@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1068px) {
   .navbar {
     align-items: center;
     justify-content: space-between;

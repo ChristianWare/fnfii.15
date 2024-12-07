@@ -3,8 +3,8 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
-// import animationData from "../../../public/lottie/agency.json";
-// import Lottie from "lottie-react";
+import animationData from "../../../public/lottie/heroii.json";
+import Lottie from "lottie-react";
 // import Experience from "../Experience/Experience";
 import FalseButton from "../FalseButton/FalseButton";
 
@@ -24,11 +24,11 @@ const data = [
     title: "14",
     desc: "Average days to launch your e-commerce store",
   },
-  {
-    id: 4,
-    title: "2",
-    desc: "Cups of coffee per day fueling our passion for creating impactful online stores",
-  },
+  // {
+  //   id: 4,
+  //   title: "2",
+  //   desc: "Cups of coffee per day fueling our passion for creating impactful online stores",
+  // },
 ];
 
 const AboutScrollText = () => {
@@ -42,6 +42,9 @@ const AboutScrollText = () => {
                 <FalseButton text='About us' btnType='primary' />
               </div>
               <h2 className={styles.heading}>What is Fonts & Footers?</h2>
+            </div>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
             </div>
             <p className={styles.copy}>
               Fonts & Footers is an e-commerce web development agency.

@@ -17,7 +17,6 @@ import NewFaq from "@/components/NewFaq/NewFaq";
 import FirstStep from "@/components/FirstStep/FirstStep";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Compare from "@/components/Compare/Compare";
-import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import Footerii from "@/components/Footerii/Footerii";
 import Calendly from "@/components/Calendly/Calendly";
 
@@ -25,17 +24,16 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <WhatWeDo />
       <AboutScrollText />
       <Problem />
       <Solution />
       <Owner />
-      <EcommFeatures />
       <Compare />
       <PostHero />
       <HowItWorks />
       <Projects />
       <Pricing />
+      <EcommFeatures />
       <Testimonials />
       <FirstStep />
       <NewFaq mapData={homePageFaqs} />

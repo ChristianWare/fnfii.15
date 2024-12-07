@@ -79,7 +79,6 @@
 
 .box {
   padding: 3rem;
-  /* border: 1px solid var(--lightBlack); */
   background-color: var(--tan2);
   border-radius: 10px;
   display: flex;

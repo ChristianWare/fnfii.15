@@ -28,7 +28,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 10rem;
   background-color: var(--tan2);
   padding: 3rem;
   border-radius: 10px;
@@ -50,26 +49,13 @@
   color: var(--purple);
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1068px) {
   .bottom {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card {
-    gap: 5rem;
-  }
-}
-
-@media screen and (max-width: 968px) {
-  .heading {
-    width: 70%;
   }
 }
 
 @media screen and (max-width: 668px) {
-  .heading {
-    width: 100%;
-  }
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
@@ -78,9 +64,5 @@
   .lottie,
   .lottieBox {
     height: 200px;
-  }
-
-  .card {
-    gap: 1rem;
   }
 }
