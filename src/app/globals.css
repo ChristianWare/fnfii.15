@@ -164,7 +164,6 @@ textarea:focus {
     font-size: 6rem;
     letter-spacing: -0.02em;
   }
-
 }
 
 @media screen and (max-width: 568px) {
@@ -174,6 +173,16 @@ textarea:focus {
 
   p {
     hyphens: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span {
+    line-height: 90%;
   }
 
   /* h1,
