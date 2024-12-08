@@ -47,7 +47,7 @@
 .spanii {
   color: var(--purple);
   text-decoration: underline;
-  margin-top: -0.7rem;
+  /* margin-top: -0.8rem; */
 }
 
 .copy {
