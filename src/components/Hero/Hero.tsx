@@ -1,18 +1,11 @@
 "use client";
 
-// import dynamic from "next/dynamic";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-// import FalseButton from "../FalseButton/FalseButton";
-// import animationData from "../../../public/lottie/heroii.json";
-// import Usp from "../Usp/Usp";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
-
-// Dynamically import Lottie with SSR disabled
-// const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Hero = () => {
   return (
@@ -23,17 +16,12 @@ const Hero = () => {
           <div className={styles.left}>
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
-                {/* <div className={styles.falseBtnContainer}>
-                  <FalseButton btnType='primary' text='Welcome!' />
-                </div> */}
                 <h1 className={styles.heading}>
-                  {/* We build 
-                  <span className={styles.span}>E-commerce</span> stores <br />
-                  for ambitious companies */}
                   We build
                   <br />
-                  <span className={styles.span}>E-commerce</span> websites.
-                  {/* Remove Carbon. */}
+                  <span className={styles.span}>E-commerce</span> websites{" "}
+                  <br />
+                  <span className={styles.spanii}> the right way.</span>
                 </h1>
                 <p className={styles.copy}>
                   We build custom online stores designed to elevate your brand,

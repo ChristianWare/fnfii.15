@@ -36,21 +36,24 @@
   text-transform: uppercase;
 }
 
-.span {
+.span,
+.spanii {
   white-space: nowrap;
-  color: var(--purple);
-  text-decoration: underline;
-  margin-bottom: 1rem;
   margin-right: 0.5rem;
   display: inline-block;
+  line-height: 1.1;
+}
+
+.spanii {
+  color: var(--purple);
+  text-decoration: underline;
+  margin-top: -0.7rem;
 }
 
 .copy {
   color: var(--black);
   width: 70%;
   font-size: 1.8rem;
-  margin-top: -1rem;
-  /* opacity: 0.8; */
 }
 
 .btnContainer {
@@ -58,7 +61,6 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   grid-gap: 2rem;
-  /* margin-bottom: 2rem; */
 }
 
 .lottieBox {
@@ -210,5 +212,11 @@
 
   .uspContainer {
     margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .spanii {
+    margin-top: 0.1rem;
   }
 }
