@@ -11,7 +11,7 @@ const data = [
   {
     id: 1,
     icon: <Listing className={styles.iconiii} />,
-    title: "Other E-commerce sites",
+    title: "Other E-comm websites",
     details: [
       {
         id: 1.1,
@@ -43,7 +43,7 @@ const data = [
   {
     id: 2,
     icon: <Clock className={styles.icon} />,
-    title: "Our E-commerce sites",
+    title: "Our E-comm websites",
     details: [
       {
         id: 2.1,
@@ -73,7 +73,6 @@ const data = [
     ],
   },
 ];
-
 
 const Compare = () => {
   return (

@@ -3,6 +3,25 @@
   font-size: 2rem;
   color: var(--black);
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.span {
+  font-family: var(--suisse);
+  font-size: 1.8rem;
+  background-color: var(--green3);
+  border: 1px solid var(--lightBlack);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
 }
 
 .white {

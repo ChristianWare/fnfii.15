@@ -8,7 +8,7 @@ interface Props {
 const Logo = ({ color = "" }: Props) => {
   return (
     <Link href='/' className={`${styles.logo} ${styles[color]}`}>
-      Fonts & Footers
+      Fonts <span className={styles.span}>&</span> Footers
     </Link>
   );
 };

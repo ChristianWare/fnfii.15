@@ -12,10 +12,13 @@
   line-height: 120%;
   margin-bottom: 2rem;
   color: var(--purple);
+  font-family: var(--suisse);
+  font-size: 2.5rem;
 }
 
 .author {
-  font-family: var(--suisse);
+  font-family: var(--chromaticCondensedBold);
+  font-size: 2.5rem;
 }
 
 .right {
@@ -110,9 +113,6 @@
     height: 254px;
   }
 
-  .heading {
-    line-height: 110%;
-  }
 }
 
 @keyframes pulse {

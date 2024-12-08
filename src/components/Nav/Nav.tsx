@@ -45,17 +45,16 @@ function Nav() {
       }
     };
 
-    // IntersectionObserver to track section visibility
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id); // Set active section based on section ID
+            setActiveSection(entry.target.id);
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.5 }
     );
 
     sections.forEach((section) => {
@@ -74,7 +73,6 @@ function Nav() {
 
   return (
     <>
-      {/* <TopNav /> */}
       <div
         style={{
           height: isFixed ? `${navHeight}px` : 0,
@@ -101,9 +99,6 @@ function Nav() {
             onClick={openMenu}
           >
             <div className={styles.navBox}>
-              {/* <li className={styles.navItem} onClick={() => setIsOpen(false)}>
-                <Link href='/'>{pathname === "/" ? <>Home</> : "Home"}</Link>
-              </li> */}
               {navItems.map((navItem, index) => (
                 <li
                   key={index}
@@ -111,7 +106,7 @@ function Nav() {
                     activeSection === navItem.href.substring(2)
                       ? styles.active
                       : ""
-                  }`} // Add the 'active' class when the section is visible
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href={navItem.href}>

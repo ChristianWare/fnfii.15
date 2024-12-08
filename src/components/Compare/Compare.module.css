@@ -40,9 +40,10 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border: 1px solid var(--lightBlack);
+  /* border: 1px solid var(--lightBlack); */
   padding: 2rem;
   border-radius: 10px;
+
 }
 
 .icon,
@@ -51,6 +52,10 @@
   width: 100px;
   height: 100px;
   color: var(--purple);
+}
+
+.column {
+  display: grid;
 }
 
 .column:nth-child(1) .iconii {
