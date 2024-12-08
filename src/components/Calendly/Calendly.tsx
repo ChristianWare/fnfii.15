@@ -10,28 +10,32 @@ const Calendly = () => {
   return (
     <section className={styles.container} id='schedule'>
       <LayoutWrapper>
-        <div className={styles.calBox} id='schedule'>
+        <div className={styles.calBox}>
+          {/* Left Section */}
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              Ready to get started? Scehdule a free
-              discovery call with us today
+              Ready to get started? Schedule a free discovery call with us today
             </h2>
             <div className={styles.imgContainer}>
               <Image src={CalendlyImage} fill alt='' className={styles.img} />
             </div>
           </div>
+
+          {/* Right Section */}
           <div className={styles.right}>
-            <InlineWidget
-              url='https://calendly.com/fontsandfooters/discovery-call'
-              styles={{
-                height: "900px",
-                borderRadius: "20px",
-              }}
-            />
+            <div className={styles.iframeWrapper}>
+              <InlineWidget
+                url='https://calendly.com/fontsandfooters/discovery-call'
+                styles={{
+                  height: "700px",
+                }}
+              />
+            </div>
           </div>
         </div>
       </LayoutWrapper>
     </section>
   );
 };
+
 export default Calendly;

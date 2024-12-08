@@ -30,10 +30,7 @@ const NewFaq: FC<Props> = ({ mapData }) => {
                 text='Frequently Asked Questions'
               />
             </div>
-            <h2 className={styles.heading}>
-              Win the e-commerce game by getting all your digital capabilities
-              in place
-            </h2>
+            <h2 className={styles.heading}>You may have wondered...</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.bLeft}>
