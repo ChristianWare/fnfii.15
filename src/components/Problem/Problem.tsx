@@ -39,7 +39,6 @@ const Problem = () => {
         <div className={styles.top}>
           <div className={styles.problemContainer}>
             <h2 className={styles.heading}>Problems we solve</h2>
-            <div className={styles.pattern}></div>
           </div>
         </div>
         <div className={styles.bottom}>
