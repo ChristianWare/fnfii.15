@@ -30,7 +30,6 @@ const Projects = () => {
                 />
               </div>
             </div>
-            <div className={styles.pattern}></div>
           </div>
           <div className={styles.dataContainer}>
             {projects.map((x, index) => (
@@ -41,7 +40,6 @@ const Projects = () => {
                     <div className={styles.imgContainer}>
                       <Image src={x.src} alt='' fill className={styles.img} />
                     </div>
-                    
                   </div>
                   <div className={styles.right}>
                     <div className={styles.featuresContainer}>
