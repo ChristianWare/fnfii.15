@@ -203,6 +203,11 @@
     text-align: center;
   }
 
+  .copy {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
   .btnContainer {
     grid-template-columns: repeat(1, 1fr);
   }
