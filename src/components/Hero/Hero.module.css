@@ -54,6 +54,8 @@
   color: var(--black);
   width: 70%;
   font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .btnContainer {
@@ -61,6 +63,7 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   grid-gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .lottieBox {
