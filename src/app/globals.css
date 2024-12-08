@@ -4,19 +4,15 @@
   --lightBlack: #808080;
   --green3: #aeff12;
   --green3b: #7fc005;
-  --green3c: #c5ff71;
-  --green4: #31715d;
   --tan: #f2efe9;
   --tan2: #e1e1d9;
   --tan3: #c4c4bc;
-  --tanGlass: rgba(242, 236, 221, 0.7);
   --white: #fffdfb;
   --gray: #dfdddd;
   --gray2: #d7d0d0;
   --gray3: #93969e;
   --purple: #5f46df;
   --purple2: #2703db;
-  --yellow: #fbda68;
 }
 
 * {
