@@ -11,7 +11,9 @@ const data = [
   {
     id: 1,
     icon: <Listing className={styles.iconiii} />,
-    title: "Other E-comm websites",
+    title: "Other E-comm stores",
+    iconii: <Clock className={styles.icon} />,
+    titleii: "Our E-comm stores",
     details: [
       {
         id: 1.1,
@@ -19,9 +21,19 @@ const data = [
         icon: <Close className={styles.iconii} />,
       },
       {
+        id: 2.1,
+        details: "Custom design",
+        icon: <Check className={styles.iconPurple} />,
+      },
+      {
         id: 1.2,
         details: "Performance issues",
         icon: <Close className={styles.iconii} />,
+      },
+      {
+        id: 2.2,
+        details: "Performance optimization",
+        icon: <Check className={styles.iconPurple} />,
       },
       {
         id: 1.3,
@@ -29,49 +41,64 @@ const data = [
         icon: <Close className={styles.iconii} />,
       },
       {
+        id: 2.3,
+        details: "High scalability",
+        icon: <Check className={styles.iconPurple} />,
+      },
+      {
         id: 1.4,
         details: "Poor SEO practices",
         icon: <Close className={styles.iconii} />,
+      },
+      {
+        id: 2.4,
+        details: "SEO-friendly development",
+        icon: <Check className={styles.iconPurple} />,
       },
       {
         id: 1.5,
         details: "Generic support",
         icon: <Close className={styles.iconii} />,
       },
-    ],
-  },
-  {
-    id: 2,
-    icon: <Clock className={styles.icon} />,
-    title: "Our E-comm websites",
-    details: [
-      {
-        id: 2.1,
-        details: "Custom design",
-        icon: <Check className={styles.iconii} />,
-      },
-      {
-        id: 2.2,
-        details: "Performance optimization",
-        icon: <Check className={styles.iconii} />,
-      },
-      {
-        id: 2.3,
-        details: "High scalability",
-        icon: <Check className={styles.iconii} />,
-      },
-      {
-        id: 2.4,
-        details: "SEO-friendly development",
-        icon: <Check className={styles.iconii} />,
-      },
       {
         id: 2.5,
         details: "Dedicated support",
-        icon: <Check className={styles.iconii} />,
+        icon: <Check className={styles.iconPurple} />,
       },
     ],
   },
+  // {
+  //   id: 2,
+  //   icon: <Clock className={styles.icon} />,
+  //   title: "Our E-comm stores",
+  //   details: [
+  //     {
+  //       id: 2.1,
+  //       details: "Custom design",
+  //       icon: <Check className={styles.iconii} />,
+  //     },
+  //     {
+  //       id: 2.2,
+  //       details: "Performance optimization",
+  //       icon: <Check className={styles.iconii} />,
+  //     },
+  //     {
+  //       id: 2.3,
+  //       details: "High scalability",
+  //       icon: <Check className={styles.iconii} />,
+  //     },
+  //     {
+  //       id: 2.4,
+  //       details: "SEO-friendly development",
+  //       icon: <Check className={styles.iconii} />,
+  //     },
+  //     {
+  //       id: 2.5,
+  //       details: "Dedicated support",
+  //       icon: <Check className={styles.iconii} />,
+  //     },
+  //   ],
+  // },
 ];
 
 const Compare = () => {
@@ -84,7 +111,8 @@ const Compare = () => {
               <FalseButton btnType='primary' text='Us vs. the other guys' />
             </div>
             <h2 className={styles.heading}>
-              Why choose us over the competition?
+              Why <span className={styles.span}>choose us</span> over the
+              competition?
             </h2>
             <p className={styles.copy}>
               When it comes to building your e-commerce store, not all solutions
@@ -102,9 +130,15 @@ const Compare = () => {
           <div className={styles.right}>
             {data.map((x) => (
               <div className={styles.column} key={x.id}>
-                <div className={styles.iconContainer}>
-                  {x.icon}
-                  <h3 className={styles.title}>{x.title}</h3>
+                <div className={styles.iconContainerBox}>
+                  <div className={styles.iconContainer}>
+                    <h3 className={styles.title}>{x.title}</h3>
+                    {x.icon}
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <h3 className={styles.title}>{x.titleii}</h3>
+                    {x.iconii}
+                  </div>
                 </div>
                 <div className={styles.dataBox}>
                   {x.details.map((y) => (

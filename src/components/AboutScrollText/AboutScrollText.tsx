@@ -23,11 +23,9 @@ const data = [
     title: "14",
     desc: "Average days to launch your e-commerce store",
   },
-
 ];
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-
 
 const AboutScrollText = () => {
   return (
@@ -39,7 +37,9 @@ const AboutScrollText = () => {
               <div className={styles.faslBtnContainer}>
                 <FalseButton text='About us' btnType='primary' />
               </div>
-              <h2 className={styles.heading}>What is Fonts & Footers?</h2>
+              <h2 className={styles.heading}>
+                What is <span className={styles.span}>Fonts & Footers?</span>
+              </h2>
             </div>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />

@@ -14,6 +14,7 @@
   color: var(--purple);
   font-family: var(--suisse);
   font-size: 2.5rem;
+  text-transform: none;
 }
 
 .author {
@@ -112,7 +113,6 @@
     width: 254px;
     height: 254px;
   }
-
 }
 
 @keyframes pulse {

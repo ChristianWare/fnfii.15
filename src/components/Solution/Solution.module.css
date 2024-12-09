@@ -27,6 +27,11 @@
   margin-top: -1rem;
 }
 
+.span {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
 .copy {
   font-family: var(--suisse);
   line-height: 130%;

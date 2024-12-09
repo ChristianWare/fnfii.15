@@ -48,9 +48,6 @@ const Solution = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        {/* <div className={styles.top}>
-          
-        </div> */}
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.rightBottom}>
@@ -68,7 +65,9 @@ const Solution = () => {
                 <FalseButton btnType='primary' text='Our Solutions' />
               </div>
               <h2 className={styles.heading}>
-                We build e-comm stores that truly resonate with your audience
+                We build e-comm stores that{" "}
+                <span className={styles.span}>truly</span> resonate with your
+                audience.
               </h2>
               <p className={styles.copy}>
                 You&apos;ve worked hard to create something unique—let&apos;s
