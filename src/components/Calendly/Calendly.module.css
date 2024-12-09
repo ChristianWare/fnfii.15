@@ -10,6 +10,7 @@
 .span {
   color: var(--purple);
   text-decoration: underline;
+  letter-spacing: 0px;
 }
 
 .imgContainer {

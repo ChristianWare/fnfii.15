@@ -79,7 +79,7 @@ const Footerii = () => {
                     <ul className={styles.sectionList}>
                       {x.section.map((y) => (
                         <li key={y.id} className={styles.listItem}>
-                          <span>{y.name}</span>
+                          {y.name}
                         </li>
                       ))}
                     </ul>
