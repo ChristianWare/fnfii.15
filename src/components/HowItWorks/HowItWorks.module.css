@@ -152,6 +152,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .heading {
+    line-height: 120%;
+  }
+
   .right {
     grid-gap: 2rem;
   }

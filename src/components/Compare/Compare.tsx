@@ -11,9 +11,9 @@ const data = [
   {
     id: 1,
     icon: <Listing className={styles.iconiii} />,
-    title: "Other E-comm stores",
+    title: "Other E-comm websites",
     iconii: <Clock className={styles.icon} />,
-    titleii: "Our E-comm stores",
+    titleii: "Our E-comm websites",
     details: [
       {
         id: 1.1,
