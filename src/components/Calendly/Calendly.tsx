@@ -11,17 +11,19 @@ const Calendly = () => {
     <section className={styles.container} id='schedule'>
       <LayoutWrapper>
         <div className={styles.calBox}>
-          {/* Left Section */}
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              Ready to get started? Schedule a free discovery call with us today
+              Ready to get started?{" "}
+              <span className={styles.span}>
+                {" "}
+                Schedule a free discovery call{" "}
+              </span>{" "}
+              with us today
             </h2>
             <div className={styles.imgContainer}>
               <Image src={CalendlyImage} fill alt='' className={styles.img} />
             </div>
           </div>
-
-          {/* Right Section */}
           <div className={styles.right}>
             <div className={styles.iframeWrapper}>
               <InlineWidget

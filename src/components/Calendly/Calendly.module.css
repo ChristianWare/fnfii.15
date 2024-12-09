@@ -4,8 +4,12 @@
 }
 
 .heading {
-  font-size: 4rem;
   width: 80%;
+}
+
+.span {
+  color: var(--purple);
+  text-decoration: underline;
 }
 
 .imgContainer {
@@ -58,7 +62,6 @@
   }
 
   .heading {
-    width: 60%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

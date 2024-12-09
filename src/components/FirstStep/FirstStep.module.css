@@ -12,6 +12,12 @@
   font-size: 3.5rem;
 }
 
+.span {
+  color: var(--purple);
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+
 .bottomMap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

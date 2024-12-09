@@ -13,16 +13,12 @@ import Hosting from "../../../public/icons/cloud.svg";
 import Listing from "../../../public/icons/listing.svg";
 import Clock from "../../../public/icons/clock.svg";
 import FalseButton from "../FalseButton/FalseButton";
-// import EveryPlan from "../EveryPlan/EveryPlan";
-// import Image, { StaticImageData } from "next/image";
 
-// Define a consistent type
 type EcommerceFeature = {
   icon?: JSX.Element | string;
   title?: string;
   description?: string;
   whyImportant?: { title: string }[];
-  // src?: StaticImageData;
 };
 
 const EcommFeatures = () => {
@@ -128,7 +124,8 @@ const EcommFeatures = () => {
         <div className={styles.top}>
           <FalseButton btnType='primary' text="What's included" />
           <h2 className={`${styles.heading} h2v2`}>
-            Features of our <br /> Ecommerce Websites
+            <span className={styles.span}>Features</span> of our <br />{" "}
+            Ecommerce Websites
           </h2>
           <p className={styles.copy}>
             Packed with powerful tools and intuitive design, our e-commerce

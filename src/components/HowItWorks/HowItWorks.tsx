@@ -47,7 +47,8 @@ const HowItWorks = () => {
             </div>
             <div className={styles.top}>
               <h2 className={styles.heading}>
-                What is the process for working with you?
+                What is the <span className={styles.headingSpan}>process</span>{" "}
+                for working with you?
               </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your

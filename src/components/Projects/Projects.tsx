@@ -19,9 +19,10 @@ const Projects = () => {
         <div className={styles.parentContent}>
           <div className={styles.top}>
             <div className={styles.leftSide}>
-              <FalseButton btnType='primary' text='Our Projects' />
+              <FalseButton btnType='primary' text='Past Projects' />
               <h2 className={styles.heading}>
-                Our work <br /> speaks for itself
+                <span className={styles.span}>Our work</span> <br /> speaks for
+                itself
               </h2>
               <div className={styles.lottieBox}>
                 <Lottie

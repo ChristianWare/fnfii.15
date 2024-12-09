@@ -233,10 +233,11 @@
   grid-gap: 3rem;
 }
 
-.custommize h3 {
+.customizeLeftTitle {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   font-family: var(--suisse);
+  text-transform: none;
 }
 
 /* .pattern {
@@ -307,6 +308,7 @@
     width: 100%;
     text-align: center;
   }
+
 
   .btnContainer {
     display: grid;

@@ -33,6 +33,11 @@
   color: var(--black);
 }
 
+.headingSpan {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
 .topText {
   color: var(--black);
   width: 80%;

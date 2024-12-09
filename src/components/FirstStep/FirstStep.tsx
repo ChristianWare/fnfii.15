@@ -74,8 +74,10 @@ const FirstStep = () => {
               <FalseButton btnType='primary' text='First steps' />
             </div>
             <h2 className={styles.heading}>
-              Take the first step toward your dream online store. Let&apos;s
-              build a high-converting website that elevates your business.
+              Take the first step toward your{" "}
+              <span className={styles.span}> dream online store. </span>{" "}
+              Let&apos;s build a high-converting website that elevates your
+              business.
             </h2>
           </div>
           <div className={styles.bottom}>

@@ -12,9 +12,7 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
 
   return (
-    <section
-      className={styles.container}
-    >
+    <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content} id='pricing'>
           <div className={styles.top}>
@@ -73,7 +71,9 @@ const Pricing = () => {
           </div>
           <div className={styles.custommize}>
             <div className={styles.customizeLeft}>
-              <h3>Looking for a customized package?</h3>
+              <h3 className={styles.customizeLeftTitle}>
+                Looking for a customized package?
+              </h3>
               <p>
                 If our plans don’t match your project or you want to talk it
                 over first, let’s have a call or lets talk while having a

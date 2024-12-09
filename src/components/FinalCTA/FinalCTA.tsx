@@ -12,17 +12,14 @@ const FinalCTA = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.left}>
-            {/* <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div> */}
-          </div>
+          <div className={styles.left}></div>
           <div className={styles.middle}>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>
             <h2 className={styles.heading}>
-              Win at the game <br /> called e-commerce
+              Win at the game <br /> called{" "}
+              <span className={styles.span}>e-commerce</span>
             </h2>
             <div className={styles.pattern}></div>
           </div>
