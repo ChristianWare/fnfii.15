@@ -27,6 +27,12 @@
   text-align: center;
 }
 
+.span {
+  color: var(--purple);
+  text-decoration: underline;
+  margin-left: 0.7rem;
+}
+
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

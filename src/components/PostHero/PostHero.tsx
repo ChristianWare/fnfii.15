@@ -34,7 +34,8 @@ const PostHero = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.topHeading}>
-              Work with us for peace of mind
+              Work with us for{" "}
+              <span className={styles.span}>peace of mind</span>
             </h2>
           </div>
           <div className={styles.bottom}>
