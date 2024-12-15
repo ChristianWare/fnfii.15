@@ -23,7 +23,7 @@ const FinalCTA = () => {
               E-commerce websites <br />
               <span className={styles.span}> the right way.</span>
             </h2>
-            <div className={styles.pattern}></div>
+            {/* <div className={styles.pattern}></div> */}
           </div>
         </div>
       </LayoutWrapper>

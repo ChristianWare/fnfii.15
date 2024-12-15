@@ -16,7 +16,7 @@ const Owner = () => {
               passion.&quot;
             </h2>
             <p className={styles.author}>
-              Chris Ware ~ Founder & Head Developer
+              Chris Ware ~ Founder & Lead Developer
             </p>
           </div>
           <div className={styles.right}>
