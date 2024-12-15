@@ -1,5 +1,6 @@
 import Claro from "../public/images/herov.jpg";
 import Taco from "../public/images/taco.webp";
+import Honey from "../public/images/honey.png";
 
 export const benefits = [
   {
@@ -251,6 +252,28 @@ export const pricing = [
 ] as const;
 
 export const projects = [
+  {
+    src: Honey,
+    title: "Golden Drips",
+    description:
+      "Chuxly is an e-comemrce website offering wireless, portable, and home theater speakers; and headphones, components, and accessories.",
+    techStack: [
+      {
+        title: "Full Product Catalog",
+      },
+      {
+        title: "Multiple Categories",
+      },
+      {
+        title: "Stripe Secure Checkout",
+      },
+      {
+        title: "Customer Reviews",
+      },
+    ],
+
+    href: "https://www.goldendrips.com/",
+  },
   {
     src: Claro,
     title: "Chuxly",
