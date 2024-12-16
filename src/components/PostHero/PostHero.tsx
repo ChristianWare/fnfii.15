@@ -1,5 +1,5 @@
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./PostHero.module.css";
+import LayoutWrapper from "../LayoutWrapper";
 import Payment from "../../../public/icons/payment.svg";
 import Clock from "../../../public/icons/clock.svg";
 import Handshake from "../../../public/icons/support.svg";

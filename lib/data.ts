@@ -256,7 +256,7 @@ export const projects = [
     src: Honey,
     title: "Golden Drips",
     description:
-      "Chuxly is an e-comemrce website offering wireless, portable, and home theater speakers; and headphones, components, and accessories.",
+      "Golden Drips is an e-comemrce website that sells a wide variety of honey.",
     techStack: [
       {
         title: "Full Product Catalog",
@@ -300,7 +300,7 @@ export const projects = [
     src: Taco,
     title: "Taco Bell Redesign",
     description:
-      "This project is a case study that redesigns Taco Bell's website. it has an admin panel where menu items can be created, updated and deleted. Users can see menu items and reach out via a fully functional contact form.",
+      "This project is a case study that redesigns Taco Bell's website. It has an admin panel where menu items can be created, updated and deleted. Users can see menu items and reach out via a fully functional contact form.",
     techStack: [
       {
         title: "Full Menu",
