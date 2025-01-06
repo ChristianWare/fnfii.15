@@ -96,7 +96,7 @@ const FirstStep = () => {
             </div>
           </div>
           <div className={styles.problemContainer}>
-            <div className={styles.pattern}></div>
+            {/* <div className={styles.pattern}></div> */}
           </div>
         </div>
       </LayoutWrapper>

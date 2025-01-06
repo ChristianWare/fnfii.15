@@ -23,7 +23,7 @@ const ContactDetails = () => {
             <br />
             <h3 className={styles.title}>Phone</h3>
             <Link href='tel:+62363267800' className={styles.detail}>
-              623-632-6780
+              623-335-4992
             </Link>
           </div>
           <div className={styles.box}>
