@@ -15,13 +15,19 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
+      delay: 0.1,
       staggerChildren: 0.8,
     },
   },
 };
 
 const child = {
-  hidden: { opacity: 0, x: 0, y: -40, filter: "blur(20px" },
+  hidden: {
+    opacity: 0,
+    x: 0,
+    y: 40,
+    filter: "blur(20px)",
+  },
   visible: {
     opacity: 1,
     x: 0,
@@ -43,12 +49,6 @@ const Hero = () => {
           <div className={styles.left}>
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
-                {/* <h1 className={styles.heading}>
-                  E-commerce
-                  <br />
-                  websites － <br />
-                  <span className={styles.spanii}> the right way</span>
-                </h1> */}
                 <motion.div
                   variants={container}
                   initial='hidden'
@@ -58,7 +58,9 @@ const Hero = () => {
                     <motion.h1
                       variants={child}
                       key={index}
-                      className={styles.heading}
+                      className={`${styles.heading} ${
+                        index === lines.length - 1 ? styles.highlight : ""
+                      }`}
                     >
                       {line}
                     </motion.h1>

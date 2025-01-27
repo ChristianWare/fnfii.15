@@ -34,7 +34,10 @@
 .heading {
   color: var(--black);
   text-transform: uppercase;
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
 }
+
 
 .span,
 .spanii {
@@ -47,6 +50,12 @@
 .spanii {
   color: var(--purple);
   text-decoration: underline;
+}
+
+.highlight {
+  color: var(--purple);
+  text-decoration: underline;
+  display: inline-block; /* Better for animation alignment */
 }
 
 .copy {
