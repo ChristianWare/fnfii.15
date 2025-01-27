@@ -48,7 +48,7 @@ export default function WhatWeDo2() {
           <div className={styles.left}>
             <h2 className={styles.heading}>What we do</h2>
             {data.map((x, index) => (
-              <div key={index} className={styles.dataBox}>
+              <div key={index} className={styles.dataBox} onClick={() => setActiveIndex(index)}>
                 <h3>{x.title}</h3>
                 <p>{x.desc}</p>
               </div>
