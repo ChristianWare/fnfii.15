@@ -55,15 +55,16 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--chromaticCondensedBold);
+  font-family: var(--BebasNeue);
   color: var(--black);
   text-transform: uppercase;
 }
 
 h1 {
-  font-size: 7.5rem;
+  font-size: 12rem;
   line-height: 0.9;
-  letter-spacing: -1.12px;
+  /* letter-spacing: -1.12px; */
+
 }
 
 h2 {

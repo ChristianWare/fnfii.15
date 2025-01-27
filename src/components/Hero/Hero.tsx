@@ -21,7 +21,7 @@ const Hero = () => {
                   <br />
                   <span className={styles.span}>E-commerce</span> websites{" "}
                   <br />
-                  <span className={styles.spanii}> the right way.</span>
+                  <span className={styles.spanii}> the right way</span>
                 </h1>
                 <p className={styles.copy}>
                   We build custom online stores designed to elevate your brand,

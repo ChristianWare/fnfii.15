@@ -34,7 +34,6 @@
 .heading {
   color: var(--black);
   text-transform: uppercase;
-  line-height: 1;
 }
 
 .span,
@@ -42,7 +41,7 @@
   white-space: nowrap;
   margin-right: 0.5rem;
   display: inline-block;
-  line-height: 1;
+  line-height: inherit;
 }
 
 .spanii {
