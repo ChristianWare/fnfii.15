@@ -5,7 +5,7 @@ import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
+// import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
 
 const lines = ["E-commerce", "websites －", "the right way"];
@@ -85,9 +85,9 @@ const Hero = () => {
                 <TopNav />
               </div>
             </div>
-            <div className={styles.uspContainer}>
+            {/* <div className={styles.uspContainer}>
               <WhatWeDo />
-            </div>
+            </div> */}
           </div>
         </div>
       </LayoutWrapper>
