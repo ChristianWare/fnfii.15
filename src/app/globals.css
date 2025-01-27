@@ -62,8 +62,8 @@ span {
 }
 
 h1 {
-  font-size: 12rem;
-  line-height: 0.9;
+  font-size: 9rem;
+  line-height: 1;
 
 }
 
@@ -155,10 +155,8 @@ textarea:focus {
     font-size: 113.7%;
   }
 
-  h1,
-  .span1 {
-    font-size: 6rem;
-    letter-spacing: -0.02em;
+  h1{
+    font-size: 7rem;
   }
 }
 
@@ -169,6 +167,11 @@ textarea:focus {
 
   p {
     hyphens: auto;
+  }
+
+
+  h1{
+    font-size: 12vw;
   }
 
   h2,
@@ -213,7 +216,7 @@ textarea:focus {
 } */
 
 /* Only use in production */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   h1 {
     letter-spacing: -1.5px;
   }
@@ -221,4 +224,4 @@ textarea:focus {
     letter-spacing: -1px;
     line-height: 120%;
   }
-}
+} */

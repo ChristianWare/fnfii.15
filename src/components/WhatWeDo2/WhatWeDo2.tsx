@@ -8,6 +8,7 @@ import animationData3 from "../../../public/lottie/pricing.json";
 import animationData4 from "../../../public/lottie/hero.json";
 import styles from "./WhatWeDo2.module.css";
 import LayoutWrapper from "../LayoutWrapper";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -44,23 +45,51 @@ export default function WhatWeDo2() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+        <h2 className={styles.heading}>Benefits of <br /> working with us</h2>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>What we do</h2>
             {data.map((x, index) => (
-              <div key={index} className={styles.dataBox} onClick={() => setActiveIndex(index)}>
-                <h3>{x.title}</h3>
-                <p>{x.desc}</p>
+              <div
+                key={index}
+                className={
+                  activeIndex === index
+                    ? `${styles.dataBox} ${styles.active}`
+                    : styles.dataBox
+                }
+                onClick={() => setActiveIndex(index)}
+              >
+                <h3 className={styles.title}>{x.title}</h3>
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{
+                    opacity: activeIndex === index ? 1 : 0,
+                    height: activeIndex === index ? "auto" : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className={styles.desc}
+                >
+                  {x.desc}
+                </motion.p>
               </div>
             ))}
           </div>
           <div className={styles.right}>
-            <div className={styles.lottieBox}>
-              <Lottie
-                animationData={data[activeIndex].animation}
-                className={styles.lottie}
-              />
-            </div>
+            <AnimatePresence mode='wait'>
+              <motion.div
+                key={activeIndex}
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className={styles.lottieBox}
+              >
+                <Lottie
+                  animationData={data[activeIndex].animation}
+                  className={styles.lottie}
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </LayoutWrapper>

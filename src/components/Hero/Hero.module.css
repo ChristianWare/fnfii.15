@@ -1,5 +1,6 @@
 .container {
   background-color: var(--tan);
+  min-height: 100vh;
 }
 
 .content {
@@ -38,7 +39,6 @@
   backface-visibility: hidden;
 }
 
-
 .span,
 .spanii {
   white-space: nowrap;
@@ -52,10 +52,10 @@
   text-decoration: underline;
 }
 
-.highlight {
+.lastLine {
   color: var(--purple);
   text-decoration: underline;
-  display: inline-block; /* Better for animation alignment */
+  display: inline-block;
 }
 
 .copy {
@@ -71,7 +71,8 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   grid-gap: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .lottieBox {
@@ -95,7 +96,7 @@
 } */
 
 .uspContainer {
-  margin-top: 1rem;
+  margin-top: 10rem;
   width: 100%;
   height: 100%;
 }

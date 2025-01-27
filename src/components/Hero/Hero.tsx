@@ -5,10 +5,10 @@ import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
-// import WhatWeDo from "../WhatWeDo/WhatWeDo";
+import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
 
-const lines = ["E-commerce", "websites －", "the right way"];
+const lines = ["We Build", "E-commerce websites", "the right way"];
 
 const container = {
   hidden: { opacity: 0 },
@@ -40,6 +40,18 @@ const child = {
   },
 };
 
+const uspVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 3,
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 const Hero = () => {
   return (
     <section className={styles.container}>
@@ -58,36 +70,47 @@ const Hero = () => {
                     <motion.h1
                       variants={child}
                       key={index}
-                      className={`${styles.heading} ${
-                        index === lines.length - 1 ? styles.highlight : ""
-                      }`}
+                      className={`${styles.heading}
+                        ${index === lines.length - 1 ? styles.lastLine : ""}`}
                     >
                       {line}
                     </motion.h1>
                   ))}
                 </motion.div>
-                <p className={styles.copy}>
-                  We build custom online stores designed to elevate your brand,
-                  engage your audience, and drive conversions.
-                </p>
-                <div className={styles.btnContainer}>
-                  <Button
-                    text='Start a project'
-                    href='/#contact'
-                    btnType='secondary'
-                  />
-                  <Button
-                    text='See Our Work'
-                    href='/#projects'
-                    btnType='primaryii'
-                  />
-                </div>
-                <TopNav />
+                <motion.div
+                  initial='hidden'
+                  animate='visible'
+                  variants={uspVariants}
+                >
+                  <p className={styles.copy}>
+                    We build custom online stores designed to elevate your
+                    brand, engage your audience, and drive conversions.
+                  </p>
+                  <div className={styles.btnContainer}>
+                    <Button
+                      text='Start a project'
+                      href='/#contact'
+                      btnType='secondary'
+                    />
+                    <Button
+                      text='See Our Work'
+                      href='/#projects'
+                      btnType='primaryii'
+                    />
+                  </div>
+                  <TopNav />
+                </motion.div>
               </div>
             </div>
-            {/* <div className={styles.uspContainer}>
-              <WhatWeDo />
-            </div> */}
+            <div className={styles.uspContainer}>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={uspVariants}
+              >
+                <WhatWeDo />
+              </motion.div>
+            </div>
           </div>
         </div>
       </LayoutWrapper>

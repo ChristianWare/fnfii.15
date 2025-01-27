@@ -19,14 +19,14 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Compare from "@/components/Compare/Compare";
 import Footerii from "@/components/Footerii/Footerii";
 import Calendly from "@/components/Calendly/Calendly";
-import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
+// import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
 // import Explain from "@/components/Explain/Explain";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <WhatWeDo2 />
+      {/* <WhatWeDo2 /> */}
       {/* <Explain /> */}
       <AboutScrollText />
       <Problem />
