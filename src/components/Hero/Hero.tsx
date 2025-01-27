@@ -19,7 +19,7 @@ const Hero = () => {
                 <h1 className={styles.heading}>
                   E-commerce
                   <br />
-                  websites - 
+                  websites － <br />
                   <span className={styles.spanii}> the right way</span>
                 </h1>
                 <p className={styles.copy}>
