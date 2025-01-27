@@ -5,8 +5,9 @@ import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
+// import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
+import RotatingText from "../RotatingText/RotatingText";
 
 const lines = ["We Build", "E-commerce websites", "the right way"];
 
@@ -101,8 +102,9 @@ const Hero = () => {
                   <TopNav />
                 </motion.div>
               </div>
+              <RotatingText text='Live mas • Live mas • Live mas • Live mas • Live mas • Live mas •' />
             </div>
-            <div className={styles.uspContainer}>
+            {/* <div className={styles.uspContainer}>
               <motion.div
                 initial='hidden'
                 animate='visible'
@@ -110,7 +112,7 @@ const Hero = () => {
               >
                 <WhatWeDo />
               </motion.div>
-            </div>
+            </div> */}
           </div>
         </div>
       </LayoutWrapper>

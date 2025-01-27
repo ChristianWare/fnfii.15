@@ -1,0 +1,42 @@
+.container {
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  user-select: none;
+  padding: 1rem;
+}
+
+.svg {
+  font-family: var(--staatliches);
+  text-transform: uppercase;
+  fill: var(--green);
+  user-select: none;
+}
+
+.olive {
+  fill: var(--olive);
+}
+
+.iconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--green);
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    width: 245px;
+    height: 245px;
+  }
+}
