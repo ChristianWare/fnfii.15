@@ -17,10 +17,9 @@ const Hero = () => {
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
                 <h1 className={styles.heading}>
-                  We build
+                  E-commerce
                   <br />
-                  <span className={styles.span}>E-commerce</span> websites{" "}
-                  <br />
+                  websites
                   <span className={styles.spanii}> the right way</span>
                 </h1>
                 <p className={styles.copy}>
