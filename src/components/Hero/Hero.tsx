@@ -6,6 +6,33 @@ import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
+import { motion } from "framer-motion";
+
+const lines = ["E-commerce", "websites －", "the right way"];
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.8,
+    },
+  },
+};
+
+const child = {
+  hidden: { opacity: 0, x: 0, y: -40, filter: "blur(20px" },
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 const Hero = () => {
   return (
@@ -16,12 +43,27 @@ const Hero = () => {
           <div className={styles.left}>
             <div className={styles.headingLottieBox}>
               <div className={styles.hlLeft}>
-                <h1 className={styles.heading}>
+                {/* <h1 className={styles.heading}>
                   E-commerce
                   <br />
                   websites － <br />
                   <span className={styles.spanii}> the right way</span>
-                </h1>
+                </h1> */}
+                <motion.div
+                  variants={container}
+                  initial='hidden'
+                  animate='visible'
+                >
+                  {lines.map((line, index) => (
+                    <motion.h1
+                      variants={child}
+                      key={index}
+                      className={styles.heading}
+                    >
+                      {line}
+                    </motion.h1>
+                  ))}
+                </motion.div>
                 <p className={styles.copy}>
                   We build custom online stores designed to elevate your brand,
                   engage your audience, and drive conversions.

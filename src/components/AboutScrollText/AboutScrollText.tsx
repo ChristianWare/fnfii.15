@@ -38,7 +38,7 @@ const AboutScrollText = () => {
                 <FalseButton text='About us' btnType='primary' />
               </div>
               <h2 className={styles.heading}>
-                What is <span className={styles.span}>Fonts & Footers?</span>
+                What is <br /> <span className={styles.span}>Fonts & Footers?</span>
               </h2>
             </div>
             <div className={styles.lottieBox}>

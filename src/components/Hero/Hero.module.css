@@ -91,6 +91,16 @@
   height: 100%;
 }
 
+.heading {
+  overflow: hidden; /* Contain the animation */
+}
+
+.hero_title {
+  position: relative;
+  display: inline-block; /* Required for positioning */
+  will-change: transform; /* Optimize for animation */
+}
+
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
