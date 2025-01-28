@@ -52,8 +52,8 @@
 }
 
 .right {
-  background-color: var(--tan);
-  border-radius: 10px;
+  background-color: var(--tan2);
+  border-radius: 12px;
 }
 
 .lottieBox {

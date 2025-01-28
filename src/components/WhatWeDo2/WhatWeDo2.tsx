@@ -1,12 +1,12 @@
 "use client";
 
+import styles from "./WhatWeDo2.module.css";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import animationData from "../../../public/lottie/cta.json";
 import animationData2 from "../../../public/lottie/email.json";
 import animationData3 from "../../../public/lottie/pricing.json";
 import animationData4 from "../../../public/lottie/hero.json";
-import styles from "./WhatWeDo2.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });

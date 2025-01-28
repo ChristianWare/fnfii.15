@@ -105,13 +105,9 @@ const Hero = () => {
         </div>
         <div className={styles.bottom}>
           <div className={styles.uspContainer}>
-            <motion.div
-              initial='hidden'
-              animate='visible'
-              variants={uspVariants}
-            >
+            <div>
               <WhatWeDo />
-            </motion.div>
+            </div>
           </div>
         </div>
       </LayoutWrapper>

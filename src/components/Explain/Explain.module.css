@@ -12,21 +12,22 @@
 }
 
 .heading {
-  width: 60%;
+  width: 80%;
   margin-right: auto;
-  line-height: 1.05;
+  font-size: 12rem;
+  display: inline-block; /* Helps with accurate trigger positioning */
 }
 
 .headingii {
-  color: var(--purple);
   text-decoration: underline;
   line-height: inherit;
 }
 
-.heading3 {
-  margin-right: auto;
-  margin-top: 1rem;
-  font-size: 3rem;
+.revealText {
+  color: var(--tan);
+  filter: drop-shadow(0 0 0.08rem var(--purple));
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .bottom {
@@ -37,11 +38,12 @@
   .heading {
     width: 100%;
     text-align: center;
+    font-size: 10rem;
   }
 }
 
 @media screen and (max-width: 668px) {
-  .bottom {
-    margin-top: 3rem;
+  .heading {
+    font-size: 7rem;
   }
 }
