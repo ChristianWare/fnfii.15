@@ -61,61 +61,51 @@ const Hero = () => {
     <section className={styles.container}>
       <Nav />
       <LayoutWrapper>
-        <div className={styles.content}>
-          <motion.div
-            variants={fadeIn("right", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.left}
-          >
-            <h1 className={styles.heading}>
-              We Build <br />
-              e-commerce websites <br />
-              <span className={styles.headingii}>The right way</span>
-            </h1>
-
-            <div>
-              <p className={styles.copy}>
-                We Build Fast, Secure, and Scalable Online Stores for Ambitious
-                Brands
-              </p>
-              <div className={styles.btnContainer}>
-                <Button
-                  text='Get Your Free Consultation →'
-                  href='/#contact'
-                  btnType='secondary'
-                />
-                <Button
-                  text='See Our Work'
-                  href='/#projects'
-                  btnType='primaryii'
-                />
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.right}
-          >
-            <div className={styles.RotatingTextContainer}>
-              <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
-            </div>
-          </motion.div>
-        </div>
         <motion.div
-          variants={fadeIn("down", 0.3)}
+          variants={fadeIn("", 0.3)}
           initial='hidden'
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className={styles.bottom}
+          className={styles.paren}
         >
-          <div className={styles.uspContainer}>
-            <div>
-              <WhatWeDo />
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <h1 className={styles.heading}>
+                We Build <br />
+                e-commerce websites <br />
+                <span className={styles.headingii}>The right way</span>
+              </h1>
+
+              <div>
+                <p className={styles.copy}>
+                  We Build Fast, Secure, and Scalable Online Stores for
+                  Ambitious Brands
+                </p>
+                <div className={styles.btnContainer}>
+                  <Button
+                    text='Get Your Free Consultation →'
+                    href='/#contact'
+                    btnType='secondary'
+                  />
+                  <Button
+                    text='See Our Work'
+                    href='/#projects'
+                    btnType='primaryii'
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={styles.right}>
+              <div className={styles.RotatingTextContainer}>
+                <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
+              </div>
+            </div>
+          </div>
+          <div className={styles.bottom}>
+            <div className={styles.uspContainer}>
+              <div>
+                <WhatWeDo />
+              </div>
             </div>
           </div>
         </motion.div>

@@ -1,109 +1,121 @@
-.header {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  padding-top: 2rem;
-  padding-left: 30px;
-  padding-right: 30px;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar {
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1rem 5.2rem;
-  z-index: 1000;
-}
-
-.navMenu,
-.navBox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  list-style: none;
-  position: relative;
-}
-
-.mobileLogo {
-  display: none;
-}
-
-.navItem {
-  position: relative;
-  line-height: 1em;
-  font-family: var(--suisseReg);
-  color: var(--black);
-  user-select: none;
-  scroll-behavior: smooth;
-  z-index: 998;
-  transition: color 0.1s ease-in-out;
-}
-
-.icon {
-  width: 15px;
-  height: 15px;
-  transform: rotate(90deg);
-  color: var(--black);
-  margin-right: 1rem;
-  position: relative;
-  top: 2px;
-}
-
-.bottom {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  z-index: 999;
-  position: relative;
-}
-
-.whiteBar {
-  position: relative;
-  z-index: 9999;
-  display: block;
-  width: 55px;
-  height: 3px;
-  margin: 5px auto;
-  border-radius: 15px;
-  background-color: var(--black);
-  transition: all 0.3s ease-in-out;
-}
-
-.navBarRight {
-  z-index: 3;
-}
-
-.btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  z-index: 998;
-}
-
-.phone {
-  position: relative;
-  top: 5px;
-  right: 5px;
-}
-
+/* 
 @media screen and (max-width: 1268px) {
   .navMenu {
     gap: 2rem;
   }
-}
+} */
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 4568px) {
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-top: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 5.2rem;
+    z-index: 1000;
+  }
+
+  .navMenu,
+  .navBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    position: relative;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+
+  .navItem {
+    position: relative;
+    line-height: 1em;
+    color: var(--black);
+    user-select: none;
+    scroll-behavior: smooth;
+    z-index: 998;
+    transition: color 0.1s ease-in-out;
+  }
+
+  .icon {
+    width: 15px;
+    height: 15px;
+    transform: rotate(90deg);
+    color: var(--black);
+    margin-right: 1rem;
+    position: relative;
+    top: 2px;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+    z-index: 999;
+    position: relative;
+    user-select: none;
+    font-size: 3rem;
+    line-height: 1;
+    border: 1px solid var(--black);
+    padding: 1rem 3rem;
+    padding-top: 1.3rem;
+    border-radius: 50px;
+    transition: all 0.2s ease-in;
+  }
+
+  .hamburger:hover {
+    background-color: var(--green3);
+  }
+
+  .whiteBar {
+    position: relative;
+    z-index: 9999;
+    display: block;
+    width: 55px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 15px;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navBarRight {
+    z-index: 3;
+  }
+
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 998;
+  }
+
+  .phone {
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+
   .fixed {
     position: fixed;
     top: 0;
@@ -129,15 +141,13 @@
     gap: 3rem;
     width: 100%;
     height: 100vh;
-
     transition: 0.3s all ease-in;
     z-index: 1000;
     background-color: var(--);
-    padding: 2rem;
+    /* padding: 2rem; */
     transform-origin: top;
-    background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in;
-    backdrop-filter: blur(5px);
+    background-color: var(--green3);
   }
 
   .navMenu.active {
@@ -157,15 +167,12 @@
   }
 
   .navItem {
-    color: var(--green3);
-    font-size: 2.4rem;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: -0.2px;
-    border-bottom: 1px solid var(--green3);
-    width: 100%;
-    padding: 2rem;
-    padding-bottom: 1rem;
+    color: var(--black);
+    font-size: 8rem;
+    font-family: var(--BebasNeue) !important;
+    padding-left: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 
   .navItem:nth-child(4) {
