@@ -21,30 +21,33 @@ import Footerii from "@/components/Footerii/Footerii";
 // import Calendly from "@/components/Calendly/Calendly";
 // import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
 import Explain from "@/components/Explain/Explain";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      {/* <WhatWeDo2 /> */}
-      <Explain />
-      <Projects />
-      <AboutScrollText />
-      <Problem />
-      <Solution />
-      <Owner />
-      <Compare />
-      <PostHero />
-      <HowItWorks />
-      <Pricing />
-      <EcommFeatures />
-      {/* <Testimonials /> */}
-      {/* <FirstStep /> */}
-      <NewFaq mapData={homePageFaqs} />
-      {/* <Calendly /> */}
-      <ContactHero />
-      <FinalCTA />
-      <Footerii />
-    </main>
+    <ReactLenis root>
+      <main>
+        <Hero />
+        {/* <WhatWeDo2 /> */}
+        <Explain />
+        <Projects />
+        <AboutScrollText />
+        <Problem />
+        <Solution />
+        <Owner />
+        <Compare />
+        <PostHero />
+        <HowItWorks />
+        <Pricing />
+        <EcommFeatures />
+        {/* <Testimonials /> */}
+        {/* <FirstStep /> */}
+        <NewFaq mapData={homePageFaqs} />
+        {/* <Calendly /> */}
+        <ContactHero />
+        <FinalCTA />
+        <Footerii />
+      </main>
+    </ReactLenis>
   );
 }
