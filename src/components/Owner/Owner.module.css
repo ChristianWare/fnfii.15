@@ -115,6 +115,12 @@
     width: 254px;
     height: 254px;
   }
+
+  .pulsingCircles::before,
+  .pulsingCircles::after,
+  .pulsingCircles div {
+    animation: none;
+  }
 }
 
 @keyframes pulse {

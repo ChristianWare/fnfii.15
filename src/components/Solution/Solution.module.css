@@ -68,6 +68,7 @@
 .img {
   object-fit: contain;
 }
+
 .rightBottom {
   display: grid;
   gap: 2rem;
@@ -175,8 +176,14 @@
 
 @media screen and (max-width: 568px) {
   .rightBottom {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
   }
 }
