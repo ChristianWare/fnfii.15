@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 4568px) {
   .header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -75,11 +75,13 @@
     user-select: none;
     font-size: 3rem;
     line-height: 1;
-    border: 1px solid var(--black);
+    border: 1px solid var(--tan3);
     padding: 1rem 3rem;
     padding-top: 1.3rem;
     border-radius: 50px;
     transition: all 0.2s ease-in;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
   }
 
   .hamburger:hover {
