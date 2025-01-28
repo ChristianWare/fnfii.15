@@ -26,12 +26,10 @@
   /* font-size: 17rem; */
 }
 
-
 .lastLine {
   color: var(--purple);
   text-decoration: underline;
   display: inline-block;
-
 }
 
 .copy {
@@ -49,16 +47,6 @@
   grid-gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.lottieBox {
-  width: 100%;
-  height: 400px;
-}
-
-.lottie {
-  height: 100%;
-  width: 100%;
 }
 
 .RotatingTextContainer {
@@ -116,11 +104,6 @@
     justify-content: center;
     width: 100%;
   }
-
-  .lottieBox {
-    width: 100%;
-    height: 350px;
-  }
 }
 
 @media screen and (max-width: 870px) {
@@ -130,10 +113,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hlLeft {
-    padding: 1rem;
-  }
-
   .heading,
   .copy {
     width: 100%;
@@ -157,19 +136,7 @@
 @media screen and (max-width: 668px) {
   .content {
     gap: 5rem;
-    margin-top: -3rem;
-  }
-
-  .left,
-  .hlLeft {
-    /* align-items: flex-start;
-    justify-content: flex-start; */
-    padding: 0rem;
-  }
-
-  .left {
-    padding: 0rem;
-    gap: 0;
+    margin-top: 3rem;
   }
 
   .heading,
@@ -177,28 +144,11 @@
     text-align: center;
   }
 
-  .copy {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-
   .btnContainer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .lottieBox {
-    position: relative;
-    top: -50px;
-    height: 250px;
-  }
-
   .uspContainer {
     margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 473px) {
-  .spanii {
-    margin-top: 0.1rem;
   }
 }

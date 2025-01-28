@@ -80,8 +80,8 @@ const Hero = () => {
               variants={uspVariants}
             >
               <p className={styles.copy}>
-                We build custom online stores designed to elevate your brand,
-                engage your audience, and drive conversions.
+                We Build Fast, Secure, and Scalable Online Stores for Ambitious
+                Brands
               </p>
               <div className={styles.btnContainer}>
                 <Button
