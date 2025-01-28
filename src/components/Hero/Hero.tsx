@@ -48,7 +48,7 @@ const uspVariants = {
     y: 0,
     filter: "blur(0px)",
     transition: {
-      delay: 2.3,
+      delay: 2.4,
       duration: 0.5,
       ease: "easeOut",
     },
