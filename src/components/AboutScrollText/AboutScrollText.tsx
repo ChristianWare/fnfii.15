@@ -7,6 +7,7 @@ import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const data = [
   {
@@ -32,40 +33,40 @@ const AboutScrollText = () => {
   return (
     <section className={styles.container} id='about'>
       <LayoutWrapper>
-        <h2 className={styles.heading}>
-          What is <br />{" "}
-          <motion.span
-            variants={fadeIn("", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.span}
-          >
-            Fonts & Footers?
-          </motion.span>
-        </h2>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
-            <p className={styles.copy}>
-              Fonts & Footers is an e-commerce web development agency.
-              We&apos;re experts at blending the latest technology with creative
-              ideas for top-notch results. By working with us, you get personal
-              care, support, and a website that boosts engagement and sales. We
-              operate out of sunny Phoenix, AZ.
-            </p>
-          </div>
-          <div className={styles.right}>
-            {data.map((x: any) => (
-              <div className={styles.card} key={x.id}>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.desc}>{x.desc}</p>
+        <motion.div
+          variants={fadeIn("", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.parent}
+        >
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <FalseButton text='About Us' btnType='primary' />
+              <div className={styles.lottieBox}>
+                <Lottie
+                  animationData={animationData}
+                  className={styles.lottie}
+                />
               </div>
-            ))}
+              <p className={styles.copy}>
+                Fonts & Footers is an e-commerce web development agency.
+                We&apos;re experts at blending the latest technology with
+                creative ideas for top-notch results. By working with us, you
+                get personal care, support, and a website that boosts engagement
+                and sales. We operate out of sunny Phoenix, AZ.
+              </p>
+            </div>
+            <div className={styles.right}>
+              {data.map((x: any) => (
+                <div className={styles.card} key={x.id}>
+                  <h3 className={styles.title}>{x.title}</h3>
+                  <p className={styles.desc}>{x.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );

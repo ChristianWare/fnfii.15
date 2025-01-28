@@ -30,8 +30,8 @@ export default function Home() {
         <Hero />
         {/* <WhatWeDo2 /> */}
         <Explain />
-        <Projects />
         <AboutScrollText />
+        <Projects />
         <Problem />
         <Solution />
         <Owner />
