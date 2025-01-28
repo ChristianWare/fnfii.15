@@ -24,24 +24,27 @@
   justify-content: space-between;
   gap: 1rem;
   border: 2px solid var(--tan2);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 3rem 2rem;
   cursor: pointer;
 }
 
 .active {
-  background-color: var(--tan);
+  background-color: var(--tan2);
+  border-color: var(--purple);
 }
 
+.active .title {
+  color: var(--purple);
+}
 .active .desc {
-  color: var(--gray3)
+  color: var(--gray3);
 }
 
 .title {
   font-size: 2rem;
-    font-family: var(--suisseReg);
-    text-transform: none;
-
+  font-family: var(--suisseReg);
+  text-transform: none;
 }
 
 .desc {
@@ -63,7 +66,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }

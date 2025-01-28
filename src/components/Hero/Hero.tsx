@@ -85,7 +85,7 @@ const Hero = () => {
               </p>
               <div className={styles.btnContainer}>
                 <Button
-                  text='Start a project'
+                  text='Get Your Free Consultation →'
                   href='/#contact'
                   btnType='secondary'
                 />

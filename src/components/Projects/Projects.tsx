@@ -21,6 +21,8 @@ const Projects = () => {
           <div className={styles.top}>
             <div className={styles.leftSide}>
               <h2 className={styles.heading}>
+                Featured
+                <br />
                 <motion.span
                   variants={fadeIn("", 0.3)}
                   initial='hidden'
@@ -28,9 +30,8 @@ const Projects = () => {
                   viewport={{ once: false, amount: 0.3 }}
                   className={styles.span}
                 >
-                  Our work
+                  Case Study
                 </motion.span>{" "}
-                <br /> speaks for itself
               </h2>
               <div className={styles.lottieBox}>
                 <Lottie

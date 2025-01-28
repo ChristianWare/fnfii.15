@@ -1,30 +1,29 @@
-import Button from "../Button/Button";
-import FalseButton from "../FalseButton/FalseButton";
+import { fadeIn } from "../../../animation/variants";
 import LayoutWrapper from "../LayoutWrapper";
+import WhatWeDo2 from "../WhatWeDo2/WhatWeDo2";
 import styles from "./Explain.module.css";
+import { motion } from "framer-motion";
 
 const Explain = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.falseBtnContainer}>
-            <FalseButton
-              btnType='primary'
-              text='How Fonts & Footers can help you'
-            />
-          </div>
           <h2 className={styles.heading}>
-            Whether you&apos;re looking to improve your current e-commerce
-            store, or start a new one, Fonts & Footers can help.
+            Most web developers build sites — we build{" "}
+            <motion.span
+              variants={fadeIn("", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.headingii}
+            >
+              profit engines.
+            </motion.span>{" "}
           </h2>
-          <div className={styles.btnContainer}>
-            <Button
-              text='Problems we solve'
-              href='/#problems'
-              btnType='secondary'
-            />
-            <Button text='See Our Work' href='/#projects' btnType='primaryii' />
+         
+          <div className={styles.bottom}>
+            <WhatWeDo2 />
           </div>
         </div>
       </LayoutWrapper>

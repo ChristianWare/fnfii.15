@@ -20,14 +20,15 @@ import Compare from "@/components/Compare/Compare";
 import Footerii from "@/components/Footerii/Footerii";
 // import Calendly from "@/components/Calendly/Calendly";
 // import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
-// import Explain from "@/components/Explain/Explain";
+import Explain from "@/components/Explain/Explain";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       {/* <WhatWeDo2 /> */}
-      {/* <Explain /> */}
+      <Explain />
+      <Projects />
       <AboutScrollText />
       <Problem />
       <Solution />
@@ -35,7 +36,6 @@ export default function Home() {
       <Compare />
       <PostHero />
       <HowItWorks />
-      <Projects />
       <Pricing />
       <EcommFeatures />
       {/* <Testimonials /> */}
