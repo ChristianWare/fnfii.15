@@ -1,6 +1,5 @@
 :root {
   --black: #333438;
-  --green: #37313b;
   --lightBlack: #808080;
   --green3: #aeff12;
   --green3b: #7fc005;
@@ -33,7 +32,6 @@ html {
   height: 100%;
 }
 
-
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
@@ -62,21 +60,19 @@ span {
 }
 
 h1 {
-  font-size: 9rem;
-  line-height: 1;
-
+  font-size: 10rem;
+  line-height: .9;
+  letter-spacing: 1px;
 }
 
 h2 {
   font-size: 7.5rem;
-  line-height: .9;
-  /* letter-spacing: -0.01em; */
+  line-height: 0.9;
 }
 
 h3 {
   font-size: 2.5rem;
   line-height: 1em;
-  /* letter-spacing: -0.01em; */
 }
 
 h4 {
@@ -155,7 +151,7 @@ textarea:focus {
     font-size: 113.7%;
   }
 
-  h1{
+  h1 {
     font-size: 7rem;
   }
 }
@@ -168,17 +164,17 @@ textarea:focus {
   p {
     hyphens: auto;
   }
-
+  /* 
 
   h1{
-    font-size: 12vw;
-  }
+    font-size: 5rem;
+  } */
 
   h2,
   h3,
   h4,
   h5,
-  h6{
+  h6 {
     /* line-height: 90%; */
     text-transform: none;
   }
@@ -216,12 +212,12 @@ textarea:focus {
 } */
 
 /* Only use in production */
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   h1 {
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
   }
   h2 {
-    letter-spacing: -1px;
-    line-height: 120%;
+    letter-spacing: -2px;
+    /* line-height: 120%; */
   }
-} */
+}

@@ -62,60 +62,56 @@ const Hero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.headingLottieBox}>
-              <div className={styles.hlLeft}>
-                <motion.div
-                  variants={container}
-                  initial='hidden'
-                  animate='visible'
-                >
-                  {lines.map((line, index) => (
-                    <motion.h1
-                      variants={child}
-                      key={index}
-                      className={`${styles.heading}
+            <motion.div variants={container} initial='hidden' animate='visible'>
+              {lines.map((line, index) => (
+                <motion.h1
+                  variants={child}
+                  key={index}
+                  className={`${styles.heading}
                         ${index === lines.length - 1 ? styles.lastLine : ""}`}
-                    >
-                      {line}
-                    </motion.h1>
-                  ))}
-                </motion.div>
-                <motion.div
-                  initial='hidden'
-                  animate='visible'
-                  variants={uspVariants}
                 >
-                  <p className={styles.copy}>
-                    We build custom online stores designed to elevate your
-                    brand, engage your audience, and drive conversions.
-                  </p>
-                  <div className={styles.btnContainer}>
-                    <Button
-                      text='Start a project'
-                      href='/#contact'
-                      btnType='secondary'
-                    />
-                    <Button
-                      text='See Our Work'
-                      href='/#projects'
-                      btnType='primaryii'
-                    />
-                  </div>
-                </motion.div>
+                  {line}
+                </motion.h1>
+              ))}
+            </motion.div>
+            <motion.div
+              initial='hidden'
+              animate='visible'
+              variants={uspVariants}
+            >
+              <p className={styles.copy}>
+                We build custom online stores designed to elevate your brand,
+                engage your audience, and drive conversions.
+              </p>
+              <div className={styles.btnContainer}>
+                <Button
+                  text='Start a project'
+                  href='/#contact'
+                  btnType='secondary'
+                />
+                <Button
+                  text='See Our Work'
+                  href='/#projects'
+                  btnType='primaryii'
+                />
               </div>
-              <div className={styles.RotatingTextContainer}>
-                <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
-              </div>
+            </motion.div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.RotatingTextContainer}>
+              <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
             </div>
-            <div className={styles.uspContainer}>
-              <motion.div
-                initial='hidden'
-                animate='visible'
-                variants={uspVariants}
-              >
-                <WhatWeDo />
-              </motion.div>
-            </div>
+          </div>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.uspContainer}>
+            <motion.div
+              initial='hidden'
+              animate='visible'
+              variants={uspVariants}
+            >
+              <WhatWeDo />
+            </motion.div>
           </div>
         </div>
       </LayoutWrapper>

@@ -37,6 +37,7 @@ const MatterMonoMedium = localFont({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "Fonts & Footers",
   description: "E-commerce Web Design and Developement Agency",
@@ -57,7 +58,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable}`}
+        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} $`}
       >
         <NoiseBg>
           <ScrollIndicator />

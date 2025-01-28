@@ -5,27 +5,12 @@
 
 .content {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 10px;
-  padding-top: 3rem;
-}
-
-.headingLottieBox {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 3rem;
   width: 100%;
 }
 
-.hlLeft {
+.left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,25 +23,15 @@
   text-transform: uppercase;
   will-change: transform, opacity, filter;
   backface-visibility: hidden;
+  /* font-size: 17rem; */
 }
 
-.span,
-.spanii {
-  white-space: nowrap;
-  margin-right: 0.5rem;
-  display: inline-block;
-  line-height: inherit;
-}
-
-.spanii {
-  color: var(--purple);
-  text-decoration: underline;
-}
 
 .lastLine {
   color: var(--purple);
   text-decoration: underline;
   display: inline-block;
+
 }
 
 .copy {
