@@ -5,6 +5,8 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Explain.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Explain = () => {
   const [lettersRef, setLettersRef] = useArrayRef();
@@ -67,10 +69,16 @@ const Explain = () => {
               </span>
             ))}
           </h2>
-          <h2 className={styles.headingii}>
+          <motion.h2
+            variants={fadeIn("", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: true }}
+            className={styles.headingii}
+          >
             Most web developers build sites — we build profit engines. Here’s
             why e-commerce requires our niche expertise
-          </h2>
+          </motion.h2>
         </div>
       </LayoutWrapper>
     </section>
