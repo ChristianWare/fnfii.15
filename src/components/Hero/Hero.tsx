@@ -7,53 +7,54 @@ import Nav from "../Nav/Nav";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
 import RotatingText from "../RotatingText/RotatingText";
+import { fadeIn } from "../../../animation/variants";
 
-const lines = ["We Build", "E-commerce websites", "the right way"];
+// const lines = ["We Build", "E-commerce websites", "the right way"];
 
-const container = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.1,
-      staggerChildren: 0.8,
-    },
-  },
-};
+// const container = {
+//   hidden: { opacity: 0 },
+//   visible: {
+//     opacity: 1,
+//     transition: {
+//       delay: 0.1,
+//       staggerChildren: 0.8,
+//     },
+//   },
+// };
 
-const child = {
-  hidden: {
-    opacity: 0,
-    x: 0,
-    y: 40,
-    filter: "blur(20px)",
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    filter: "blur(0px)",
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
+// const child = {
+//   hidden: {
+//     opacity: 0,
+//     x: 0,
+//     y: 40,
+//     filter: "blur(20px)",
+//   },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     y: 0,
+//     filter: "blur(0px)",
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeOut",
+//     },
+//   },
+// };
 
-const uspVariants = {
-  hidden: { opacity: 0, x: 0, y: 40, filter: "blur(20px)" },
-  visible: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    filter: "blur(0px)",
-    transition: {
-      delay: 2.4,
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
+// const uspVariants = {
+//   hidden: { opacity: 0, x: 0, y: 40, filter: "blur(20px)" },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     y: 0,
+//     filter: "blur(0px)",
+//     transition: {
+//       delay: 2.4,
+//       duration: 0.5,
+//       ease: "easeOut",
+//     },
+//   },
+// };
 
 const Hero = () => {
   return (
@@ -61,24 +62,20 @@ const Hero = () => {
       <Nav />
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.left}>
-            <motion.div variants={container} initial='hidden' animate='visible'>
-              {lines.map((line, index) => (
-                <motion.h1
-                  variants={child}
-                  key={index}
-                  className={`${styles.heading}
-                        ${index === lines.length - 1 ? styles.lastLine : ""}`}
-                >
-                  {line}
-                </motion.h1>
-              ))}
-            </motion.div>
-            <motion.div
-              initial='hidden'
-              animate='visible'
-              variants={uspVariants}
-            >
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.left}
+          >
+            <h1 className={styles.heading}>
+              We Build <br />
+              e-commerce websites <br />
+              <span className={styles.headingii}>The right way</span>
+            </h1>
+
+            <div>
               <p className={styles.copy}>
                 We Build Fast, Secure, and Scalable Online Stores for Ambitious
                 Brands
@@ -95,21 +92,33 @@ const Hero = () => {
                   btnType='primaryii'
                 />
               </div>
-            </motion.div>
-          </div>
-          <div className={styles.right}>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.right}
+          >
             <div className={styles.RotatingTextContainer}>
               <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className={styles.bottom}>
+        <motion.div
+          variants={fadeIn("down", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.bottom}
+        >
           <div className={styles.uspContainer}>
             <div>
               <WhatWeDo />
             </div>
           </div>
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );

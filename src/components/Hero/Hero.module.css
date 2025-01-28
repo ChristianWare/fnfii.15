@@ -26,10 +26,11 @@
   /* font-size: 17rem; */
 }
 
-.lastLine {
+.headingii {
   color: var(--purple);
   text-decoration: underline;
   display: inline-block;
+  line-height: inherit;
 }
 
 .copy {
