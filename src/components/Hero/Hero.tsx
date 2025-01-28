@@ -101,10 +101,11 @@ const Hero = () => {
                       btnType='primaryii'
                     />
                   </div>
-                  {/* <TopNav /> */}
                 </motion.div>
               </div>
-              <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
+              <div className={styles.RotatingTextContainer}>
+                <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
+              </div>
             </div>
             <div className={styles.uspContainer}>
               <motion.div

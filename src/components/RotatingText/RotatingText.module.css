@@ -8,15 +8,15 @@
 }
 
 .container {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 2px solid var(--purple);
   position: relative;
   display: block;
   user-select: none;
   padding: 1rem;
-  animation: rotate 10s linear infinite; 
+  animation: rotate 20s linear infinite;
 }
 
 .container:after {
@@ -60,6 +60,13 @@
   .container {
     width: 300px;
     height: 300px;
+  }
+
+  .svg textPath {
+    fill: var(--purple);
+    stroke: var(--purple);
+    stroke-width: 0.1px;
+    opacity: 0.3;
   }
 }
 
