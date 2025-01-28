@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import styles from "./RotatingText.module.css";
 import { FC } from "react";
 
@@ -10,34 +9,15 @@ interface RotatingTextProps {
   color?: string;
 }
 
-const RotatingText: FC<RotatingTextProps> = ({
-  text,
-  color = "",
-}) => {
-  const [rotationAngle, setRotationAngle] = useState(0);
-
-  useEffect(() => {
-    const scrollListener = () => {
-      const scrollY = window.scrollY;
-      const newRotationAngle = scrollY * 0.5;
-      setRotationAngle(newRotationAngle);
-    };
-
-    window.addEventListener("scroll", scrollListener);
-
-    return () => {
-      window.removeEventListener("scroll", scrollListener);
-    };
-  }, []);
+const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
+ 
 
   return (
     <div className={styles.container}>
       <svg
         className={styles.svg}
         viewBox='0 0 100 100'
-        style={{
-          transform: `rotate(${rotationAngle}deg)`,
-        }}
+
       >
         <defs>
           <path
@@ -49,7 +29,7 @@ const RotatingText: FC<RotatingTextProps> = ({
         a 37,37 0 1,1 -74,0'
           />
         </defs>
-        <text font-size='11'>
+        <text font-size='16'>
           <textPath
             className={`${styles.svg} ${styles[color]}`}
             xlinkHref='#circle'
@@ -58,7 +38,6 @@ const RotatingText: FC<RotatingTextProps> = ({
           </textPath>
         </text>
       </svg>
-      
     </div>
   );
 };

@@ -3,9 +3,8 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-import TopNav from "../TopNav/TopNav";
 import Nav from "../Nav/Nav";
-// import WhatWeDo from "../WhatWeDo/WhatWeDo";
+import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
 import RotatingText from "../RotatingText/RotatingText";
 
@@ -42,11 +41,14 @@ const child = {
 };
 
 const uspVariants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0, x: 0, y: 40, filter: "blur(20px)" },
   visible: {
     opacity: 1,
+    x: 0,
+    y: 0,
+    filter: "blur(0px)",
     transition: {
-      delay: 3,
+      delay: 2.3,
       duration: 0.5,
       ease: "easeOut",
     },
@@ -99,12 +101,12 @@ const Hero = () => {
                       btnType='primaryii'
                     />
                   </div>
-                  <TopNav />
+                  {/* <TopNav /> */}
                 </motion.div>
               </div>
-              <RotatingText text='Live mas • Live mas • Live mas • Live mas • Live mas • Live mas •' />
+              <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
             </div>
-            {/* <div className={styles.uspContainer}>
+            <div className={styles.uspContainer}>
               <motion.div
                 initial='hidden'
                 animate='visible'
@@ -112,7 +114,7 @@ const Hero = () => {
               >
                 <WhatWeDo />
               </motion.div>
-            </div> */}
+            </div>
           </div>
         </div>
       </LayoutWrapper>

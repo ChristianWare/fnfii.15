@@ -6,6 +6,7 @@ import animationData2 from "../../../public/lottie/email.json";
 import animationData3 from "../../../public/lottie/pricing.json";
 import animationData4 from "../../../public/lottie/hero.json";
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -42,12 +43,12 @@ const WhatWeDo = () => {
       <div className={styles.top}></div>
       <div className={styles.bottom}>
         {data.map((x) => (
-          <div key={x.id} className={styles.card}>
+          <motion.div key={x.id} className={styles.card}>
             <div className={styles.lottieBox}>
               <Lottie animationData={x.animation} className={styles.lottie} />
             </div>
             <p className={styles.title}>{x.title}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
