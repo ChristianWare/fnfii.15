@@ -1,28 +1,35 @@
 "use client";
 
 import styles from "./FinalCTA.module.css";
-import LayoutWrapper from "../LayoutWrapper";
-import animationData from "../../../public/lottie/hero.json";
-import dynamic from "next/dynamic";
-
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+// import LayoutWrapper from "../LayoutWrapper";
+import RotatingText from "../RotatingText/RotatingText";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const FinalCTA = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.lottieBox}>
-            <Lottie animationData={animationData} className={styles.lottie} />
+      {/* <LayoutWrapper> */}
+        <motion.div
+          variants={fadeIn("", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className={styles.parentContent}
+        >
+          <div className={styles.content}>
+            <div className={styles.RotatingTextContainer}>
+              <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
+            </div>
+            <h2 className={styles.heading}>
+              We build
+              <br />
+              E-commerce websites <br />
+              <span className={styles.span}> the right way</span>
+            </h2>
           </div>
-          <h2 className={styles.heading}>
-            We build
-            <br />
-            E-commerce websites <br />
-            <span className={styles.span}> the right way</span>
-          </h2>
-        </div>
-      </LayoutWrapper>
+        </motion.div>
+      {/* </LayoutWrapper> */}
     </section>
   );
 };

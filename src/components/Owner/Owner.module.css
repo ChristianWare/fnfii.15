@@ -1,7 +1,5 @@
 .container {
   background-color: var(--tan);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .content {
@@ -106,6 +104,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  
   .imgContainer {
     width: 250px;
     height: 250px;
@@ -114,12 +117,6 @@
   .pulsingCircles {
     width: 254px;
     height: 254px;
-  }
-
-  .pulsingCircles::before,
-  .pulsingCircles::after,
-  .pulsingCircles div {
-    animation: none;
   }
 }
 

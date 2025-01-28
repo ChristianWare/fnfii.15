@@ -1,7 +1,5 @@
 .container {
   background-color: var(--tan);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .top {
@@ -19,10 +17,6 @@
   margin-right: auto;
 }
 
-.heading {
-  margin-top: -1rem;
-}
-
 .span {
   color: var(--purple);
   text-decoration: underline;
@@ -32,6 +26,11 @@
   width: 40%;
   margin-bottom: 3rem;
   opacity: 0.7;
+}
+
+.lottie {
+  width: 200px;
+  height: 200px;
 }
 
 .dataContainer {
@@ -114,6 +113,10 @@
     text-align: center;
   }
 
+  .lottie {
+    margin-bottom: 5rem;
+  }
+
   .copy {
     width: 80%;
   }
@@ -147,6 +150,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .top {
     align-items: center;
     justify-content: center;

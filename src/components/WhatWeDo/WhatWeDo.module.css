@@ -50,6 +50,7 @@
   font-size: 2rem;
   font-family: var(--suisse);
   letter-spacing: -0.001em;
+  text-align: center;
 }
 
 @media screen and (max-width: 1068px) {

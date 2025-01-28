@@ -74,67 +74,59 @@ const Compare = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <h2 className={styles.heading}>
-              Why{" "}
-              <motion.span
-                variants={fadeIn("", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.span}
-              >
-                choose us
-              </motion.span>{" "}
-              over the competition?
-            </h2>
-            <p className={styles.copy}>
-              When it comes to building your e-commerce store, not all solutions
-              are created equal. We go beyond templates and generic designs to
-              deliver custom-built websites tailored to your unique goals.
-            </p>
-            <div className={styles.btnContainer}>
-              <Button
-                text='Schedule Discovery Call'
-                href='/#schedule'
-                btnType='secondary'
-              />
+        <motion.div
+          variants={fadeIn("", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className={styles.parentContent}
+        >
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <h2 className={styles.heading}>
+                Why <span className={styles.span}>choose us</span> over the
+                competition?
+              </h2>
+              <p className={styles.copy}>
+                When it comes to building your e-commerce store, not all
+                solutions are created equal. We go beyond templates and generic
+                designs to deliver custom-built websites tailored to your unique
+                goals.
+              </p>
+              <div className={styles.btnContainer}>
+                <Button
+                  text='Schedule Discovery Call'
+                  href='/#schedule'
+                  btnType='secondary'
+                />
+              </div>
+            </div>
+            <div className={styles.right}>
+              {data.map((x) => (
+                <div className={styles.column} key={x.id}>
+                  <div className={styles.iconContainerBox}>
+                    <div className={styles.iconContainer}>
+                      <h3 className={styles.title}>{x.title}</h3>
+                      {x.icon}
+                    </div>
+                    <div className={styles.iconContainer}>
+                      <h3 className={styles.title}>{x.titleii}</h3>
+                      {x.iconii}
+                    </div>
+                  </div>
+                  <div className={styles.dataBox}>
+                    {x.details.map((y) => (
+                      <ul key={y.id} className={styles.box}>
+                        <div>{y.icon}</div>
+                        <li>{y.details}</li>
+                      </ul>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          <div className={styles.right}>
-            {data.map((x) => (
-              <div className={styles.column} key={x.id}>
-                <div className={styles.iconContainerBox}>
-                  <div className={styles.iconContainer}>
-                    <h3 className={styles.title}>{x.title}</h3>
-                    {x.icon}
-                  </div>
-                  <div className={styles.iconContainer}>
-                    <h3 className={styles.title}>{x.titleii}</h3>
-                    {x.iconii}
-                  </div>
-                </div>
-                <div className={styles.dataBox}>
-                  {x.details.map((y) => (
-                    <ul key={y.id} className={styles.box}>
-                      <motion.div
-                        variants={fadeIn("left", 0.3)}
-                        initial='hidden'
-                        whileInView={"show"}
-                        viewport={{ once: false, amount: 0.3 }}
-                      >
-                        {y.icon}
-                      </motion.div>
-
-                      <li>{y.details}</li>
-                    </ul>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );

@@ -31,7 +31,7 @@ const NewFaq: FC<Props> = ({ mapData }) => {
                 variants={fadeIn("", 0.3)}
                 initial='hidden'
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true }}
                 className={styles.headingii}
               >
                 Questions

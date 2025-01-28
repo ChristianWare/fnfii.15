@@ -148,8 +148,4 @@
   .btnContainer {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .uspContainer {
-    margin-top: 3rem;
-  }
 }

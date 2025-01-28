@@ -37,9 +37,12 @@ const AboutScrollText = () => {
           variants={fadeIn("", 0.3)}
           initial='hidden'
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
           className={styles.parent}
         >
+          <h2 className={styles.heading}>
+            What is <br /> <span className={styles.span}>Fonts & Footers?</span>
+          </h2>
           <div className={styles.content}>
             <div className={styles.left}>
               <FalseButton text='About Us' btnType='primary' />

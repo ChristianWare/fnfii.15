@@ -14,6 +14,8 @@ import Listing from "../../../public/icons/listing.svg";
 import Clock from "../../../public/icons/clock.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import dynamic from "next/dynamic";
+import animationData from "../../../public/lottie/usp.json";
 
 type EcommerceFeature = {
   icon?: JSX.Element | string;
@@ -21,6 +23,8 @@ type EcommerceFeature = {
   description?: string;
   whyImportant?: { title: string }[];
 };
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const EcommFeatures = () => {
   const ecommerceFeatures: EcommerceFeature[] = [
@@ -122,37 +126,40 @@ const EcommFeatures = () => {
   return (
     <section className={styles.container} id='features'>
       <LayoutWrapper>
-        <div className={styles.top}>
-          <h2 className={styles.heading}>
-            <motion.span
-              variants={fadeIn("", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className={styles.span}
-            >
-              Features
-            </motion.span>{" "}
-            of our <br /> Ecommerce Websites
-          </h2>
-          <p className={styles.copy}>
-            Packed with powerful tools and intuitive design, our e-commerce
-            websites are built to enhance user experience, drive sales, and
-            scale effortlessly with your business.
-          </p>
-        </div>
-        <div className={styles.dataContainer}>
-          {ecommerceFeatures.map((x, index) => (
-            <div key={index} className={styles.content}>
-              <div className={styles.left}>
-                <div className={styles.iconContainer}>{x.icon}</div>
-              </div>
-              <div className={styles.right}>
-                <h3 className={styles.title}>{x.title}</h3>
-              </div>
+        <motion.div
+          variants={fadeIn("", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className={styles.parent}
+        >
+          <div className={styles.top}>
+            <h2 className={styles.heading}>
+              <span className={styles.span}>Features</span> of our <br />{" "}
+              Ecommerce Websites
+            </h2>
+            <p className={styles.copy}>
+              Packed with powerful tools and intuitive design, our e-commerce
+              websites are built to enhance user experience, drive sales, and
+              scale effortlessly with your business.
+            </p>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
             </div>
-          ))}
-        </div>
+          </div>
+          <div className={styles.dataContainer}>
+            {ecommerceFeatures.map((x, index) => (
+              <div key={index} className={styles.content}>
+                <div className={styles.left}>
+                  <div className={styles.iconContainer}>{x.icon}</div>
+                </div>
+                <div className={styles.right}>
+                  <h3 className={styles.title}>{x.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );

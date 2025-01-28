@@ -67,6 +67,10 @@ const Explain = () => {
               </span>
             ))}
           </h2>
+          <h2 className={styles.headingii}>
+            Most web developers build sites — we build profit engines. Here’s
+            why e-commerce requires our niche expertise
+          </h2>
         </div>
       </LayoutWrapper>
     </section>

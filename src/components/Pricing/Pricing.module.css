@@ -1,7 +1,6 @@
 .container {
   background-color: var(--tan);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 20rem;
 }
 
 .tan {
@@ -328,6 +327,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

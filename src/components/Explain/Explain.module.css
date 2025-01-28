@@ -1,7 +1,5 @@
 .container {
   background-color: var(--tan);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .content {
@@ -12,7 +10,8 @@
   gap: 2rem;
 }
 
-.heading {
+.heading,
+.headingii {
   width: 80%;
   margin-right: auto;
   font-size: 8rem;
@@ -24,8 +23,9 @@
 }
 
 .headingii {
-  text-decoration: underline;
-  line-height: inherit;
+  display: none;
+  color: var(--purple);
+  letter-spacing: -.5px;
 }
 
 .revealText {
@@ -40,7 +40,8 @@
 }
 
 @media screen and (max-width: 1068px) {
-  .heading {
+  .heading,
+  .headingii {
     width: 100%;
     text-align: center;
     font-size: 10rem;
@@ -48,8 +49,22 @@
 }
 
 @media screen and (max-width: 668px) {
-  .heading {
+  .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  
+  .heading,
+  .headingii {
     font-size: 7rem;
     font-weight: 500;
+  }
+
+  .headingii {
+    display: block;
+  }
+
+  .heading {
+    display: none;
   }
 }

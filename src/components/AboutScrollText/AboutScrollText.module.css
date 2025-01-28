@@ -1,11 +1,9 @@
 .container {
   background-color: var(--tan);
-  /* padding-top: 10rem; */
-  /* padding-bottom: 10rem; */
 }
 
 .heading {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 3rem;
 }
 
@@ -97,6 +95,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 

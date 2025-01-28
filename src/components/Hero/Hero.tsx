@@ -65,8 +65,8 @@ const Hero = () => {
           variants={fadeIn("", 0.3)}
           initial='hidden'
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
-          className={styles.paren}
+          viewport={{ once: true }}
+          className={styles.parent}
         >
           <div className={styles.content}>
             <div className={styles.left}>

@@ -1,7 +1,5 @@
 .container {
   background-color: var(--tan);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .content {
@@ -151,6 +149,11 @@
 }
 
 @media screen and (max-width: 568px) {
+.container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .heading {
     line-height: 120%;
   }
