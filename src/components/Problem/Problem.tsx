@@ -2,7 +2,8 @@
 
 import styles from "./Problem.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-// import FalseButton from "../FalseButton/FalseButton";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Problem = () => {
   const data = [
@@ -38,14 +39,39 @@ const Problem = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <div className={styles.problemContainer}>
-            <h2 className={styles.heading}>Problems we solve</h2>
+            <motion.h2
+              variants={fadeIn("top", 0.3)}
+              // variants={fadeIn("down", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.heading}
+            >
+              Problems we solve
+            </motion.h2>
           </div>
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div key={index} className={styles.card}>
-              <h3 className={styles.title}>{x.title}</h3>
-              <p className={styles.description}>{x.description}</p>
+              <motion.h3
+                variants={fadeIn("right", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.title}
+              >
+                {x.title}
+              </motion.h3>
+              <motion.p
+                variants={fadeIn("left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.description}
+              >
+                {x.description}
+              </motion.p>
             </div>
           ))}
         </div>
