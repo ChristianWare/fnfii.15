@@ -1,6 +1,6 @@
 .logo {
-  font-family: var(--suisse);
-  font-size: 2rem;
+  font-family: var(--BebasNeue);
+  font-size: 2.5rem;
   color: var(--black);
   user-select: none;
   display: flex;
@@ -22,6 +22,8 @@
   align-items: center;
   justify-content: center;
   padding-top: 2px;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 
 .white {
