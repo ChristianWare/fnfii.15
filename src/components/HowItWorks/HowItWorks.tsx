@@ -7,7 +7,8 @@ import Consult from "../../../public/icons/consult.svg";
 import Notes from "../../../public/icons/notes.svg";
 import animationData from "../../../public/lottie/howitworks.json";
 import dynamic from "next/dynamic";
-import FalseButton from "../FalseButton/FalseButton";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -42,12 +43,18 @@ const HowItWorks = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='Our 3 week Process' />
-            </div>
             <div className={styles.top}>
               <h2 className={styles.heading}>
-                What is the <span className={styles.headingSpan}>process</span>{" "}
+                What is the{" "}
+                <motion.span
+                  variants={fadeIn("", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.headingSpan}
+                >
+                  process
+                </motion.span>{" "}
                 for working with you?
               </h2>
               <p className={styles.topText}>
@@ -63,7 +70,15 @@ const HowItWorks = () => {
             {process.map((x, index) => (
               <div key={x.id} className={styles.card}>
                 <div className={styles.cardLeft}>
-                  <span className={styles.span}>Week {index + 1}</span>
+                  <motion.span
+                    variants={fadeIn("left", 0.3)}
+                    initial='hidden'
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className={styles.span}
+                  >
+                    Week {index + 1}
+                  </motion.span>
                 </div>
                 <div className={styles.cardRight}>
                   <h3 className={styles.processName}>{x.processName}</h3>

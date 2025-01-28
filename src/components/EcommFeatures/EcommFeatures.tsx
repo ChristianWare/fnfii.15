@@ -12,7 +12,8 @@ import Edit from "../../../public/icons/edit.svg";
 import Hosting from "../../../public/icons/cloud.svg";
 import Listing from "../../../public/icons/listing.svg";
 import Clock from "../../../public/icons/clock.svg";
-import FalseButton from "../FalseButton/FalseButton";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 type EcommerceFeature = {
   icon?: JSX.Element | string;
@@ -122,10 +123,17 @@ const EcommFeatures = () => {
     <section className={styles.container} id='features'>
       <LayoutWrapper>
         <div className={styles.top}>
-          <FalseButton btnType='primary' text="What's included" />
-          <h2 className={`${styles.heading} h2v2`}>
-            <span className={styles.span}>Features</span> of our <br />{" "}
-            Ecommerce Websites
+          <h2 className={styles.heading}>
+            <motion.span
+              variants={fadeIn("", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.span}
+            >
+              Features
+            </motion.span>{" "}
+            of our <br /> Ecommerce Websites
           </h2>
           <p className={styles.copy}>
             Packed with powerful tools and intuitive design, our e-commerce

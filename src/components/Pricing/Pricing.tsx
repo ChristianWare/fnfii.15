@@ -2,11 +2,11 @@
 
 import { pricing } from "../../../lib/data";
 import Button from "../Button/Button";
-import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
@@ -16,10 +16,19 @@ const Pricing = () => {
       <LayoutWrapper>
         <div className={styles.content} id='pricing'>
           <div className={styles.top}>
-            <FalseButton btnType='primary' text='Our Plans' />
-
-            <h2 className={styles.heading}>Choose your Package</h2>
-
+            <h2 className={styles.heading}>
+              {" "}
+              <motion.span
+                variants={fadeIn("", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.headingii}
+              >
+                Pricing:
+              </motion.span>
+              <br /> Choose your Package
+            </h2>
             <p className={styles.copy}>
               Our plans are clear and open, no shocks or caps. Help is always
               here when you want it. Subscription based pricing. No contracts.

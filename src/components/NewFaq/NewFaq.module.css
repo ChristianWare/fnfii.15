@@ -1,5 +1,7 @@
 .container {
   background-color: var(--tan);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .top {
@@ -22,6 +24,11 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.headingii {
+  color: var(--purple);
+  text-decoration: underline;
 }
 
 .copy {
@@ -101,6 +108,7 @@
 .question {
   color: var(--purple);
   font-family: var(--suisse);
+  text-transform: none;
   line-height: 130%;
   font-size: 2.1rem;
 }

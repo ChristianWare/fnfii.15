@@ -1,5 +1,7 @@
 .container {
   background-color: var(--tan);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .content {
@@ -18,8 +20,8 @@
 }
 
 .author {
-  font-family: var(--chromaticCondensedBold);
-  font-size: 2.5rem;
+  font-family: var(--BebasNeue);
+  font-size: 3rem;
 }
 
 .right {

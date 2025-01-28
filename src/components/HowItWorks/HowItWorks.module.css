@@ -1,5 +1,7 @@
 .container {
   background-color: var(--tan);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .content {
@@ -36,6 +38,7 @@
 .headingSpan {
   color: var(--purple);
   text-decoration: underline;
+  /* line-height: inherit; */
 }
 
 .topText {
@@ -92,6 +95,7 @@
   color: var(--purple);
   font-family: var(--suisse);
   font-size: 2rem;
+  text-transform: none;
 }
 
 .box {

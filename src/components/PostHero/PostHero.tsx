@@ -5,6 +5,8 @@ import Clock from "../../../public/icons/clock.svg";
 import Handshake from "../../../public/icons/support.svg";
 import Img1 from "../../../public/images/posthero.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const data = [
   {
@@ -35,7 +37,15 @@ const PostHero = () => {
           <div className={styles.top}>
             <h2 className={styles.topHeading}>
               Work with us for{" "}
-              <span className={styles.span}>peace of mind</span>
+              <motion.span
+                variants={fadeIn("", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.span}
+              >
+                peace of mind
+              </motion.span>
             </h2>
           </div>
           <div className={styles.bottom}>

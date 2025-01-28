@@ -3,7 +3,8 @@ import styles from "./Solution.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import Img1 from "../../../public/images/solution.png";
 import Design from "../../../public/icons/designii.svg";
-import FalseButton from "../FalseButton/FalseButton";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const data = [
   {
@@ -53,7 +54,15 @@ const Solution = () => {
             <div className={styles.rightBottom}>
               {data.map((item) => (
                 <div key={item.id} className={styles.card}>
-                  <h3 className={styles.title}>{item.title}</h3>
+                  <motion.h3
+                    variants={fadeIn("left", 0.3)}
+                    initial='hidden'
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className={styles.title}
+                  >
+                    {item.title}
+                  </motion.h3>
                   <p className={styles.desc}>{item.desc}</p>
                 </div>
               ))}
@@ -61,13 +70,18 @@ const Solution = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.rightTop}>
-              <div className={styles.falseBtnContainer}>
-                <FalseButton btnType='primary' text='Our Solutions' />
-              </div>
               <h2 className={styles.heading}>
-                We build e-comm stores that{" "}
-                <span className={styles.span}>truly</span> resonate with your
-                audience.
+                We build online stores that{" "}
+                <motion.span
+                  variants={fadeIn("down", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.span}
+                >
+                  resonate
+                </motion.span>{" "}
+                with your audience
               </h2>
               <p className={styles.copy}>
                 You&apos;ve worked hard to create something unique—let&apos;s

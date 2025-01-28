@@ -1,11 +1,12 @@
 import styles from "./Compare.module.css";
 import Button from "../Button/Button";
-import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import Listing from "../../../public/icons/sad.svg";
 import Clock from "../../../public/icons/happy.svg";
 import Check from "../../../public/icons/checkii.svg";
 import Close from "../../../public/icons/closeii.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const data = [
   {
@@ -67,38 +68,6 @@ const data = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   icon: <Clock className={styles.icon} />,
-  //   title: "Our E-comm stores",
-  //   details: [
-  //     {
-  //       id: 2.1,
-  //       details: "Custom design",
-  //       icon: <Check className={styles.iconii} />,
-  //     },
-  //     {
-  //       id: 2.2,
-  //       details: "Performance optimization",
-  //       icon: <Check className={styles.iconii} />,
-  //     },
-  //     {
-  //       id: 2.3,
-  //       details: "High scalability",
-  //       icon: <Check className={styles.iconii} />,
-  //     },
-  //     {
-  //       id: 2.4,
-  //       details: "SEO-friendly development",
-  //       icon: <Check className={styles.iconii} />,
-  //     },
-  //     {
-  //       id: 2.5,
-  //       details: "Dedicated support",
-  //       icon: <Check className={styles.iconii} />,
-  //     },
-  //   ],
-  // },
 ];
 
 const Compare = () => {
@@ -107,12 +76,18 @@ const Compare = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='Us vs. the other guys' />
-            </div>
             <h2 className={styles.heading}>
-              Why <span className={styles.span}>choose us</span> over the
-              competition?
+              Why{" "}
+              <motion.span
+                variants={fadeIn("", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.span}
+              >
+                choose us
+              </motion.span>{" "}
+              over the competition?
             </h2>
             <p className={styles.copy}>
               When it comes to building your e-commerce store, not all solutions
@@ -143,7 +118,14 @@ const Compare = () => {
                 <div className={styles.dataBox}>
                   {x.details.map((y) => (
                     <ul key={y.id} className={styles.box}>
-                      {y.icon}
+                      <motion.div
+                        variants={fadeIn("left", 0.3)}
+                        initial='hidden'
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+                      >
+                        {y.icon}
+                      </motion.div>
 
                       <li>{y.details}</li>
                     </ul>

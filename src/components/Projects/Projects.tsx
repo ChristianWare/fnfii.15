@@ -7,8 +7,9 @@ import Image from "next/image";
 import animationData from "../../../public/lottie/usp.json";
 import dynamic from "next/dynamic";
 import Check from "../../../public/icons/checkii.svg";
-import FalseButton from "../FalseButton/FalseButton";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -19,10 +20,17 @@ const Projects = () => {
         <div className={styles.parentContent}>
           <div className={styles.top}>
             <div className={styles.leftSide}>
-              <FalseButton btnType='primary' text='Past Projects' />
               <h2 className={styles.heading}>
-                <span className={styles.span}>Our work</span> <br /> speaks for
-                itself
+                <motion.span
+                  variants={fadeIn("", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.span}
+                >
+                  Our work
+                </motion.span>{" "}
+                <br /> speaks for itself
               </h2>
               <div className={styles.lottieBox}>
                 <Lottie

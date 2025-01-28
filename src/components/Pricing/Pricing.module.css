@@ -1,5 +1,7 @@
 .container {
   background-color: var(--tan);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .tan {
@@ -36,6 +38,11 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.headingii {
+  color: var(--purple);
+  text-decoration: underline;
 }
 
 .copy {
@@ -308,7 +315,6 @@
     width: 100%;
     text-align: center;
   }
-
 
   .btnContainer {
     display: grid;

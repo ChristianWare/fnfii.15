@@ -54,24 +54,8 @@ const Problem = () => {
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div key={index} className={styles.card}>
-              <motion.h3
-                variants={fadeIn("right", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.title}
-              >
-                {x.title}
-              </motion.h3>
-              <motion.p
-                variants={fadeIn("left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.description}
-              >
-                {x.description}
-              </motion.p>
+              <h3 className={styles.title}>{x.title}</h3>
+              <p className={styles.description}>{x.description}</p>
             </div>
           ))}
         </div>
