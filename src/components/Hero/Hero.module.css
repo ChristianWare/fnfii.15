@@ -23,7 +23,6 @@
   color: var(--black);
   will-change: transform, opacity, filter;
   backface-visibility: hidden;
-
 }
 
 .headingii {
@@ -104,12 +103,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .content {
-    margin-top: -5rem;
   }
 }
 

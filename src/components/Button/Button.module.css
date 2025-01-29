@@ -4,9 +4,9 @@
 }
 
 .btn {
-  font-family: var(--MatterMonoMedium);
+  font-family: var(--VisbyCF);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.8px;
   white-space: nowrap;
@@ -20,7 +20,6 @@
   gap: 1.5rem;
   border-radius: 50px;
   padding: 10px 20px;
-  padding-bottom: 8px;
   position: relative;
   z-index: 1;
   width: 100%;

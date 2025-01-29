@@ -72,18 +72,18 @@ const Hero = () => {
             <div className={styles.left}>
               <h1 className={styles.heading}>
                 We build <br />
-                e-commerce websites <br />
-                <span className={styles.headingii}>the right way</span>
+                e-commerce <br /> websites <br />
+                <span className={styles.headingii}>the right way.</span>
               </h1>
 
               <div>
                 <p className={styles.copy}>
                   We Build Fast, Secure, and Scalable Online Stores for
-                  Ambitious Brands
+                  Ambitious Brands.
                 </p>
                 <div className={styles.btnContainer}>
                   <Button
-                    text='Get Your Free Consultation →'
+                    text='Book Free Consultation'
                     href='/#contact'
                     btnType='secondary'
                   />

@@ -55,20 +55,22 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--GrotzecCondBold);
+  font-family: var(--VisbyCF);
   color: var(--black);
   text-transform: uppercase;
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 8rem;
   line-height: 1;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
+  /* white-space: nowrap; */
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1;
+  text-transform: none;
 }
 
 h3 {

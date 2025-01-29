@@ -38,18 +38,18 @@
 
 .navItem {
   position: relative;
-  line-height: .9;
+  line-height: 1;
   color: var(--black);
   user-select: none;
   scroll-behavior: smooth;
   z-index: 998;
   transition: color 0.1s ease-in-out;
   color: var(--black);
-  font-size: 10rem;
-  font-family: var(--GrotzecCondBold);
+  font-size: 8rem;
+  font-family: var(--VisbyCF);
   text-transform: uppercase;
   padding-left: 2rem;
-  /* padding-bottom: 1rem; */
+  padding-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -73,7 +73,7 @@
   z-index: 999;
   position: relative;
   user-select: none;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   border: 1px solid var(--tan3);
   padding: 1rem 3rem;

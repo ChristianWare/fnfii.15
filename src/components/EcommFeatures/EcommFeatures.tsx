@@ -151,34 +151,10 @@ const EcommFeatures = () => {
             {ecommerceFeatures.map((x, index) => (
               <div key={index} className={styles.content}>
                 <div className={styles.left}>
-                  <motion.div
-                    variants={
-                      index % 2 === 0
-                        ? fadeIn("right", 0.3)
-                        : fadeIn("left", 0.3)
-                    }
-                    initial='hidden'
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
-                    className={styles.iconContainer}
-                  >
-                    {x.icon}
-                  </motion.div>
+                  <div className={styles.iconContainer}>{x.icon}</div>
                 </div>
                 <div className={styles.right}>
-                  <motion.h3
-                    variants={
-                      index % 2 === 0
-                        ? fadeIn("right", 0.3)
-                        : fadeIn("left", 0.3)
-                    }
-                    initial='hidden'
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
-                    className={styles.title}
-                  >
-                    {x.title}
-                  </motion.h3>
+                  <h3 className={styles.title}>{x.title}</h3>
                 </div>
               </div>
             ))}

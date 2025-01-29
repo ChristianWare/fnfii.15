@@ -85,6 +85,18 @@ const GilroySemiBold = localFont({
   display: "swap",
 });
 
+const FTCalhernCondensedSemibold = localFont({
+  src: "../../public/fonts/FTCalhernCondensedSemibold.woff2",
+  variable: "--FTCalhernCondensedSemibold",
+  display: "swap",
+});
+
+const VisbyCF = localFont({
+  src: "../../public/fonts/VisbyCF.ttf",
+  variable: "--VisbyCF",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Fonts & Footers",
   description: "E-commerce Web Design and Developement Agency",
@@ -105,7 +117,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable}  ${GrotzecCondBold.variable} ${InterTight.variable} ${InterDisplayMedium.variable} ${GilroySemiBold.variable}`}
+        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable}  ${GrotzecCondBold.variable} ${InterTight.variable} ${InterDisplayMedium.variable} ${GilroySemiBold.variable} ${FTCalhernCondensedSemibold.variable} ${VisbyCF.variable}`}
       >
         <NoiseBg>
           <ScrollIndicator />

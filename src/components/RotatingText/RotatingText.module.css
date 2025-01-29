@@ -8,8 +8,8 @@
 }
 
 .container {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: 2px solid var(--purple);
   position: relative;
@@ -34,7 +34,8 @@
 }
 
 .svg {
-  font-family: var(--BebasNeue);
+  font-family: var(--VisbyCF);
+  text-transform: uppercase;
   user-select: none;
 }
 

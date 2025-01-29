@@ -18,7 +18,8 @@
 }
 
 .author {
-  font-family: var(--BebasNeue);
+  font-family: var(--VisbyCF);
+  text-transform: uppercase;
   font-size: 3rem;
 }
 
