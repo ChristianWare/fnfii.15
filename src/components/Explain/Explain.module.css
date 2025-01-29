@@ -17,8 +17,6 @@
   width: 60%;
   margin-right: auto;
   font-size: 8rem;
-  line-height: 0.9;
-  /* letter-spacing: 1px; */
   display: inline-block; /* Helps with accurate trigger positioning */
   /* letter-spacing: -1px; */
   /* font-weight: 500; */

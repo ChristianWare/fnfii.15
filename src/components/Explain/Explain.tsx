@@ -24,7 +24,7 @@ const Explain = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "Most web developers build sites — we build profit engines. Here’s why e-commerce requires our niche expertise";
+    "Most web developers build sites — we build profit engines. Here’s why e-commerce requires our niche expertise.";
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -77,7 +77,7 @@ const Explain = () => {
             className={styles.headingii}
           >
             Most web developers build sites — we build profit engines. Here’s
-            why e-commerce requires our niche expertise
+            why e-commerce requires our niche expertise.
           </motion.h2>
         </div>
       </LayoutWrapper>

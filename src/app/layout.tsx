@@ -67,18 +67,23 @@ const PPPangaia = localFont({
   display: "swap",
 });
 
-const SFProDisplayMedium = localFont({
-  src: "../../public/fonts/SFProDisplayMedium.woff",
-  variable: "--SFProDisplayMedium",
-  display: "swap",
-});
-
 const GrotzecCondBold = localFont({
   src: "../../public/fonts/GrotzecCondBold.woff2",
   variable: "--GrotzecCondBold",
   display: "swap",
 });
 
+const InterDisplayMedium = localFont({
+  src: "../../public/fonts/InterDisplayMedium.ttf",
+  variable: "--InterDisplayMedium",
+  display: "swap",
+});
+
+const GilroySemiBold = localFont({
+  src: "../../public/fonts/GilroySemiBold.woff2",
+  variable: "--GilroySemiBold",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Fonts & Footers",
@@ -100,7 +105,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable} ${SFProDisplayMedium.variable} ${GrotzecCondBold.variable} ${InterTight.variable}`}
+        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable}  ${GrotzecCondBold.variable} ${InterTight.variable} ${InterDisplayMedium.variable} ${GilroySemiBold.variable}`}
       >
         <NoiseBg>
           <ScrollIndicator />
