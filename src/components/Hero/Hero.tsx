@@ -9,53 +9,6 @@ import { motion } from "framer-motion";
 import RotatingText from "../RotatingText/RotatingText";
 import { fadeIn } from "../../../animation/variants";
 
-// const lines = ["We Build", "E-commerce websites", "the right way"];
-
-// const container = {
-//   hidden: { opacity: 0 },
-//   visible: {
-//     opacity: 1,
-//     transition: {
-//       delay: 0.1,
-//       staggerChildren: 0.8,
-//     },
-//   },
-// };
-
-// const child = {
-//   hidden: {
-//     opacity: 0,
-//     x: 0,
-//     y: 40,
-//     filter: "blur(20px)",
-//   },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     y: 0,
-//     filter: "blur(0px)",
-//     transition: {
-//       duration: 0.5,
-//       ease: "easeOut",
-//     },
-//   },
-// };
-
-// const uspVariants = {
-//   hidden: { opacity: 0, x: 0, y: 40, filter: "blur(20px)" },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     y: 0,
-//     filter: "blur(0px)",
-//     transition: {
-//       delay: 2.4,
-//       duration: 0.5,
-//       ease: "easeOut",
-//     },
-//   },
-// };
-
 const Hero = () => {
   return (
     <section className={styles.container}>
@@ -65,7 +18,7 @@ const Hero = () => {
           variants={fadeIn("", 0.3)}
           initial='hidden'
           whileInView={"show"}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.1 }}
           className={styles.parent}
         >
           <div className={styles.content}>

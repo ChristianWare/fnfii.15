@@ -61,14 +61,14 @@ span {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1;
   letter-spacing: -2px;
   /* white-space: nowrap; */
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1;
   /* text-transform: none; */
 }
@@ -159,7 +159,7 @@ textarea:focus {
   }
 
   h2 {
-    font-size: 4.8rem;
+    font-size: 3.5rem;
   }
 }
 

@@ -30,7 +30,6 @@
   display: inline-block;
   line-height: inherit;
   text-decoration: underline;
-  /* font-family: var(--PPPangaia); */
 }
 
 .copy {
@@ -60,6 +59,7 @@
   width: 100%;
   height: 100%;
 }
+
 
 @media screen and (max-width: 1068px) {
   .content {

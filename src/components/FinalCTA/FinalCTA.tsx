@@ -14,7 +14,7 @@ const FinalCTA = () => {
         variants={fadeIn("", 0.3)}
         initial='hidden'
         whileInView={"show"}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.1 }}
         className={styles.parentContent}
       >
         <div className={styles.content}>

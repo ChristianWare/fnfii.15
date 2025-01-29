@@ -50,7 +50,7 @@ const HowItWorks = () => {
                   variants={fadeIn("", 0.3)}
                   initial='hidden'
                   whileInView={"show"}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.1 }}
                   className={styles.headingSpan}
                 >
                   process
@@ -74,7 +74,7 @@ const HowItWorks = () => {
                     variants={fadeIn("left", 0.3)}
                     initial='hidden'
                     whileInView={"show"}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.1 }}
                     className={styles.span}
                   >
                     Week {index + 1}

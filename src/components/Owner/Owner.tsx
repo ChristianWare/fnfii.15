@@ -13,7 +13,7 @@ const Owner = () => {
           variants={fadeIn("", 0.3)}
           initial='hidden'
           whileInView={"show"}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.1 }}
           className={styles.parent}
         >
           <div className={styles.content}>
@@ -25,7 +25,8 @@ const Owner = () => {
                 passion.&quot;
               </h2>
               <p className={styles.author}>
-                Chris Ware － Founder & Lead Developer
+                Chris Ware － <br />
+                Founder & Lead Developer
               </p>
             </div>
             <div className={styles.right}>
@@ -34,7 +35,7 @@ const Owner = () => {
                 variants={fadeIn("", 0.3)}
                 initial='hidden'
                 whileInView={"show"}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.1 }}
                 className={styles.imgContainer}
               >
                 <Image src={Author} alt='' fill className={styles.img} />
