@@ -84,10 +84,6 @@
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-.hamburger:hover {
-  background-color: var(--green3);
-}
-
 .whiteBar {
   position: relative;
   z-index: 9999;
@@ -228,5 +224,11 @@
     background-color: var(--tan2);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 569px) {
+  .hamburger:hover {
+    background-color: var(--green3);
   }
 }
