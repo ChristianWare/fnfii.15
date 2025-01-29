@@ -170,8 +170,9 @@
 
   .navItem {
     color: var(--black);
-    font-size: 8rem;
-    font-family: var(--BebasNeue) !important;
+    font-size: 10rem;
+    font-family: var(--GrotzecCondBold);
+    text-transform: uppercase;
     padding-left: 2rem;
     font-weight: 600;
     letter-spacing: 1px;

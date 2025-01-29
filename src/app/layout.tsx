@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
@@ -9,6 +9,12 @@ import { Toaster } from "react-hot-toast";
 
 const BebasNeue = Bebas_Neue({
   variable: "--BebasNeue",
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const InterTight = Inter_Tight({
+  variable: "--InterTight",
   weight: ["400"],
   subsets: ["latin"],
 });
@@ -37,6 +43,42 @@ const MatterMonoMedium = localFont({
   display: "swap",
 });
 
+const tuskerGrotesk = localFont({
+  src: "../../public/fonts/tuskerGrotesk.ttf",
+  variable: "--tuskerGrotesk",
+  display: "swap",
+});
+
+const StratosSemibold = localFont({
+  src: "../../public/fonts/StratosSemibold.otf",
+  variable: "--StratosSemibold",
+  display: "swap",
+});
+
+const HelveticaNowDisplay = localFont({
+  src: "../../public/fonts/HelveticaNowDisplay.woff2",
+  variable: "--HelveticaNowDisplay",
+  display: "swap",
+});
+
+const PPPangaia = localFont({
+  src: "../../public/fonts/PPPangaia.woff2",
+  variable: "--PPPangaia",
+  display: "swap",
+});
+
+const SFProDisplayMedium = localFont({
+  src: "../../public/fonts/SFProDisplayMedium.woff",
+  variable: "--SFProDisplayMedium",
+  display: "swap",
+});
+
+const GrotzecCondBold = localFont({
+  src: "../../public/fonts/GrotzecCondBold.woff2",
+  variable: "--GrotzecCondBold",
+  display: "swap",
+});
+
 
 export const metadata: Metadata = {
   title: "Fonts & Footers",
@@ -58,7 +100,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} $`}
+        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable} ${SFProDisplayMedium.variable} ${GrotzecCondBold.variable} ${InterTight.variable}`}
       >
         <NoiseBg>
           <ScrollIndicator />

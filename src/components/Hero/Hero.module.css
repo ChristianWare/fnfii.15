@@ -21,17 +21,17 @@
 
 .heading {
   color: var(--black);
-  text-transform: uppercase;
   will-change: transform, opacity, filter;
   backface-visibility: hidden;
-  /* font-size: 17rem; */
+
 }
 
 .headingii {
   color: var(--purple);
-  text-decoration: underline;
   display: inline-block;
   line-height: inherit;
+  text-decoration: underline;
+  /* font-family: var(--PPPangaia); */
 }
 
 .copy {

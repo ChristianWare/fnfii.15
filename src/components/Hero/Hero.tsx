@@ -71,9 +71,9 @@ const Hero = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h1 className={styles.heading}>
-                We Build <br />
+                We build <br />
                 e-commerce websites <br />
-                <span className={styles.headingii}>The right way</span>
+                <span className={styles.headingii}>the right way</span>
               </h1>
 
               <div>

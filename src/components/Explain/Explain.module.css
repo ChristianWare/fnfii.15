@@ -14,11 +14,11 @@
 
 .heading,
 .headingii {
-  width: 80%;
+  width: 60%;
   margin-right: auto;
   font-size: 8rem;
   line-height: 0.9;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   display: inline-block; /* Helps with accurate trigger positioning */
   /* letter-spacing: -1px; */
   /* font-weight: 500; */
@@ -27,14 +27,14 @@
 .headingii {
   display: none;
   color: var(--purple);
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 
 .revealText {
   color: var(--tan);
   filter: drop-shadow(0 0 0.08rem var(--purple));
   line-height: 1;
-  text-transform: uppercase;
+  /* font-family: var(--PPPangaia); */
 }
 
 .bottom {
@@ -55,7 +55,7 @@
     padding-top: 10rem;
     padding-bottom: 10rem;
   }
-  
+
   .heading,
   .headingii {
     font-size: 7rem;
