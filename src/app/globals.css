@@ -221,6 +221,7 @@ textarea:focus {
 /* Only use in production */
 @media screen and (max-width: 480px) {
   h1 {
+    font-size: 5rem;
     letter-spacing: -2px;
   }
   h2 {
