@@ -130,7 +130,8 @@
 @media screen and (max-width: 668px) {
   .content {
     gap: 5rem;
-    margin-top: 3rem;
+    margin-top: -3rem;
+    
   }
 
   .heading,
