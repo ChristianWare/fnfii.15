@@ -70,7 +70,7 @@ h1 {
 h2 {
   font-size: 5rem;
   line-height: 1;
-  text-transform: none;
+  /* text-transform: none; */
 }
 
 h3 {
@@ -171,48 +171,7 @@ textarea:focus {
   p {
     hyphens: auto;
   }
-  /* 
 
-  h1{
-    font-size: 5rem;
-  } */
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    /* line-height: 90%; */
-    text-transform: none;
-  }
-
-  /* h1,
-  .span1 {
-    font-size: 4rem;
-    letter-spacing: -0.02em;
-  } */
-
-  /* h2,
-  .h2v2,
-  .h2v3 {
-    font-size: 3rem;
-  }
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 2rem;
-  } */
-
-  /* h2 {
-    font-size: 5.5rem;
-  } */
-  /* 
-  p,
-  label {
-    font-size: 110%;
-  } */
 }
 
 /* .toastFont {
@@ -226,6 +185,5 @@ textarea:focus {
   }
   h2 {
     letter-spacing: -2px;
-    /* line-height: 120%; */
   }
 }
