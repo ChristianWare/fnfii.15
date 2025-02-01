@@ -4,7 +4,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import Nav from "../Nav/Nav";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
+// import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
 import RotatingText from "../RotatingText/RotatingText";
 import { fadeIn } from "../../../animation/variants";
@@ -38,29 +38,33 @@ const Hero = () => {
                   <Button
                     text='Book Free Consultation'
                     href='/#contact'
-                    btnType='secondary'
+                    btnType='primaryiii'
+                    arrow
                   />
                   <Button
                     text='See Our Work'
                     href='/#projects'
-                    btnType='primaryii'
+                    btnType='primaryiv'
                   />
                 </div>
               </div>
             </div>
             <div className={styles.right}>
               <div className={styles.RotatingTextContainer}>
-                <RotatingText text='Fonts & Footers • E-Commerce Specialists •' />
+                <RotatingText
+                  text='Fonts & Footers • E-Commerce Specialists •'
+                  color='tan'
+                />
               </div>
             </div>
           </div>
-          <div className={styles.bottom}>
+          {/* <div className={styles.bottom}>
             <div className={styles.uspContainer}>
               <div>
                 <WhatWeDo />
               </div>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       </LayoutWrapper>
     </section>

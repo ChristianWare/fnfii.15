@@ -33,6 +33,14 @@
   z-index: 1;
 }
 
+.tan {
+  border: 2px solid var(--tan);
+}
+
+.tan::after {
+  border: 2px solid var(--tan);
+}
+
 .svg {
   font-family: var(--VisbyCF);
   text-transform: uppercase;

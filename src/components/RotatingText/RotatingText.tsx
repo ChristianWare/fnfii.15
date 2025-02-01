@@ -13,12 +13,8 @@ const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
  
 
   return (
-    <div className={styles.container}>
-      <svg
-        className={styles.svg}
-        viewBox='0 0 100 100'
-
-      >
+    <div className={`${styles.container} ${styles[color]}`}>
+      <svg className={styles.svg} viewBox='0 0 100 100'>
         <defs>
           <path
             id='circle'
@@ -30,10 +26,7 @@ const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
           />
         </defs>
         <text fontSize='10.5'>
-          <textPath
-            className={`${styles.svg} ${styles[color]}`}
-            xlinkHref='#circle'
-          >
+          <textPath className={styles.svg} xlinkHref='#circle'>
             {text}
           </textPath>
         </text>

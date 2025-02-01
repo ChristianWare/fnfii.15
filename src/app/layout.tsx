@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Bebas_Neue, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
-import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
+// import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import PlausibleProvider from "next-plausible";
 import { Toaster } from "react-hot-toast";
 
@@ -120,7 +120,7 @@ export default function RootLayout({
         className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable}  ${GrotzecCondBold.variable} ${InterTight.variable} ${InterDisplayMedium.variable} ${GilroySemiBold.variable} ${FTCalhernCondensedSemibold.variable} ${VisbyCF.variable}`}
       >
         <NoiseBg>
-          <ScrollIndicator />
+          {/* <ScrollIndicator /> */}
           <Toaster
             position='bottom-right'
             toastOptions={{

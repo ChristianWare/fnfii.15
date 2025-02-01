@@ -43,15 +43,20 @@
 }
 
 .primaryiii {
-  color: var(--black);
-  background-color: var(--tan2);
+  color: var(--purple);
+  background-color: var(--tan);
   /* border: 1px solid var(--lightBlack); */
+}
+
+.primaryiv {
+  color: var(--tan);
+  background-color: transparent;
+  border: 2px solid var(--tan);
 }
 
 .primaryNav {
   color: var(--tan);
   background-color: var(--purple);
-  /* border: 1px solid var(--lightBlack); */
   padding: 7px 15px;
   font-size: 1.4rem;
 }
