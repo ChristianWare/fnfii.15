@@ -11,6 +11,7 @@ import Compare from "@/components/Compare/Compare";
 import Footerii from "@/components/Footerii/Footerii";
 import Explain from "@/components/Explain/Explain";
 import { ReactLenis } from "@studio-freight/react-lenis";
+// import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 // import HowItWorks from "@/components/HowItWorks/HowItWorks";
 // import Problem from "@/components/Problem/Problem";
 // import Solution from "@/components/Solution/Solution";
@@ -30,6 +31,7 @@ export default function Home() {
         <Hero />
         <Explain />
         <AboutScrollText />
+        {/* <WhatWeDo /> */}
         <Owner />
         <EcommFeatures />
         <Projects />

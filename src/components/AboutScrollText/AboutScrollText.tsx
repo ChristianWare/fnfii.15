@@ -3,11 +3,13 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
-import animationData from "../../../public/lottie/heroii.json";
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
+
+import animationData from "../../../public/lottie/heroii.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const data = [
   {
@@ -27,7 +29,6 @@ const data = [
   },
 ];
 
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const AboutScrollText = () => {
   return (

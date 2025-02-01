@@ -7,6 +7,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import animationData from "../../../public/lottie/hero.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Explain = () => {
   const [lettersRef, setLettersRef] = useArrayRef();
@@ -58,27 +61,34 @@ const Explain = () => {
     <section className={styles.container} ref={triggerRef}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <h2 className={styles.heading}>
-            {text.split("").map((letter, index) => (
-              <span
-                key={index}
-                className={styles.revealText}
-                ref={setLettersRef}
-              >
-                {letter}
-              </span>
-            ))}
-          </h2>
-          <motion.h2
-            variants={fadeIn("", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
-            className={styles.headingii}
-          >
-            Most web developers build sites — we build profit engines. Here’s
-            why e-commerce requires our niche expertise.
-          </motion.h2>
+          <div className={styles.left}>
+            <h2 className={styles.heading}>
+              {text.split("").map((letter, index) => (
+                <span
+                  key={index}
+                  className={styles.revealText}
+                  ref={setLettersRef}
+                >
+                  {letter}
+                </span>
+              ))}
+            </h2>
+            <motion.h2
+              variants={fadeIn("", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.1 }}
+              className={styles.headingii}
+            >
+              Most web developers build sites — we build profit engines. Here’s
+              why e-commerce requires our niche expertise.
+            </motion.h2>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
+            </div>
+          </div>
         </div>
       </LayoutWrapper>
     </section>

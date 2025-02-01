@@ -149,9 +149,7 @@
 }
 
 @media screen and (max-width: 568px) {
-.container {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+  .container {
   }
 
   .heading {

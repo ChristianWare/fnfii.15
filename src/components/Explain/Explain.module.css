@@ -1,20 +1,14 @@
 .container {
   background-color: var(--tan);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .heading,
 .headingii {
-  width: 60%;
   margin-right: auto;
   font-size: 6rem;
   display: inline-block; /* Helps with accurate trigger positioning */
@@ -32,28 +26,36 @@
   color: var(--tan);
   filter: drop-shadow(0 0 0.08rem var(--purple));
   line-height: 1;
-  /* font-family: var(--PPPangaia); */
 }
 
 .bottom {
   margin-top: 5rem;
 }
 
+.lottieBox {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 2rem;
+}
+
+.lottie {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .heading,
   .headingii {
     width: 100%;
     text-align: center;
-    font-size: 10rem;
   }
 }
 
 @media screen and (max-width: 668px) {
-  .container {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
   .heading,
   .headingii {
     font-size: 5rem;
