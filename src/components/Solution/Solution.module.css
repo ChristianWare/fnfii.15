@@ -29,7 +29,9 @@
 
 .span {
   color: var(--purple);
-  text-decoration: underline;
+  font-family: var(--NyghtSerifLightItalic);
+  text-transform: lowercase;
+  font-size: 6rem;
 }
 
 .copy {

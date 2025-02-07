@@ -3,14 +3,13 @@
 
 import styles from "./AboutScrollText.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-// import FalseButton from "../FalseButton/FalseButton";
-
 import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
 import SectionHeading from "../SectionHeading/SectionHeading";
-// import WhatWeDo from "../WhatWeDo/WhatWeDo";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react";
+
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const data = [
@@ -30,23 +29,30 @@ const data = [
     desc: "Average days to launch your e-commerce store",
   },
   {
-    id: 1,
+    id: 4,
     title: "99.9%",
     desc: "Uptime for every e-commerce site we build",
   },
   {
-    id: 2,
+    id: 5,
     title: "2X",
     desc: "Faster Website load times than industry standard",
   },
   {
-    id: 3,
+    id: 6,
     title: "14",
     desc: "Average days to launch your e-commerce store",
   },
 ];
 
 const AboutScrollText = () => {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start start", "end start"],
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
   return (
     <section className={styles.container} id='about'>
       <LayoutWrapper>
@@ -57,9 +63,9 @@ const AboutScrollText = () => {
           viewport={{ once: false, amount: 0.1 }}
           className={styles.parent}
         >
-          <SectionHeading title='Features' color='purple' dotColor='purple' />
+          <SectionHeading title='About Us' color='purple' dotColor='purple' />
           <h2 className={styles.heading}>
-            Why <br /> <span className={styles.span}>Fonts & Footers?</span>
+            What is <br /> <span className={styles.span}>Fonts & Footers?</span>
           </h2>
           <div className={styles.content}>
             <div className={styles.left}>
@@ -87,7 +93,16 @@ const AboutScrollText = () => {
             </div>
           </div>
         </motion.div>
-        {/* <WhatWeDo /> */}
+        <section ref={targetRef} className={styles.rightiiWrapper}>
+          <motion.div className={styles.rightii} style={{ x }}>
+            {data.map((x: any) => (
+              <div className={styles.cardii} key={x.id}>
+                <h3 className={styles.title}>{x.title}</h3>
+                <p className={styles.desc}>{x.desc}</p>
+              </div>
+            ))}
+          </motion.div>
+        </section>
       </LayoutWrapper>
     </section>
   );

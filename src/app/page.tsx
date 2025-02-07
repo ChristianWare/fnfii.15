@@ -10,7 +10,7 @@ import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 // import Problem from "@/components/Problem/Problem";
 import Solution from "@/components/Solution/Solution";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
-import Testimonials from "@/components/Testimonials/Testimonials";
+// import Testimonials from "@/components/Testimonials/Testimonials";
 import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 // import Pricing from "@/components/Pricing/Pricing";
 // import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
@@ -31,11 +31,11 @@ export default function Home() {
         <Hero />
         <Explain />
         <AboutScrollText />
-        <Solution />
         <WhatWeDo />
         <Projects />
         <HowItWorks />
-        <Testimonials />
+        {/* <Testimonials /> */}
+        <Solution />
         <FinalCTA />
         <Footerii />
         {/* <Problem /> */}

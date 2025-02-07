@@ -101,6 +101,58 @@
   color: var(--tan);
 }
 
+/* Add these new styles */
+.rightiiWrapper {
+  position: relative;
+  height: 100vh;
+  margin: 10rem 0;
+}
+
+.rightii {
+  display: flex;
+  gap: 2rem;
+  position: sticky;
+  top: 300px;
+  height: fit-content;
+  padding: 2rem 0;
+}
+
+/* Modify existing rightii styles */
+.rightii {
+  /* Remove previous grid/flex styles */
+  display: flex;
+  width: fit-content;
+}
+
+.cardii {
+  flex: 0 0 auto;
+  width: 400px;
+  position: relative;
+  /* Keep your existing card styles */
+  border: 1px solid var(--lightBlack);
+  background-color: var(--tan);
+  border-radius: 10px;
+  padding: 3rem;
+  min-height: 400px;
+}
+
+/* Optional: Add media queries for mobile */
+@media screen and (max-width: 768px) {
+  .rightiiWrapper {
+    height: 70vh;
+  }
+  
+  .cardii {
+    width: 300px;
+    min-height: 300px;
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 6rem;
+  }
+}
+
 @media screen and (max-width: 968px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
