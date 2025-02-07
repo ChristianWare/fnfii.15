@@ -1,0 +1,86 @@
+.card {
+  perspective: 1000px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  background-color: var(--tan2);
+  border: 1px solid var(--purple);
+  border-radius: 10px;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.title {
+  line-height: 120%;
+  color: var(--purple);
+  font-size: 2rem;
+  font-family: var(--suisse);
+  letter-spacing: -0.001em;
+  text-transform: none;
+  user-select: none;
+}
+
+.desc {
+  user-select: none;
+  transform: all 0.2s ease-in;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--black);
+  margin-left: auto;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.cardInner.flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}

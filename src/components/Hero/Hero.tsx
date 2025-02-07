@@ -31,10 +31,10 @@ const Hero = () => {
               </h1>
 
               <div>
-                <p className={styles.copy}>
+                {/* <p className={styles.copy}>
                   We Build Fast, Secure, and Scalable Online Stores for
                   Ambitious Brands.
-                </p>
+                </p> */}
                 <div className={styles.btnContainer}>
                   <Button
                     text='Book Free Consultation'

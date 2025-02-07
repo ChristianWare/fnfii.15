@@ -6,12 +6,15 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function ProductPreview() {
   return (
     <div className={styles.container}>
-      <h3 className={styles.heading}>
+      {/* <h3 className={styles.heading}>
         Turbo Como SL 5.0 - Smoke /
         <br /> Transparent
-      </h3>
-      <span className={styles.model}>Diamond</span>
-     
+      </h3> */}
+      <span className={styles.model}>
+        {" "}
+        We Build Fast, Secure, and Scalable Online Stores for Ambitious Brands.
+      </span>
+
       <div className={styles.lottieBox}>
         <Lottie animationData={animationData} className={styles.lottie} />
       </div>
