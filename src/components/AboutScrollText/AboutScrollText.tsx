@@ -9,10 +9,26 @@ import { fadeIn } from "../../../animation/variants";
 
 import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
+import SectionHeading from "../SectionHeading/SectionHeading";
 // import WhatWeDo from "../WhatWeDo/WhatWeDo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const data = [
+  {
+    id: 1,
+    title: "99.9%",
+    desc: "Uptime for every e-commerce site we build",
+  },
+  {
+    id: 2,
+    title: "2X",
+    desc: "Faster Website load times than industry standard",
+  },
+  {
+    id: 3,
+    title: "14",
+    desc: "Average days to launch your e-commerce store",
+  },
   {
     id: 1,
     title: "99.9%",
@@ -41,8 +57,9 @@ const AboutScrollText = () => {
           viewport={{ once: false, amount: 0.1 }}
           className={styles.parent}
         >
+          <SectionHeading title='Features' color='purple' dotColor='purple' />
           <h2 className={styles.heading}>
-            What is <br /> <span className={styles.span}>Fonts & Footers?</span>
+            Why <br /> <span className={styles.span}>Fonts & Footers?</span>
           </h2>
           <div className={styles.content}>
             <div className={styles.left}>
