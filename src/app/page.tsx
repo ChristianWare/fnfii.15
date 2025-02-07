@@ -1,6 +1,5 @@
 "use client";
 
-import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import Hero from "@/components/Hero/Hero";
 import Pricing from "@/components/Pricing/Pricing";
@@ -8,6 +7,9 @@ import Projects from "@/components/Projects/Projects";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Footerii from "@/components/Footerii/Footerii";
 import Explain from "@/components/Explain/Explain";
+import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
+// import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
+// import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
 // import Owner from "@/components/Owner/Owner";
 // import HowItWorks from "@/components/HowItWorks/HowItWorks";
 // import { homePageFaqs } from "../../lib/data";
@@ -21,7 +23,6 @@ import Explain from "@/components/Explain/Explain";
 // import PostHero from "@/components/PostHero/PostHero";
 // import FirstStep from "@/components/FirstStep/FirstStep";
 // import Calendly from "@/components/Calendly/Calendly";
-// import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
 
 export default function Home() {
   return (
@@ -29,7 +30,9 @@ export default function Home() {
       <main>
         <Hero />
         <Explain />
-        <AboutScrollText />
+        <WhatWeDo />
+        {/* <WhatWeDo2 /> */}
+        {/* <AboutScrollText /> */}
         <Projects />
         {/* <HowItWorks /> */}
         <Pricing />
@@ -37,8 +40,6 @@ export default function Home() {
         {/* <NewFaq mapData={homePageFaqs} /> */}
         <FinalCTA />
         <Footerii />
-        {/* <WhatWeDo2 /> */}
-        {/* <WhatWeDo /> */}
         {/* <EcommFeatures /> */}
         {/* <Compare /> */}
         {/* <Problem /> */}

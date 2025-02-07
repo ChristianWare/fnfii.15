@@ -1,6 +1,7 @@
 import styles from "./ProductPreview.module.css";
-import Image from "next/image";
-import Model from "../../../public/images/model.webp";
+import animationData from "../../../public/lottie/hero.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function ProductPreview() {
   return (
@@ -10,8 +11,9 @@ export default function ProductPreview() {
         <br /> Transparent
       </h3>
       <span className={styles.model}>Diamond</span>
-      <div className={styles.imgContainer}>
-        <Image src={Model} alt='' title='' fill className={styles.img} />
+     
+      <div className={styles.lottieBox}>
+        <Lottie animationData={animationData} className={styles.lottie} />
       </div>
       <div className={styles.details}>
         <div className={styles.left}>

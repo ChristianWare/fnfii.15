@@ -3,19 +3,24 @@
 }
 
 .top {
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .heading {
-  text-align: center;
+  /* text-align: center; */
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   text-transform: uppercase;
 }
 
 .span {
-  white-space: nowrap;
+  color: var(--purple);
+  line-height: inherit;
+  font-family: var(--NyghtSerifLightItalic);
+  text-transform: lowercase;
+  font-size: 6rem;
 }
 
 .bottom {
@@ -32,16 +37,7 @@
   background-color: var(--tan2);
   padding: 3rem;
   border-radius: 10px;
-}
-
-.lottieBox {
-  width: 100%;
-  height: 250px;
-}
-
-.lottie {
-  height: 100%;
-  width: 100%;
+  gap: 10rem;
 }
 
 .title {
@@ -50,7 +46,7 @@
   font-size: 2rem;
   font-family: var(--suisse);
   letter-spacing: -0.001em;
-  text-align: center;
+  text-transform: none;
 }
 
 @media screen and (max-width: 1068px) {

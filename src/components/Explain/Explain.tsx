@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-import animationData from "../../../public/lottie/hero.json";
+import animationData from "../../../public/lottie/usp.json";
 import dynamic from "next/dynamic";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 

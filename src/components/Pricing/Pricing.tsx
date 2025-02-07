@@ -25,8 +25,9 @@ const Pricing = () => {
             <div className={styles.top}>
               <h2 className={styles.heading}>
                 {" "}
+                Transparent
+                <br />
                 <span className={styles.headingii}>Pricing:</span>
-                <br /> Choose your Package
               </h2>
               <p className={styles.copy}>
                 Our plans are clear and open, no shocks or caps. Help is always

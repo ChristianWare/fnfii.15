@@ -36,7 +36,8 @@
 
 .span {
   color: var(--purple);
-  text-decoration: underline;
+  font-family: var(--NyghtSerifLightItalic);
+  text-transform: lowercase;
 }
 
 .lottieBox {

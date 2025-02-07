@@ -40,8 +40,9 @@
 
 .span {
   color: var(--purple);
-  text-decoration: underline;
   line-height: inherit;
+  font-family: var(--NyghtSerifLightItalic);
+  text-transform: lowercase;
 }
 
 .copy {
@@ -204,9 +205,6 @@
   }
 
   @media screen and (max-width: 568px) {
-    .container {
-    }
-
     .parent {
       border-radius: 20px;
       padding: 2rem;

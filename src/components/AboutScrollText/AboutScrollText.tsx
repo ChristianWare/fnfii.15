@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
+import LayoutWrapper from "../LayoutWrapper";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 // import FalseButton from "../FalseButton/FalseButton";
 
 import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
+// import WhatWeDo from "../WhatWeDo/WhatWeDo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const data = [
@@ -70,7 +70,7 @@ const AboutScrollText = () => {
             </div>
           </div>
         </motion.div>
-        <WhatWeDo />
+        {/* <WhatWeDo /> */}
       </LayoutWrapper>
     </section>
   );

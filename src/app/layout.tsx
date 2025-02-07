@@ -97,6 +97,12 @@ const VisbyCF = localFont({
   display: "swap",
 });
 
+const NyghtSerifLightItalic = localFont({
+  src: "../../public/fonts/NyghtSerifLightItalic.woff2",
+  variable: "--NyghtSerifLightItalic",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Fonts & Footers",
   description: "E-commerce Web Design and Developement Agency",
@@ -117,7 +123,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable}  ${GrotzecCondBold.variable} ${InterTight.variable} ${InterDisplayMedium.variable} ${GilroySemiBold.variable} ${FTCalhernCondensedSemibold.variable} ${VisbyCF.variable}`}
+        className={`${suisse.variable} ${suissReg.variable} ${chromaticCondensedBold.variable} ${MatterMonoMedium.variable} ${BebasNeue.variable} ${tuskerGrotesk.variable} ${StratosSemibold.variable} ${HelveticaNowDisplay.variable} ${PPPangaia.variable}  ${GrotzecCondBold.variable} ${InterTight.variable} ${InterDisplayMedium.variable} ${GilroySemiBold.variable} ${FTCalhernCondensedSemibold.variable} ${VisbyCF.variable} ${NyghtSerifLightItalic.variable}`}
       >
         <NoiseBg>
           {/* <ScrollIndicator /> */}
