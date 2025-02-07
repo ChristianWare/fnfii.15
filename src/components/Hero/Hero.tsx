@@ -6,8 +6,9 @@ import Button from "../Button/Button";
 import Nav from "../Nav/Nav";
 // import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
-import RotatingText from "../RotatingText/RotatingText";
+// import RotatingText from "../RotatingText/RotatingText";
 import { fadeIn } from "../../../animation/variants";
+import ProductPreview from "../ProductPreview/ProductPreview";
 
 const Hero = () => {
   return (
@@ -50,12 +51,13 @@ const Hero = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.RotatingTextContainer}>
+              {/* <div className={styles.RotatingTextContainer}>
                 <RotatingText
                   text='Fonts & Footers • E-Commerce Specialists •'
                   color='tan'
                 />
-              </div>
+              </div> */}
+              <ProductPreview />
             </div>
           </div>
           {/* <div className={styles.bottom}>

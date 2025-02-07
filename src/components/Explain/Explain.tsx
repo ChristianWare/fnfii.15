@@ -1,8 +1,8 @@
 "use client";
 
+import styles from "./Explain.module.css";
 import { useEffect, useRef } from "react";
 import LayoutWrapper from "../LayoutWrapper";
-import styles from "./Explain.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { motion } from "framer-motion";

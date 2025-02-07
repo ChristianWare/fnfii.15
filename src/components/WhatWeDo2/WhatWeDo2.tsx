@@ -8,6 +8,9 @@ import animationData2 from "../../../public/lottie/email.json";
 import animationData3 from "../../../public/lottie/pricing.json";
 import animationData4 from "../../../public/lottie/hero.json";
 import { AnimatePresence, motion } from "framer-motion";
+import LayoutWrapper from "../LayoutWrapper";
+// import FalseButton from "../FalseButton/FalseButton";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -43,52 +46,63 @@ export default function WhatWeDo2() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
-        <div className={styles.left}>
-          {data.map((x, index) => (
-            <div
-              key={index}
-              className={
-                activeIndex === index
-                  ? `${styles.dataBox} ${styles.active}`
-                  : styles.dataBox
-              }
-              onClick={() => setActiveIndex(index)}
-            >
-              <h3 className={styles.title}>{x.title}</h3>
-              <motion.p
-                initial={{ opacity: 0, height: 0 }}
-                animate={{
-                  opacity: activeIndex === index ? 1 : 0,
-                  height: activeIndex === index ? "auto" : 0,
-                }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className={styles.desc}
+      <LayoutWrapper>
+        {/* <FalseButton
+          text='How we can be helpful'
+          btnType='primary'
+        /> */}
+        <SectionHeading
+          title='How we can be helpful'
+          color='purple'
+          dotColor='purple'
+        />
+        <div className={styles.content}>
+          <div className={styles.left}>
+            {data.map((x, index) => (
+              <div
+                key={index}
+                className={
+                  activeIndex === index
+                    ? `${styles.dataBox} ${styles.active}`
+                    : styles.dataBox
+                }
+                onClick={() => setActiveIndex(index)}
               >
-                {x.desc}
-              </motion.p>
-            </div>
-          ))}
+                <h3 className={styles.title}>{x.title}</h3>
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{
+                    opacity: activeIndex === index ? 1 : 0,
+                    height: activeIndex === index ? "auto" : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className={styles.desc}
+                >
+                  {x.desc}
+                </motion.p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.right}>
+            <AnimatePresence mode='wait'>
+              <motion.div
+                key={activeIndex}
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className={styles.lottieBox}
+              >
+                <Lottie
+                  animationData={data[activeIndex].animation}
+                  className={styles.lottie}
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
-        <div className={styles.right}>
-          <AnimatePresence mode='wait'>
-            <motion.div
-              key={activeIndex}
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className={styles.lottieBox}
-            >
-              <Lottie
-                animationData={data[activeIndex].animation}
-                className={styles.lottie}
-              />
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
+      </LayoutWrapper>
     </section>
   );
 }

@@ -1,3 +1,7 @@
+.parent {
+  margin-bottom: 10rem;
+}
+
 .container {
   background-color: var(--tan);
 }
@@ -95,11 +99,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .container {
   }
 }
 

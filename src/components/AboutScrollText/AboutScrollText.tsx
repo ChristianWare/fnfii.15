@@ -5,10 +5,11 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-import FalseButton from "../FalseButton/FalseButton";
+// import FalseButton from "../FalseButton/FalseButton";
 
 import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
+import WhatWeDo from "../WhatWeDo/WhatWeDo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const data = [
@@ -29,7 +30,6 @@ const data = [
   },
 ];
 
-
 const AboutScrollText = () => {
   return (
     <section className={styles.container} id='about'>
@@ -46,7 +46,6 @@ const AboutScrollText = () => {
           </h2>
           <div className={styles.content}>
             <div className={styles.left}>
-              <FalseButton text='About Us' btnType='primary' />
               <div className={styles.lottieBox}>
                 <Lottie
                   animationData={animationData}
@@ -71,6 +70,7 @@ const AboutScrollText = () => {
             </div>
           </div>
         </motion.div>
+        <WhatWeDo />
       </LayoutWrapper>
     </section>
   );

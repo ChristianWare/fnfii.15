@@ -1,8 +1,8 @@
 "use client";
 
+import styles from "./Projects.module.css";
 import { projects } from "../../../lib/data";
 import LayoutWrapper from "../LayoutWrapper";
-import styles from "./Projects.module.css";
 import Image from "next/image";
 import Check from "../../../public/icons/checkii.svg";
 import Button from "../Button/Button";
