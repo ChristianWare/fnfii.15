@@ -14,7 +14,7 @@
   transform-style: preserve-3d;
   transition: transform 0.6s;
   background-color: var(--tan2);
-  border: 1px solid var(--purple);
+  border: 1px solid var(--black);
   border-radius: 10px;
 }
 
@@ -49,7 +49,7 @@
 
 .title {
   line-height: 120%;
-  color: var(--purple);
+  color: var(--black);
   font-size: 2rem;
   font-family: var(--suisse);
   letter-spacing: -0.001em;
@@ -65,7 +65,7 @@
 .icon {
   width: 4rem;
   height: 4rem;
-  color: var(--black);
+  color: var(--purple);
   margin-left: auto;
 }
 
