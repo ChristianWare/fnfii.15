@@ -33,10 +33,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.front:hover {
+  background-color: var(--green3);
 }
 
 .back {
   transform: rotateY(180deg);
+  background-color: var(--green3);
+  border-radius: 10px;
 }
 
 .title {
