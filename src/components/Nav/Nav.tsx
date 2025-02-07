@@ -10,10 +10,11 @@ import Logo from "../Logo/Logo";
 import { gsap } from "gsap";
 
 const navItems = [
-  { text: "About Us", href: "/#about" },
-  { text: "Features", href: "/#features" },
-  { text: "Pricing", href: "/#pricing" },
-  { text: "Contact", href: "/#contact" },
+  { text: "About", href: "/about" },
+  { text: "Services", href: "/services" },
+  { text: "Works", href: "/works" },
+  { text: "Pricing", href: "/pricing" },
+  { text: "Contact", href: "/contact" },
 ];
 
 const Nav = () => {
