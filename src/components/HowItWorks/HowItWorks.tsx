@@ -1,96 +1,73 @@
-"use client";
-
 import LayoutWrapper from "../LayoutWrapper";
+// import Offer from "../Offer/Offer";
+import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./HowItWorks.module.css";
-import Develop from "../../../public/icons/develop.svg";
-import Consult from "../../../public/icons/consult.svg";
-import Notes from "../../../public/icons/notes.svg";
-import animationData from "../../../public/lottie/howitworks.json";
-import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-
-const process = [
+const data = [
   {
-    id: 59,
-    icon: <Consult className={styles.icon} width={40} height={40} />,
-    processName: "Discovery",
-    processDescription:
-      "We kick off with a detailed questionnaire where you tell us about your business and share your vision for the project. Inspired by your answers, we create a blueprint and discuss it in an all-hands call. This guides our next steps, ensuring no time is wasted on off-target ideas.",
+    id: 1,
+    feature: "Discovery & Planning",
+    desc: "I begin each project by thoroughly understanding the goals, target audience, and technical requirements. This phase involves research, brainstorming, and setting a solid foundation for the project's success.",
   },
   {
-    id: 40,
-    icon: <Notes className={styles.icon} width={40} height={40} />,
-
-    processName: "Validation",
-    processDescription:
-      "Based on the previous insights, we present two visual concepts so you can choose the one that best meets your needs. After your feedback, we can either refine the chosen path or proceed with it as approved.",
+    id: 2,
+    feature: "Design & Prototyping",
+    desc: "I create detailed wireframes and prototypes that align with the project’s objectives. Through iterative design, I ensure the final product is both functional and visually appealing.",
   },
   {
-    id: 61,
-    icon: <Develop className={styles.icon} width={40} height={40} />,
-    processName: "Execution & handoff",
-    processDescription:
-      "Finally, we create a versatile visual system designed to work for the channels and formats you will use the most. The delivery—comprised of a guide and a set of essential assets—is asynchronous, so you can take your time for the final revision before the handoff.",
+    id: 3,
+    feature: "Development & Integration",
+    desc: "With the design finalized, I move into development, leveraging modern technologies like Next.js and TypeScript. I focus on writing clean, efficient code and seamlessly integrating any necessary third-party services.",
+  },
+  {
+    id: 4,
+    feature: "Testing & Launch",
+    desc: "Before deployment, I conduct extensive testing to guarantee optimal performance and reliability. Once the project meets all standards, I launch it and continue to monitor and optimize as needed.",
   },
 ];
 
 const HowItWorks = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <div className={styles.top}>
-              <h2 className={styles.heading}>
-                What is the{" "}
-                <motion.span
-                  variants={fadeIn("", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
-                  className={styles.headingSpan}
-                >
-                  process
-                </motion.span>{" "}
-                for working with you?
-              </h2>
-              <p className={styles.topText}>
-                This is our process for developing the perfect websites for your
-                brand. We Keep you in the loop 100% of the time.
-              </p>
-            </div>
-            <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
+      <div className={styles.parent}>
+        <LayoutWrapper>
+          <div className={styles.top}>
+            <SectionHeading
+              title='Process'
+              color='purple'
+              dotColor='purpleDot'
+            />
+            <h2 className={styles.heading1}>How it works</h2>
           </div>
-          <div className={styles.right}>
-            {process.map((x, index) => (
-              <div key={x.id} className={styles.card}>
-                <div className={styles.cardLeft}>
-                  <motion.span
-                    variants={fadeIn("left", 0.3)}
-                    initial='hidden'
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.1 }}
-                    className={styles.span}
-                  >
-                    Week {index + 1}
-                  </motion.span>
-                </div>
-                <div className={styles.cardRight}>
-                  <h3 className={styles.processName}>{x.processName}</h3>
-                  <p className={styles.processDescription}>
-                    {x.processDescription}
-                  </p>
-                </div>
+          <div className={styles.box}>
+            <div className={styles.middle}>
+              <div className={styles.middleLeft}>
+                <div className={styles.sectionTitle}></div>
               </div>
-            ))}
+              <h4 className={styles.heading}>
+                By taking a holistic approach to web development, I provide
+                clients with personalized solutions, ongoing support, and
+                actionable insights to ensure their success extends far beyond
+                the launch.
+              </h4>
+            </div>
+            <div className={styles.bottom}>
+              {data.map((x) => (
+                <div key={x.id} className={styles.card}>
+                  <div className={styles.indexContainer}>
+                    <span className={styles.index}>{x.id}</span>
+                  </div>
+                  <div>
+                    <h3 className={styles.feature}>{x.feature}</h3>
+                    <p className={styles.desc}>{x.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </LayoutWrapper>
+          {/* <Offer /> */}
+        </LayoutWrapper>
+      </div>
     </section>
   );
 };
