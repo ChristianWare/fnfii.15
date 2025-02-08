@@ -7,8 +7,9 @@ import { fadeIn } from "../../../animation/variants";
 import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
+// import { motion, useTransform, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
+// import { useRef } from "react";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -46,13 +47,13 @@ const data = [
 ];
 
 const AboutScrollText = () => {
-  const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start start", "end start"],
-  });
+  // const targetRef = useRef<HTMLDivElement>(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: targetRef,
+  //   offset: ["start start", "end start"],
+  // });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  // const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
   return (
     <section className={styles.container} id='about'>
       <LayoutWrapper>
@@ -93,7 +94,7 @@ const AboutScrollText = () => {
             </div>
           </div>
         </motion.div>
-        <section ref={targetRef} className={styles.rightiiWrapper}>
+        {/* <section ref={targetRef} className={styles.rightiiWrapper}>
           <motion.div className={styles.rightii} style={{ x }}>
             {data.map((x: any) => (
               <div className={styles.cardii} key={x.id}>
@@ -102,7 +103,7 @@ const AboutScrollText = () => {
               </div>
             ))}
           </motion.div>
-        </section>
+        </section> */}
       </LayoutWrapper>
     </section>
   );

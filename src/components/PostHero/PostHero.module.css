@@ -1,7 +1,7 @@
 .container {
   background-color: var(--tan);
-  padding-top: 15rem;
-  padding-bottom: 25rem;
+  /* padding-top: 15rem;
+  padding-bottom: 25rem; */
 }
 
 .content {
@@ -31,8 +31,10 @@
 
 .span {
   color: var(--purple);
-  text-decoration: underline;
+  font-family: var(--NyghtSerifLightItalic);
   margin-left: 0.7rem;
+  text-transform: lowercase;
+  font-size: 6rem;
 }
 
 .bottom {

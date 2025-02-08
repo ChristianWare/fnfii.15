@@ -9,7 +9,6 @@ import animationData3 from "../../../public/lottie/pricing.json";
 import animationData4 from "../../../public/lottie/hero.json";
 import { AnimatePresence, motion } from "framer-motion";
 import LayoutWrapper from "../LayoutWrapper";
-// import FalseButton from "../FalseButton/FalseButton";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });

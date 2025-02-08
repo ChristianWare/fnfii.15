@@ -2,7 +2,7 @@
 
 import { ReactLenis } from "@studio-freight/react-lenis";
 import Hero from "@/components/Hero/Hero";
-import Projects from "@/components/Projects/Projects";
+// import Projects from "@/components/Projects/Projects";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Footerii from "@/components/Footerii/Footerii";
 import Explain from "@/components/Explain/Explain";
@@ -12,6 +12,7 @@ import Solution from "@/components/Solution/Solution";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 // import Testimonials from "@/components/Testimonials/Testimonials";
 import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
+import PostHero from "@/components/PostHero/PostHero";
 // import Pricing from "@/components/Pricing/Pricing";
 // import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
 // import Owner from "@/components/Owner/Owner";
@@ -20,7 +21,6 @@ import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 // import Compare from "@/components/Compare/Compare";
 // import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 // import ContactHero from "@/components/ContactHero/ContactHero";
-// import PostHero from "@/components/PostHero/PostHero";
 // import FirstStep from "@/components/FirstStep/FirstStep";
 // import Calendly from "@/components/Calendly/Calendly";
 
@@ -32,12 +32,14 @@ export default function Home() {
         <Explain />
         <AboutScrollText />
         <WhatWeDo />
-        <Projects />
-        <HowItWorks />
-        {/* <Testimonials /> */}
         <Solution />
+        <HowItWorks />
+        <PostHero />
         <FinalCTA />
         <Footerii />
+        {/* <Testimonials /> */}
+        {/* <WhatWeDo2 /> */}
+        {/* <Projects /> */}
         {/* <Problem /> */}
         {/* <WhatWeDo2 /> */}
         {/* <Pricing /> */}
@@ -45,7 +47,6 @@ export default function Home() {
         {/* <NewFaq mapData={homePageFaqs} /> */}
         {/* <EcommFeatures /> */}
         {/* <Compare /> */}
-        {/* <PostHero /> */}
         {/* <FirstStep /> */}
         {/* <Calendly /> */}
         {/* <ContactHero /> */}

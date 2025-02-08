@@ -36,7 +36,7 @@ const PostHero = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.topHeading}>
-              Work with us for{" "}
+              Work with us for <br />
               <motion.span
                 variants={fadeIn("", 0.3)}
                 initial='hidden'
