@@ -70,6 +70,7 @@ const Card = ({ title, desc, icon }: Props) => {
       <div className={`${styles.cardInner} ${isFlipped ? styles.flip : ""}`}>
         <div className={styles.front}>
           <h3 className={styles.title}>{title}</h3>
+          {icon}
           <div className={styles.btnContainer}>
             <FalseButton text='more details →' btnType='primary' />
           </div>

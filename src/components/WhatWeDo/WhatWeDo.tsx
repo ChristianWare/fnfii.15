@@ -12,7 +12,7 @@ import Card from "../Card/Card";
 const data = [
   {
     id: 1,
-    title: "Platform Consultation & Selection",
+    title: "Platform Consult & Selection",
     desc: "We build websites that help your online store reach new heights, combining speed, scalability, and style to make your business stand out.",
     icon: <Platform className={styles.icon} />,
   },
