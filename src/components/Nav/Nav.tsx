@@ -8,6 +8,7 @@ import styles from "./Nav.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
 import Logo from "../Logo/Logo";
 import { gsap } from "gsap";
+import ScrollIndicator from "../ScrollIndicator/ScrollIndicator";
 
 const navItems = [
   { text: "About", href: "/about" },
@@ -129,6 +130,7 @@ const Nav = () => {
         className={`${styles.header} ${isFixed ? styles.fixed : ""}`}
         ref={navRef}
       >
+        <ScrollIndicator />
         <nav className={styles.navbar}>
           <div className={styles.mobileLogo}>
             <Logo />

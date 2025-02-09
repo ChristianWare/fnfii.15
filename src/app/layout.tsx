@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
-import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
+// import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import PlausibleProvider from "next-plausible";
 import { Toaster } from "react-hot-toast";
 
@@ -53,7 +53,7 @@ export default function RootLayout({
         className={`${suisse.variable} ${suissReg.variable} ${VisbyCF.variable} ${BoogyBrutPoster.variable}`}
       >
         <NoiseBg>
-          <ScrollIndicator />
+          {/* <ScrollIndicator /> */}
           <Toaster
             position='bottom-right'
             toastOptions={{

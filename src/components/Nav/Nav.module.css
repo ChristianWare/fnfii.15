@@ -8,7 +8,7 @@
   padding-right: 30px;
   background-color: var(--tan);
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid var(--purple);
+  /* border-bottom: 1px solid var(--purple); */
 }
 
 .navbar {
@@ -77,6 +77,7 @@
   line-height: 1;
   padding: 0.5rem 2rem;
   border-radius: 50px;
+  border: 1px solid var(--tan);
   background-color: var(--purple);
   color: var(--tan);
   transition: all 0.2s ease-in;

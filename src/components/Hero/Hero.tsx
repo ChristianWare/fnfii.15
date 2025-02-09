@@ -4,11 +4,10 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import Nav from "../Nav/Nav";
-// import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import { motion } from "framer-motion";
-// import RotatingText from "../RotatingText/RotatingText";
 import { fadeIn } from "../../../animation/variants";
 import ProductPreview from "../ProductPreview/ProductPreview";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Hero = () => {
   return (
@@ -24,6 +23,12 @@ const Hero = () => {
         >
           <div className={styles.content}>
             <div className={styles.left}>
+              <SectionHeading
+                title='E-commerce Web Developer'
+                color='white'
+                dotColor='whiteDot'
+              />
+
               <h1 className={styles.heading}>
                 We build <br />
                 e-commerce <br /> websites <br />
