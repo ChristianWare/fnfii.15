@@ -2,7 +2,6 @@
   background-color: var(--tan);
   padding-top: 10rem;
   padding-bottom: 10rem;
-  
 }
 
 .parentContent {
@@ -42,7 +41,7 @@
 .span {
   color: var(--purple);
   line-height: inherit;
-  font-family: var(--NyghtSerifLightItalic);
+  font-family: var(--BoogyBrutPoster);
   text-transform: lowercase;
 }
 

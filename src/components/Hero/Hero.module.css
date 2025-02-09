@@ -31,10 +31,11 @@
   display: inline-block;
   line-height: inherit;
   /* text-decoration: underline; */
-  font-family: var(--NyghtSerifLightItalic);
+  font-family: var(--BoogyBrutPoster);
   text-transform: lowercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
+/* BoogyBrutPoster */
 
 .copy {
   color: var(--white);

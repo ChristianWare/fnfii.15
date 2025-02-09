@@ -32,29 +32,40 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   padding: 2rem;
   border-radius: 10px;
   transition: all 0.2s ease-in;
 }
 
-.front:hover {
+/* .front:hover {
   background-color: var(--green3);
-}
+} */
 
 .back {
   transform: rotateY(180deg);
   background-color: var(--green3);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .title {
   line-height: 120%;
-  color: var(--black);
-  font-size: 2rem;
-  font-family: var(--suisse);
+  color: var(--purple);
+  text-align: center;
   letter-spacing: -0.001em;
   text-transform: none;
   user-select: none;
+  transition: all 0.3s ease-in;
+}
+
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
 }
 
 .desc {
@@ -66,7 +77,8 @@
   width: 4rem;
   height: 4rem;
   color: var(--purple);
-  margin-left: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .cardInner {
@@ -92,3 +104,16 @@
 .back {
   transform: rotateY(180deg);
 }
+
+/* Add this at the bottom of your CSS file */
+/* @media (hover: hover) and (pointer: fine) {
+  .front:hover {
+    background-color: var(--green3);
+  }
+
+  .front:hover .title {
+    color: var(--black);
+  }
+} */
+
+/* Remove the existing .front:hover and .front:hover .title rules */

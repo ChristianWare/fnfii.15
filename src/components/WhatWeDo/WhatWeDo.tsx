@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 4,
-    title: "Payment Gateway & Third-Party Integrations",
+    title: "Payment Gateway Integrations",
     desc: "Easily manage your store from anywhere with user-friendly tools that give you control over products, sales, and analytics—all in one place.",
     icon: <Cash className={styles.icon} />,
   },

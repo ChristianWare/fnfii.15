@@ -46,7 +46,7 @@
 
 .span {
   color: var(--purple);
-  font-family: var(--NyghtSerifLightItalic);
+  font-family: var(--BoogyBrutPoster);
   text-transform: lowercase;
 }
 
@@ -141,13 +141,13 @@
   .rightiiWrapper {
     height: 70vh;
   }
-  
+
   .cardii {
     width: 300px;
     min-height: 300px;
     padding: 2rem;
   }
-  
+
   .title {
     font-size: 6rem;
   }

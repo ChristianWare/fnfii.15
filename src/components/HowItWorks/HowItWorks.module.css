@@ -12,9 +12,10 @@
 
 .heading1 {
   text-align: center;
-  color: var(--black);
-  font-family: var(--NyghtSerifLightItalic);
-  text-transform: capitalize;
+  color: var(--purple);
+  font-family: var(--BoogyBrutPoster);
+  text-transform: none;
+  border-bottom: 1px solid var(--purple);
 }
 
 .box {
@@ -36,7 +37,6 @@
   padding: 3rem;
   font-size: 2rem;
   text-indent: 4em;
-  /* font-weight: 600; */
   text-transform: none;
   font-family: var(--suisseReg);
 }
@@ -88,7 +88,7 @@
 .index {
   font-size: 4rem;
   color: var(--black);
-  font-family: var(--NyghtSerifLightItalic);
+  font-family: var(--BoogyBrutPoster);
 }
 
 .feature {

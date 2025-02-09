@@ -16,7 +16,7 @@
 .span {
   color: var(--purple);
   line-height: inherit;
-  font-family: var(--NyghtSerifLightItalic);
+  font-family: var(--BoogyBrutPoster);
   text-transform: lowercase;
   font-size: 5.5rem;
   white-space: nowrap;
@@ -38,10 +38,9 @@
 }
 
 .icon {
-  width: 4rem;
-  height: 4rem;
-  color: var(--purple);
-  margin-left: auto;
+  width: 5rem;
+  height: 5rem;
+  color: var(--black);
 }
 
 @media screen and (max-width: 1068px) {

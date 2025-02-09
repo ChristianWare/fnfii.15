@@ -13,12 +13,16 @@
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   line-height: 2rem;
   text-align: center;
+  text-transform: capitalize;
+  width: 100%
 }
 
 .primary {
-  font-family: var(--suisse);
+  font-family: var(--VisbyCF);
   color: var(--purple);
-  padding: 0;
+  /* padding: 0; */
+  border: 1px solid var(--purple);
+  border-radius: 50px;
 }
 
 .primaryHero {

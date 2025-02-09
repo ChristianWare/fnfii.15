@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import styles from "./Card.module.css";
+import FalseButton from "../FalseButton/FalseButton";
 
 interface Props {
   title: string;
@@ -11,6 +13,7 @@ interface Props {
 
 const Card = ({ title, desc, icon }: Props) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
   const x = useMotionValue(0.5);
@@ -19,8 +22,27 @@ const Card = ({ title, desc, icon }: Props) => {
   const rotateX = useTransform(y, [0, 1], [35, -35]);
   const rotateY = useTransform(x, [0, 1], [-35, 35]);
 
+  useEffect(() => {
+    const checkTouchDevice = () => {
+      try {
+        const mediaQuery = window.matchMedia(
+          "(hover: hover) and (pointer: fine)"
+        );
+        setIsTouchDevice(!mediaQuery.matches);
+      } catch (e) {
+        setIsTouchDevice(
+          "ontouchstart" in window || navigator.maxTouchPoints > 0
+        );
+      }
+    };
+
+    checkTouchDevice();
+    window.addEventListener("resize", checkTouchDevice);
+    return () => window.removeEventListener("resize", checkTouchDevice);
+  }, []);
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return;
+    if (!cardRef.current || isTouchDevice) return;
     const rect = cardRef.current.getBoundingClientRect();
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
@@ -29,6 +51,7 @@ const Card = ({ title, desc, icon }: Props) => {
   };
 
   const handleMouseLeave = () => {
+    if (isTouchDevice) return;
     x.set(0.5);
     y.set(0.5);
   };
@@ -39,7 +62,7 @@ const Card = ({ title, desc, icon }: Props) => {
     <motion.div
       ref={cardRef}
       className={styles.card}
-      style={{ rotateX, rotateY }}
+      style={!isTouchDevice ? { rotateX, rotateY } : undefined}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onClick={flipCard}
@@ -47,10 +70,13 @@ const Card = ({ title, desc, icon }: Props) => {
       <div className={`${styles.cardInner} ${isFlipped ? styles.flip : ""}`}>
         <div className={styles.front}>
           <h3 className={styles.title}>{title}</h3>
-          {icon}
+          <div className={styles.btnContainer}>
+            <FalseButton text='more details →' btnType='primary' />
+          </div>
         </div>
 
         <div className={styles.back}>
+          {icon}
           <p className={styles.desc}>{desc}</p>
         </div>
       </div>
