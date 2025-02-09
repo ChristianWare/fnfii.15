@@ -3,7 +3,7 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-import Nav from "../Nav/Nav";
+// import Nav from "../Nav/Nav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 import ProductPreview from "../ProductPreview/ProductPreview";
@@ -12,7 +12,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 const Hero = () => {
   return (
     <section className={styles.container}>
-      <Nav />
+      {/* <Nav /> */}
       <LayoutWrapper>
         <motion.div
           variants={fadeIn("", 0.3)}
@@ -35,24 +35,22 @@ const Hero = () => {
                 <span className={styles.headingii}>the right way.</span>
               </h1>
 
-              <div>
-                {/* <p className={styles.copy}>
+              {/* <p className={styles.copy}>
                   We Build Fast, Secure, and Scalable Online Stores for
                   Ambitious Brands.
                 </p> */}
-                <div className={styles.btnContainer}>
-                  <Button
-                    text='Book Free Consultation'
-                    href='/#contact'
-                    btnType='primaryiii'
-                    arrow
-                  />
-                  <Button
-                    text='See Our Work'
-                    href='/#projects'
-                    btnType='primaryiv'
-                  />
-                </div>
+              <div className={styles.btnContainer}>
+                <Button
+                  text='Book Free Consultation'
+                  href='/#contact'
+                  btnType='primaryiii'
+                  arrow
+                />
+                <Button
+                  text='See Our Work'
+                  href='/#projects'
+                  btnType='primaryiv'
+                />
               </div>
             </div>
             <div className={styles.right}>

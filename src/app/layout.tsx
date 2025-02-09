@@ -5,6 +5,7 @@ import NoiseBg from "@/components/NoiseBg/NoiseBg";
 // import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import PlausibleProvider from "next-plausible";
 import { Toaster } from "react-hot-toast";
+import Nav from "@/components/Nav/Nav";
 
 const suisse = localFont({
   src: "../../public/fonts/SuisseIntl-Medium.ttf",
@@ -60,6 +61,7 @@ export default function RootLayout({
               className: "toastFont",
             }}
           />
+          <Nav />
           {children}
         </NoiseBg>
       </body>
