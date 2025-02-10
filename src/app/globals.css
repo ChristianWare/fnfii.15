@@ -61,7 +61,7 @@ span {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 5rem;
   line-height: 1;
   letter-spacing: -2px;
   /* white-space: nowrap; */
@@ -74,24 +74,24 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1em;
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
@@ -155,7 +155,7 @@ textarea:focus {
   }
 
   h1 {
-    font-size: 7rem;
+    font-size: 4.5rem;
   }
 
   h2 {
@@ -180,7 +180,7 @@ textarea:focus {
 /* Only use in production */
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: -2px;
   }
   h2 {

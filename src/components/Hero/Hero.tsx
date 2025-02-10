@@ -3,16 +3,13 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-// import Nav from "../Nav/Nav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-import ProductPreview from "../ProductPreview/ProductPreview";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import RotatingText from "../RotatingText/RotatingText";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
-      {/* <Nav /> */}
       <LayoutWrapper>
         <motion.div
           variants={fadeIn("", 0.3)}
@@ -23,53 +20,32 @@ const Hero = () => {
         >
           <div className={styles.content}>
             <div className={styles.left}>
-              <SectionHeading
-                title='E-commerce Web Developer'
-                color='white'
-                dotColor='whiteDot'
-              />
-
-              <h1 className={styles.heading}>
-                We build <br />
-                e-commerce <br /> websites <br />
-                <span className={styles.headingii}>the right way.</span>
-              </h1>
-
-              {/* <p className={styles.copy}>
-                  We Build Fast, Secure, and Scalable Online Stores for
-                  Ambitious Brands.
-                </p> */}
-              <div className={styles.btnContainer}>
-                <Button
-                  text='Book Free Consultation'
-                  href='/#contact'
-                  btnType='primaryiii'
-                  arrow
-                />
-                <Button
-                  text='See Our Work'
-                  href='/#projects'
-                  btnType='primaryiv'
-                />
-              </div>
-            </div>
-            <div className={styles.right}>
-              {/* <div className={styles.RotatingTextContainer}>
+              <div className={styles.RotatingTextContainer}>
                 <RotatingText
                   text='Fonts & Footers • E-Commerce Specialists •'
                   color='tan'
                 />
-              </div> */}
-              <ProductPreview />
-            </div>
-          </div>
-          {/* <div className={styles.bottom}>
-            <div className={styles.uspContainer}>
-              <div>
-                <WhatWeDo />
+              </div>
+              <h1 className={styles.heading}>
+                We build <br />
+                e-commerce websites <br />
+                <span className={styles.headingii}>the right way.</span>
+              </h1>
+
+              <p className={styles.copy}>
+                We Build Fast, Secure, and Scalable Online Stores for Ambitious
+                Brands.
+              </p>
+              <div className={styles.btnContainer}>
+                <Button
+                  text='Learn more'
+                  href='/#contact'
+                  btnType='primaryiii'
+                  arrow
+                />
               </div>
             </div>
-          </div> */}
+          </div>
         </motion.div>
       </LayoutWrapper>
     </section>

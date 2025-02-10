@@ -2,6 +2,9 @@
 
 import styles from "./RotatingText.module.css";
 import { FC } from "react";
+import animationData from "../../../public/lottie/hero.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 interface RotatingTextProps {
   text: string;
@@ -10,8 +13,6 @@ interface RotatingTextProps {
 }
 
 const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
- 
-
   return (
     <div className={`${styles.container} ${styles[color]}`}>
       <svg className={styles.svg} viewBox='0 0 100 100'>
@@ -31,6 +32,9 @@ const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
           </textPath>
         </text>
       </svg>
+      <div className={styles.lottieBox}>
+        <Lottie animationData={animationData} className={styles.lottie} />
+      </div>
     </div>
   );
 };

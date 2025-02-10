@@ -6,9 +6,9 @@
   z-index: 999;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
   transition: all 0.3s ease-in-out;
-  /* border-bottom: 1px solid var(--purple); */
+  /* backdrop-filter: blur(20px); */
 }
 
 .navbar {
@@ -20,6 +20,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 1rem 5.2rem;
+  padding-top: 2rem;
   z-index: 1000;
 }
 
