@@ -1,17 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { fadeIn } from "../../../animation/variants";
-import LayoutWrapper from "../LayoutWrapper";
-import ProductPreview from "../ProductPreview/ProductPreview";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./PageIntro.module.css";
 import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
+import LayoutWrapper from "../LayoutWrapper";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 interface Props {
   title: string;
   title2?: string;
   copy?: string;
   sectionHeading: string;
+  animationData: any;
 }
 
 export default function PageIntro({
@@ -19,6 +22,7 @@ export default function PageIntro({
   title,
   title2,
   copy,
+  animationData,
 }: Props) {
   return (
     <section className={styles.container}>
@@ -32,11 +36,13 @@ export default function PageIntro({
         >
           <div className={styles.content}>
             <div className={styles.left}>
-              <SectionHeading
-                title={sectionHeading}
-                color='white'
-                dotColor='whiteDot'
-              />
+              <div className={styles.sectionHeaderContainer}>
+                <SectionHeading
+                  title={sectionHeading}
+                  color='green'
+                  dotColor='greenDot'
+                />
+              </div>
               <h1 className={styles.heading}>
                 {title} <br />
                 <span className={styles.headingii}>{title2}</span>
@@ -44,7 +50,14 @@ export default function PageIntro({
               <p className={styles.copy}>{copy}</p>
             </div>
             <div className={styles.right}>
-              <ProductPreview />
+              <div className={styles.rightContent}>
+                <div className={styles.lottieBox}>
+                  <Lottie
+                    animationData={animationData}
+                    className={styles.lottie}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>

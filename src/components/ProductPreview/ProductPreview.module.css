@@ -49,8 +49,10 @@
 }
 
 .right {
-  display: flex;
+  display: block;
 }
+
+
 
 .btn,
 .btnii {

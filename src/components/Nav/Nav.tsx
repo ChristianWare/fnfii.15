@@ -5,7 +5,6 @@ import Link from "next/link";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
-import Arrow from "../../../public/icons/arrow.svg";
 import Logo from "../Logo/Logo";
 import { gsap } from "gsap";
 import ScrollIndicator from "../ScrollIndicator/ScrollIndicator";
@@ -158,7 +157,6 @@ const Nav = () => {
                   <Link href={navItem.href} className={styles.navItem}>
                     {pathname.includes(navItem.href) && (
                       <>
-                        <Arrow className={styles.icon} />
                         {navItem.text}
                       </>
                     )}
