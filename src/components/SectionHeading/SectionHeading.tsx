@@ -1,7 +1,7 @@
 import styles from "./SectionHeading.module.css";
 
 interface Props {
-  title: string;
+  title: string ;
   color: string;
   dotColor: string;
 }
