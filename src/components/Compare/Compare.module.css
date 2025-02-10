@@ -20,13 +20,11 @@
   top: 120px;
 }
 
-.heading {
-  margin-top: -1rem;
-}
-
 .span {
   color: var(--purple);
-  text-decoration: underline;
+  font-family: var(--BoogyBrutPoster);
+  text-transform: lowercase;
+  font-size: 6rem;
 }
 
 .copy {
@@ -149,9 +147,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .container {
-  }
-
   .heading {
     line-height: 120%;
   }

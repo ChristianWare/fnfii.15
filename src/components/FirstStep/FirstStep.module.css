@@ -7,14 +7,16 @@
 }
 
 .heading {
-  width: 45%;
+  /* width: 45%; */
   margin-top: 1rem;
   font-size: 3.5rem;
 }
 
 .span {
   color: var(--purple);
-  text-decoration: underline;
+  font-family: var(--BoogyBrutPoster);
+  text-transform: none;
+  font-size: 6rem;
   margin-right: 1rem;
 }
 
@@ -44,7 +46,8 @@
   color: var(--purple);
   line-height: 110%;
   margin-bottom: 2rem;
-  font-family: var(--suisse);
+  font-family: var(--VisbyCF);
+  width: 70%;
 }
 
 .addTitle {
@@ -114,7 +117,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .pattern {
-    height: 100px;
+  .title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

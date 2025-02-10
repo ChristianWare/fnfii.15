@@ -1,5 +1,4 @@
 import styles from "./FirstStep.module.css";
-import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 
 const data = [
@@ -70,14 +69,9 @@ const FirstStep = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='First steps' />
-            </div>
             <h2 className={styles.heading}>
-              Take the first step toward your{" "}
-              <span className={styles.span}> dream online store. </span>{" "}
-              Let&apos;s build a high-converting website that elevates your
-              business.
+              Take the first step toward your <br />
+              <span className={styles.span}> dream online store. </span>
             </h2>
           </div>
           <div className={styles.bottom}>

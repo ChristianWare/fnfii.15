@@ -1,5 +1,8 @@
 .container {
   background-color: var(--tan);
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+
 }
 
 .content {
@@ -106,9 +109,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .container {
-  }
-
   .imgContainer {
     width: 200px;
     height: 200px;

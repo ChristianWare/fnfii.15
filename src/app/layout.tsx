@@ -6,6 +6,7 @@ import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import PlausibleProvider from "next-plausible";
 import { Toaster } from "react-hot-toast";
 import Nav from "@/components/Nav/Nav";
+import Footerii from "@/components/Footerii/Footerii";
 
 const suisse = localFont({
   src: "../../public/fonts/SuisseIntl-Medium.ttf",
@@ -63,6 +64,7 @@ export default function RootLayout({
           />
           <Nav />
           {children}
+          <Footerii />
         </NoiseBg>
       </body>
     </html>

@@ -1,5 +1,5 @@
 import styles from "./Compare.module.css";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import Listing from "../../../public/icons/sad.svg";
 import Clock from "../../../public/icons/happy.svg";
@@ -93,13 +93,13 @@ const Compare = () => {
                 designs to deliver custom-built websites tailored to your unique
                 goals.
               </p>
-              <div className={styles.btnContainer}>
+              {/* <div className={styles.btnContainer}>
                 <Button
                   text='Schedule Discovery Call'
                   href='/#schedule'
                   btnType='secondary'
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.right}>
               {data.map((x) => (

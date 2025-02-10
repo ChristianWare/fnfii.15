@@ -12,7 +12,10 @@
 .heading {
   margin-right: auto;
   font-size: 7rem;
-  color: var(--white);
+  color: var(--tan);
+  font-family: var(--BoogyBrutPoster);
+  text-transform: none;
+  letter-spacing: 1px;
 }
 
 .problemContainer {

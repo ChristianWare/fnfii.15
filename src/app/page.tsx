@@ -4,7 +4,6 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 import Hero from "@/components/Hero/Hero";
 // import Projects from "@/components/Projects/Projects";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
-import Footerii from "@/components/Footerii/Footerii";
 import Explain from "@/components/Explain/Explain";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 // import Problem from "@/components/Problem/Problem";
@@ -36,7 +35,6 @@ export default function Home() {
         <HowItWorks />
         <PostHero />
         <FinalCTA />
-        <Footerii />
         {/* <Testimonials /> */}
         {/* <WhatWeDo2 /> */}
         {/* <Projects /> */}
