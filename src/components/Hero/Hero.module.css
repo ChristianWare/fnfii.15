@@ -29,14 +29,14 @@
 }
 
 .headingii {
-  color: var(--white);
+  color: var(--green3);
   display: inline-block;
   line-height: inherit;
   font-family: var(--BoogyBrutPoster);
   text-transform: lowercase;
   letter-spacing: 1px;
   font-size: 7rem;
-  border-bottom: 8px solid var(--white);
+  border-bottom: 8px solid var(--green3);
 }
 
 .copy {
@@ -62,8 +62,6 @@
 }
 
 @media screen and (max-width: 1068px) {
-
-
   .btnContainer {
     margin-right: auto;
     margin-left: auto;
@@ -72,7 +70,6 @@
 }
 
 @media screen and (max-width: 768px) {
- 
   .headingii {
     font-size: 6rem;
     border-bottom: 5px solid var(--white);
@@ -80,11 +77,10 @@
 }
 
 @media screen and (max-width: 568px) {
- .content {
-  margin-top: 3rem;
- }
+  .content {
+    margin-top: 3rem;
+  }
 
- 
   .copy {
     width: 100%;
   }

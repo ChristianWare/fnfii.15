@@ -23,7 +23,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  transition: all 0.1s ease-in, color 0.1s ease-in;
+  transition: all 0.2s ease-in, color 0.1s ease-in;
 }
 
 .primary {
@@ -46,6 +46,10 @@
   color: var(--purple);
   background-color: var(--tan);
   /* border: 1px solid var(--lightBlack); */
+}
+
+.primaryiii:hover {
+  background-color: var(--green3);
 }
 
 .primaryiv {
