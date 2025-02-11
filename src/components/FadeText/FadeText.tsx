@@ -1,17 +1,18 @@
 "use client";
 
-import styles from "./Explain.module.css";
+import styles from "./FadeText.module.css";
 import { useEffect, useRef } from "react";
-import LayoutWrapper from "../LayoutWrapper";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
-import animationData from "../../../public/lottie/usp.json";
-import dynamic from "next/dynamic";
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+import LayoutWrapper from "../LayoutWrapper";
 
-export default function Explain() {
+interface Props {
+  title: string;
+  subheading: string;
+  textContent: string;
+}
+
+export default function FadeText({ title, subheading, textContent }: Props) {
   const [lettersRef, setLettersRef] = useArrayRef();
   const triggerRef = useRef(null);
 
@@ -26,8 +27,7 @@ export default function Explain() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  const text =
-    "Most web developers build sites — we build profit engines. Here’s why e-commerce requires our niche expertise.";
+  const text = textContent;
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -60,8 +60,14 @@ export default function Explain() {
     <section className={styles.container} ref={triggerRef}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.left}>
-            <h2 className={styles.heading}>
+          <div className={styles.top}>
+            <h2 className={styles.title}>
+                {title}
+            </h2>
+            <h3 className={styles.subheading}>
+                {subheading}
+            </h3>
+            <h4 className={styles.heading}>
               {text.split("").map((letter, index) => (
                 <span
                   key={index}
@@ -71,23 +77,9 @@ export default function Explain() {
                   {letter}
                 </span>
               ))}
-            </h2>
-            <motion.h2
-              variants={fadeIn("", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.1 }}
-              className={styles.headingii}
-            >
-              Most web developers build sites — we build profit engines. Here’s
-              why e-commerce requires our niche expertise.
-            </motion.h2>
+            </h4>
           </div>
-          <div className={styles.right}>
-            <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
-          </div>
+          <div className={styles.right}></div>
         </div>
       </LayoutWrapper>
     </section>

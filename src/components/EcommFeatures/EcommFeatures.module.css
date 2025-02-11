@@ -21,6 +21,10 @@
 
 .span {
   color: var(--purple);
+  font-family: var(--BoogyBrutPoster);
+  text-transform: capitalize;
+  font-size: 6rem;
+  letter-spacing: 1px;
   text-decoration: underline;
 }
 
