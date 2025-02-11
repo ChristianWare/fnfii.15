@@ -177,10 +177,10 @@
 
   .logoMobile {
     display: block;
-    margin-bottom: 3rem;
-    font-size: 3rem;
-    text-align: center;
-    width: 100%;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .bottom {

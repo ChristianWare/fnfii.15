@@ -157,6 +157,12 @@
     justify-content: center;
   }
 
+  .sectionHeadingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .heading,
   .copy {
     text-align: center;
@@ -169,13 +175,6 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .falseBtnContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
   }
 
   .right {
@@ -210,6 +209,10 @@
       "six";
     grid-template-columns: repeat(1, 1fr);
     overflow-x: hidden;
+  }
+
+  .span {
+    font-size: 5rem;
   }
 
   .btnContainer {

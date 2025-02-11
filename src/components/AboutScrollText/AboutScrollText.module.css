@@ -7,9 +7,17 @@
 }
 
 .heading {
-  /* text-align: center; */
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .content {
@@ -23,10 +31,6 @@
   background-color: var(--tan2);
   padding: 3rem;
   border-radius: 10px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -48,6 +52,7 @@
   color: var(--purple);
   font-family: var(--BoogyBrutPoster);
   text-transform: lowercase;
+  font-size: 6rem;
 }
 
 .lottieBox {
@@ -162,6 +167,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    position: static;
   }
 
   .heading {
@@ -172,6 +178,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .span {
+    font-size: 5rem;
   }
 }
 

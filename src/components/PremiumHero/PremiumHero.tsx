@@ -1,9 +1,10 @@
 import styles from "./PremiumHero.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-import FalseButton from "../FalseButton/FalseButton";
 import Nav from "../Nav/Nav";
 import Image from "next/image";
 import Mega from "../../../public/images/mega.png";
+import Usp from "../Usp/Usp";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const PremiumHero = () => {
   return (
@@ -13,7 +14,11 @@ const PremiumHero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='Members Only' />
+              <SectionHeading
+                title='Members Only'
+                color='purple'
+                dotColor='purpleDot'
+              />
             </div>
             <h1 className={styles.heading}>Premium Page</h1>
             <p className={styles.copy}>
@@ -27,6 +32,7 @@ const PremiumHero = () => {
             </div>
           </div>
         </div>
+        <Usp />
       </LayoutWrapper>
     </section>
   );

@@ -96,27 +96,17 @@ export default function Solution() {
           </div>
           <div className={styles.right}>
             <div className={styles.rightTop}>
-              <SectionHeading
-                title='Projects'
-                color='purple'
-                dotColor='purple'
-              />
-
+              <div className={styles.sectionHeadingContainer}>
+                <SectionHeading
+                  title='Projects'
+                  color='purple'
+                  dotColor='purple'
+                />
+              </div>
               <h2 className={styles.heading}>
-                {/* We build online stores that{" "}
-                <motion.span
-                  variants={fadeIn("down", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
-                  className={styles.span}
-                >
-                  resonate
-                </motion.span>{" "}
-                with your audience */}
                 Featured
                 <br />
-                <span className={styles.span}>Case Study</span>{" "}
+                <span className={styles.span}>Case Study</span>
               </h2>
               <p className={styles.copy}>
                 You&apos;ve worked hard to create something unique—let&apos;s

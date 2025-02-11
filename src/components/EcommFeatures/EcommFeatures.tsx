@@ -136,10 +136,10 @@ const EcommFeatures = () => {
           <div className={styles.top}>
             <h2 className={styles.heading}>
               Features of our <br /> E-commerce Websites: <br />
+            </h2>
               <span className={styles.span}>
                 Everything you need to launch, scale, and succeed online
               </span>{" "}
-            </h2>
             <p className={styles.copy}>
               We offer a comprehensive e-commerce development service designed
               to cover every aspect of building and managing an online store:

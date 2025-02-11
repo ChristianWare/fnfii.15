@@ -7,9 +7,7 @@ import { fadeIn } from "../../../animation/variants";
 import animationData from "../../../public/lottie/heroii.json";
 import dynamic from "next/dynamic";
 import SectionHeading from "../SectionHeading/SectionHeading";
-// import { motion, useTransform, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
-// import { useRef } from "react";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -47,13 +45,6 @@ const data = [
 ];
 
 const AboutScrollText = () => {
-  // const targetRef = useRef<HTMLDivElement>(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: targetRef,
-  //   offset: ["start start", "end start"],
-  // });
-
-  // const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
   return (
     <section className={styles.container} id='about'>
       <LayoutWrapper>
@@ -64,10 +55,17 @@ const AboutScrollText = () => {
           viewport={{ once: false, amount: 0.1 }}
           className={styles.parent}
         >
-          <SectionHeading title='About Us' color='purple' dotColor='purple' />
-          <h2 className={styles.heading}>
-            What is <br /> <span className={styles.span}>Fonts & Footers?</span>
-          </h2>
+          <div className={styles.top}>
+            <SectionHeading
+              title='About Us'
+              color='purple'
+              dotColor='purpleDot'
+            />
+            <h2 className={styles.heading}>
+              What is <br />{" "}
+              <span className={styles.span}> Fonts & Footers?</span>
+            </h2>
+          </div>
           <div className={styles.content}>
             <div className={styles.left}>
               <div className={styles.lottieBox}>
@@ -94,16 +92,6 @@ const AboutScrollText = () => {
             </div>
           </div>
         </motion.div>
-        {/* <section ref={targetRef} className={styles.rightiiWrapper}>
-          <motion.div className={styles.rightii} style={{ x }}>
-            {data.map((x: any) => (
-              <div className={styles.cardii} key={x.id}>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.desc}>{x.desc}</p>
-              </div>
-            ))}
-          </motion.div>
-        </section> */}
       </LayoutWrapper>
     </section>
   );

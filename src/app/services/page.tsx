@@ -32,7 +32,7 @@ export default function ServicesPage() {
       <EcommFeatures />
       <HowItWorks />
       <PremiumHero />
-      <Usp />
+      {/* <Usp /> */}
       <Pricing />
       <PostHero />
       <FinalCTA />

@@ -5,7 +5,6 @@ import Track from "../../../public/icons/track.svg";
 import Solutions from "../../../public/icons/solutions.svg";
 import Attention from "../../../public/icons/attention.svg";
 import Team from "../../../public/icons/team.svg";
-import LayoutWrapper from "../LayoutWrapper";
 
 const data = [
   {
@@ -37,18 +36,16 @@ const data = [
 const Usp = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
-        <div className={styles.bottom}>
-          {data.map((x) => (
-            <div key={x.id} className={styles.card}>
-              <div>
-                <h3 className={styles.usp}>{x.usp}</h3>
-              </div>
-              <p className={styles.copy}>{x.desc}</p>
+      <div className={styles.bottom}>
+        {data.map((x) => (
+          <div key={x.id} className={styles.card}>
+            <div>
+              <h3 className={styles.usp}>{x.usp}</h3>
             </div>
-          ))}
-        </div>
-      </LayoutWrapper>
+            <p className={styles.copy}>{x.desc}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

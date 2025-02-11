@@ -1,6 +1,5 @@
 import LayoutWrapper from "../LayoutWrapper";
 // import Offer from "../Offer/Offer";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./HowItWorks.module.css";
 
 const data = [
@@ -32,12 +31,10 @@ const HowItWorks = () => {
       <div className={styles.parent}>
         <LayoutWrapper>
           <div className={styles.top}>
-            <SectionHeading
-              title='Process'
-              color='purple'
-              dotColor='purpleDot'
-            />
-            <h2 className={styles.heading1}>How it works</h2>
+            <h2 className={styles.heading1}>
+              Our Process: <br />
+              <span className={styles.span}>How it works</span>
+            </h2>
           </div>
           <div className={styles.box}>
             <div className={styles.middle}>

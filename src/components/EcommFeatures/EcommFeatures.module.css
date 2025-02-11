@@ -1,7 +1,5 @@
 .container {
   background-color: var(--tan);
-  /* padding-top: 20rem; */
-  /* padding-bottom: 20rem; */
 }
 
 .top {
@@ -19,15 +17,16 @@
   margin-right: auto;
 }
 
-.span {
-  color: var(--purple);
+.heading {
   font-family: var(--BoogyBrutPoster);
   text-transform: none;
-  font-size: 6rem;
-  letter-spacing: 1px;
-  line-height: 1;
-  width: 60%;
-  display: block;
+  color: var(--purple);
+}
+
+.span {
+  text-align: center;
+  color: var(--lightBlack);
+  text-transform: none;
 }
 
 .copy {
@@ -71,9 +70,9 @@
 .title,
 .titleMobile {
   text-align: center;
-  font-family: var(--suisse);
   font-size: 2rem;
   text-transform: none;
+  color: var(--lightBlack);
 }
 
 .titleMobile {
@@ -120,6 +119,19 @@
     margin-right: auto;
     text-align: center;
   } */
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .heading,
+  .copy {
+    text-align: center;
+  }
 
   .span {
     width: 100%;
