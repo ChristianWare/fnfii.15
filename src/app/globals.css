@@ -57,7 +57,7 @@ h6,
 span {
   font-family: var(--VisbyCF);
   color: var(--black);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 h1 {

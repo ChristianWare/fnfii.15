@@ -24,7 +24,6 @@
 }
 
 .revealText {
-  text-transform: none;
   color: var(--tan);
   filter: drop-shadow(0 0 0.08rem var(--purple));
   line-height: 1;

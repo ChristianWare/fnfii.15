@@ -47,7 +47,7 @@ const WhatWeDo = () => {
             dotColor='purple'
           />
           <h2 className={styles.heading}>
-            Our <span className={styles.span}>E-commerce Services</span>
+            Our <span className={styles.span}>E-commerce Services</span> 
           </h2>
         </div>
         <div className={styles.bottom}>
