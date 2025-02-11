@@ -5,16 +5,21 @@
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .heading,
 .headingii {
   margin-right: auto;
   font-size: 6rem;
-  display: inline-block;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .headingii {
@@ -45,9 +50,7 @@
 }
 
 @media screen and (max-width: 1068px) {
-  .content {
-    grid-template-columns: repeat(1, 1fr);
-  }
+
 
   .heading,
   .headingii {

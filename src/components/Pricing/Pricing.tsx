@@ -1,9 +1,9 @@
 "use client";
 
+import styles from "./Pricing.module.css";
 import { pricing } from "../../../lib/data";
 import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
-import styles from "./Pricing.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";

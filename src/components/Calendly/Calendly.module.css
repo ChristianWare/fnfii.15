@@ -3,17 +3,19 @@
   height: 100%;
 }
 
+.calBox {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
 .heading {
   width: 80%;
-  font-family: var(--BoogyBrutPoster);
-  color: var(--purple);
-  font-size: 6rem;
-  letter-spacing: 1px;
-  text-transform: none;
 }
 
 .imgContainer {
-  position: relative;
+  position: relative; 
   width: 550px;
   height: 550px;
 }
@@ -22,12 +24,6 @@
   object-fit: cover;
 }
 
-.calBox {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-}
 .right {
   flex: 1;
   max-width: 600px;

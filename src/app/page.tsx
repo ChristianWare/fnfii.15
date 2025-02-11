@@ -22,12 +22,12 @@ export default function Home() {
         <Explain />
         <AboutScrollText />
         <Problem />
+        <Owner />
         <EcommFeatures />
         <Solution />
         <HowItWorks />
         <Pricing />
         <Calendly />
-        <Owner />
         <PostHero />
         <FinalCTA />
       </main>
