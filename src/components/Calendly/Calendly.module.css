@@ -12,6 +12,7 @@
 
 .heading {
   width: 80%;
+  text-transform: none;
 }
 
 .imgContainer {
