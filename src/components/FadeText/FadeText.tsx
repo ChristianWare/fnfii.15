@@ -61,12 +61,8 @@ export default function FadeText({ title, subheading, textContent }: Props) {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.title}>
-                {title}
-            </h2>
-            <h3 className={styles.subheading}>
-                {subheading}
-            </h3>
+            <h2 className={styles.title}>{title}</h2>
+            <h3 className={styles.subheading}>{subheading}</h3>
             <h4 className={styles.heading}>
               {text.split("").map((letter, index) => (
                 <span
@@ -77,6 +73,9 @@ export default function FadeText({ title, subheading, textContent }: Props) {
                   {letter}
                 </span>
               ))}
+            </h4>
+            <h4 className={styles.headingii}>
+              <span className={styles.revealTextii}>{text}</span>
             </h4>
           </div>
           <div className={styles.right}></div>

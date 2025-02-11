@@ -35,7 +35,7 @@
 
 .lottieBox {
   width: 100%;
-  height: 250px;
+  height: 200px;
   margin-bottom: 2rem;
 }
 
@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 568px) {
   .heading,
   .headingii {
     font-size: 5rem;
@@ -70,5 +70,9 @@
 
   .heading {
     display: none;
+  }
+
+  .lottieBox {
+    height: 175px;
   }
 }
