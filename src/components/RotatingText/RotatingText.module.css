@@ -85,13 +85,6 @@
     height: 230px;
   }
 
-  .svg textPath {
-    /* fill: var(--purple); */
-    stroke: var(--purple);
-    stroke-width: 0.1px;
-    opacity: 0.3;
-  }
-
   .lottieBox {
     height: 100px;
   }
