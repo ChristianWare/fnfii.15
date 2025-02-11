@@ -81,6 +81,10 @@
     margin-top: 3rem;
   }
 
+  .headingii {
+    letter-spacing: -1px;
+  }
+
   .copy {
     width: 100%;
   }
