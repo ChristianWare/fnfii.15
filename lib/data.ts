@@ -1,6 +1,6 @@
 import Claro from "../public/images/herov.jpg";
-// import Taco from "../public/images/taco.webp";
-// import Honey from "../public/images/honey.png";
+import Taco from "../public/images/taco.webp";
+import Honey from "../public/images/honey.png";
 
 export const benefits = [
   {
@@ -252,28 +252,28 @@ export const pricing = [
 ] as const;
 
 export const projects = [
-  // {
-  //   src: Honey,
-  //   title: "Golden Drips",
-  //   description:
-  //     "Golden Drips is an e-comemrce website that sells a wide variety of honey.",
-  //   techStack: [
-  //     {
-  //       title: "Full Product Catalog",
-  //     },
-  //     {
-  //       title: "Multiple Categories",
-  //     },
-  //     {
-  //       title: "Stripe Secure Checkout",
-  //     },
-  //     {
-  //       title: "Customer Reviews",
-  //     },
-  //   ],
+  {
+    src: Honey,
+    title: "Golden Drips",
+    description:
+      "Golden Drips is an e-comemrce website that sells a wide variety of honey.",
+    techStack: [
+      {
+        title: "Full Product Catalog",
+      },
+      {
+        title: "Multiple Categories",
+      },
+      {
+        title: "Stripe Secure Checkout",
+      },
+      {
+        title: "Customer Reviews",
+      },
+    ],
 
-  //   href: "https://www.goldendrips.com/",
-  // },
+    href: "https://www.goldendrips.com/",
+  },
   {
     src: Claro,
     title: "Chuxly",
@@ -296,28 +296,28 @@ export const projects = [
 
     href: "https://www.chuxly.com/",
   },
-  // {
-  //   src: Taco,
-  //   title: "Taco Bell Redesign",
-  //   description:
-  //     "This project is a case study that redesigns Taco Bell's website. It has an admin panel where menu items can be created, updated and deleted. Users can see menu items and reach out via a fully functional contact form.",
-  //   techStack: [
-  //     {
-  //       title: "Full Menu",
-  //     },
-  //     {
-  //       title: "Multiple Categories",
-  //     },
-  //     {
-  //       title: "Custom Design",
-  //     },
-  //     {
-  //       title: "Multiple Pages",
-  //     },
-  //   ],
+  {
+    src: Taco,
+    title: "Taco Bell Redesign",
+    description:
+      "This project is a case study that redesigns Taco Bell's website. It has an admin panel where menu items can be created, updated and deleted. Users can see menu items and reach out via a fully functional contact form.",
+    techStack: [
+      {
+        title: "Full Menu",
+      },
+      {
+        title: "Multiple Categories",
+      },
+      {
+        title: "Custom Design",
+      },
+      {
+        title: "Multiple Pages",
+      },
+    ],
 
-  //   href: "https://www.livemas.dev/",
-  // },
+    href: "https://www.livemas.dev/",
+  },
 ] as const;
 
 export const projectFaqs = [

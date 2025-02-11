@@ -21,13 +21,7 @@ const Projects = () => {
           className={styles.parentContent}
         >
           <div className={styles.top}>
-            <div className={styles.leftSide}>
-              <h2 className={styles.heading}>
-                Featured
-                <br />
-                <span className={styles.span}>Case Study</span>{" "}
-              </h2>
-            </div>
+            <div className={styles.leftSide}></div>
           </div>
           <div className={styles.dataContainer}>
             {projects.map((x, index) => (
@@ -61,6 +55,13 @@ const Projects = () => {
                   <div className={styles.righLeftContainer}>
                     <p className={styles.description}>{x.description}</p>
                     <div className={styles.btnContainer}>
+                      <Button
+                        text='More Details'
+                        target='_blank'
+                        href={x.href}
+                        btnType='secondary'
+                        arrow
+                      />
                       <Button
                         text='Live Site'
                         target='_blank'
