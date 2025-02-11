@@ -46,6 +46,7 @@
   color: var(--tan);
   filter: drop-shadow(0 0 0.08rem var(--purple));
   line-height: 1;
+  text-transform: none;
 }
 
 .bottom {

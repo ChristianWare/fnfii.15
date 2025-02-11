@@ -1,7 +1,7 @@
 .container {
   background-color: var(--tan);
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+  /* padding-top: 20rem; */
+  /* padding-bottom: 20rem; */
 }
 
 .top {
@@ -22,10 +22,12 @@
 .span {
   color: var(--purple);
   font-family: var(--BoogyBrutPoster);
-  text-transform: capitalize;
+  text-transform: none;
   font-size: 6rem;
   letter-spacing: 1px;
-  text-decoration: underline;
+  line-height: 1;
+  width: 60%;
+  display: block;
 }
 
 .copy {
@@ -106,17 +108,21 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 968px) {
-  .top {
+@media screen and (max-width: 1068px) {
+  /* .top {
     align-items: center;
     justify-content: center;
-  }
+  } */
 
-  .heading,
+  /* .heading,
   .copy {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  } */
+
+  .span {
+    width: 100%;
   }
 
   .lottie {
@@ -138,10 +144,6 @@
   .content:nth-child(6),
   .content:nth-child(9) {
     display: none;
-  }
-
-  .heading {
-    width: 80%;
   }
 }
 

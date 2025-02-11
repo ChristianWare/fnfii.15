@@ -45,7 +45,7 @@ const EcommFeatures = () => {
     },
     {
       icon: <Integration width={40} height={40} className={styles.icon} />,
-      title: "Platform Integration",
+      title: "Platform Selection & Consultation",
       description:
         "We integrate with leading e-commerce platforms like Shopify, WooCommerce, and Magento, ensuring your online store has the functionality and flexibility required to succeed in a competitive market.",
     },
@@ -61,7 +61,7 @@ const EcommFeatures = () => {
     },
     {
       icon: <Designii width={40} height={40} className={styles.icon} />,
-      title: "Custom Website Design",
+      title: "Custom UI/UX Design",
       description:
         "We offer bespoke design services that reflect your brand’s identity and provide an engaging user experience.",
     },
@@ -78,20 +78,20 @@ const EcommFeatures = () => {
     },
     {
       icon: <Analytics width={40} height={40} className={styles.icon} />,
-      title: "E-commerce Analytics",
+      title: "Performance Optimization & Security",
       description:
         "We provide comprehensive analytics and reporting to help you understand your e-commerce performance.",
     },
     {
       icon: <Multiple width={40} height={40} className={styles.icon} />,
-      title: "Inventory Management",
+      title: "Store Setup & Product Management",
       description:
         "Our e-commerce platforms enable efficient management of multiple products.",
     },
 
     {
       icon: <Payment width={40} height={40} className={styles.icon} />,
-      title: "Stripe Payment Gateway",
+      title: "Payment Gateway & Third-Party Integrations",
       description:
         "Integrating Stripe as your payment gateway ensures secure transactions and supports multiple payment methods.",
     },
@@ -111,7 +111,7 @@ const EcommFeatures = () => {
     },
     {
       icon: <Clock width={40} height={40} className={styles.icon} />,
-      title: "24/7 Support",
+      title: "Ongoing Maintenance & Support",
       description:
         "If you ever need to reach out to us for any reason, call us! We're here and ready to help.",
     },
@@ -135,13 +135,14 @@ const EcommFeatures = () => {
         >
           <div className={styles.top}>
             <h2 className={styles.heading}>
-              <span className={styles.span}>Features</span> of our <br />{" "}
-              Ecommerce Websites
+              Features of our <br /> E-commerce Websites: <br />
+              <span className={styles.span}>
+                Everything you need to launch, scale, and succeed online
+              </span>{" "}
             </h2>
             <p className={styles.copy}>
-              Packed with powerful tools and intuitive design, our e-commerce
-              websites are built to enhance user experience, drive sales, and
-              scale effortlessly with your business.
+              We offer a comprehensive e-commerce development service designed
+              to cover every aspect of building and managing an online store:
             </p>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />

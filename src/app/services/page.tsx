@@ -6,11 +6,13 @@ import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 // import Delivery from "@/components/Delivery/Delivery";
 // import Experience from "@/components/Experience/Experience";
 import PostHero from "@/components/PostHero/PostHero";
-import PreAbout from "@/components/PreAbout/PreAbout";
+// import PreAbout from "@/components/PreAbout/PreAbout";
 import PremiumHero from "@/components/PremiumHero/PremiumHero";
 import Usp from "@/components/Usp/Usp";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import FadeText from "@/components/FadeText/FadeText";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import Pricing from "@/components/Pricing/Pricing";
 
 export default function ServicesPage() {
   return (
@@ -28,11 +30,10 @@ export default function ServicesPage() {
         textContent='With online sales surging, an optimized e-commerce presence is essential for broader reach, 24/7 operations, and sustainable growth in a fast-evolving digital landscape.'
       />
       <EcommFeatures />
-      {/* <Delivery /> */}
-      {/* <Experience /> */}
-      <PreAbout />
+      <HowItWorks />
       <PremiumHero />
       <Usp />
+      <Pricing />
       <PostHero />
       <FinalCTA />
     </main>

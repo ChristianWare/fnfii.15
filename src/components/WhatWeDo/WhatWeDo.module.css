@@ -6,11 +6,14 @@
 .top {
   margin-top: 1rem;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading {
-  width: 40%;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .span {

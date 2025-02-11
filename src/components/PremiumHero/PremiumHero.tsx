@@ -1,13 +1,9 @@
 import styles from "./PremiumHero.module.css";
-
 import LayoutWrapper from "../LayoutWrapper";
 import FalseButton from "../FalseButton/FalseButton";
-
 import Nav from "../Nav/Nav";
 import Image from "next/image";
 import Mega from "../../../public/images/mega.png";
-
-// Dynamically import Lottie with SSR disabled
 
 const PremiumHero = () => {
   return (
