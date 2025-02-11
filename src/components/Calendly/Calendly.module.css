@@ -5,12 +5,11 @@
 
 .heading {
   width: 80%;
-}
-
-.span {
+  font-family: var(--BoogyBrutPoster);
   color: var(--purple);
-  text-decoration: underline;
-  letter-spacing: 0px;
+  font-size: 6rem;
+  letter-spacing: 1px;
+  text-transform: none;
 }
 
 .imgContainer {

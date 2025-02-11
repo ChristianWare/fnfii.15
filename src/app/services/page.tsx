@@ -8,7 +8,6 @@ import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 import PostHero from "@/components/PostHero/PostHero";
 // import PreAbout from "@/components/PreAbout/PreAbout";
 import PremiumHero from "@/components/PremiumHero/PremiumHero";
-import Usp from "@/components/Usp/Usp";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import FadeText from "@/components/FadeText/FadeText";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
@@ -32,7 +31,6 @@ export default function ServicesPage() {
       <EcommFeatures />
       <HowItWorks />
       <PremiumHero />
-      {/* <Usp /> */}
       <Pricing />
       <PostHero />
       <FinalCTA />

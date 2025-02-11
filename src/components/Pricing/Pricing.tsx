@@ -7,9 +7,12 @@ import styles from "./Pricing.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import { usePathname } from "next/navigation";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
+
+  const pathname = usePathname();
 
   return (
     <section className={styles.container}>
@@ -23,12 +26,14 @@ const Pricing = () => {
         >
           <div className={styles.content}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>
-                {" "}
-                Transparent
-                <br />
-                <span className={styles.headingii}>Pricing:</span>
-              </h2>
+              {pathname !== "/pricing" && (
+                <h2 className={styles.heading}>
+                  {" "}
+                  Transparent
+                  <br />
+                  <span className={styles.headingii}>Pricing:</span>
+                </h2>
+              )}
               <p className={styles.copy}>
                 Our plans are clear and open, no shocks or caps. Help is always
                 here when you want it. Subscription based pricing. No contracts.
