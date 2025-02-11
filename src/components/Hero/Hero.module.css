@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    min-height: 100vh;
+  }
+
   .content {
     margin-top: 3rem;
   }
