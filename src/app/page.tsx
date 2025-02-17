@@ -12,22 +12,22 @@ import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 import Problem from "@/components/Problem/Problem";
 import Owner from "@/components/Owner/Owner";
 import Pricing from "@/components/Pricing/Pricing";
-import Calendly from "@/components/Calendly/Calendly";
+// import Calendly from "@/components/Calendly/Calendly";
 
 export default function Home() {
   return (
     <ReactLenis root>
       <main>
         <Hero />
-        <Explain />
         <AboutScrollText />
         <Problem />
-        <Owner />
-        <EcommFeatures />
+        <Explain />
         <Solution />
+        <EcommFeatures />
         <HowItWorks />
         <Pricing />
-        <Calendly />
+        {/* <Calendly /> */}
+        <Owner />
         <PostHero />
         <FinalCTA />
       </main>

@@ -32,6 +32,12 @@ const BoogyBrutPoster = localFont({
   display: "swap",
 });
 
+const nbGroteskProMonoBold = localFont({
+  src: "../../public/fonts/nbGroteskProMonoBold.woff2",
+  variable: "--nbGroteskProMonoBold",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Fonts & Footers",
   description: "E-commerce Web Design and Developement Agency",
@@ -52,7 +58,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${suisse.variable} ${suissReg.variable} ${VisbyCF.variable} ${BoogyBrutPoster.variable}`}
+        className={`${suisse.variable} ${suissReg.variable} ${VisbyCF.variable} ${BoogyBrutPoster.variable} ${nbGroteskProMonoBold.variable}`}
       >
         <NoiseBg>
           {/* <ScrollIndicator /> */}

@@ -14,32 +14,32 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 const data = [
   {
     id: 1,
-    title: "99.9%",
+    title: "Who we are",
     desc: "Uptime for every e-commerce site we build",
   },
   {
     id: 2,
-    title: "2X",
+    title: "What we do",
     desc: "Faster Website load times than industry standard",
   },
   {
     id: 3,
-    title: "14",
+    title: "Why we do it ",
     desc: "Average days to launch your e-commerce store",
   },
   {
     id: 4,
-    title: "99.9%",
+    title: "What Sets Us Apart",
     desc: "Uptime for every e-commerce site we build",
   },
   {
     id: 5,
-    title: "2X",
+    title: "Mission",
     desc: "Faster Website load times than industry standard",
   },
   {
     id: 6,
-    title: "14",
+    title: "Culture",
     desc: "Average days to launch your e-commerce store",
   },
 ];
@@ -62,8 +62,8 @@ const AboutScrollText = () => {
               dotColor='purpleDot'
             />
             <h2 className={styles.heading}>
-              What is <br />{" "}
-              <span className={styles.span}> Fonts & Footers?</span>
+              {/* What is <br />{" "} */}
+              <span className={styles.span}> Fonts & Footers</span>
             </h2>
           </div>
           <div className={styles.content}>
