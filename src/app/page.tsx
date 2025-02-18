@@ -12,6 +12,7 @@ import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 import Problem from "@/components/Problem/Problem";
 import Owner from "@/components/Owner/Owner";
 import Pricing from "@/components/Pricing/Pricing";
+import WhatWeDo2 from "@/components/WhatWeDo2/WhatWeDo2";
 // import Calendly from "@/components/Calendly/Calendly";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
     <ReactLenis root>
       <main>
         <Hero />
+        <WhatWeDo2 />
         <AboutScrollText />
         <Problem />
         <Explain />
