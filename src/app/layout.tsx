@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NoiseBg from "@/components/NoiseBg/NoiseBg";
+// import NoiseBg from "@/components/NoiseBg/NoiseBg";
 // import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 import PlausibleProvider from "next-plausible";
 import { Toaster } from "react-hot-toast";
