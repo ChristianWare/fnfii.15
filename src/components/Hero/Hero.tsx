@@ -1,7 +1,7 @@
 "use client";
 
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
+import LayoutWrapper from "../LayoutWrapper";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";

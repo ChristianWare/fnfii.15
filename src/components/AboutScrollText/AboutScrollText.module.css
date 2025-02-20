@@ -1,5 +1,7 @@
 .container {
   background-color: var(--tan);
+  position: relative;
+  height: 100vh;
 }
 
 .heading {

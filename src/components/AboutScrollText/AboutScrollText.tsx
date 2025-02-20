@@ -2,12 +2,11 @@
 "use client";
 
 import styles from "./AboutScrollText.module.css";
-import { useState } from "react";
+// import { useState } from "react";
 import LayoutWrapper from "../LayoutWrapper";
-import { fadeIn } from "../../../animation/variants";
 import animationData from "../../../public/lottie/heroii.json";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import animationData1 from "../../../public/lottie/cta.json";
 import animationData2 from "../../../public/lottie/email.json";
@@ -56,16 +55,12 @@ const data = [
 ];
 
 export default function AboutScrollText() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className={styles.container} id='about'>
       <LayoutWrapper>
-        <motion.div
-          variants={fadeIn("", 0.3)}
-          initial='hidden'
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.1 }}
+        <div
           className={styles.parent}
         >
           <div className={styles.top}>
@@ -75,7 +70,6 @@ export default function AboutScrollText() {
               dotColor='purpleDot'
             />
             <h2 className={styles.heading}>
-              {/* What is <br />{" "} */}
               <span className={styles.span}> Fonts & Footers</span>
             </h2>
           </div>
@@ -104,7 +98,7 @@ export default function AboutScrollText() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </LayoutWrapper>
     </section>
   );

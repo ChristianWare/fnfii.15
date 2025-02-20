@@ -60,7 +60,7 @@ export default function RootLayout({
       <body
         className={`${suisse.variable} ${suissReg.variable} ${VisbyCF.variable} ${BoogyBrutPoster.variable} ${nbGroteskProMonoBold.variable}`}
       >
-        <NoiseBg>
+        {/* <NoiseBg> */}
           {/* <ScrollIndicator /> */}
           <Toaster
             position='bottom-right'
@@ -71,7 +71,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <Footerii />
-        </NoiseBg>
+        {/* </NoiseBg> */}
       </body>
     </html>
   );
