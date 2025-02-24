@@ -7,9 +7,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-import animationData from "../../../public/lottie/usp.json";
-import dynamic from "next/dynamic";
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+// import animationData from "../../../public/lottie/usp.json";
+// import dynamic from "next/dynamic";
+// const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function Explain() {
   const [lettersRef, setLettersRef] = useArrayRef();
@@ -84,9 +84,9 @@ export default function Explain() {
             </motion.h2>
           </div>
           <div className={styles.right}>
-            <div className={styles.lottieBox}>
+            {/* <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
+            </div> */}
           </div>
         </div>
       </LayoutWrapper>
