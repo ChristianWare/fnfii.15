@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
-import { gsap } from "gsap";
 import ScrollIndicator from "../ScrollIndicator/ScrollIndicator";
+import { useTransitionRouter } from "next-view-transitions";
 
 const navItems = [
   { text: "About", href: "/about" },
@@ -19,116 +19,64 @@ const navItems = [
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isFixed, setIsFixed] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-  const [navHeight, setNavHeight] = useState(0);
 
   const navRef = useRef<HTMLElement | null>(null);
   const containerRef = useRef<HTMLUListElement | null>(null);
 
-  // We'll create a single timeline for animating the navItem elements
-  const tl = useRef<gsap.core.Timeline | null>(null);
+  const router = useTransitionRouter();
 
   const openMenu = () => {
     setIsOpen((prev) => !prev);
   };
 
-  // Sticky nav + active section observer
-  useEffect(() => {
-    const handleScroll = () => {
-      const topNav = document.querySelector(".topNav") as HTMLElement;
-      const nav = navRef.current;
-
-      if (topNav && nav) {
-        const topNavHeight = topNav.offsetHeight;
-        const currentNavHeight = nav.offsetHeight;
-
-        setNavHeight(currentNavHeight);
-
-        if (window.scrollY > topNavHeight) {
-          setIsFixed(true);
-        } else {
-          setIsFixed(false);
-        }
-      }
-    };
-
-    // Observe sections to highlight current nav link
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
   const pathname = usePathname();
+  function slideInOut() {
+    // Only animate if view transitions are supported
+    if (!document.startViewTransition) return;
 
-  useEffect(() => {
-    if (!tl.current) {
-      // Set initial state for nav items
-      gsap.set(".navItem", { y: 75, opacity: 0 });
+    const transition = document.startViewTransition(() => {
+      // This callback should contain any DOM changes
+    });
 
-      // Build a paused timeline
-      tl.current = gsap.timeline({ paused: true });
+    transition.ready.then(() => {
+      document.documentElement.animate(
+        [
+          { transform: "translateY(0)", opacity: 1 },
+          { transform: "translateY(-35%)", opacity: 0.2 },
+        ],
+        {
+          duration: 1500,
+          easing: "cubic-bezier(0.87, 0, 0.13, 1)",
+          pseudoElement: "::view-transition-old(root)",
+        }
+      );
 
-      // Animate nav items in
-      tl.current.to(".navItem", {
-        // Wait 0.5s before animating text
-        delay: 0.2,
-        y: 0,
-        opacity: 1,
-        stagger: 0.3, // each item starts 0.3s after the previous
-        duration: 0.8, // each item fades in over 0.8s
-        ease: "power4.out",
-      });
-    }
-  }, []);
+      document.documentElement.animate(
+        [
+          { clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)" },
+          { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" },
+        ],
+        {
+          duration: 1500,
+          easing: "cubic-bezier(0.87, 0, 0.13, 1)",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      );
+    });
+  }
 
-  // Toggle timeline and menu .active class
-  useEffect(() => {
-    const menuEl = containerRef.current; // <ul> with .navMenu
+  // Add this at the top of your component
+  // const [supportsViewTransitions, setSupportsViewTransitions] = useState(false);
 
-    if (!tl.current || !menuEl) return;
-
-    if (isOpen) {
-      // Slide menu in (CSS) via .active
-      menuEl.classList.add(styles.active);
-      // Animate text in
-      tl.current.play(0);
-    } else {
-      // Animate text out (reverse)
-      tl.current.reverse();
-
-      // After reversed text completes, remove .active
-      tl.current.eventCallback("onReverseComplete", () => {
-        menuEl.classList.remove(styles.active);
-      });
-    }
-  }, [isOpen]);
+  // useEffect(() => {
+  //   setSupportsViewTransitions(
+  //     typeof document !== "undefined" && "startViewTransition" in document
+  //   );
+  // }, []);
 
   return (
     <>
-      {/* Spacer to offset the fixed nav height */}
-      <div style={{ height: isFixed ? `${navHeight}px` : 0 }} />
-
-      <header
-        className={`${styles.header} ${isFixed ? styles.fixed : ""}`}
-        ref={navRef}
-      >
+      <header className={styles.header} ref={navRef}>
         <ScrollIndicator />
         <nav className={styles.navbar}>
           <div className={styles.mobileLogo}>
@@ -138,28 +86,37 @@ const Nav = () => {
             <Logo />
           </div>
 
-          <ul ref={containerRef} className={`${styles.navMenu} navMenu`}>
+          <ul
+            ref={containerRef}
+            className={`${styles.navMenu} ${isOpen ? styles.active : ""}`}
+          >
+            {" "}
             <div className={styles.navBox}>
               {navItems.map((navItem, index) => (
-                <li
-                  key={index}
-                  className={`
-                    ${styles.navItem} 
-                    navItem 
-                    ${
-                      activeSection === navItem.href.substring(2)
-                        ? styles.active
-                        : ""
-                    }
-                  `.replace(/\s+/g, " ")}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Link href={navItem.href} className={styles.navItem}>
-                    {pathname.includes(navItem.href) && (
-                      <>
-                        {navItem.text}
-                      </>
-                    )}
+                <li key={index}>
+                  <Link
+                    href={navItem.href}
+                    className={styles.navItem}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsOpen(false);
+
+                      if (!document.startViewTransition) {
+                        router.push(navItem.href);
+                        return;
+                      }
+
+                      const transition = document.startViewTransition(() => {
+                        router.push(navItem.href);
+                      });
+
+                      transition.ready.then(() => {
+                        // Trigger your animations here
+                        slideInOut();
+                      });
+                    }}
+                  >
+                    {pathname.includes(navItem.href) && <>{navItem.text}</>}
                     {!pathname.includes(navItem.href) && navItem.text}
                   </Link>
                 </li>

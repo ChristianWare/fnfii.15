@@ -7,6 +7,7 @@ import PlausibleProvider from "next-plausible";
 import { Toaster } from "react-hot-toast";
 import Nav from "@/components/Nav/Nav";
 import Footerii from "@/components/Footerii/Footerii";
+import { ViewTransitions } from "next-view-transitions";
 
 const suisse = localFont({
   src: "../../public/fonts/SuisseIntl-Medium.ttf",
@@ -49,18 +50,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <head>
-        <PlausibleProvider
-          domain='fontsandfooters.com'
-          trackLocalhost={false}
-          enabled={true}
-        />
-      </head>
-      <body
-        className={`${suisse.variable} ${suissReg.variable} ${VisbyCF.variable} ${BoogyBrutPoster.variable} ${nbGroteskProMonoBold.variable}`}
-      >
-        {/* <NoiseBg> */}
+    <ViewTransitions>
+      <html lang='en'>
+        <head>
+          <PlausibleProvider
+            domain='fontsandfooters.com'
+            trackLocalhost={false}
+            enabled={true}
+          />
+        </head>
+        <body
+          className={`${suisse.variable} ${suissReg.variable} ${VisbyCF.variable} ${BoogyBrutPoster.variable} ${nbGroteskProMonoBold.variable}`}
+        >
+          {/* <NoiseBg> */}
           {/* <ScrollIndicator /> */}
           <Toaster
             position='bottom-right'
@@ -71,8 +73,9 @@ export default function RootLayout({
           <Nav />
           {children}
           <Footerii />
-        {/* </NoiseBg> */}
-      </body>
-    </html>
+          {/* </NoiseBg> */}
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
