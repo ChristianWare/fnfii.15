@@ -1,23 +1,48 @@
 "use client";
 
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import SplitType from "split-type";
+
 import styles from "./Hero.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-import Button from "../Button/Button";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
+// import Button from "../Button/Button";
 import RotatingText from "../RotatingText/RotatingText";
 
-const Hero = () => {
+export default function Hero() {
+  // Use a typed ref for the element to be animated
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  // Update your useGSAP animation code
+  useGSAP(() => {
+    if (!headingRef.current) return;
+
+    const heroText = new SplitType(headingRef.current, { types: "chars" });
+
+    // Immediately reveal parent after splitting
+    gsap.set(headingRef.current, { visibility: "visible" });
+
+    // Start characters fully hidden and offscreen
+    gsap.set(heroText.chars, {
+      y: 150,
+      opacity: 0, // Add opacity control for extra safety
+    });
+
+    gsap.to(heroText.chars, {
+      y: 0,
+      opacity: 1, // Fade in while moving
+      duration: 1,
+      stagger: 0.075,
+      ease: "power4.out",
+      delay: 0.05,
+    });
+  });
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <motion.div
-          variants={fadeIn("", 0.3)}
-          initial='hidden'
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.1 }}
-          className={styles.parent}
-        >
+        <div className={styles.parent}>
           <div className={styles.content}>
             <div className={styles.left}>
               <div className={styles.RotatingTextContainer}>
@@ -26,13 +51,21 @@ const Hero = () => {
                   color='tan'
                 />
               </div>
-              <h1 className={styles.heading}>
-                We build <br />
-                e-commerce websites <br />
-                <span className={styles.headingii}>the right way.</span>
-              </h1>
 
-              <p className={styles.copy}>
+              {/* Note the direct ref on the h1 */}
+              {/* Note: If you're going to have a one word/one line h1 heading then this will work fine, however for multiple words you may want to choose somethinng that animates each word instead of each individual letter. Also be sure to add a min height for the one word animation to work.  */}
+              <div className={styles.headingContainer}>
+                <div className={styles.headingClip}>
+                  <h1 ref={headingRef} className={styles.heading}>
+                    {/* We build <br /> */}
+                    E-commerce {/* websites <br /> */}
+                    
+                    {/* <span className={styles.headingii}>the right way.</span> */}
+                  </h1>
+                </div>
+              </div>
+
+              {/* <p className={styles.copy}>
                 We Build Fast, Secure, and Scalable Online Stores for Ambitious
                 Brands.
               </p>
@@ -43,13 +76,11 @@ const Hero = () => {
                   btnType='primaryiii'
                   arrow
                 />
-              </div>
+              </div> */}
             </div>
           </div>
-        </motion.div>
+        </div>
       </LayoutWrapper>
     </section>
   );
-};
-
-export default Hero;
+}
