@@ -68,9 +68,26 @@
 
 .copy {
   color: var(--white);
-  width: 380px;
   text-align: center;
   opacity: 0.7;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden; /* Initial hide for paragraph */
+  overflow: hidden;
+}
+
+.line {
+  overflow: hidden;
+  display: block;
+}
+
+.lineInner {
+  display: inline-block;
+    transform: translateY(100%); /* Fallback position */
+
 }
 
 .btnContainer {

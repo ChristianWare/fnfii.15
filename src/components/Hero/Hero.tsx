@@ -1,43 +1,76 @@
 "use client";
 
+import styles from "./Hero.module.css";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
-
-import styles from "./Hero.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-// import Button from "../Button/Button";
 import RotatingText from "../RotatingText/RotatingText";
 
 export default function Hero() {
-  // Use a typed ref for the element to be animated
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const copyRef = useRef<HTMLParagraphElement>(null);
 
-  // Update your useGSAP animation code
   useGSAP(() => {
     if (!headingRef.current) return;
 
     const heroText = new SplitType(headingRef.current, { types: "chars" });
 
-    // Immediately reveal parent after splitting
     gsap.set(headingRef.current, { visibility: "visible" });
 
-    // Start characters fully hidden and offscreen
     gsap.set(heroText.chars, {
       y: 150,
-      opacity: 0, // Add opacity control for extra safety
+      opacity: 0,
     });
 
     gsap.to(heroText.chars, {
       y: 0,
-      opacity: 1, // Fade in while moving
+      opacity: 1,
       duration: 1,
       stagger: 0.075,
       ease: "power4.out",
       delay: 0.05,
     });
   });
+
+  useGSAP(
+    () => {
+      if (!copyRef.current) return;
+
+      // Hide immediately before splitting
+      gsap.set(copyRef.current, { visibility: "hidden" });
+
+      const text = new SplitType(copyRef.current, {
+        types: "lines",
+        tagName: "div",
+        lineClass: styles.line,
+      });
+
+      // Reveal parent while keeping lines hidden
+      gsap.set(copyRef.current, { visibility: "visible" });
+
+      // Set initial state for lines
+      gsap.set(text.lines, {
+        y: "100%",
+        opacity: 0,
+        willChange: "transform, opacity",
+      });
+
+      // Animate lines with proper stagger
+      gsap.to(text.lines, {
+        y: "0%",
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power4.out",
+        delay: 0.25,
+      });
+
+      return () => text.revert();
+    },
+    { scope: copyRef }
+  );
 
   return (
     <section className={styles.container}>
@@ -58,18 +91,18 @@ export default function Hero() {
                 <div className={styles.headingClip}>
                   <h1 ref={headingRef} className={styles.heading}>
                     {/* We build <br /> */}
-                    E-commerce {/* websites <br /> */}
-                    
+                    E-commerce 
+                    {/* websites <br /> */}
                     {/* <span className={styles.headingii}>the right way.</span> */}
                   </h1>
                 </div>
               </div>
 
-              {/* <p className={styles.copy}>
+              <p className={styles.copy} ref={copyRef}>
                 We Build Fast, Secure, and Scalable Online Stores for Ambitious
                 Brands.
               </p>
-              <div className={styles.btnContainer}>
+              {/* <div className={styles.btnContainer}>
                 <Button
                   text='Learn more'
                   href='/#contact'
